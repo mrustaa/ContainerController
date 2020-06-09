@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'ContainerControllerSwift/*.{swift}'
+  s.source_files = 'ContainerControllerSwift/**/*.{swift}'
   
   # s.resource_bundles = {
   #   'ContainerControllerSwift' => ['ContainerControllerSwift/Assets/*.png']
