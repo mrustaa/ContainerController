@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
+'This is a swipe-panel from application: https://www.apple.com/ios/maps/'
                        DESC
 
   s.homepage         = 'https://github.com/mrustaa/ContainerController'
@@ -27,7 +28,8 @@ TODO: Add long description of the pod here.
   s.author           = { 'rustamburger@gmail.com' => 'rustamburger@gmail.com' }
   s.source           = { :git => 'https://github.com/mrustaa/ContainerController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
+  s.swift_version = '5.2.4'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'ContainerControllerSwift/*.{swift}'
