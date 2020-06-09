@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ContainerControllerSwift_Example' do
+  pod 'ContainerControllerSwift', :path => '../'
+
+  target 'ContainerControllerSwift_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
