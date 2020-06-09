@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		01C7EF19A8C89AA4D02D74D2 /* Pods-ContainerControllerSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Tests/Pods-ContainerControllerSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0AA8BF39B9F182FE833C0178 /* Pods-ContainerControllerSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Example/Pods-ContainerControllerSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		1034FE614CC8890CE063531F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1034FE614CC8890CE063531F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		121FB933CAE3EC5A2A00F4B2 /* Pods_ContainerControllerSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ContainerControllerSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerControllerSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		84550121AB9630F101ECE515 /* Pods-ContainerControllerSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Example/Pods-ContainerControllerSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
-		95BE06AF27887E1C134436AD /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ContainerControllerSwift.podspec; path = ../ContainerControllerSwift.podspec; sourceTree = "<group>"; };
+		95BE06AF27887E1C134436AD /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ContainerControllerSwift.podspec; path = ../ContainerControllerSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D8903A29B31F63B5A7A8607B /* Pods_ContainerControllerSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5E269035BE15FBD5F947F3 /* Pods-ContainerControllerSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Tests.release.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Tests/Pods-ContainerControllerSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E0FB46D7C5BC0F8759A83A60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E0FB46D7C5BC0F8759A83A60 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,6 @@
 				01C7EF19A8C89AA4D02D74D2 /* Pods-ContainerControllerSwift_Tests.debug.xcconfig */,
 				DF5E269035BE15FBD5F947F3 /* Pods-ContainerControllerSwift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

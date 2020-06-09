@@ -1,0 +1,22 @@
+{
+  "name": "ContainerControllerSwift",
+  "version": "0.1.0",
+  "summary": "A short description of ContainerControllerSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/rustamburger@gmail.com/ContainerControllerSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "rustamburger@gmail.com": "rustamburger@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/rustamburger@gmail.com/ContainerControllerSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ContainerControllerSwift/Classes/**/*"
+}
