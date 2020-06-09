@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableAdapterCellData: NSObject {
+open class TableAdapterCellData: NSObject {
     
 //    public let cellIdentifier: String
 //

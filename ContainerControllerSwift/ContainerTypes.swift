@@ -16,7 +16,7 @@ public enum ContainerMoveType {
     case custom
 }
 
-enum ContainerFromType {
+public enum ContainerFromType {
     case pan
     case scroll
     case scrollBorder

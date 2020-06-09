@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionAdapterCell: UICollectionViewCell {
+open class CollectionAdapterCell: UICollectionViewCell {
     
     @IBInspectable var hideAnimation: Bool = false
     var selectedView: UIView?
@@ -24,7 +24,7 @@ class CollectionAdapterCell: UICollectionViewCell {
         setupCommonProperties()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupCommonProperties()
     }
@@ -49,7 +49,7 @@ class CollectionAdapterCell: UICollectionViewCell {
     let selAlpha: CGFloat = 0.2 // 0.15
     
     
-    override var isSelected: Bool {
+    open override var isSelected: Bool {
         set {
             super.isSelected = newValue
             
@@ -85,7 +85,7 @@ class CollectionAdapterCell: UICollectionViewCell {
         }
     }
     
-    override var isHighlighted: Bool {
+    open override var isHighlighted: Bool {
         set {
             super.isHighlighted = newValue
             

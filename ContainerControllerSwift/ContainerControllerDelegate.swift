@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol ContainerControllerDelegate {
+public protocol ContainerControllerDelegate {
     
     /// Reports rotation and orientation changes
     func containerControllerRotation(_ containerController: ContainerController)
@@ -21,7 +21,7 @@ protocol ContainerControllerDelegate {
     
 }
 
-extension ContainerControllerDelegate {
+public extension ContainerControllerDelegate {
     
     func containerControllerRotation(_ containerController: ContainerController) {
     }

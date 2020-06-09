@@ -10,7 +10,7 @@ import UIKit
 
 // MARK: - Position
 
-class ContainerPosition {
+open class ContainerPosition {
     
     var top: CGFloat
     
@@ -30,7 +30,7 @@ class ContainerPosition {
 
 // MARK: - Insets
 
-struct ContainerInsets {
+public struct ContainerInsets {
     
     var right: CGFloat
 
@@ -46,7 +46,7 @@ struct ContainerInsets {
 
 // MARK: - Layout
 
-class ContainerLayout {
+open class ContainerLayout {
     
     /**
      Initialization start position.

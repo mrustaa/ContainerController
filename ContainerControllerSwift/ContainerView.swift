@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContainerView: UIView {
+open class ContainerView: UIView {
     
     var contentView: UIView?
     
@@ -44,7 +44,7 @@ class ContainerView: UIView {
         self.contentView = contentView
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     

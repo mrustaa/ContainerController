@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableAdapterCell: UITableViewCell {
+open class TableAdapterCell: UITableViewCell {
     
     @IBInspectable var hideAnimation: Bool = false
     var selectedView: UIView?
@@ -35,7 +35,7 @@ class TableAdapterCell: UITableViewCell {
     
     let selAlpha: CGFloat = 0.2 // 0.15
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    open override func setSelected(_ selected: Bool, animated: Bool) {
         
         if hideAnimation {
             
@@ -65,7 +65,7 @@ class TableAdapterCell: UITableViewCell {
         
     }
     
-    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    open override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         
         if hideAnimation {
             if highlighted {

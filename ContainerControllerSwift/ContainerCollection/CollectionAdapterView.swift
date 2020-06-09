@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionAdapterView: UICollectionView {
+open class CollectionAdapterView: UICollectionView {
     
     var countCallback: CollectionAdapterCountCallback?
     var cellIndexCallback: CollectionAdapterCellIndexCallback?
@@ -17,7 +17,7 @@ class CollectionAdapterView: UICollectionView {
     
     var items: [CollectionAdapterItem] = []
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         update()
     }
@@ -64,7 +64,7 @@ class CollectionAdapterView: UICollectionView {
 
 extension CollectionAdapterView: UICollectionViewDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if !items.isEmpty {
             let item = items[indexPath.row]
             item.cellData?.selectCallback?()
@@ -78,7 +78,7 @@ extension CollectionAdapterView: UICollectionViewDelegate {
 
 extension CollectionAdapterView: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if !items.isEmpty {
             return items.count
         }
@@ -88,7 +88,7 @@ extension CollectionAdapterView: UICollectionViewDataSource {
         return 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if !items.isEmpty {
             let item = items[indexPath.row]
             let cell = cellAt(indexPath)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionAdapterItem: NSObject {
+open class CollectionAdapterItem: NSObject {
     
     public let cellClass: AnyClass
     public let cellData: CollectionAdapterCellData?

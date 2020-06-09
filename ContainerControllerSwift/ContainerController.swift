@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContainerController: NSObject {
+open class ContainerController: NSObject {
     
     // MARK: Views
     
@@ -1094,7 +1094,7 @@ class ContainerController: NSObject {
 
 extension ContainerController: UIGestureRecognizerDelegate {
     
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return false
     }
     
@@ -1104,14 +1104,14 @@ extension ContainerController: UIGestureRecognizerDelegate {
 
 extension ContainerController: UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if let tableAdapterView = scrollView as? TableAdapterView {
             return tableAdapterView.tableView(tableView, heightForRowAt: indexPath)
         }
         return 0
     }
 
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let tableAdapterView = scrollView as? TableAdapterView {
             return tableAdapterView.tableView(tableView, didSelectRowAt: indexPath)
         }
@@ -1123,14 +1123,14 @@ extension ContainerController: UITableViewDelegate {
 
 extension ContainerController: UITableViewDataSource {
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let tableAdapterView = scrollView as? TableAdapterView {
             return tableAdapterView.tableView(tableView, numberOfRowsInSection: section)
         }
         return 0
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let tableAdapterView = scrollView as? TableAdapterView {
             return tableAdapterView.tableView(tableView, cellForRowAt: indexPath)
         }
@@ -1143,7 +1143,7 @@ extension ContainerController: UITableViewDataSource {
 
 extension ContainerController: UICollectionViewDelegate {
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let collectionAdapterView = scrollView as? CollectionAdapterView {
             collectionAdapterView.collectionView(collectionView, didSelectItemAt: indexPath)
         }
@@ -1155,14 +1155,14 @@ extension ContainerController: UICollectionViewDelegate {
 
 extension ContainerController: UICollectionViewDataSource {
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let collectionAdapterView = scrollView as? CollectionAdapterView {
             return collectionAdapterView.collectionView(collectionView, numberOfItemsInSection: section)
         }
         return 0
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let collectionAdapterView = scrollView as? CollectionAdapterView {
             return collectionAdapterView.collectionView(collectionView, cellForItemAt: indexPath)
         }
@@ -1186,7 +1186,7 @@ extension ContainerController: UICollectionViewDelegateFlowLayout {
 
 extension ContainerController: UIScrollViewDelegate {
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if let tableAdapterView = scrollView as? TableAdapterView {
             tableAdapterView.scrollViewDidScroll(tableAdapterView)
@@ -1296,7 +1296,7 @@ extension ContainerController: UIScrollViewDelegate {
     
     // MARK: - Scroll Begin/End Dragging
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         
         isScrolling = true
         
@@ -1309,11 +1309,11 @@ extension ContainerController: UIScrollViewDelegate {
         }
     }
     
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         isScrolling = false
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         
         if !decelerate {
            isScrolling = false

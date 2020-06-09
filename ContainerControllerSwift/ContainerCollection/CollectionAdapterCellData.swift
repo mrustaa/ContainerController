@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionAdapterCellData: NSObject {
+open class CollectionAdapterCellData: NSObject {
     
     public var selectCallback: (() -> Void)?
     

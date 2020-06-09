@@ -2,11 +2,9 @@
 
 import UIKit
 
-
-
-extension ContainerDevice {
+public extension ContainerDevice {
     
-    public enum Orientation {
+    enum Orientation {
         case portrait
         case landscapeLeft
         case landscapeRight

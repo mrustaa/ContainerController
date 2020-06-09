@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableAdapterView: UITableView {
+open class TableAdapterView: UITableView {
     
     @IBInspectable var separatorClr: UIColor?
     
@@ -22,7 +22,7 @@ class TableAdapterView: UITableView {
     
     var items: [TableAdapterItem] = []
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         update()
     }
@@ -32,7 +32,7 @@ class TableAdapterView: UITableView {
         update()
     }
     
-    override func draw(_ rect: CGRect) {
+    open override func draw(_ rect: CGRect) {
         if let color = separatorClr {
             separatorColor = color
         }
@@ -122,7 +122,7 @@ extension TableAdapterView: UITableViewDataSource {
     }
     
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         if !items.isEmpty {
             let item = items[indexPath.row]
             return item.canEditing()
@@ -130,7 +130,7 @@ extension TableAdapterView: UITableViewDataSource {
         return false
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             
             items.remove(at: indexPath.row)

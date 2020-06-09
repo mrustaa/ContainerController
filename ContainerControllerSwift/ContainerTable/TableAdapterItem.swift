@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableAdapterItem: NSObject {
+open class TableAdapterItem: NSObject {
     
     public let cellClass: AnyClass
     
