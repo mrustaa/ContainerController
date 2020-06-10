@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/mrustaa/ContainerController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
-  s.swift_version = '5.2.4'
+  s.swift_version = '5.2'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'ContainerControllerSwift/*.{swift}'
