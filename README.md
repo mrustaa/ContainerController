@@ -1,4 +1,4 @@
-[![CI Status](https://img.shields.io/travis/github/mrustaa/ContainerController.svg?style=flat)](https://travis-ci.org/github/mrustaa/ContainerController)
+
 [![Version](https://img.shields.io/cocoapods/v/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
 [![License](https://img.shields.io/cocoapods/l/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
@@ -407,6 +407,9 @@ container.set(footerPadding: 100)
 container.set(trackingPosition: false)
 
 ```
+
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/footerPadding.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/trackingPosition.gif)
 
 ## ContainerControllerDelegate
 
