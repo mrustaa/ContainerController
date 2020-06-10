@@ -211,19 +211,12 @@ open class ContainerController: NSObject {
     @objc func rotated() {
         
         let orint = UIDevice.current.orientation
-        if orint == .faceUp || orint == .faceDown { return }
+        if orint == .faceUp || orint == .faceDown || orint == .portraitUpsideDown { return }
+        
         if ContainerDevice.orientation == oldOrientation { return }
         oldOrientation = ContainerDevice.orientation
         
-        if isPortrait {
-            shadowButton.isHidden = !layout.backgroundShadowShow
-        } else {
-            if let landscapeShadowShow = layout.landscapeBackgroundShadowShow {
-                shadowButton.isHidden = !landscapeShadowShow
-            } else {
-                shadowButton.isHidden = !layout.backgroundShadowShow
-            }
-        }
+        shadowHiddenCheck()
         
         delegate?.containerControllerRotation(self)
         
@@ -870,7 +863,7 @@ open class ContainerController: NSObject {
         
     }
     
-    func shadowLevelAlpha(positionY: CGFloat) {
+    func shadowHiddenCheck() {
         
         if isPortrait {
             shadowButton.isHidden = !layout.backgroundShadowShow
@@ -881,6 +874,11 @@ open class ContainerController: NSObject {
                 shadowButton.isHidden = !layout.backgroundShadowShow
             }
         }
+    }
+    
+    func shadowLevelAlpha(positionY: CGFloat) {
+        
+        shadowHiddenCheck()
         
         let alphaMax: CGFloat = 0.45
         

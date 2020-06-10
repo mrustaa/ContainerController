@@ -108,6 +108,10 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
     // MARK: -  Rotation Callback
     
     @objc func rotated() {
+        
+        let orint = UIDevice.current.orientation
+        if orint == .faceUp || orint == .faceDown || orint == .portraitUpsideDown { return }
+        
         updateMapViewTopPadding()
     }
     
