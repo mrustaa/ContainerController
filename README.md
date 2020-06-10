@@ -4,13 +4,14 @@
 [![Platform](https://img.shields.io/cocoapods/p/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org/)
 [![Swift 5.1](https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat)](https://swift.org/)
+[![Swift 5.2](https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat)](https://swift.org/)
 
 # ContainerController 
 
-This is a swipe-panel from application: https://www.apple.com/ios/maps/
+UI Component. This is a copy swipe-panel from app: https://www.apple.com/ios/maps/
 
 ## Preview
-![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screenLandscape3.png)
+![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screenLandscape4.png)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/maps.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/examples.gif)
 ![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/mapsLandscape.gif)
