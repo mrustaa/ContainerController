@@ -15,8 +15,8 @@ class MapsRouteCellItem: TableAdapterItem {
          separator: Bool = true,
          selected: Bool = false) {
         
-        let cellData = MapsRouteCellData(title ?? "42 мин",
-                                          subtitle ?? "улица Поляны\nСамый быстрый",
+        let cellData = MapsRouteCellData(title ?? "42 min",
+                                          subtitle ?? "Street Polyany\nFastest",
                                           darkStyle,
                                           separator,
                                           selected)

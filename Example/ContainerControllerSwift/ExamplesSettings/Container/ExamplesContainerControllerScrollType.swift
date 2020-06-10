@@ -2,8 +2,8 @@
 //  ExamplesContainerControllerScrollType.swift
 //  ContainerController
 //
-//  Created by Рустам Мотыгуллин on 03/06/2020.
-//  Copyright © 2020 mrusta. All rights reserved.
+//  Created by mrustaa on 03/06/2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
 //
 
 import UIKit

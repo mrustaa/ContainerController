@@ -2,8 +2,8 @@
 //  ContainerTypes.swift
 //  PatternsSwift
 //
-//  Created by Рустам Мотыгуллин on 21/04/2020.
-//  Copyright © 2020 mrusta. All rights reserved.
+//  Created by mrustaa on 21/04/2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
 //
 
 import UIKit

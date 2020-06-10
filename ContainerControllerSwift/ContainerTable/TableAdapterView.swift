@@ -2,8 +2,8 @@
 //  BlockTableView.swift
 //  PatternsSwift
 //
-//  Created by Рустам Мотыгуллин on 16/04/2020.
-//  Copyright © 2020 mrusta. All rights reserved.
+//  Created by mrustaa on 16/04/2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
 //
 
 import UIKit
@@ -96,7 +96,7 @@ open class TableAdapterView: UITableView {
 
 extension TableAdapterView: UITableViewDataSource {
     
-    /// колличество
+    /// count
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if !items.isEmpty {
             return items.count
@@ -107,7 +107,7 @@ extension TableAdapterView: UITableViewDataSource {
         return 0
     }
     
-    /// ячейка
+    /// cell
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if !items.isEmpty {
             let item = items[indexPath.row]
@@ -147,7 +147,7 @@ extension TableAdapterView: UITableViewDataSource {
 
 extension TableAdapterView: UITableViewDelegate {
     
-    /// высота
+    /// height
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if !items.isEmpty {
             return items[indexPath.row].height()
@@ -158,7 +158,7 @@ extension TableAdapterView: UITableViewDelegate {
         return 0
     }
     
-    /// нажал
+    /// select
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         selectIndexCallback?(indexPath.row)

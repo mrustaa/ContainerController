@@ -2,8 +2,8 @@
 //  TableAdapterItem.swift
 //  PatternsSwift
 //
-//  Created by Рустам Мотыгуллин on 17/04/2020.
-//  Copyright © 2020 mrusta. All rights reserved.
+//  Created by mrustaa on 17/04/2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
 //
 
 import UIKit
@@ -27,7 +27,7 @@ open class TableAdapterItem: NSObject {
         return cellData?.cellHeight() ?? UITableView.automaticDimension
     }
     
-    func canEditing() -> Bool {
+    public func canEditing() -> Bool {
         return cellData?.canEditing() ?? false
     }
 

@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  dwadwa
 //
-//  Created by Рустам Мотыгуллин on 09.06.2020.
-//  Copyright © 2020 mrusta. All rights reserved.
+//  Created by mrustaa on 09.06.2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
 //
 
 import UIKit
