@@ -10,7 +10,7 @@
 This is a swipe-panel from application: https://www.apple.com/ios/maps/
 
 ## Preview
-![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screenLandscape2.png)
+![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screenLandscape3.png)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/maps.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/examples.gif)
 ![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/mapsLandscape.gif)
