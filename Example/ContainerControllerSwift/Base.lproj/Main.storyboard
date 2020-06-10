@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="132" y="137.18140929535232"/>
         </scene>
-        <!--Light Content Navigation Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="2WA-6t-2aK">
             <objects>
-                <navigationController id="aV9-EX-QWJ" customClass="LightContentNavigationController" customModule="ContainerControllerSwift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="aV9-EX-QWJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="QWK-gZ-mYK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

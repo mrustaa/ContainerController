@@ -9,15 +9,6 @@
 import UIKit
 import ContainerControllerSwift
 
-class LightContentNavigationController: UINavigationController {
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
-}
-
 class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: TableAdapterView?
@@ -50,12 +41,6 @@ class ViewController: UIViewController {
             _self.navigationController?.pushViewController(vc, animated: true)
         }
         
-    }
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
     
 }

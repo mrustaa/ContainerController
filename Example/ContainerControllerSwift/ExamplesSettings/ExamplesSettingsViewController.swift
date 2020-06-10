@@ -36,10 +36,6 @@ class ExamplesSettingsViewController: StoryboardController {
         }
     }
     
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-    
     // MARK: - Load TableView
     
     func loadTableView() {

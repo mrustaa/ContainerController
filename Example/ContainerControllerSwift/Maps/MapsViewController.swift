@@ -56,10 +56,6 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         startAnimationMapElements()
     }
     
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
