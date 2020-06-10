@@ -1,4 +1,5 @@
-[![CI Status](https://img.shields.io/travis/rustamburger@gmail.com/ContainerControllerSwift.svg?style=flat)](https://travis-ci.org/github/mrustaa/ContainerController)
+[![Build Status](https://travis-ci.org/github/mrustaa/ContainerController.svg?branch=master)](https://travis-ci.org/github/mrustaa/ContainerController)
+[![CI Status](https://img.shields.io/travis/github/mrustaa/ContainerController.svg?style=flat)](https://travis-ci.org/github/mrustaa/ContainerController)
 [![Version](https://img.shields.io/cocoapods/v/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
 [![License](https://img.shields.io/cocoapods/l/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
 [![Platform](https://img.shields.io/cocoapods/p/ContainerControllerSwift.svg?style=flat)](https://cocoapods.org/pods/ContainerControllerSwift)
