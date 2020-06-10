@@ -10,24 +10,24 @@ import UIKit
 
 open class CollectionAdapterView: UICollectionView {
     
-    var countCallback: CollectionAdapterCountCallback?
-    var cellIndexCallback: CollectionAdapterCellIndexCallback?
-    var sizeIndexCallback: CollectionAdapterSizeIndexCallback?
-    var selectIndexCallback: CollectionAdapterSelectIndexCallback?
+    public var countCallback: CollectionAdapterCountCallback?
+    public var cellIndexCallback: CollectionAdapterCellIndexCallback?
+    public var sizeIndexCallback: CollectionAdapterSizeIndexCallback?
+    public var selectIndexCallback: CollectionAdapterSelectIndexCallback?
     
-    var items: [CollectionAdapterItem] = []
+    public var items: [CollectionAdapterItem] = []
     
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         update()
     }
     
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+    public override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         update()
     }
     
-    func update() {
+    public func update() {
         delegate = self
         dataSource = self
         backgroundColor = .clear

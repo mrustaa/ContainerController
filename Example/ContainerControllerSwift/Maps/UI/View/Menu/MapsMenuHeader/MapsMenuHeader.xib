@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapsMenuHeader" customModule="PatternsSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="bEx-I2-4Q0" id="auu-R4-1Wa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzr-Or-LLU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings Maps" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEx-I2-4Q0">
+                            <rect key="frame" x="15" y="21" width="117.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTl-6R-GSV" customClass="DesignView" customModule="PatternsSwift" customModuleProvider="target">
+                            <rect key="frame" x="234" y="4" width="73" height="47"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="-1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5o-G4-Zvk" customClass="DesignView" customModule="PatternsSwift" customModuleProvider="target">
+                            <rect key="frame" x="274" y="17" width="29" height="29"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oa-Bk-kr5">
+                                    <rect key="frame" x="0.0" y="0.0" width="29" height="29"/>
+                                    <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="7" minY="7" maxX="6" maxY="8"/>
+                                    <state key="normal" image="xmark" catalog="system">
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonCloseAction:" destination="-1" eventType="touchUpInside" id="R8A-2d-wkb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6oa-Bk-kr5" firstAttribute="top" secondItem="j5o-G4-Zvk" secondAttribute="top" id="8B3-FW-2ww"/>
+                                <constraint firstAttribute="width" constant="29" id="AXS-cU-GFD"/>
+                                <constraint firstAttribute="height" constant="29" id="IYa-fQ-Wfu"/>
+                                <constraint firstAttribute="trailing" secondItem="6oa-Bk-kr5" secondAttribute="trailing" id="RZj-Fw-ueP"/>
+                                <constraint firstItem="6oa-Bk-kr5" firstAttribute="leading" secondItem="j5o-G4-Zvk" secondAttribute="leading" id="cxy-Y5-k48"/>
+                                <constraint firstAttribute="bottom" secondItem="6oa-Bk-kr5" secondAttribute="bottom" id="dew-iE-FJL"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="-1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                    <color key="value" white="0.5" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="j5o-G4-Zvk" firstAttribute="top" secondItem="fzr-Or-LLU" secondAttribute="top" constant="17" id="K7k-Do-omN"/>
+                        <constraint firstItem="bEx-I2-4Q0" firstAttribute="top" secondItem="fzr-Or-LLU" secondAttribute="top" constant="21" id="aci-oC-eGk"/>
+                        <constraint firstAttribute="trailing" secondItem="j5o-G4-Zvk" secondAttribute="trailing" constant="17" id="l4g-v7-1dh"/>
+                        <constraint firstItem="bEx-I2-4Q0" firstAttribute="leading" secondItem="fzr-Or-LLU" secondAttribute="leading" constant="15" id="lpt-hv-7Wj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fzr-Or-LLU" secondAttribute="bottom" id="MR3-Id-ZGh"/>
+                <constraint firstItem="fzr-Or-LLU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nLW-Fj-0Im"/>
+                <constraint firstItem="fzr-Or-LLU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ucV-Af-zM1"/>
+                <constraint firstAttribute="trailing" secondItem="fzr-Or-LLU" secondAttribute="trailing" id="xbs-6X-yw6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="257.60000000000002" y="181.70914542728636"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

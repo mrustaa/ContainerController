@@ -18,7 +18,7 @@ open class TableAdapterItem: NSObject {
         return String(describing: cellClass)
     }
     
-    init(cellClass: AnyClass, cellData: TableAdapterCellData? = nil) {
+    public init(cellClass: AnyClass, cellData: TableAdapterCellData? = nil) {
         self.cellClass = cellClass
         self.cellData = cellData
     }

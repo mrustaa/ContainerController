@@ -11,9 +11,9 @@ import UIKit
 open class TableAdapterCell: UITableViewCell {
     
     @IBInspectable var hideAnimation: Bool = false
-    var selectedView: UIView?
+    open var selectedView: UIView?
     
-    var cellData: TableAdapterCellData?
+    public var cellData: TableAdapterCellData?
     
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

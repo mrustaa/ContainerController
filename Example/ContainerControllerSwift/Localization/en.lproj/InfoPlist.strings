@@ -1,0 +1,9 @@
+
+
+"NSLocationWhenInUseUsageDescription" = "Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.";
+
+"NSLocationAlwaysUsageDescription" = "Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.";
+
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.";
+
+"NSLocationUsageDescription" = "Your current location will be displayed on the map and used for directions, nearby search results, and estimated travel times.";

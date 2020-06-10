@@ -10,13 +10,13 @@ import UIKit
 
 open class ContainerView: UIView {
     
-    var contentView: UIView?
+    public var contentView: UIView?
     
-    var visualEffectView: UIVisualEffectView?
+    public var visualEffectView: UIVisualEffectView?
     
     // MARK: CornerRadius
     
-    var cornerRadius: CGFloat = 0 {
+    public var cornerRadius: CGFloat = 0 {
         didSet {
             let r = radius()
             layer.cornerRadius = r
@@ -26,7 +26,7 @@ open class ContainerView: UIView {
         }
     }
     
-    func radius() -> CGFloat {
+    public func radius() -> CGFloat {
         let minSize = min(frame.width, frame.height)
         let radius = (((minSize / 2) < cornerRadius) ? (minSize / 2) : cornerRadius)
         return radius
@@ -34,7 +34,7 @@ open class ContainerView: UIView {
     
     // MARK: Init
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         let contentView = UIView(frame: CGRect(x: 0, y: 0, width: frame.width, height: frame.height))
@@ -50,7 +50,7 @@ open class ContainerView: UIView {
     
     // MARK: Add Custom Shadow
     
-    func addShadow(opacity: CGFloat = 0.1) {
+    public func addShadow(opacity: CGFloat = 0.1) {
         layer.shadowOpacity = Float(opacity)
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 3
@@ -58,13 +58,13 @@ open class ContainerView: UIView {
     
     // MARK: Add Blur
     
-    func addBlur(darkStyle: Bool) {
+    public func addBlur(darkStyle: Bool) {
         let style: UIBlurEffect.Style = darkStyle ? .systemThinMaterialDark : .systemChromeMaterialLight
         backgroundColor = .clear
         addBlur(style: style)
     }
 
-    func addBlur(style: UIBlurEffect.Style) {
+    public func addBlur(style: UIBlurEffect.Style) {
         
         if visualEffectView == nil {
             let blurView = UIVisualEffectView(effect: UIBlurEffect(style: style))
@@ -84,7 +84,7 @@ open class ContainerView: UIView {
     
     // MARK: Remove Blur
     
-    func removeBlur() {
+    public func removeBlur() {
         if let visualEffectView = visualEffectView {
             visualEffectView.removeFromSuperview()
         }

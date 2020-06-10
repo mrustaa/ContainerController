@@ -17,7 +17,7 @@ open class CollectionAdapterItem: NSObject {
         return String(describing: cellClass)
     }
     
-    init(cellClass: AnyClass, cellData: CollectionAdapterCellData? = nil) {
+    public init(cellClass: AnyClass, cellData: CollectionAdapterCellData? = nil) {
         self.cellClass = cellClass
         self.cellData = cellData
     }

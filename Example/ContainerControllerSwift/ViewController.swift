@@ -1,24 +1,68 @@
 //
 //  ViewController.swift
-//  ContainerControllerSwift
+//  ContainerController
 //
-//  Created by rustamburger@gmail.com on 06/09/2020.
-//  Copyright (c) 2020 rustamburger@gmail.com. All rights reserved.
+//  Created by mrustaa on 12/05/2020.
+//  Copyright © 2020 mrusta. All rights reserved.
 //
 
 import UIKit
+import ContainerControllerSwift
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+class LightContentNavigationController: UINavigationController {
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-
 }
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var tableView: TableAdapterView?
+    var items: [TableAdapterItem] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = "ContainerController"
+        
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        
+        items = [
+            TitleTextItem(title: "Maps.app", clss: MapsViewController.self),
+            TitleTextItem(title: "Example. Settings", clss: ExamplesSettingsViewController.self),
+            TitleTextItem(title: "Example. Add TableView", clss: ExamplesAddTableViewController.self)
+        ]
+        
+        tableView?.set(items: items, animated: true)
+        
+        
+        tableView?.selectIndexCallback = { [weak self] (index: Int) in
+            guard let _self = self else { return }
+            
+            guard let data = _self.tableView?.items[index].cellData as? TitleTextCellData else { return }
+            guard let storyboardClass = data.clss as? StoryboardController.Type else { return }
+            let vc = storyboardClass.instantiate()
+            
+            _self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+    }
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+}
+
+extension ViewController: UIGestureRecognizerDelegate {
+
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}

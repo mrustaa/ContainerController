@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ExampleCollectionCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="132"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="135" height="132"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEH-bq-86c">
+                        <rect key="frame" x="0.0" y="0.0" width="135" height="132"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-Iw-oJa" customClass="DesignButton" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="132"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.0" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClickAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="h1P-jY-xGs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gSI-Iw-oJa" secondAttribute="bottom" id="G8K-Pi-exg"/>
+                            <constraint firstItem="gSI-Iw-oJa" firstAttribute="leading" secondItem="LEH-bq-86c" secondAttribute="leading" id="XMR-dX-hy2"/>
+                            <constraint firstAttribute="trailing" secondItem="gSI-Iw-oJa" secondAttribute="trailing" id="jgw-rR-x72"/>
+                            <constraint firstItem="gSI-Iw-oJa" firstAttribute="top" secondItem="LEH-bq-86c" secondAttribute="top" id="x4f-qZ-COE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LEH-bq-86c" secondAttribute="trailing" id="G8N-J0-CSq"/>
+                <constraint firstItem="LEH-bq-86c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dbr-mp-YyA"/>
+                <constraint firstAttribute="bottom" secondItem="LEH-bq-86c" secondAttribute="bottom" id="hRo-ja-sYz"/>
+                <constraint firstItem="LEH-bq-86c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lyJ-5L-dyH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="135" height="132"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="hideAnimation" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageButton" destination="gSI-Iw-oJa" id="qP3-Hl-7ap"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="78.348214285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

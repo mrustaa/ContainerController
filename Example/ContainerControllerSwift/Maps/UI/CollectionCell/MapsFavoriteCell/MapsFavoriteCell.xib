@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MapsFavoriteCell" customModule="PatternsSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="86" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEH-bq-86c">
+                        <rect key="frame" x="0.0" y="0.0" width="86" height="137"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSI-Iw-oJa" customClass="DesignButton" customModule="PatternsSwift" customModuleProvider="target">
+                                <rect key="frame" x="13" y="9" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CqI-gj-AsC"/>
+                                    <constraint firstAttribute="width" constant="60" id="eyA-xh-juC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="house.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="-1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.0" green="0.68235294120000001" blue="0.93725490199999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClickAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="h1P-jY-xGs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEe-gI-KIe">
+                                <rect key="frame" x="0.0" y="77" width="86" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRG-4Z-hEG">
+                                <rect key="frame" x="0.0" y="98" width="86" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dEe-gI-KIe" firstAttribute="top" secondItem="gSI-Iw-oJa" secondAttribute="bottom" constant="8" id="2LK-Qw-cYT"/>
+                            <constraint firstAttribute="trailing" secondItem="TRG-4Z-hEG" secondAttribute="trailing" id="2ps-qQ-BCO"/>
+                            <constraint firstItem="gSI-Iw-oJa" firstAttribute="centerX" secondItem="LEH-bq-86c" secondAttribute="centerX" id="6AF-VK-6OI"/>
+                            <constraint firstItem="dEe-gI-KIe" firstAttribute="leading" secondItem="LEH-bq-86c" secondAttribute="leading" id="Y95-sq-vfL"/>
+                            <constraint firstItem="TRG-4Z-hEG" firstAttribute="top" secondItem="dEe-gI-KIe" secondAttribute="bottom" constant="3" id="sxZ-lw-6T7"/>
+                            <constraint firstItem="TRG-4Z-hEG" firstAttribute="leading" secondItem="LEH-bq-86c" secondAttribute="leading" id="vBj-xt-H9c"/>
+                            <constraint firstItem="gSI-Iw-oJa" firstAttribute="top" secondItem="LEH-bq-86c" secondAttribute="top" constant="9" id="x4f-qZ-COE"/>
+                            <constraint firstAttribute="trailing" secondItem="dEe-gI-KIe" secondAttribute="trailing" id="zJB-Fs-WKl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LEH-bq-86c" secondAttribute="trailing" id="G8N-J0-CSq"/>
+                <constraint firstItem="LEH-bq-86c" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dbr-mp-YyA"/>
+                <constraint firstAttribute="bottom" secondItem="LEH-bq-86c" secondAttribute="bottom" id="hRo-ja-sYz"/>
+                <constraint firstItem="LEH-bq-86c" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lyJ-5L-dyH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="hideAnimation" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageButton" destination="gSI-Iw-oJa" id="qP3-Hl-7ap"/>
+                <outlet property="subtitleLabel" destination="TRG-4Z-hEG" id="gJE-Hc-BCC"/>
+                <outlet property="titleLabel" destination="dEe-gI-KIe" id="XDV-ww-X7B"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+    </resources>
+</document>

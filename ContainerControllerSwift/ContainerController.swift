@@ -235,82 +235,82 @@ open class ContainerController: NSObject {
     
     // MARK: - Update Layout
     
-    func set(layout: ContainerLayout) {
+    public func set(layout: ContainerLayout) {
         self.layout = layout
         calculationViews()
     }
     
     // MARK: Set
     
-    func set(movingEnabled: Bool) {
+    public func set(movingEnabled: Bool) {
         layout.movingEnabled = movingEnabled
         scrollView?.isScrollEnabled = movingEnabled
         panGesture?.isEnabled = movingEnabled
     }
     
-    func set(trackingPosition: Bool) {
+    public func set(trackingPosition: Bool) {
         layout.trackingPosition = trackingPosition
     }
     
-    func set(footerPadding: CGFloat) {
+    public func set(footerPadding: CGFloat) {
         layout.footerPadding = footerPadding
         calculationViews()
     }
     
     // MARK: Scroll Insets
     
-    func set(scrollIndicatorTop: CGFloat) {
+    public func set(scrollIndicatorTop: CGFloat) {
         layout.scrollIndicatorInsets = UIEdgeInsets(top: scrollIndicatorTop, left: 0, bottom: layout.scrollIndicatorInsets.bottom, right: 0)
         calculationViews()
     }
     
-    func set(scrollIndicatorBottom: CGFloat) {
+    public func set(scrollIndicatorBottom: CGFloat) {
         layout.scrollIndicatorInsets = UIEdgeInsets(top: layout.scrollIndicatorInsets.top, left: 0, bottom: scrollIndicatorBottom, right: 0)
         calculationViews()
     }
     
-    func set(scrollInsetsTop: CGFloat) {
+    public func set(scrollInsetsTop: CGFloat) {
         layout.scrollInsets = UIEdgeInsets(top: scrollInsetsTop, left: 0, bottom: layout.scrollInsets.bottom, right: 0)
         calculationViews()
     }
     
-    func set(scrollInsetsBottom: CGFloat) {
+    public func set(scrollInsetsBottom: CGFloat) {
         layout.scrollInsets = UIEdgeInsets(top: layout.scrollInsets.top, left: 0, bottom: scrollInsetsBottom, right: 0)
         calculationViews()
     }
     
     // MARK: Portrait
     
-    func set(top: CGFloat) {
+    public func set(top: CGFloat) {
         layout.positions.top = top
     }
     
-    func set(middle: CGFloat?) {
+    public func set(middle: CGFloat?) {
         layout.positions.middle = middle
     }
     
-    func set(bottom: CGFloat) {
+    public func set(bottom: CGFloat) {
         layout.positions.bottom = bottom
     }
     
-    func set(right: CGFloat) {
+    public func set(right: CGFloat) {
         layout.insets.right = right
         if isPortrait { calculationViews() }
     }
     
-    func set(left: CGFloat) {
+    public func set(left: CGFloat) {
         layout.insets.left = left
         if isPortrait { calculationViews() }
     }
     
-    func set(backgroundShadowShow: Bool) {
+    public func set(backgroundShadowShow: Bool) {
         layout.backgroundShadowShow = backgroundShadowShow
         if isPortrait { move(type: moveType) }
     }
     
     // MARK: Landscape
     
-    func updateLandscapeLayout() {
+    public func updateLandscapeLayout() {
         if layout.landscapePositions == nil {
             layout.landscapePositions = ContainerPosition.zero
         }
@@ -319,34 +319,34 @@ open class ContainerController: NSObject {
         }
     }
     
-    func setLandscape(top: CGFloat) {
+    public func setLandscape(top: CGFloat) {
         updateLandscapeLayout()
         layout.landscapePositions?.top = top
     }
     
-    func setLandscape(middle: CGFloat?) {
+    public func setLandscape(middle: CGFloat?) {
         updateLandscapeLayout()
         layout.landscapePositions?.middle = middle
     }
     
-    func setLandscape(bottom: CGFloat) {
+    public func setLandscape(bottom: CGFloat) {
         updateLandscapeLayout()
         layout.landscapePositions?.bottom = bottom
     }
     
-    func setLandscape(right: CGFloat) {
+    public func setLandscape(right: CGFloat) {
         updateLandscapeLayout()
         layout.landscapeInsets?.right = right
         if !isPortrait { calculationViews() }
     }
     
-    func setLandscape(left: CGFloat) {
+    public func setLandscape(left: CGFloat) {
         updateLandscapeLayout()
         layout.landscapeInsets?.left = left
         if !isPortrait { calculationViews() }
     }
     
-    func setLandscape(backgroundShadowShow: Bool) {
+    public func setLandscape(backgroundShadowShow: Bool) {
         layout.landscapeBackgroundShadowShow = backgroundShadowShow
         if !isPortrait { move(type: moveType) }
     }

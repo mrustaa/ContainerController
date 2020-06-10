@@ -12,15 +12,15 @@ import UIKit
 
 open class ContainerPosition {
     
-    var top: CGFloat
+    public var top: CGFloat
     
-    var middle: CGFloat?
+    public var middle: CGFloat?
     
-    var bottom: CGFloat
+    public var bottom: CGFloat
     
     static let zero = ContainerPosition(top: 0, bottom: 0)
     
-    init(top: CGFloat, middle: CGFloat? = nil, bottom: CGFloat) {
+    public init(top: CGFloat, middle: CGFloat? = nil, bottom: CGFloat) {
         self.top = top
         self.middle = middle
         self.bottom = bottom
@@ -32,13 +32,13 @@ open class ContainerPosition {
 
 public struct ContainerInsets {
     
-    var right: CGFloat
+    public var right: CGFloat
 
-    var left: CGFloat
+    public var left: CGFloat
 
     static let zero = ContainerInsets(right: 0, left: 0)
     
-    init(right: CGFloat, left: CGFloat) {
+    public init(right: CGFloat, left: CGFloat) {
         self.right = right
         self.left = left
     }
@@ -51,70 +51,74 @@ open class ContainerLayout {
     /**
      Initialization start position.
     */
-    var startPosition: ContainerMoveType = .hide
+    public var startPosition: ContainerMoveType = .hide
     
     /**
      Disables any moving with gestures.
     */
-    var movingEnabled: Bool = true
+    public var movingEnabled: Bool = true
     
     /**
      This is parameters for control footerView.
      Padding-top from containerView, if headerView is added, then its + height is summed.
     */
-    var footerPadding: CGFloat = 0.0
+    public var footerPadding: CGFloat = 0.0
     
     /**
      This is parameters for control FooterView.
      Tracking position ContainerView during animated movement.
     */
-    var trackingPosition: Bool = false
+    public var trackingPosition: Bool = false
     
     /**
      This is parameter contentInsets for transmission scrollView added containerView.
     */
-    var scrollInsets: UIEdgeInsets = UIEdgeInsets.zero
+    public var scrollInsets: UIEdgeInsets = UIEdgeInsets.zero
     
     /**
      This is parameter scrollIndicatorInsets for transmission scrollView added containerView.
     */
-    var scrollIndicatorInsets: UIEdgeInsets = UIEdgeInsets.zero
+    public var scrollIndicatorInsets: UIEdgeInsets = UIEdgeInsets.zero
     
     /**
      This parameter for portrait orientation.
      Sets the background shadow under container.
     */
-    var backgroundShadowShow: Bool = false
+    public var backgroundShadowShow: Bool = false
     
     /**
      This parameter for Portrait orientation
      Sets the new value for positions of animated movement (top, middle, bottom).
      */
-    var positions: ContainerPosition = ContainerPosition.zero
+    public var positions: ContainerPosition = ContainerPosition.zero
     
     /**
      This parameter for Portrait orientation.
      Insets for containerView (left, right).
     */
-    var insets: ContainerInsets = ContainerInsets.zero
+    public var insets: ContainerInsets = ContainerInsets.zero
     
     /**
      This parameter for Landscape orientation.
      Sets the background shadow under container. (Default: portrait backgroundShadowShow).
     */
-    var landscapeBackgroundShadowShow: Bool?
+    public var landscapeBackgroundShadowShow: Bool?
     
     /**
      This parameter for Landscape orientation.
      Sets the new value for positions of animated movement (top, middle, bottom). (Default: portrait positions).
     */
-    var landscapePositions: ContainerPosition?
+    public var landscapePositions: ContainerPosition?
     
     /**
      This parameter for Landscape orientation.
      Insets for containerView (left, right). (Default: portrait insets).
     */
-    var landscapeInsets: ContainerInsets?
+    public var landscapeInsets: ContainerInsets?
+    
+    public init() {
+        
+    }
     
 }
 

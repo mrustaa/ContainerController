@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="ADc-Wu-299" customClass="MapsSectionCell" customModule="PatternsSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADc-Wu-299" id="Qrk-n6-aPT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-0z-4Rg" customClass="DesignView" customModule="PatternsSwift" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeO-sQ-4j3">
+                                <rect key="frame" x="14" y="2" width="62" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrF-nx-MNf">
+                                <rect key="frame" x="313" y="0.0" width="47" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="FZ3-Mh-btd"/>
+                                </constraints>
+                                <state key="normal" title="See All"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WrF-nx-MNf" firstAttribute="top" secondItem="RfK-0z-4Rg" secondAttribute="top" id="7wc-vg-8w6"/>
+                            <constraint firstItem="ZeO-sQ-4j3" firstAttribute="top" secondItem="RfK-0z-4Rg" secondAttribute="top" constant="2" id="C7F-En-GuE"/>
+                            <constraint firstAttribute="trailing" secondItem="WrF-nx-MNf" secondAttribute="trailing" constant="15" id="Wa6-ja-uUN"/>
+                            <constraint firstItem="ZeO-sQ-4j3" firstAttribute="leading" secondItem="RfK-0z-4Rg" secondAttribute="leading" constant="14" id="iBC-L5-eMq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="RfK-0z-4Rg" firstAttribute="top" secondItem="Qrk-n6-aPT" secondAttribute="top" id="Tfp-HE-qbi"/>
+                    <constraint firstAttribute="trailing" secondItem="RfK-0z-4Rg" secondAttribute="trailing" id="bep-4F-QCJ"/>
+                    <constraint firstAttribute="bottom" secondItem="RfK-0z-4Rg" secondAttribute="bottom" id="gI6-66-xul"/>
+                    <constraint firstItem="RfK-0z-4Rg" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" id="hT5-aJ-Hie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="textButton" destination="WrF-nx-MNf" id="0dC-Gn-X9f"/>
+                <outlet property="titleLabel" destination="ZeO-sQ-4j3" id="lvo-lz-lwo"/>
+            </connections>
+            <point key="canvasLocation" x="127.2" y="111.54422788605699"/>
+        </tableViewCell>
+    </objects>
+</document>

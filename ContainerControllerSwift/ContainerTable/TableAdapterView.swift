@@ -12,22 +12,22 @@ open class TableAdapterView: UITableView {
     
     @IBInspectable var separatorClr: UIColor?
     
-    var countCallback: TableAdapterCountCallback?
-    var cellIndexCallback: TableAdapterCellIndexCallback?
-    var heightIndexCallback: TableAdapterHeightIndexCallback?
-    var selectIndexCallback: TableAdapterSelectIndexCallback?
-    var deleteIndexCallback: TableAdapterDeleteIndexCallback?
-    var didScrollCallback: TableAdapterDidScrollCallback?
+    public var countCallback: TableAdapterCountCallback?
+    public var cellIndexCallback: TableAdapterCellIndexCallback?
+    public var heightIndexCallback: TableAdapterHeightIndexCallback?
+    public var selectIndexCallback: TableAdapterSelectIndexCallback?
+    public var deleteIndexCallback: TableAdapterDeleteIndexCallback?
+    public var didScrollCallback: TableAdapterDidScrollCallback?
     
     
-    var items: [TableAdapterItem] = []
+    public var items: [TableAdapterItem] = []
     
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         update()
     }
     
-    override init(frame: CGRect, style: UITableView.Style) {
+    public override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         update()
     }
@@ -38,7 +38,7 @@ open class TableAdapterView: UITableView {
         }
     }
     
-    func update() {
+    public func update() {
         delegate = self
         dataSource = self
         
@@ -46,7 +46,7 @@ open class TableAdapterView: UITableView {
         backgroundColor = .clear
     }
     
-    func set(items: [TableAdapterItem], animated: Bool = false, reload: Bool = true) {
+    public func set(items: [TableAdapterItem], animated: Bool = false, reload: Bool = true) {
         self.clear()
         items.forEach {
             self.unsafeAdd(item: $0)
