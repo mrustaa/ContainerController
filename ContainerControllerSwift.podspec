@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ContainerControllerSwift'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'This is a swipe-panel from application: https://www.apple.com/ios/maps/'
 
 # This description is used to generate tags and improve search results.
@@ -28,14 +28,15 @@ TODO: Add long description of the pod here.
   s.author           = { 'rustamburger@gmail.com' => 'rustamburger@gmail.com' }
   s.source           = { :git => 'https://github.com/mrustaa/ContainerController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.swift_version = '5.0'
   
-  s.swift_version = '5.2'
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'ContainerControllerSwift/*.{swift}'
   s.source_files = 'ContainerControllerSwift/ContainerTable/*.{swift}'
   s.source_files = 'ContainerControllerSwift/ContainerCollection/*.{swift}'
   
+  s.ios.framework  = 'UIKit'
   # s.resource_bundles = {
   #   'ContainerControllerSwift' => ['ContainerControllerSwift/Assets/*.png']
   # }
