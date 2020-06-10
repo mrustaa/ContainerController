@@ -5,23 +5,6 @@ import UIKit
 @IBDesignable
 class DesignButton: UIButton {
     
-    /*
-//    @IBInspectable var cornerRadius: CGFloat = 0.0 {
-//        didSet {
-//            let minSize = min(frame.size.width, frame.size.height)
-//            let radius = ((cornerRadius < 0) ? (minSize / 2) : cornerRadius)
-//            self.layer.cornerRadius = radius
-//        }
-//    }
-
-//    UIGraphicsBeginImageContextWithOptions(glayer.frame.size, false, UIScreen.main.scale)
-//    UIGraphicsBeginImageContext(glayer.frame.size)
-//    glayer.render(in:UIGraphicsGetCurrentContext()!)
-//    let image = UIGraphicsGetImageFromCurrentImageContext()
-//    UIGraphicsEndImageContext()
-//     setImage(image, for: .normal)
-     */
-    
     @IBInspectable var hideAnimation: Bool = true
     
     @IBInspectable var fillColor: UIColor = .clear

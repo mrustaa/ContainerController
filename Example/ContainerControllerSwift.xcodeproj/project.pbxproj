@@ -102,6 +102,7 @@
 		46ACF0D52490FEB300FAAD43 /* ExamplesContainerControllerScrollType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0BF2490FEB300FAAD43 /* ExamplesContainerControllerScrollType.swift */; };
 		46ACF0D62490FEB300FAAD43 /* ExamplesScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0C02490FEB300FAAD43 /* ExamplesScrollViews.swift */; };
 		46ACF0D72490FEB300FAAD43 /* ExamplesSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0C12490FEB300FAAD43 /* ExamplesSettingsViewController.swift */; };
+		46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0D82491A75300FAAD43 /* screenLandscape5.png */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -212,6 +213,7 @@
 		46ACF0BF2490FEB300FAAD43 /* ExamplesContainerControllerScrollType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesContainerControllerScrollType.swift; sourceTree = "<group>"; };
 		46ACF0C02490FEB300FAAD43 /* ExamplesScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesScrollViews.swift; sourceTree = "<group>"; };
 		46ACF0C12490FEB300FAAD43 /* ExamplesSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesSettingsViewController.swift; sourceTree = "<group>"; };
+		46ACF0D82491A75300FAAD43 /* screenLandscape5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenLandscape5.png; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ContainerControllerSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerControllerSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -280,26 +282,10 @@
 		46ACEFDA2490F52500FAAD43 /* LoadNib */ = {
 			isa = PBXGroup;
 			children = (
-				46ACEFDB2490F52500FAAD43 /* Controller */,
-				46ACEFDD2490F52500FAAD43 /* View */,
-			);
-			path = LoadNib;
-			sourceTree = "<group>";
-		};
-		46ACEFDB2490F52500FAAD43 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
 				46ACEFDC2490F52500FAAD43 /* StoryboardController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		46ACEFDD2490F52500FAAD43 /* View */ = {
-			isa = PBXGroup;
-			children = (
 				46ACEFDE2490F52500FAAD43 /* XibView.swift */,
 			);
-			path = View;
+			path = LoadNib;
 			sourceTree = "<group>";
 		};
 		46ACEFDF2490F52500FAAD43 /* DesignableViews */ = {
@@ -861,8 +847,8 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for ContainerControllerSwift */,
+				607FACF51AFB993E008FA782 /* Podspec */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACD11AFB9204008FA782 /* Products */,
 				22F538CF8601A849D034CF8B /* Pods */,
 				AD5BB6CA5AB2437952B3E0A8 /* Frameworks */,
@@ -877,7 +863,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for ContainerControllerSwift */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				46ACEFD62490F52500FAAD43 /* Framework */,
@@ -889,30 +875,31 @@
 				46ACF09D2490FE2700FAAD43 /* SceneDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for ContainerControllerSwift";
+			name = Example;
 			path = ContainerControllerSwift;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46ACF0D82491A75300FAAD43 /* screenLandscape5.png */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+		607FACF51AFB993E008FA782 /* Podspec */ = {
 			isa = PBXGroup;
 			children = (
 				95BE06AF27887E1C134436AD /* ContainerControllerSwift.podspec */,
 				1034FE614CC8890CE063531F /* README.md */,
 				E0FB46D7C5BC0F8759A83A60 /* LICENSE */,
 			);
-			name = "Podspec Metadata";
+			name = Podspec;
 			sourceTree = "<group>";
 		};
 		AD5BB6CA5AB2437952B3E0A8 /* Frameworks */ = {
@@ -1017,6 +1004,7 @@
 				46ACF06F2490F52600FAAD43 /* LocationAddressCell.xib in Resources */,
 				46ACF0C72490FEB300FAAD43 /* ExampleSegmentCell.xib in Resources */,
 				46ACF0CF2490FEB300FAAD43 /* ExampleFooterButtonView.xib in Resources */,
+				46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */,
 				46ACF0872490F52600FAAD43 /* MapsMenuHeader.xib in Resources */,
 				46ACF07B2490F52600FAAD43 /* MapsMenuSegmentCell.xib in Resources */,
 				46ACF0762490F52600FAAD43 /* MapsSearchCell.xib in Resources */,
