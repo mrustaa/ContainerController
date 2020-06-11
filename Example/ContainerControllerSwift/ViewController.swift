@@ -41,9 +41,7 @@ class ViewController: UIViewController {
             
             _self.navigationController?.pushViewController(vc, animated: true)
         }
-        
     }
-    
 }
 
 extension ViewController: UIGestureRecognizerDelegate {
