@@ -23,9 +23,10 @@ class ViewController: UIViewController {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         
         items = [
-            TitleTextItem(title: "Maps.app", clss: MapsViewController.self),
-            TitleTextItem(title: "Example. Settings", clss: ExamplesSettingsViewController.self),
-            TitleTextItem(title: "Example. Add TableView", clss: ExamplesAddTableViewController.self)
+            TitleTextItem(title: "Maps.app",                      clss: MapsViewController.self),
+            TitleTextItem(title: "Example. Settings",             clss: ExamplesSettingsViewController.self),
+            TitleTextItem(title: "Example. Add UITableView",      clss: ExampleAddTableViewController.self),
+            TitleTextItem(title: "Example. Add UICollectionView", clss: ExampleAddCollectionViewController.self)
         ]
         
         tableView?.set(items: items, animated: true)

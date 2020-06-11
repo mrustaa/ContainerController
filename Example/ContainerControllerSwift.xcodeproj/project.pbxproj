@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46ACF0532490F52600FAAD43 /* ExamplesAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFD42490F52500FAAD43 /* ExamplesAddTableViewController.swift */; };
-		46ACF0542490F52600FAAD43 /* ExamplesAddTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ACEFD52490F52500FAAD43 /* ExamplesAddTableViewController.storyboard */; };
 		46ACF0552490F52600FAAD43 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFD82490F52500FAAD43 /* Color.swift */; };
 		46ACF0562490F52600FAAD43 /* UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFD92490F52500FAAD43 /* UIView+Positioning.swift */; };
 		46ACF0572490F52600FAAD43 /* StoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFDC2490F52500FAAD43 /* StoryboardController.swift */; };
@@ -103,6 +101,11 @@
 		46ACF0D62490FEB300FAAD43 /* ExamplesScrollViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0C02490FEB300FAAD43 /* ExamplesScrollViews.swift */; };
 		46ACF0D72490FEB300FAAD43 /* ExamplesSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0C12490FEB300FAAD43 /* ExamplesSettingsViewController.swift */; };
 		46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0D82491A75300FAAD43 /* screenLandscape5.png */; };
+		46ACF0E3249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0E1249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard */; };
+		46ACF0E4249255ED00FAAD43 /* ExampleAddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0E2249255ED00FAAD43 /* ExampleAddCollectionViewController.swift */; };
+		46ACF0E824925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0E524925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift */; };
+		46ACF0E924925B9200FAAD43 /* ExampleAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0E624925B9200FAAD43 /* ExampleAddTableViewController.swift */; };
+		46ACF0EA24925B9200FAAD43 /* ExampleAddTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0E724925B9200FAAD43 /* ExampleAddTableViewController.storyboard */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -116,8 +119,6 @@
 		0AA8BF39B9F182FE833C0178 /* Pods-ContainerControllerSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContainerControllerSwift_Example.debug.xcconfig"; path = "Target Support Files/Pods-ContainerControllerSwift_Example/Pods-ContainerControllerSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1034FE614CC8890CE063531F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		121FB933CAE3EC5A2A00F4B2 /* Pods_ContainerControllerSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46ACEFD42490F52500FAAD43 /* ExamplesAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesAddTableViewController.swift; sourceTree = "<group>"; };
-		46ACEFD52490F52500FAAD43 /* ExamplesAddTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExamplesAddTableViewController.storyboard; sourceTree = "<group>"; };
 		46ACEFD82490F52500FAAD43 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		46ACEFD92490F52500FAAD43 /* UIView+Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Positioning.swift"; sourceTree = "<group>"; };
 		46ACEFDC2490F52500FAAD43 /* StoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
@@ -214,7 +215,12 @@
 		46ACF0C02490FEB300FAAD43 /* ExamplesScrollViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesScrollViews.swift; sourceTree = "<group>"; };
 		46ACF0C12490FEB300FAAD43 /* ExamplesSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesSettingsViewController.swift; sourceTree = "<group>"; };
 		46ACF0D82491A75300FAAD43 /* screenLandscape5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenLandscape5.png; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* ContainerControllerSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerControllerSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46ACF0E1249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAddCollectionViewController.storyboard; sourceTree = "<group>"; };
+		46ACF0E2249255ED00FAAD43 /* ExampleAddCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddCollectionViewController.swift; sourceTree = "<group>"; };
+		46ACF0E524925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddTableViewControllerSettings.swift; sourceTree = "<group>"; };
+		46ACF0E624925B9200FAAD43 /* ExampleAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddTableViewController.swift; sourceTree = "<group>"; };
+		46ACF0E724925B9200FAAD43 /* ExampleAddTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAddTableViewController.storyboard; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* ContainerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -254,8 +260,9 @@
 		46ACEFD32490F52500FAAD43 /* ExamplesAddTableView */ = {
 			isa = PBXGroup;
 			children = (
-				46ACEFD42490F52500FAAD43 /* ExamplesAddTableViewController.swift */,
-				46ACEFD52490F52500FAAD43 /* ExamplesAddTableViewController.storyboard */,
+				46ACF0E624925B9200FAAD43 /* ExampleAddTableViewController.swift */,
+				46ACF0E524925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift */,
+				46ACF0E724925B9200FAAD43 /* ExampleAddTableViewController.storyboard */,
 			);
 			path = ExamplesAddTableView;
 			sourceTree = "<group>";
@@ -844,6 +851,15 @@
 			path = Container;
 			sourceTree = "<group>";
 		};
+		46ACF0DA2492297100FAAD43 /* ExampleAddCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				46ACF0E2249255ED00FAAD43 /* ExampleAddCollectionViewController.swift */,
+				46ACF0E1249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard */,
+			);
+			path = ExampleAddCollectionView;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -858,7 +874,7 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* ContainerControllerSwift_Example.app */,
+				607FACD01AFB9204008FA782 /* ContainerController.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -868,9 +884,10 @@
 			children = (
 				46ACEFD62490F52500FAAD43 /* Framework */,
 				46ACEFE22490F52500FAAD43 /* Localization */,
-				46ACF09F2490FEB200FAAD43 /* ExamplesSettings */,
-				46ACEFD32490F52500FAAD43 /* ExamplesAddTableView */,
 				46ACEFEB2490F52500FAAD43 /* Maps */,
+				46ACF09F2490FEB200FAAD43 /* ExamplesSettings */,
+				46ACF0DA2492297100FAAD43 /* ExampleAddCollectionView */,
+				46ACEFD32490F52500FAAD43 /* ExamplesAddTableView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				46ACF09D2490FE2700FAAD43 /* SceneDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -930,7 +947,7 @@
 			);
 			name = ContainerControllerSwift_Example;
 			productName = ContainerControllerSwift;
-			productReference = 607FACD01AFB9204008FA782 /* ContainerControllerSwift_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* ContainerController.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -994,17 +1011,18 @@
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				46ACF0742490F52600FAAD43 /* LocationTextCell.xib in Resources */,
 				46ACF07F2490F52600FAAD43 /* HeaderDetailsView.xib in Resources */,
+				46ACF0E3249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard in Resources */,
 				46ACF0812490F52600FAAD43 /* HeaderSearchBarView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				46ACF0C32490FEB300FAAD43 /* ExampleCollectionCell.xib in Resources */,
 				46ACF0D22490FEB300FAAD43 /* ExampleHeaderGripView.xib in Resources */,
 				46ACF0722490F52600FAAD43 /* LocationButtonCell.xib in Resources */,
 				46ACF0D32490FEB300FAAD43 /* ExamplesSettingsViewController.storyboard in Resources */,
-				46ACF0542490F52600FAAD43 /* ExamplesAddTableViewController.storyboard in Resources */,
 				46ACF06F2490F52600FAAD43 /* LocationAddressCell.xib in Resources */,
 				46ACF0C72490FEB300FAAD43 /* ExampleSegmentCell.xib in Resources */,
 				46ACF0CF2490FEB300FAAD43 /* ExampleFooterButtonView.xib in Resources */,
 				46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */,
+				46ACF0EA24925B9200FAAD43 /* ExampleAddTableViewController.storyboard in Resources */,
 				46ACF0872490F52600FAAD43 /* MapsMenuHeader.xib in Resources */,
 				46ACF07B2490F52600FAAD43 /* MapsMenuSegmentCell.xib in Resources */,
 				46ACF0762490F52600FAAD43 /* MapsSearchCell.xib in Resources */,
@@ -1068,6 +1086,7 @@
 			files = (
 				46ACF06D2490F52600FAAD43 /* LocationCoordinateCell.swift in Sources */,
 				46ACF0D42490FEB300FAAD43 /* ExamplesContainerController.swift in Sources */,
+				46ACF0E924925B9200FAAD43 /* ExampleAddTableViewController.swift in Sources */,
 				46ACF06B2490F52600FAAD43 /* MapsRouteCell.swift in Sources */,
 				46ACF0752490F52600FAAD43 /* LocationTextCell.swift in Sources */,
 				46ACF09A2490F52600FAAD43 /* MapsViewController.swift in Sources */,
@@ -1091,11 +1110,13 @@
 				46ACF0D52490FEB300FAAD43 /* ExamplesContainerControllerScrollType.swift in Sources */,
 				46ACF0CB2490FEB300FAAD43 /* TitleTextCell.swift in Sources */,
 				46ACF08F2490F52600FAAD43 /* MapsMainContainerLayout.swift in Sources */,
+				46ACF0E4249255ED00FAAD43 /* ExampleAddCollectionViewController.swift in Sources */,
 				46ACF0772490F52600FAAD43 /* MapsSearchCell.swift in Sources */,
 				46ACF05F2490F52600FAAD43 /* MapsFavoriteCell.swift in Sources */,
 				46ACF0582490F52600FAAD43 /* XibView.swift in Sources */,
 				46ACF0782490F52600FAAD43 /* MapsMenuSpaceCell.swift in Sources */,
 				46ACF0972490F52600FAAD43 /* MenuContainerControllerDelegate.swift in Sources */,
+				46ACF0E824925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift in Sources */,
 				46ACF0552490F52600FAAD43 /* Color.swift in Sources */,
 				46ACF0692490F52600FAAD43 /* MapsSectionCell.swift in Sources */,
 				46ACF0882490F52600FAAD43 /* MapsButtons.swift in Sources */,
@@ -1120,7 +1141,6 @@
 				46ACF0982490F52600FAAD43 /* MenuContainerController.swift in Sources */,
 				46ACF0672490F52600FAAD43 /* MapsLocationCell.swift in Sources */,
 				46ACF0D62490FEB300FAAD43 /* ExamplesScrollViews.swift in Sources */,
-				46ACF0532490F52600FAAD43 /* ExamplesAddTableViewController.swift in Sources */,
 				46ACF07E2490F52600FAAD43 /* HeaderDetailsView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				46ACF05A2490F52600FAAD43 /* DesignView.swift in Sources */,
@@ -1287,8 +1307,8 @@
 				INFOPLIST_FILE = ContainerControllerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = mrusta.ContainerController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mrustaa.ContainerController;
+				PRODUCT_NAME = ContainerController;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -1303,8 +1323,8 @@
 				INFOPLIST_FILE = ContainerControllerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = mrusta.ContainerController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = mrustaa.ContainerController;
+				PRODUCT_NAME = ContainerController;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};

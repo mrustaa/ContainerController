@@ -107,7 +107,7 @@ class MapViewManager: NSObject {
     }
     
     
-    // MARK: - 🗺 Map Show Route
+    // MARK: - Map Show Route
     
     public func showRouteOnMapMyLocation() {
         if let pickupCoord = mapView?.userLocation.location?.coordinate,
@@ -165,7 +165,7 @@ class MapViewManager: NSObject {
     }
 }
 
-// MARK: - ⚠️ Map-Delegate
+// MARK: - Map-Delegate
 
 extension MapViewManager: MKMapViewDelegate {
     
@@ -209,7 +209,7 @@ extension MapViewManager: MKMapViewDelegate {
     
 }
 
-// MARK: - ⚠️ Update Location Delegate
+// MARK: - Update Location Delegate
 
 extension MapViewManager: CLLocationManagerDelegate {
     
@@ -236,7 +236,7 @@ extension MapViewManager: CLLocationManagerDelegate {
     
 }
 
-// MARK: - 🗺 Map Extension
+// MARK: - Map Extension
 
 extension MKCoordinateRegion {
     var mapRect: MKMapRect {

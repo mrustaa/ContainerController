@@ -170,7 +170,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         mapManager.compass.y = (paddingTop + mapButtons.height + 12)
     }
     
-    // MARK: - 🗺 Map Manager
+    // MARK: - Map Manager
     
     func updateMapManager() {
     
@@ -186,7 +186,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         }
     }
     
-    // MARK: - 🗺 Map Long-Press
+    // MARK: - Map Long-Press
     
     @IBAction func handleLong(_ recognizer: UILongPressGestureRecognizer) {
         if routeContainer != nil { return }
@@ -239,7 +239,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         })
     }
     
-    // MARK: - 🗺 Map Buttons Alpha
+    // MARK: - Map Buttons Alpha
     
     func mapButtons(alpha: CGFloat, animation: Bool = true) {
         if ContainerDevice.isPortrait, !ContainerDevice.isIpad {
@@ -330,7 +330,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         setNeedsStatusBarAppearanceUpdate()
     }
     
-    // MARK: - 🦄 Show Maps-Container
+    // MARK: - Show Maps-Container
     
     func showMapsContainer() {
         mapsContainer = MapsContainerController(addTo: self, darkStyle: darkStyle)
@@ -349,7 +349,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         changePositionMapsElements(container: mapsContainerController, position: position, type: type, animation: animation)
     }
     
-    //MARK: - 🦄 Show Location-Details
+    //MARK: - Show Location-Details
     
     func showLocationDetailsContainer() {
         if locationContainer != nil { return }
@@ -383,7 +383,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         changePositionMapsElements(container: locationContainerController, position: position, type: type, animation: animation)
     }
     
-    //MARK: - 🦄 Show Route
+    //MARK: - Show Route
     
     func showRouteContainer() {
         if routeContainer != nil { return }
@@ -408,7 +408,7 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         changePositionMapsElements(container: routeContainerController, position: position, type: type, animation: animation)
     }
     
-    // MARK: - 🦄 Show Menu-Container
+    // MARK: - Show Menu-Container
     
     func showMenuContainer() {
         if menuContainer != nil { return }
