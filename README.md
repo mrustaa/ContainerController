@@ -18,31 +18,41 @@ UI Component. This is a copy swipe-panel from app: https://www.apple.com/ios/map
 
 <!-- TOC -->
 
+- [Requirements](#requirements)
+- [Installation CocoaPods](#installation-cocoapods)
 - [Getting Started](#getting-started)
-- [Delegate ScrollView to self](#delegate-scrollview-to-self)
 - [Action](#action)
   - [Move position with an animation](#move-position-with-an-animation)
-- [Adding custom views in ContainerController](#adding-custom-views-in-containercontroller)
-  - [Add `ScrollView`](#add-scrollview)
+- [Adding possible custom subviews in ContainerController view](#adding-possible-custom-subviews-in-containercontroller-view)
+  - [Add `ScrollView`📃](#add-scrollview)
+    - [`Delegate` to self 👆](#delegate-to-self-)
   - [Add `HeaderView`](#add-headerview)
   - [Add `FooterView`](#add-footerview)
-- [Settings](#settings)
+  - [Add Custom `View`](#add-custom-view)
+- [Settings ⚙️](#settings-)
   - [Layout](#layout)
-    - [Customize the layout with create subclass ContainerLayout on initialization](#customize-the-layout-with-create-subclass-containerlayout-on-initialization)
-    - [Or create object ContainerLayout](#or-create-object-containerlayout)
+    - [Customize the layout with create subclass `ContainerLayout` on initialization](#customize-the-layout-with-create-subclass-containerlayout-on-initialization)
+    - [Or create object `ContainerLayout`](#or-create-object-containerlayout)
   - [Change settings right away](#change-settings-right-away)
-  - [ContainerView](#containerview)
+  - [ContainerController `View`](#containercontroller-view)
     - [Use a ready-made solution](#use-a-ready-made-solution)
-    - [Add your changes](#add-your-changes)
+    - [Change `CornerRadius`](#change-cornerradius)
+    - [Add Layer `Shadow`](#add-layer-shadow)
+    - [Add Background `Blur`](#add-background-blur)
   - [More details](#more-details)
     - [Change positions on screen Top Middle Bottom](#change-positions-on-screen-top-middle-bottom)
     - [Customize indentations for View](#customize-indentations-for-view)
     - [Customize for landscape orientation](#customize-for-landscape-orientation)
     - [Parameters for control footerView](#parameters-for-control-footerview)
-- [ContainerControllerDelegate](#containercontrollerdelegate)
+- [ContainerController `Delegate`](#containercontroller-delegate)
+- [Author](#author)
 - [License](#license)
 
 <!-- /TOC -->
+
+## Requirements 
+
+✏️ ContainerController is written in Swift 5.0+. It can be built by Xcode 11 or later. Compatible with iOS 13.0+.
 
 ## Installation CocoaPods
 
@@ -103,8 +113,39 @@ class ViewController: UIViewController, ContainerControllerDelegate {
 }
 ```
 
-## Delegate ScrollView to self
-#### ☝️ If you implement delegate ScrollView (TableView, CollectionView, TextView) to `self`, then you need to call 4 functions in ContainerController
+## Action
+
+### Move position with an animation
+
+```swift
+
+container.move(type: .top)
+container.move(type: .middle)
+container.move(type: .bottom)
+
+```
+
+## Adding possible custom subviews in ContainerController view
+
+### Add `ScrollView`
+
+```swift 
+
+let tableView = UITableView()
+tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+tableView.backgroundColor = .clear
+tableView.tableFooterView = UIView()
+tableView.delegate = self
+tableView.dataSource = self
+
+// Add scrollView to container
+container.add(scrollView: tableView)
+
+```
+
+
+#### `Delegate` to self 👆
+#### If you implement delegate ScrollView (TableView, CollectionView, TextView) to `self`, then you need to call 4 functions in ContainerController
 
 ```swift
 extension ViewController: UIScrollViewDelegate {
@@ -136,36 +177,6 @@ extension ViewController: UITableViewDataSource {
 
 ```
 
-## Action
-
-### Move position with an animation
-
-```swift
-
-container.move(type: .top)
-container.move(type: .middle)
-container.move(type: .bottom)
-
-```
-
-## Adding custom views in ContainerController
-
-### Add `ScrollView`
-
-```swift 
-
-let tableView = UITableView()
-tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-tableView.backgroundColor = .clear
-tableView.tableFooterView = UIView()
-tableView.delegate = self
-tableView.dataSource = self
-
-// Add scrollView to container
-container.add(scrollView: tableView)
-
-```
-
 ### Add `HeaderView`
 
 ```swift
@@ -187,8 +198,30 @@ tabBarView.height = 49.0
 container.add(footerView: tabBarView)
 
 ```
+### Add Custom `View`
 
-## Settings
+```swift
+
+// Add custom shadow
+let layer = container.view.layer
+layer.shadowOpacity = 0.5
+layer.shadowColor = UIColor.red.cgColor
+layer.shadowOffset = CGSize(width: 1, height: 4)
+layer.shadowRadius = 5
+
+// Add view in container.view
+let viewRed = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
+viewRed.backgroundColor = .systemRed
+container.view.addSubview(viewRed)
+
+// Add view under scrollView container.view
+let viewGreen = UIView(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
+viewGreen.backgroundColor = .systemGreen
+container.view.insertSubview(viewGreen, at: 0)
+
+```
+
+## Settings ⚙️
 
 ### Layout 
 
@@ -290,45 +323,29 @@ container.setLandscape(right: 100)
 
 ```
 
-## ContainerView
+## ContainerController `View`
 
-ContainerView is generated automatically when you create ContainerController
+#### Use a ready-made solution
+
+`ContainerView` is generated automatically when you create ContainerController
 Use a ready-made solution to change the radius, add shadow, and blur.
 
-### Use a ready-made solution
+#### Change `CornerRadius`
 
 ```swift
-
 // Change cornerRadius global for all subviews
 container.view.cornerRadius = 15 
-
-// Add layer shadow
-container.view.addShadow(opacity: 0.1) 
-
-// Add background blur UIVisualEffectView
-container.view.addBlur(style: .dark) 
-
 ```
-#### Add your changes
+#### Add Layer `Shadow`
 
 ```swift
+container.view.addShadow(opacity: 0.1) 
+```
+#### Add Background `Blur`
 
-// Add custom shadow
-let layer = container.view.layer
-layer.shadowOpacity = 0.5
-layer.shadowColor = UIColor.red.cgColor
-layer.shadowOffset = CGSize(width: 1, height: 4)
-layer.shadowRadius = 5
-
-// Add view in container.view
-let viewRed = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
-viewRed.backgroundColor = .systemRed
-container.view.addSubview(viewRed)
-
-// Add view under scrollView container.view
-let viewGreen = UIView(frame: CGRect(x: 25, y: 25, width: 50, height: 50))
-viewGreen.backgroundColor = .systemGreen
-container.view.insertSubview(viewGreen, at: 0)
+```swift
+// add blur UIVisualEffectView
+container.view.addBlur(style: .dark) 
 
 ```
 
@@ -415,7 +432,7 @@ container.set(trackingPosition: false)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/footerPadding.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/trackingPosition.gif)
 
-## ContainerControllerDelegate
+## ContainerController `Delegate`
 
 ```swift
 
@@ -445,6 +462,10 @@ func containerControllerMove(_ containerController: ContainerController, positio
 }
 
 ```
+
+## Author
+
+<motionrustam@gmail.com>| [mrustaa](https://github.com/mrustaa/)
 
 ## License
 
