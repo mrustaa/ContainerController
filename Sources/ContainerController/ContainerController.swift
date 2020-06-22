@@ -1134,7 +1134,19 @@ extension ContainerController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
-
+    
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if let tableAdapterView = scrollView as? TableAdapterView {
+            return tableAdapterView.tableView(tableView, canEditRowAt: indexPath)
+        }
+        return false
+    }
+    
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if let tableAdapterView = scrollView as? TableAdapterView {
+            return tableAdapterView.tableView(tableView, commit: editingStyle, forRowAt: indexPath)
+        }
+    }
 }
 
 // MARK: - Collection Delegate
