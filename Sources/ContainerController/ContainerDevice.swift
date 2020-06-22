@@ -1,4 +1,10 @@
-
+//
+//  ContainerDevice.swift
+//  PatternsSwift
+//
+//  Created by mrustaa on 21/04/2020.
+//  Copyright © 2020 mrustaa. All rights reserved.
+//
 
 import UIKit
 

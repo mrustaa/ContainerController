@@ -1,5 +1,5 @@
 //
-//  ColletionAdapterCellData.swift
+//  CollectionAdapterCellData.swift
 //  PatternsSwift
 //
 //  Created by mrustaa on 01/05/2020.

@@ -58,28 +58,28 @@
 		13296F8F89440216D156B1EF58BBD3FA /* Pods-ContainerControllerSwift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContainerControllerSwift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		148A1CC4CCA9A45E6679C0483EC257F1 /* Pods_ContainerControllerSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContainerControllerSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B800897A944FAFD0416DC3C8A2B9CD /* ContainerControllerSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContainerControllerSwift.debug.xcconfig; sourceTree = "<group>"; };
-		23B6CA2F0075DF1F0D43741B3188D49C /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ContainerControllerSwift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		23B6CA2F0075DF1F0D43741B3188D49C /* ContainerControllerSwift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ContainerControllerSwift.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		31C6D8CE52D9D44CFE3381837377CCE7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32E7EA3D3C16ECD90748D85102DE9F48 /* Pods-ContainerControllerSwift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ContainerControllerSwift_Tests-umbrella.h"; sourceTree = "<group>"; };
 		34B99A079CA33F3CFA10293C249BD2CE /* Pods-ContainerControllerSwift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContainerControllerSwift_Example-Info.plist"; sourceTree = "<group>"; };
 		3F0346DDED41D0AB543AE2537D7539D6 /* ContainerControllerSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ContainerControllerSwift-Info.plist"; sourceTree = "<group>"; };
-		46ACEFB1249021C900FAAD43 /* ContainerTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerTypes.swift; path = ContainerControllerSwift/ContainerTypes.swift; sourceTree = "<group>"; };
+		46ACEFB1249021C900FAAD43 /* ContainerTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerTypes.swift; path = Sources/ContainerController/ContainerTypes.swift; sourceTree = "<group>"; };
 		46ACEFB3249021C900FAAD43 /* TableAdapterCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterCellData.swift; sourceTree = "<group>"; };
 		46ACEFB4249021C900FAAD43 /* TableAdapterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterItem.swift; sourceTree = "<group>"; };
 		46ACEFB5249021C900FAAD43 /* TableAdapterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterCell.swift; sourceTree = "<group>"; };
 		46ACEFB6249021C900FAAD43 /* TableAdapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterView.swift; sourceTree = "<group>"; };
 		46ACEFB7249021C900FAAD43 /* TableAdapterTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableAdapterTypes.swift; sourceTree = "<group>"; };
-		46ACEFB8249021CA00FAAD43 /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = ContainerControllerSwift/ContainerView.swift; sourceTree = "<group>"; };
-		46ACEFB9249021CA00FAAD43 /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerController.swift; path = ContainerControllerSwift/ContainerController.swift; sourceTree = "<group>"; };
-		46ACEFBA249021CA00FAAD43 /* ContainerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerLayout.swift; path = ContainerControllerSwift/ContainerLayout.swift; sourceTree = "<group>"; };
+		46ACEFB8249021CA00FAAD43 /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Sources/ContainerController/ContainerView.swift; sourceTree = "<group>"; };
+		46ACEFB9249021CA00FAAD43 /* ContainerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerController.swift; path = Sources/ContainerController/ContainerController.swift; sourceTree = "<group>"; };
+		46ACEFBA249021CA00FAAD43 /* ContainerLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerLayout.swift; path = Sources/ContainerController/ContainerLayout.swift; sourceTree = "<group>"; };
 		46ACEFBC249021CA00FAAD43 /* CollectionAdapterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterItem.swift; sourceTree = "<group>"; };
 		46ACEFBD249021CA00FAAD43 /* CollectionAdapterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterCell.swift; sourceTree = "<group>"; };
 		46ACEFBE249021CA00FAAD43 /* CollectionAdapterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterView.swift; sourceTree = "<group>"; };
 		46ACEFBF249021CA00FAAD43 /* CollectionAdapterCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterCellData.swift; sourceTree = "<group>"; };
 		46ACEFC0249021CA00FAAD43 /* CollectionAdapterTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapterTypes.swift; sourceTree = "<group>"; };
-		46ACEFC1249021CA00FAAD43 /* ContainerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerControllerDelegate.swift; path = ContainerControllerSwift/ContainerControllerDelegate.swift; sourceTree = "<group>"; };
-		46ACEFC2249021CA00FAAD43 /* ContainerDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerDevice.swift; path = ContainerControllerSwift/ContainerDevice.swift; sourceTree = "<group>"; };
+		46ACEFC1249021CA00FAAD43 /* ContainerControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerControllerDelegate.swift; path = Sources/ContainerController/ContainerControllerDelegate.swift; sourceTree = "<group>"; };
+		46ACEFC2249021CA00FAAD43 /* ContainerDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContainerDevice.swift; path = Sources/ContainerController/ContainerDevice.swift; sourceTree = "<group>"; };
 		4EEA0EC0D79861379FB2B1874207A67A /* ContainerControllerSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ContainerControllerSwift-dummy.m"; sourceTree = "<group>"; };
 		4FAEEAC4BEF190DBB2A8F50DB74A5DC4 /* Pods-ContainerControllerSwift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContainerControllerSwift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		82F3FE4320C7E1306E9D6353343C0247 /* ContainerControllerSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ContainerControllerSwift.release.xcconfig; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		89922BFA2A740F6B35D8B7F42EC3C4A6 /* Pods-ContainerControllerSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerControllerSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9539933A3B21B34CCDEC71F036AEAE32 /* Pods-ContainerControllerSwift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContainerControllerSwift_Tests-Info.plist"; sourceTree = "<group>"; };
 		9CE04B24AA978789CDFAA23C3FF9D294 /* Pods-ContainerControllerSwift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContainerControllerSwift_Tests-dummy.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		A44F5E78625C75314837F442526B9F1F /* Pods-ContainerControllerSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContainerControllerSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0064E8B7E1FC56F5599EFD271C67594 /* ContainerControllerSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ContainerControllerSwift.modulemap; sourceTree = "<group>"; };
 		C492E15579178E6EFA4F7D5E4FD837E3 /* Pods-ContainerControllerSwift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContainerControllerSwift_Example-dummy.m"; sourceTree = "<group>"; };
@@ -156,7 +156,7 @@
 				46ACEFB7249021C900FAAD43 /* TableAdapterTypes.swift */,
 			);
 			name = ContainerTable;
-			path = ContainerControllerSwift/ContainerTable;
+			path = Sources/ContainerController/ContainerTable;
 			sourceTree = "<group>";
 		};
 		46ACEFBB249021CA00FAAD43 /* ContainerCollection */ = {
@@ -169,7 +169,7 @@
 				46ACEFC0249021CA00FAAD43 /* CollectionAdapterTypes.swift */,
 			);
 			name = ContainerCollection;
-			path = ContainerControllerSwift/ContainerCollection;
+			path = Sources/ContainerController/ContainerCollection;
 			sourceTree = "<group>";
 		};
 		60BF066757F56B86BB1CBE3EBB71A70A /* Support Files */ = {

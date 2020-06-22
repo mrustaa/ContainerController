@@ -1,5 +1,5 @@
 //
-//  ContainerTypes.swift
+//  TableAdapterTypes.swift
 //  PatternsSwift
 //
 //  Created by mrustaa on 21/04/2020.
