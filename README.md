@@ -19,7 +19,9 @@ UI Component. This is a copy swipe-panel from app: https://www.apple.com/ios/map
 <!-- TOC -->
 
 - [Requirements](#requirements)
-- [Installation CocoaPods](#installation-cocoapods)
+- [Installation](#installation)
+  - [CocoaPods](#cocoapods)
+  - [Swift Package Manager with Xcode 11](#swift-package-manager-with-xcode-11)
 - [Getting Started](#getting-started)
 - [Action](#action)
   - [Move position with an animation](#move-position-with-an-animation)
@@ -54,7 +56,9 @@ UI Component. This is a copy swipe-panel from app: https://www.apple.com/ios/map
 
 ✏️ ContainerController is written in Swift 5.0+. It can be built by Xcode 11 or later. Compatible with iOS 13.0+.
 
-## Installation CocoaPods
+## Installation 
+
+### CocoaPods
 
 ContainerControllerSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -62,6 +66,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ContainerControllerSwift'
 ```
+### Swift Package Manager with Xcode 11
+
+Follow [this doc](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
 
 ## Getting Started
 
@@ -465,7 +472,7 @@ func containerControllerMove(_ containerController: ContainerController, positio
 
 ## Author
 
-<motionrustam@gmail.com>| [mrustaa](https://github.com/mrustaa/)
+<motionrustam@gmail.com> 📩| [mrustaa](https://github.com/mrustaa/)
 
 ## License
 
