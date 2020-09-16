@@ -92,7 +92,7 @@ class ViewController: UIViewController, ContainerControllerDelegate {
         
         // Create ContainerController object, along with the container.view
         // Pass the current UIViewController 
-        container = ContainerController(addTo: self, layout: layout)
+        let container = ContainerController(addTo: self, layout: layout)
         container.view.cornerRadius = 15
         container.view.addShadow()
         
