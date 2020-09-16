@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 open class ContainerController: NSObject {
     
     // MARK: Views
@@ -1090,6 +1091,7 @@ open class ContainerController: NSObject {
 
 // MARK: - Gesture Delegate
 
+@available(iOS 13.0, *)
 extension ContainerController: UIGestureRecognizerDelegate {
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
@@ -1100,6 +1102,7 @@ extension ContainerController: UIGestureRecognizerDelegate {
 
 // MARK: - Table Delegate
 
+@available(iOS 13.0, *)
 extension ContainerController: UITableViewDelegate {
 
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -1119,6 +1122,7 @@ extension ContainerController: UITableViewDelegate {
 
 // MARK: - Table DataSource
 
+@available(iOS 13.0, *)
 extension ContainerController: UITableViewDataSource {
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -1151,6 +1155,7 @@ extension ContainerController: UITableViewDataSource {
 
 // MARK: - Collection Delegate
 
+@available(iOS 13.0, *)
 extension ContainerController: UICollectionViewDelegate {
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -1163,6 +1168,7 @@ extension ContainerController: UICollectionViewDelegate {
 
 // MARK: - Collection DataSource
 
+@available(iOS 13.0, *)
 extension ContainerController: UICollectionViewDataSource {
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -1182,6 +1188,7 @@ extension ContainerController: UICollectionViewDataSource {
 
 // MARK: - Collection DelegateFlowLayout
 
+@available(iOS 13.0, *)
 extension ContainerController: UICollectionViewDelegateFlowLayout {
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -1194,6 +1201,7 @@ extension ContainerController: UICollectionViewDelegateFlowLayout {
 
 // MARK: - Scroll Delegate
 
+@available(iOS 13.0, *)
 extension ContainerController: UIScrollViewDelegate {
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {

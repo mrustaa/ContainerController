@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 open class ContainerView: UIView {
     
     public var contentView: UIView?

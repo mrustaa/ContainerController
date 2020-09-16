@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 public extension ContainerDevice {
     
     enum Orientation {
@@ -17,6 +18,7 @@ public extension ContainerDevice {
     }
 }
 
+@available(iOS 13.0, *)
 open class ContainerDevice {
     
     // MARK: - Size
