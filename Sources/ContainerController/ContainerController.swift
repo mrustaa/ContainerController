@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 open class ContainerController: NSObject {
     
@@ -23,6 +24,8 @@ open class ContainerController: NSObject {
     public var headerView: UIView?
     
     public var footerView: UIView?
+    
+    public var hostingController: UIHostingController<AnyView>?
     
     // MARK: Layout
     
@@ -449,6 +452,29 @@ open class ContainerController: NSObject {
         
         view.contentView?.addSubview(scrollView)
         calculationViews()
+    }
+    
+    // MARK: - Add SwiftUI View
+    
+    public func removeSwiftUIView() {
+//        self.hostingController?.willMove(toParent: nil)
+        self.hostingController?.view.removeFromSuperview()
+//        self.hostingController?.removeFromParent()
+        self.hostingController = nil
+    }
+    
+    public func add<V: View>(swiftUIView: V) {
+        guard let contentView = self.view.contentView else {
+            return
+        }
+        removeSwiftUIView()
+        let hostingController = UIHostingController(rootView: AnyView(swiftUIView))
+        self.hostingController = hostingController
+//        self.controller?.addChild(hostingController)
+        hostingController.view.frame = contentView.bounds
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+        contentView.addSubview(hostingController.view)
+//        hostingController.didMove(toParent: self.controller)
     }
     
     // MARK: - Pan Gesture
