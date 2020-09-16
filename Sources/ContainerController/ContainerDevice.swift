@@ -62,12 +62,8 @@ open class ContainerDevice {
     
     class public var statusBarHeight: CGFloat {
         var height: CGFloat = 0
-        if #available(iOS 13.0, *) {
-            let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-            height = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-        } else {
-            height = UIApplication.shared.statusBarFrame.height
-        }
+        let window = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+        height = window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
         return height
     }
     
