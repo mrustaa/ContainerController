@@ -458,24 +458,25 @@ open class ContainerController: NSObject {
     // MARK: - Add SwiftUI View
     
     public func removeSwiftUIView() {
-//        self.hostingController?.willMove(toParent: nil)
+        self.hostingController?.willMove(toParent: nil)
         self.hostingController?.view.removeFromSuperview()
-//        self.hostingController?.removeFromParent()
+        self.hostingController?.removeFromParent()
         self.hostingController = nil
     }
     
-    public func add<V: View>(swiftUIView: V) {
+    public func add<V: View>(swiftUIView: V, parentViewController: UIViewController? = nil) {
         guard let contentView = self.view.contentView else {
             return
         }
         removeSwiftUIView()
         let hostingController = UIHostingController(rootView: AnyView(swiftUIView))
         self.hostingController = hostingController
-//        self.controller?.addChild(hostingController)
+        let parent = parentViewController ?? self.controller
+        parent?.addChild(hostingController)
         hostingController.view.frame = contentView.bounds
-        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleBottomMargin]
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.addSubview(hostingController.view)
-//        hostingController.didMove(toParent: self.controller)
+        hostingController.didMove(toParent: parent)
     }
     
     // MARK: - Pan Gesture
