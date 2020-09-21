@@ -366,7 +366,7 @@ open class ContainerController: NSObject {
     private func createContainerView() {
         let frame = CGRect(x: 0, y: 0, width: deviceWidth, height: deviceHeight * 2)
         view = ContainerView(frame: frame)
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         controller?.view.addSubview(view)
         
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
