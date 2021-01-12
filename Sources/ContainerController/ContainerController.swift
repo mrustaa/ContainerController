@@ -6,6 +6,8 @@
 //  Copyright © 2020 mrustaa. All rights reserved.
 //
 
+#if arch(x86_64) || arch(arm64)
+
 import UIKit
 import SwiftUI
 
@@ -1378,3 +1380,6 @@ extension ContainerController: UIScrollViewDelegate {
     }
     
 }
+
+#endif
+
