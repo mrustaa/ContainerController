@@ -120,3 +120,17 @@ open class ContainerDevice {
         }
     }
 }
+
+public extension UIDeviceOrientation {
+    
+    var isRotateAllowed: Bool {
+        return !(face || self == .portraitUpsideDown)
+    }
+    
+    var face: Bool {
+        switch self {
+        case .faceUp, .faceDown: return true
+        default: return false
+        }
+    }
+}
