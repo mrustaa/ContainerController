@@ -211,8 +211,7 @@ open class ContainerController: NSObject {
     
     @objc func rotated() {
         
-        let orint = UIDevice.current.orientation
-        if orint == .faceUp || orint == .faceDown || orint == .portraitUpsideDown { return }
+        if !UIDevice.current.orientation.isRotateAllowed { return }
         
         if ContainerDevice.orientation == oldOrientation { return }
         oldOrientation = ContainerDevice.orientation

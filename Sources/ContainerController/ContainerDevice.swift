@@ -10,7 +10,6 @@ import UIKit
 
 @available(iOS 13.0, *)
 public extension ContainerDevice {
-    
     enum Orientation {
         case portrait
         case landscapeLeft
@@ -85,7 +84,7 @@ open class ContainerDevice {
         switch UIDevice.current.orientation {
         case .landscapeLeft, .landscapeRight:
             portrait = false
-        case .portrait, .portraitUpsideDown:
+        case .portrait:
             portrait = true
         default: break
         }
@@ -120,6 +119,18 @@ open class ContainerDevice {
             return .landscapeLeft
         }
     }
+}
+
+public extension UIDeviceOrientation {
     
+    var isRotateAllowed: Bool {
+        return !(face || self == .portraitUpsideDown)
+    }
     
+    var face: Bool {
+        switch self {
+        case .faceUp, .faceDown: return true
+        default: return false
+        }
+    }
 }
