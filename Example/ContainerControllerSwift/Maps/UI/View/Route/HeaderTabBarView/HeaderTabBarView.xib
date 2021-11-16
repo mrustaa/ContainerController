@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderLocationDetailsView" customModule="ContainerController" customModuleProvider="target">
+            <connections>
+                <outlet property="separatorView" destination="uAr-wR-sBL" id="bpN-Ki-lfX"/>
+                <outlet property="separatorViewHeight" destination="Lls-hA-4eN" id="Ncf-PM-6oa"/>
+                <outlet property="separatorViewY" destination="pdN-8A-m6b" id="uh7-Ve-ZlD"/>
+                <outlet property="tabBarItem1" destination="X0Q-gH-aUD" id="hCL-pR-p94"/>
+                <outlet property="tabBarItem2" destination="TUB-Lf-F8Y" id="5UX-R2-pzw"/>
+                <outlet property="tabBarItem3" destination="gYH-mJ-xnj" id="u5l-C0-9Hs"/>
+                <outlet property="tabBarItem4" destination="5l2-Zw-bNx" id="4Af-PD-j8k"/>
+                <outlet property="tabbar" destination="nB5-qq-WPd" id="j1O-ah-NFl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEq-BX-n4L" customClass="DesignView" customModule="ContainerController" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="312" height="49"/>
+                    <subviews>
+                        <tabBar clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nB5-qq-WPd">
+                            <rect key="frame" x="0.0" y="0.0" width="312" height="49"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <items>
+                                <tabBarItem title="1" image="car.fill" catalog="system" id="X0Q-gH-aUD">
+                                    <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tabBarItem>
+                                <tabBarItem title="2" image="arrowshape.turn.up.left.2.fill" catalog="system" id="TUB-Lf-F8Y"/>
+                                <tabBarItem title="3" image="heart.fill" catalog="system" id="gYH-mJ-xnj"/>
+                                <tabBarItem title="4" image="person.fill" catalog="system" id="5l2-Zw-bNx">
+                                    <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tabBarItem>
+                            </items>
+                            <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="selectedImageTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="view.background">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </tabBar>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nB5-qq-WPd" secondAttribute="bottom" id="Hpv-Kh-DZr"/>
+                        <constraint firstItem="nB5-qq-WPd" firstAttribute="leading" secondItem="kEq-BX-n4L" secondAttribute="leading" id="aWT-bO-70c"/>
+                        <constraint firstAttribute="trailing" secondItem="nB5-qq-WPd" secondAttribute="trailing" id="kNH-lt-rzZ"/>
+                        <constraint firstItem="nB5-qq-WPd" firstAttribute="top" secondItem="kEq-BX-n4L" secondAttribute="top" id="uHC-46-opj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uAr-wR-sBL">
+                    <rect key="frame" x="0.0" y="1" width="312" height="1"/>
+                    <color key="backgroundColor" white="0.5" alpha="0.5956898384" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Lls-hA-4eN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kEq-BX-n4L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EZc-a0-fDU"/>
+                <constraint firstAttribute="bottom" secondItem="kEq-BX-n4L" secondAttribute="bottom" id="Th6-e2-7Te"/>
+                <constraint firstItem="kEq-BX-n4L" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="VFf-Rn-CcY"/>
+                <constraint firstAttribute="trailing" secondItem="uAr-wR-sBL" secondAttribute="trailing" id="WXe-qc-7r4"/>
+                <constraint firstAttribute="bottom" secondItem="kEq-BX-n4L" secondAttribute="bottom" id="mBj-MU-nkQ"/>
+                <constraint firstItem="uAr-wR-sBL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="pdN-8A-m6b"/>
+                <constraint firstItem="kEq-BX-n4L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="z0r-kv-leF"/>
+                <constraint firstItem="uAr-wR-sBL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zEf-ku-mJu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="251.19999999999999" y="181.25937031484258"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.left.2.fill" catalog="system" width="64" height="42"/>
+        <image name="car.fill" catalog="system" width="64" height="46"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

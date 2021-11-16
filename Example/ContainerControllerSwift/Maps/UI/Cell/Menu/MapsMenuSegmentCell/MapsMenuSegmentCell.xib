@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="ADc-Wu-299" customClass="MapsMenuSegmentCell" customModule="PatternsSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADc-Wu-299" id="Qrk-n6-aPT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-RB-FsG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gJ-D9-9HM">
+                                <rect key="frame" x="16" y="9" width="288" height="30"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6JM-Qm-xrq">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="31"/>
+                                        <segments>
+                                            <segment title="Map"/>
+                                            <segment title="Transit"/>
+                                            <segment title="Satellite"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentAction:" destination="ADc-Wu-299" eventType="valueChanged" id="grZ-Oo-qTS"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6JM-Qm-xrq" firstAttribute="top" secondItem="7gJ-D9-9HM" secondAttribute="top" id="5t8-ks-LxM"/>
+                                    <constraint firstAttribute="bottom" secondItem="6JM-Qm-xrq" secondAttribute="bottom" id="UEY-VO-cWy"/>
+                                    <constraint firstItem="6JM-Qm-xrq" firstAttribute="leading" secondItem="7gJ-D9-9HM" secondAttribute="leading" id="WLE-nl-qET"/>
+                                    <constraint firstAttribute="trailing" secondItem="6JM-Qm-xrq" secondAttribute="trailing" id="drG-mj-kqt"/>
+                                    <constraint firstAttribute="height" constant="30" id="qVG-DR-rG3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7gJ-D9-9HM" firstAttribute="leading" secondItem="kn5-RB-FsG" secondAttribute="leading" constant="16" id="4l3-m2-7CE"/>
+                            <constraint firstItem="7gJ-D9-9HM" firstAttribute="top" secondItem="kn5-RB-FsG" secondAttribute="top" constant="9" id="I7i-bM-pSi"/>
+                            <constraint firstAttribute="trailing" secondItem="7gJ-D9-9HM" secondAttribute="trailing" constant="16" id="Kax-JX-7W1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="kn5-RB-FsG" firstAttribute="top" secondItem="Qrk-n6-aPT" secondAttribute="top" id="Cik-5i-GZE"/>
+                    <constraint firstAttribute="trailing" secondItem="kn5-RB-FsG" secondAttribute="trailing" id="kwj-aJ-ilg"/>
+                    <constraint firstAttribute="bottom" secondItem="kn5-RB-FsG" secondAttribute="bottom" id="p2v-HX-BVQ"/>
+                    <constraint firstItem="kn5-RB-FsG" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" id="wEJ-s7-GHg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="segment" destination="6JM-Qm-xrq" id="RMc-tv-JVb"/>
+            </connections>
+            <point key="canvasLocation" x="126.40000000000001" y="111.54422788605699"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Maps View Controller-->
+        <scene sceneID="Rk6-gL-wZG">
+            <objects>
+                <viewController storyboardIdentifier="MapsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f2s-jC-2Ov" customClass="MapsViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kgU-LS-KrK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJh-Fm-jmk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sxv-Tw-fIc" appends="YES" id="CQx-BC-g6G"/>
+                                </connections>
+                            </mapView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvC-se-dlU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qLU-jw-IXJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5UE-cf-AY5"/>
+                                </constraints>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BF1-Z2-4rJ" customClass="MapsButtons" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="322" y="28" width="45" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="ScR-6k-Ysj"/>
+                                    <constraint firstAttribute="height" constant="91" id="ddV-29-jFA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpf-5B-ldg" customClass="MapsWeatherView" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="309" y="342" width="58" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="UJh-Fm-jmk" firstAttribute="top" secondItem="kgU-LS-KrK" secondAttribute="top" id="0va-s9-Aub"/>
+                            <constraint firstItem="UJh-Fm-jmk" firstAttribute="leading" secondItem="kgU-LS-KrK" secondAttribute="leading" id="6pA-L6-gGI"/>
+                            <constraint firstAttribute="trailing" secondItem="UJh-Fm-jmk" secondAttribute="trailing" id="7pp-6d-NRv"/>
+                            <constraint firstItem="KvC-se-dlU" firstAttribute="leading" secondItem="kgU-LS-KrK" secondAttribute="leading" id="BG7-aK-8Pp"/>
+                            <constraint firstItem="KvC-se-dlU" firstAttribute="trailing" secondItem="kgU-LS-KrK" secondAttribute="trailing" id="Eic-Cw-bQD"/>
+                            <constraint firstItem="KvC-se-dlU" firstAttribute="top" secondItem="kgU-LS-KrK" secondAttribute="top" id="aqu-Fv-lq0"/>
+                            <constraint firstAttribute="trailing" secondItem="BF1-Z2-4rJ" secondAttribute="trailing" constant="8" id="eED-Hs-eow"/>
+                            <constraint firstAttribute="bottom" secondItem="UJh-Fm-jmk" secondAttribute="bottom" id="rbR-5f-1BQ"/>
+                            <constraint firstItem="BF1-Z2-4rJ" firstAttribute="top" secondItem="kgU-LS-KrK" secondAttribute="top" constant="28" id="ysX-5T-3eG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qdr-zC-gg2"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapButtons" destination="BF1-Z2-4rJ" id="Ju8-fq-VTB"/>
+                        <outlet property="mapButtonsPaddingRight" destination="eED-Hs-eow" id="oDt-le-Sdf"/>
+                        <outlet property="mapButtonsPaddingTop" destination="ysX-5T-3eG" id="LrD-nb-fMg"/>
+                        <outlet property="mapView" destination="UJh-Fm-jmk" id="9kq-bJ-Naq"/>
+                        <outlet property="mapWeatherView" destination="cpf-5B-ldg" id="XHv-aG-MMo"/>
+                        <outlet property="statusBarBlurHeight" destination="5UE-cf-AY5" id="9HD-jh-ICJ"/>
+                        <outlet property="statusBlur" destination="KvC-se-dlU" id="gwu-5p-fR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhy-Gp-pip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="sxv-Tw-fIc">
+                    <connections>
+                        <action selector="handleLong:" destination="f2s-jC-2Ov" id="bhL-lA-T0W"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="81.338028169014081"/>
+        </scene>
+    </scenes>
+</document>

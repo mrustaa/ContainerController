@@ -1,0 +1,88 @@
+
+
+"LNG_MAPS_SECTION_SEE_ALL" = "See All";
+"LNG_MAPS_SECTION_CLEAR" = "Clear";
+
+"LNG_MAPS_RECENT_SEARCH" = "Recent Searches";
+"LNG_MAPS_RECENT_CITY" = "Moscow";
+
+"LNG_MAPS_SECTION_FAVORITES" = "Favorites";
+"LNG_MAPS_SECTION_COLLECTIONS" = "Collections";
+"LNG_MAPS_SECTION_RECENTLY_VIEWED" = "Recently Viewed";
+
+"LNG_MAPS_NEARBY_SEARCH" = "Search Nearby";
+"LNG_MAPS_NEARBY_RESTAURANTS" = "Restaurants";
+"LNG_MAPS_NEARBY_FOOD_DELIVERY" = "Food Delivery";
+"LNG_MAPS_NEARBY_GROCERIES" = "Groceries";
+"LNG_MAPS_NEARBY_GAS_STATION" = "Gas Station";
+"LNG_MAPS_NEARBY_PHARMACIES" = "Pharmacies";
+"LNG_MAPS_NEARBY_HOSPITALS" = "Hospitals";
+"LNG_MAPS_NEARBY_URGENT_CARE" = "Urgent Care";
+"LNG_MAPS_NEARBY_SUBWAY" = "Subway";
+"LNG_MAPS_NEARBY_TRAIN_STATION" = "Train Station";
+"LNG_MAPS_NEARBY_SHOPPING_CENTERS" = "Shopping Centers";
+
+"LNG_MAPS_NEW_COLLECTION" = "New Collection...";
+"LNG_MAPS_SEARCH_PLACE_ADDRESS" = "Search for a place or address";
+
+"LNG_MAPS_MARKED_LOCATION" = "Marked Location";
+"LNG_MAPS_DIRECTIONS_MY_LOCATION" = "Directions from My Location";
+
+"LNG_MAPS_KM" = "km";
+"LNG_MAPS_TO" = "to";
+"LNG_MAPS_MIN" = "min";
+
+"LNG_MAPS_COUNTRY" = "Country";
+"LNG_MAPS_ADDRESS" = "Address";
+"LNG_MAPS_STREET" = "Street";
+"LNG_MAPS_CITY" = "City";
+"LNG_MAPS_HOME" = "Home";
+"LNG_MAPS_ADD" = "Add";
+"LNG_MAPS_SCORE" = "Score";
+"LNG_MAPS_WORK" = "Work";
+"LNG_MAPS_REMOVE" = "Remove";
+"LNG_MAPS_SHARE" = "Share";
+
+
+"LNG_MAPS_LOCATION_DIRECTIONS" = "Directions";
+"LNG_MAPS_LOCATION_EDIT" = "Edit Location";
+
+"LNG_MAPS_LOCATION_LATITUDE" = "Latitude";
+"LNG_MAPS_LOCATION_LONGITUDE" = "Longitude";
+
+"LNG_MAPS_LOCATION_ADD_TO_FAVORITES" = "Add to Favorites";
+"LNG_MAPS_LOCATION_CREATE_NEW_CONTACT" = "Create New Contact";
+"LNG_MAPS_LOCATION_ADD_TO_EXISTING_CONTACT" = "Add to Existing Contact";
+"LNG_MAPS_LOCATION_ADD_A_MISSING_PLACE" = "Add a Missing Place";
+
+
+
+"LNG_MAPS_HR" = "hr";
+"LNG_MAPS_WHERE" = "To";
+"LNG_MAPS_FROM" = "From";
+"LNG_MAPS_MY_LOCATION" = "My Location";
+
+"LNG_MAPS_GO" = "GO";
+"LNG_MAPS_SECTION_DRIVING_OPTIONS" = "Driving Options";
+"LNG_MAPS_SECTION_REPORT_AN_ISSUE" = "Report an Issue";
+
+"LNG_MAPS_DRIVE" = "Drive";
+"LNG_MAPS_WALK" = "Walk";
+"LNG_MAPS_TRANSIT" = "Transit";
+"LNG_MAPS_RIDE" = "Ride";
+
+"LNG_MAPS_LOADING" = "Loading...";
+
+"LNG_MAPS_MENU_MAPS_SETTINGS" = "Maps Settings";
+"LNG_MAPS_MENU_MAP" = "Map";
+"LNG_MAPS_MENU_SATELLITE" = "Satellite";
+"LNG_MAPS_MENU_TRAFFIC" = "Traffic";
+"LNG_MAPS_SECTION_MARK_MY_LOCATION" = "Mark My Location";
+
+"LNG_ROUTE_FASTEST" = "Fastest route";
+"LNG_ROUTE_SIMPLEST" = "Simplest route";
+
+"LNG_ROUTE_UNKNOWN" = "unknown";
+
+
+

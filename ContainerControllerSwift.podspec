@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'ContainerControllerSwift'
-  s.version                 = '1.1.3'
+  s.version                 = '1.1.4'
   s.summary                 = 'This is a swipe-panel from application: https://www.apple.com/ios/maps/'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
   s.platform                = :ios, "13.0"
 
   s.source_files            = '**/ContainerControllerSwift/**/*.{swift}'
-  s.exclude_files	   = '**/ContainerControllerSwift/**/*.plist'
+  s.exclude_files           = '**/ContainerControllerSwift/**/*.plist'
 
   s.framework               = "UIKit"
   # s.ios.framework           = 'UIKit'

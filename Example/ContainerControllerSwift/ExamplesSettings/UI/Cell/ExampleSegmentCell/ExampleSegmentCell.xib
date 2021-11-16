@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ADc-Wu-299" customClass="ExampleSegmentCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADc-Wu-299" id="Qrk-n6-aPT">
+                <rect key="frame" x="0.0" y="0.0" width="290" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WgT-5R-8In">
+                        <rect key="frame" x="10" y="38" width="270" height="32"/>
+                        <segments>
+                            <segment title="1"/>
+                            <segment title="2"/>
+                        </segments>
+                        <connections>
+                            <action selector="segmentAction:" destination="ADc-Wu-299" eventType="valueChanged" id="oIV-cV-3H2"/>
+                        </connections>
+                    </segmentedControl>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SegmentText" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYC-50-jqf">
+                        <rect key="frame" x="10" y="12" width="270" height="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="aYC-50-jqf" firstAttribute="top" secondItem="Qrk-n6-aPT" secondAttribute="top" constant="12" id="1NE-tQ-6YQ"/>
+                    <constraint firstItem="WgT-5R-8In" firstAttribute="top" secondItem="aYC-50-jqf" secondAttribute="bottom" constant="10" id="6hI-5U-Scq"/>
+                    <constraint firstAttribute="trailing" secondItem="WgT-5R-8In" secondAttribute="trailing" constant="10" id="9a8-wY-lLP"/>
+                    <constraint firstItem="WgT-5R-8In" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" constant="10" id="kj4-5u-Txa"/>
+                    <constraint firstAttribute="trailing" secondItem="aYC-50-jqf" secondAttribute="trailing" constant="10" id="s5D-0l-vbW"/>
+                    <constraint firstItem="aYC-50-jqf" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" constant="10" id="tNY-fx-JmB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="segmentControl" destination="WgT-5R-8In" id="reJ-Vu-glv"/>
+                <outlet property="titleLabel" destination="aYC-50-jqf" id="lUq-rA-0RO"/>
+            </connections>
+            <point key="canvasLocation" x="54.399999999999999" y="101.19940029985008"/>
+        </tableViewCell>
+    </objects>
+</document>

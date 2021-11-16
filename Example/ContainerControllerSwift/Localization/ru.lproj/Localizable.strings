@@ -1,0 +1,87 @@
+
+
+"LNG_MAPS_SECTION_SEE_ALL" = "См. все";
+"LNG_MAPS_SECTION_CLEAR" = "Очистить";
+
+"LNG_MAPS_RECENT_SEARCH" = "Недавние поиски";
+"LNG_MAPS_RECENT_CITY" = "Москва";
+
+"LNG_MAPS_SECTION_FAVORITES" = "Избранное";
+"LNG_MAPS_SECTION_COLLECTIONS" = "Коллекции";
+"LNG_MAPS_SECTION_RECENTLY_VIEWED" = "Недавно просмотренные";
+
+"LNG_MAPS_NEARBY_SEARCH" = "Поиск рядом";
+"LNG_MAPS_NEARBY_RESTAURANTS" = "Рестораны";
+"LNG_MAPS_NEARBY_FOOD_DELIVERY" = "Доставка еды";
+"LNG_MAPS_NEARBY_GROCERIES" = "Продукты";
+"LNG_MAPS_NEARBY_GAS_STATION" = "АЗС";
+"LNG_MAPS_NEARBY_PHARMACIES" = "Аптека";
+"LNG_MAPS_NEARBY_HOSPITALS" = "Больницы";
+"LNG_MAPS_NEARBY_URGENT_CARE" = "Пункт скорой помощи";
+"LNG_MAPS_NEARBY_SUBWAY" = "Метро";
+"LNG_MAPS_NEARBY_TRAIN_STATION" = "Ж/д станции";
+"LNG_MAPS_NEARBY_SHOPPING_CENTERS" = "Торговые центры";
+
+"LNG_MAPS_NEW_COLLECTION" = "Новая коллекция...";
+"LNG_MAPS_SEARCH_PLACE_ADDRESS" = "Поиск места или адреса";
+
+"LNG_MAPS_MARKED_LOCATION" = "Отмеченная геопозиция";
+"LNG_MAPS_DIRECTIONS_MY_LOCATION" = "Маршруты из моей геопозиции";
+
+"LNG_MAPS_KM" = "км";
+"LNG_MAPS_TO" = "в";
+"LNG_MAPS_MIN" = "мин";
+
+"LNG_MAPS_COUNTRY" = "Страна";
+"LNG_MAPS_ADDRESS" = "Адрес";
+"LNG_MAPS_STREET" = "Улица";
+"LNG_MAPS_CITY" = "Город";
+"LNG_MAPS_HOME" = "Дом";
+"LNG_MAPS_ADD" = "Добавить";
+"LNG_MAPS_SCORE" = "Магазин";
+"LNG_MAPS_WORK" = "Работа";
+"LNG_MAPS_REMOVE" = "Удалить";
+"LNG_MAPS_SHARE" = "Поделиться";
+
+
+"LNG_MAPS_LOCATION_DIRECTIONS" = "Маршруты";
+"LNG_MAPS_LOCATION_EDIT" = "Изменить геопозицию";
+
+"LNG_MAPS_LOCATION_LATITUDE" = "Широта";
+"LNG_MAPS_LOCATION_LONGITUDE" = "Долгота";
+
+"LNG_MAPS_LOCATION_ADD_TO_FAVORITES" = "Добавить в Избранное";
+"LNG_MAPS_LOCATION_CREATE_NEW_CONTACT" = "Создать контакт";
+"LNG_MAPS_LOCATION_ADD_TO_EXISTING_CONTACT" = "Добавить к контакту";
+"LNG_MAPS_LOCATION_ADD_A_MISSING_PLACE" = "Добавить отсутствующее место";
+
+
+
+"LNG_MAPS_HR" = "ч";
+"LNG_MAPS_WHERE" = "Куда:";
+"LNG_MAPS_FROM" = "Откуда:";
+"LNG_MAPS_MY_LOCATION" = "Моя геолокация";
+
+"LNG_MAPS_GO" = "Начать";
+"LNG_MAPS_SECTION_DRIVING_OPTIONS" = "Параметры для автомаршрута";
+"LNG_MAPS_SECTION_REPORT_AN_ISSUE" = "Сообщить о проблеме";
+
+"LNG_MAPS_DRIVE" = "Автомобиль";
+"LNG_MAPS_WALK" = "Пешком";
+"LNG_MAPS_TRANSIT" = "Транспорт";
+"LNG_MAPS_RIDE" = "Поездка";
+
+"LNG_MAPS_LOADING" = "Загрузка...";
+
+"LNG_MAPS_MENU_MAPS_SETTINGS" = "Настройки Карт";
+"LNG_MAPS_MENU_MAP" = "Карта";
+"LNG_MAPS_MENU_SATELLITE" = "Спутник";
+"LNG_MAPS_MENU_TRAFFIC" = "Пробки";
+"LNG_MAPS_SECTION_MARK_MY_LOCATION" = "Отметить мою геопозицию";
+
+"LNG_ROUTE_FASTEST" = "Самый быстрый";
+"LNG_ROUTE_SIMPLEST" = "Самый простой маршрут";
+
+"LNG_ROUTE_UNKNOWN" = "неизвестно";
+
+
