@@ -33,8 +33,7 @@ TODO: Add long description of the pod here.
   # s.ios.deployment_target   = '13.0'
   s.platform                = :ios, "13.0"
 
-  s.source_files            = '**/ContainerControllerSwift/**/*.{swift}'
-  s.exclude_files           = '**/ContainerControllerSwift/**/*.plist'
+  s.source_files            = 'Sources/**/*.{swift}'
 
   s.framework               = "UIKit"
   # s.ios.framework           = 'UIKit'
