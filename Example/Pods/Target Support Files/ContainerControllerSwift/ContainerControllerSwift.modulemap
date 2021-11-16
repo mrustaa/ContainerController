@@ -1,6 +1,0 @@
-framework module ContainerControllerSwift {
-  umbrella header "ContainerControllerSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
