@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name                    = 'ContainerControllerSwift'
-  s.version                 = '1.1.2'
+  s.version                 = '1.1.3'
   s.summary                 = 'This is a swipe-panel from application: https://www.apple.com/ios/maps/'
 
 # This description is used to generate tags and improve search results.
