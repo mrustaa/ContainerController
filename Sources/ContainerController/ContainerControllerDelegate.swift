@@ -6,6 +6,8 @@
 //  Copyright © 2020 mrustaa. All rights reserved.
 //
 
+#if arch(x86_64) || arch(arm64)
+
 import UIKit
 
 @available(iOS 13.0, *)
@@ -35,4 +37,6 @@ public extension ContainerControllerDelegate {
     func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool) {
     }
 }
+
+#endif
 

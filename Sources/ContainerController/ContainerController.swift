@@ -6,7 +6,10 @@
 //  Copyright © 2020 mrustaa. All rights reserved.
 //
 
+#if arch(x86_64) || arch(arm64)
+
 import UIKit
+import SwiftUI
 
 @available(iOS 13.0, *)
 open class ContainerController: NSObject {
@@ -24,6 +27,8 @@ open class ContainerController: NSObject {
     public var headerView: UIView?
     
     public var footerView: UIView?
+    
+    public var hostingController: UIHostingController<AnyView>?
     
     // MARK: Layout
     
@@ -449,6 +454,30 @@ open class ContainerController: NSObject {
         
         view.contentView?.addSubview(scrollView)
         calculationViews()
+    }
+    
+    // MARK: - Add SwiftUI View
+    
+    public func removeSwiftUIView() {
+        self.hostingController?.willMove(toParent: nil)
+        self.hostingController?.view.removeFromSuperview()
+        self.hostingController?.removeFromParent()
+        self.hostingController = nil
+    }
+    
+    public func add<V: View>(swiftUIView: V, parentViewController: UIViewController? = nil) {
+        guard let contentView = self.view.contentView else {
+            return
+        }
+        removeSwiftUIView()
+        let hostingController = UIHostingController(rootView: AnyView(swiftUIView))
+        self.hostingController = hostingController
+        let parent = parentViewController ?? self.controller
+        parent?.addChild(hostingController)
+        hostingController.view.frame = contentView.bounds
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        contentView.addSubview(hostingController.view)
+        hostingController.didMove(toParent: parent)
     }
     
     // MARK: - Pan Gesture
@@ -1350,3 +1379,6 @@ extension ContainerController: UIScrollViewDelegate {
     }
     
 }
+
+#endif
+
