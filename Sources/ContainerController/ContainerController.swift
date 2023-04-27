@@ -108,7 +108,7 @@ open class ContainerController: NSObject {
     
     // MARK: - Positions Move
     
-    private var positionTop: CGFloat {
+    public var positionTop: CGFloat {
         var top = layout.positions.top
         if !isPortrait {
             if let landscape = layout.landscapePositions {
@@ -128,7 +128,7 @@ open class ContainerController: NSObject {
         return deviceHeight - middle
     }
     
-    private var positionBottom: CGFloat {
+    public var positionBottom: CGFloat {
         var bottom = layout.positions.bottom
         if !isPortrait {
             if let landscape = layout.landscapePositions {
@@ -178,7 +178,7 @@ open class ContainerController: NSObject {
         self.controller = controller
         set(layout: layout)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         createShadowButton()
         createContainerView()
@@ -448,6 +448,11 @@ open class ContainerController: NSObject {
         }
         
         view.contentView?.addSubview(scrollView)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         calculationViews()
     }
     
