@@ -19,6 +19,8 @@ class ExamplesSettingsViewController: StoryboardController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Example Add/Settings Container"
+        
         let barButtonAddItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(navigationBarAddAction))
         let barButtonCloseItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(navigationBarCloseAction))
         self.navigationItem.rightBarButtonItems = [ barButtonAddItem, barButtonCloseItem ]

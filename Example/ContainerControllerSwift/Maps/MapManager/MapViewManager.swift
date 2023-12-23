@@ -44,13 +44,16 @@ class MapViewManager: NSObject {
     // MARK: - Location Manager
     
     func loadLocation() {
-        
-        if CLLocationManager.locationServicesEnabled() {
-            locationManager = CLLocationManager()
-            locationManager?.delegate = self
-            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager?.requestAlwaysAuthorization()
-            locationManager?.startUpdatingLocation()
+        DispatchQueue.global().async {
+            if CLLocationManager.locationServicesEnabled() {
+                DispatchQueue.main.async {
+                    self.locationManager = CLLocationManager()
+                    self.locationManager?.delegate = self
+                    self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+                    self.locationManager?.requestAlwaysAuthorization()
+                    self.locationManager?.startUpdatingLocation()
+                }
+            }
         }
     }
     

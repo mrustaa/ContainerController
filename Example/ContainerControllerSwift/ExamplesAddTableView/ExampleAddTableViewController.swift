@@ -18,6 +18,8 @@ class ExampleAddTableViewController: StoryboardController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Example Add TableView"
+        
         let layout = ContainerLayout()
         layout.backgroundShadowShow = true
         layout.positions = ContainerPosition(top: 70, middle: 250, bottom: 100)

@@ -18,6 +18,7 @@ class ExampleAddCollectionViewController: StoryboardController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Example Add CollectionView"
         
         let layoutC = ContainerLayout()
         layoutC.positions = ContainerPosition(top: 100, middle: 250, bottom: 70)
