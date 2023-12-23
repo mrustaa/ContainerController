@@ -108,7 +108,7 @@ open class ContainerController: NSObject {
     
     // MARK: - Positions Move
     
-    private var positionTop: CGFloat {
+    public var positionTop: CGFloat {
         var top = layout.positions.top
         if !isPortrait {
             if let landscape = layout.landscapePositions {
@@ -128,7 +128,7 @@ open class ContainerController: NSObject {
         return deviceHeight - middle
     }
     
-    private var positionBottom: CGFloat {
+    public var positionBottom: CGFloat {
         var bottom = layout.positions.bottom
         if !isPortrait {
             if let landscape = layout.landscapePositions {
@@ -178,7 +178,7 @@ open class ContainerController: NSObject {
         self.controller = controller
         set(layout: layout)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
         
         createShadowButton()
         createContainerView()
@@ -448,9 +448,29 @@ open class ContainerController: NSObject {
         }
         
         view.contentView?.addSubview(scrollView)
+//        scrollView.translatesAutoresizingMaskIntoConstraints = false
+//        scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+//        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+//        scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+//        scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         calculationViews()
+        
+        self.addRecognizerToScrollView(scrollView: scrollView)
     }
     
+    func addRecognizerToScrollView(scrollView: UIScrollView) {
+        if let panGesture = panGesture {
+            print("didScroll addRecognizer")
+            scrollView.addGestureRecognizer(panGesture)
+        }
+    }
+    
+    func removeRecognizerToScrollView(scrollView: UIScrollView) {
+        if let panGesture = panGesture {
+            print("didScroll removeRecognizer")
+            scrollView.removeGestureRecognizer(panGesture)
+        }
+    }
     // MARK: - Pan Gesture
     
     @objc private func handlePan(_ gesture: UIPanGestureRecognizer) {
@@ -495,6 +515,14 @@ open class ContainerController: NSObject {
             let type = calculatePositionTypeFrom(velocity: velocityY)
             
             move(type: type, animation: true, velocity: velocityY, from: .pan)
+            
+            if type == .top && scrollView?.contentSize.height ?? 0.0 > (UIScreen.main.bounds.height * 0.95) {
+                
+                if let scrollView = self.scrollView {
+                    self.removeRecognizerToScrollView(scrollView: scrollView)
+                    
+                }
+            }
             
         default: break
         }
@@ -1266,6 +1294,10 @@ extension ContainerController: UIScrollViewDelegate {
             let from: ContainerFromType = .scrollBorder
             let animation = false
             
+            print("didScroll a \(position) \(type)")
+            
+            self.addRecognizerToScrollView(scrollView: scrollView)
+            
             shadowLevelAlpha(position: position, animation: false)
             changeFooterView(position: position)
             calculationScrollViewHeight(from: from)
@@ -1301,12 +1333,16 @@ extension ContainerController: UIScrollViewDelegate {
                     let from: ContainerFromType = .scroll
                     let animation = false
                     
+                    print("didScroll b \(position) \(type)")
+                    
                     changeView(transform: scrollTransform)
                     shadowLevelAlpha(position: position, animation: false)
                     changeFooterView(position: position)
                     calculationScrollViewHeight(from: from)
                     changeMove(position: position, type: type, animation: animation)
                 }
+            } else {
+                print("didScroll false")
             }
         }
     }

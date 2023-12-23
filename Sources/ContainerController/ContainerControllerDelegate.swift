@@ -20,6 +20,8 @@ public protocol ContainerControllerDelegate {
     /// Reports the changes current position of the container, after its use
     func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool)
     
+    func hideMenu(position: Double)
+    
 }
 
 @available(iOS 13.0, *)
@@ -33,6 +35,9 @@ public extension ContainerControllerDelegate {
     }
     
     func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool) {
+        
+        hideMenu(position: position)
+        
     }
 }
 
