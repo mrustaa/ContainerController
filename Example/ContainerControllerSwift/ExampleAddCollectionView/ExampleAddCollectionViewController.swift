@@ -31,8 +31,21 @@ class ExampleAddCollectionViewController: StoryboardController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        navigationController?.navigationBar.isTranslucent = true
+        
         container.move(type: .middle)
     }
+    
+    @IBAction func buttonChangeTranslucent(_ sender: UIButton) {
+        
+        guard let translucent = navigationController?.navigationBar.isTranslucent else { return }
+        
+        navigationController?.navigationBar.isTranslucent = !translucent
+        
+        container.move(type: container.moveType)
+    }
+    
+    
     
     func addCollectionView() -> UICollectionView {
         
