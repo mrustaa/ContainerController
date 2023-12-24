@@ -70,6 +70,9 @@ class ExamplesContainerController: ContainerController, ExampleCellDelegate {
              ExampleSwitchCellItem(height: h, delegate: self, type: .shadowBackground,      value: false),
              ExampleSliderCellItem(height: h, delegate: self, type: .shadowContainer,       value: 0.2, maximumValue: 1.0),
              ExampleSliderCellItem(height: h, delegate: self, type: .cornerRadius,          value: 15,  maximumValue: 140),
+            
+             ExampleSwitchCellItem(height: h, delegate: self, type: .navbarTranslucent,     value: false),
+            
              ExampleSwitchCellItem(height: h, delegate: self, type: .movingEnabled,         value: true),
              ExampleSwitchCellItem(height: h, delegate: self, type: .trackingPosition,      value: false),
              ExampleSliderCellItem(height: h, delegate: self, type: .footerPadding,         value: 0,   maximumValue: Float(ContainerDevice.screenMax)),
@@ -121,6 +124,8 @@ class ExamplesContainerController: ContainerController, ExampleCellDelegate {
             case .cornerRadius:                 self.view.cornerRadius = value
             
             case .shadowContainer:              self.view.addShadow(opacity: value)
+            
+            case .navbarTranslucent:            self.controller?.navigationController?.navigationBar.isTranslucent = boolValue; move(type: moveType)
             
             case .movingEnabled:                set(movingEnabled: boolValue)
             

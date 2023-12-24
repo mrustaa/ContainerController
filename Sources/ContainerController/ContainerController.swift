@@ -218,7 +218,7 @@ open class ContainerController: NSObject {
         
         shadowHiddenCheck()
         
-        delegate?.containerControllerRotation(self)
+        delegate?.containerControllerRotation?(self)
         
         calculationView()
         calculationScrollViewHeight(from: .rotation)
@@ -357,7 +357,7 @@ open class ContainerController: NSObject {
     }
     
     @objc private func shadowButtonAction() {
-        delegate?.containerControllerShadowClick(self)
+        delegate?.containerControllerShadowClick?(self)
     }
     
     // MARK: - Create Container-View
@@ -845,7 +845,7 @@ open class ContainerController: NSObject {
                             type: ContainerMoveType,
                             animation: Bool) {
         
-        delegate?.containerControllerMove(self, position: position, type: type, animation: animation)
+        delegate?.containerControllerMove?(self, position: position, type: type, animation: animation)
     }
     
     //MARK: - Shadow Alpha Level

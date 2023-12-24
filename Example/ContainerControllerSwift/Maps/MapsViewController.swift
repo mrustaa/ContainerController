@@ -59,6 +59,8 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        navigationController?.navigationBar.isTranslucent = false
+        
         setNeedsStatusBarAppearanceUpdate()
         
         navBar(hide: true)

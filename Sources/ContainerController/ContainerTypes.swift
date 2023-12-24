@@ -10,7 +10,7 @@ import UIKit
 
 typealias ContainerCompletion = () -> Void
 
-public enum ContainerMoveType {
+@objc public enum ContainerMoveType: Int {
     case top
     case middle
     case bottom
