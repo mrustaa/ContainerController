@@ -13,12 +13,15 @@ class ExampleAddCollectionViewController: StoryboardController {
     
     var container: ContainerController!
     
+    @IBOutlet var btnChangeTranslucent: UIButton!
     // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Example Add CollectionView"
+        
+        btnUpdateText()
         
         let layoutC = ContainerLayout()
         layoutC.positions = ContainerPosition(top: 100, middle: 250, bottom: 70)
@@ -32,6 +35,24 @@ class ExampleAddCollectionViewController: StoryboardController {
         super.viewWillAppear(animated)
         
         container.move(type: .middle)
+    }
+    
+    @IBAction func btnChangeTranslucentAction(_ sender: UIButton) {
+        
+        guard let translucent = navigationController?.navigationBar.isTranslucent else { return }
+        
+        navigationController?.navigationBar.isTranslucent = !translucent
+        
+        btnUpdateText()
+        
+        container.move(type: container.moveType)
+    }
+    
+    func btnUpdateText() {
+        
+        guard let translucent = navigationController?.navigationBar.isTranslucent else { return }
+        
+        btnChangeTranslucent.setTitle("NavBar isTranslucent \(translucent)", for: .normal)
     }
     
     func addCollectionView() -> UICollectionView {

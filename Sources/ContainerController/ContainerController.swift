@@ -218,7 +218,7 @@ open class ContainerController: NSObject {
         
         shadowHiddenCheck()
         
-        delegate?.containerControllerRotation(self)
+        delegate?.containerControllerRotation?(self)
         
         calculationView()
         calculationScrollViewHeight(from: .rotation)
@@ -357,7 +357,7 @@ open class ContainerController: NSObject {
     }
     
     @objc private func shadowButtonAction() {
-        delegate?.containerControllerShadowClick(self)
+        delegate?.containerControllerShadowClick?(self)
     }
     
     // MARK: - Create Container-View
@@ -477,7 +477,11 @@ open class ContainerController: NSObject {
                 transform.ty = ((positionTop / 2) + (transform.ty / 2))
             }
             
-            let position = transform.ty
+            var position = transform.ty
+            if topTranslucent {
+                position = position + topBarHeight
+            }
+            
             let type: ContainerMoveType = moveType
             let from: ContainerFromType = .pan
             let animation = false
@@ -555,7 +559,7 @@ open class ContainerController: NSObject {
             scrollInsetsBottom = 0.0
         }
         
-        let top: CGFloat = layout.scrollInsets.top
+        var top: CGFloat = layout.scrollInsets.top
         let bottom: CGFloat = layout.scrollInsets.bottom + scrollInsetsBottom
         
         let indicatorTop: CGFloat = layout.scrollIndicatorInsets.top
@@ -573,6 +577,10 @@ open class ContainerController: NSObject {
         
         if height < 0 {
             height = 0
+        }
+        
+        if topTranslucent {
+            height = height + topBarHeight
         }
         
         if animation ,
@@ -735,7 +743,10 @@ open class ContainerController: NSObject {
                      from: ContainerFromType = .custom,
                      completion: (() -> Void)? = nil) {
         
-        let position = positionMoveFrom(type: type)
+        var position = positionMoveFrom(type: type)
+        if topTranslucent {
+            position = position + topBarHeight
+        }
         
         move(position: position,
              animation: animation,
@@ -834,7 +845,7 @@ open class ContainerController: NSObject {
                             type: ContainerMoveType,
                             animation: Bool) {
         
-        delegate?.containerControllerMove(self, position: position, type: type, animation: animation)
+        delegate?.containerControllerMove?(self, position: position, type: type, animation: animation)
     }
     
     //MARK: - Shadow Alpha Level
@@ -1229,7 +1240,10 @@ extension ContainerController: UIScrollViewDelegate {
         
         scrollTransform = view.transform
         
-        let top: CGFloat = positionTop
+        var top: CGFloat = positionTop
+        if topTranslucent {
+            top = top + topBarHeight
+        }
         
         if gesture.state == .ended {
             scrollOnceBeginDragging = false

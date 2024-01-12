@@ -20,6 +20,7 @@ extension ExampleCell {
     public enum Style: String {
         case `default` = ""
         case shadowContainer = "ShadowContainer"
+        case navbarTranslucent = "NavbarTranslucent"
         case movingEnabled = "MovingEnabled"
         case cornerRadius = "CornerRadius"
         case footerPadding = "FooterView.Padding"
