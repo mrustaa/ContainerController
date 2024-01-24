@@ -50,7 +50,9 @@ class MapViewManager: NSObject {
                     self.locationManager = CLLocationManager()
                     self.locationManager?.delegate = self
                     self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+                    #if os(iOS)
                     self.locationManager?.requestAlwaysAuthorization()
+                    #endif
                     self.locationManager?.startUpdatingLocation()
                 }
             }

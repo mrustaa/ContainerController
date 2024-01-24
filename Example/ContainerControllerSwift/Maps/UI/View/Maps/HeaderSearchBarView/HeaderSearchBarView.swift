@@ -27,10 +27,12 @@ class HeaderSearchBarView: XibView {
         searchBar.placeholder = _L("LNG_MAPS_SEARCH_PLACE_ADDRESS")
         
         let textFieldInsideSearchBar = searchBar.value(forKey: "searchField") as? UITextField
-        let imageV = textFieldInsideSearchBar?.leftView as! UIImageView
-        imageV.image = imageV.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
-//        imageV.image = imageV.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        imageV.tintColor = Colors.rgb(128, 128, 128)
+        if let imageV = textFieldInsideSearchBar?.leftView as? UIImageView
+        {
+            imageV.image = imageV.image?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+//            imageV.image = imageV.image?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+            imageV.tintColor = Colors.rgb(128, 128, 128)
+        }
     }
     
     func set(darkStyle: Bool) {
