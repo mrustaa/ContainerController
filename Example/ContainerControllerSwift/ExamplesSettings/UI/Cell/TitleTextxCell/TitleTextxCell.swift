@@ -7,7 +7,7 @@ import ContainerControllerSwift
 
 // MARK: - Item
 
-class TitleTextItem: TableAdapterItem {
+class TitleTextxItem: TableAdapterItem {
     
     init(title: String? = nil,
          subtitle: String? = nil,
@@ -16,15 +16,15 @@ class TitleTextItem: TableAdapterItem {
          touchAnimationHide: Bool = false,
          editing: Bool = false) {
         
-        let cellData = TitleTextCellData(title, subtitle, separator, clss, touchAnimationHide, editing)
+        let cellData = TitleTextxCellData(title, subtitle, separator, clss, touchAnimationHide, editing)
         
-        super.init(cellClass: TitleTextCell.self, cellData: cellData)
+        super.init(cellClass: TitleTextxCell.self, cellData: cellData)
     }
 }
 
 // MARK: - Data
 
-class TitleTextCellData: TableAdapterCellData {
+class TitleTextxCellData: TableAdapterCellData {
     
     // MARK: Properties
     
@@ -34,7 +34,6 @@ class TitleTextCellData: TableAdapterCellData {
     var separatorVisible: Bool
     var touchAnimationHide: Bool
     
-    var editing: Bool
     
     // MARK: Inits
     
@@ -53,7 +52,7 @@ class TitleTextCellData: TableAdapterCellData {
         self.separatorVisible = separator
         self.touchAnimationHide = touchAnimationHide
         
-        self.editing = editing
+//        self.editing = editing
         
         super.init()
     }
@@ -74,11 +73,11 @@ class TitleTextCellData: TableAdapterCellData {
 
 // MARK: - Cell
 
-class TitleTextCell: TableAdapterCell {
+class TitleTextxCell: TableAdapterCell {
     
     // MARK: Properties
     
-    public var data: TitleTextCellData?
+    public var data: TitleTextxCellData?
     
     // MARK: Outlets
     
@@ -99,7 +98,7 @@ class TitleTextCell: TableAdapterCell {
     }
     
     override func fill(data: TableAdapterCellData?) {
-        guard let data = data as? TitleTextCellData else { return }
+        guard let data = data as? TitleTextxCellData else { return }
         self.data = data
         
 //        self._hideAnimation = data.touchAnimationHide

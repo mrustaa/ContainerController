@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects><placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/><tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="ThO-kG-dyk" customClass="WalletsTitleCell" customModule="FigmaConvertXib" customModuleProvider="target">
+    <rect key="frame" x="0.0" y="0.0" width="375.0" height="235.0"/>
+    <autoresizingMask key="autoresizingMask"/>
+    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ThO-kG-dyk" id="wnX-ss-Oag">
+        <rect key="frame" x="0.0" y="0.0" width="375.0" height="235.0"/>
+        <autoresizingMask key="autoresizingMask"/>
+        <subviews>
+            <view clipsSubviews="YES" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel=" WalletsTitle" id="8mr-HP-XBe" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="0.0" width="375.0" height="235.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/><subviews><imageView clipsSubviews="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconWalletsMore" translatesAutoresizingMaskIntoConstraints="NO" userLabel="iconWalletsMore" id="nKB-BA-2ym"><rect key="frame" x="331.0" y="44.0" width="17.0" height="17.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/></imageView><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Wallets" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNP-iZ-HJH" userLabel="My Wallets" customClass="DesignLabel" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="24.0" y="168.0" width="113.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="19.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="color" keyPath="shColor">
+    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+    <real key="value" value="2.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+    <size key="value" width="0.0" height="4.0"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$55,849.20" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhZ-P1-nLm" userLabel="$55,849.20" customClass="DesignLabel" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="22.0" y="69.0" width="222.0" height="51.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="38.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="color" keyPath="shColor">
+    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.2199999988079071" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+    <real key="value" value="3.25"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+    <size key="value" width="0.0" height="5.0"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total balance" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2eo-Ci-833" userLabel="Total balance" customModuleProvider="target"><rect key="frame" x="22.0" y="45.0" width="113.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="13.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.44999998807907104" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
+</userDefinedRuntimeAttributes></label><button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zL1-9B-odI">
+  <rect key="frame" x="0.0" y="0.0" width="375.0" height="235.0"/></button>
+</subviews><userDefinedRuntimeAttributes>
+</userDefinedRuntimeAttributes>            </view>
+        </subviews>
+        
+<constraints>
+    
+</constraints>
+
+    </tableViewCellContentView>
+    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/><connections>
+    <outlet property="firstImageView" destination="nKB-BA-2ym" id="cOZ-3p-Var"/><outlet property="subtitleLabel" destination="eNP-iZ-HJH" id="5Fq-cI-ldy"/><outlet property="label2" destination="GhZ-P1-nLm" id="X3I-Ea-31H"/><outlet property="label3" destination="2eo-Ci-833" id="18u-T1-o4U"/><outlet property="button" destination="zL1-9B-odI" id="6H7-aE-nZt"/>
+</connections></tableViewCell></objects></document>

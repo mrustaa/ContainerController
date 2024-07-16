@@ -84,9 +84,9 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         navBar(hide: false)
     }
     
-    func navBar(hide: Bool) {
-        self.navigationController?.setNavigationBarHidden(hide, animated: true)
-    }
+//    func navBar(hide: Bool) {
+//        self.navigationController?.setNavigationBarHidden(hide, animated: true)
+//    }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)

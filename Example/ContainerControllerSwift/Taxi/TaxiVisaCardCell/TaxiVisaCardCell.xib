@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="q35-DN-YaF" customClass="TaxiVisaCardCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q35-DN-YaF" id="vGH-G5-KPt">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiK-ok-PmS" userLabel=" TaxiVisaCard">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNO-Pq-U1W" userLabel="Rectangle 13" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="16" y="11" width="343" height="60"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.9529411792755127" green="0.95686274766921997" blue="0.96078431606292725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** 4568" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-37-Eo8" userLabel="**** 4568">
+                                <rect key="frame" x="76" y="33" width="59" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="O0L-j5-Cj5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                <color key="textColor" red="0.11372549086809158" green="0.11372549086809158" blue="0.10980392247438431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-gC-sDy" userLabel="Rectangle 43" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="41" y="34" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="qY7-1k-tNG"/>
+                                    <constraint firstAttribute="width" constant="17" id="vC5-DD-hWa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.9686274528503418" green="0.61960786581039429" blue="0.10588235408067703" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ui8-CW-jBV" userLabel="Rectangle 41" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="30" y="34" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="gMj-Vy-bHk"/>
+                                    <constraint firstAttribute="height" constant="17" id="yQv-DH-stD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.92156863212585449" green="0.0" blue="0.10588235408067703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtV-4b-VSc" userLabel="Rectangle 42" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="41" y="34" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="ANk-vf-CdW"/>
+                                    <constraint firstAttribute="height" constant="17" id="ecx-KK-tFK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="0.5954546332359314" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconTaxiArrow" translatesAutoresizingMaskIntoConstraints="NO" id="plb-St-j5Y">
+                                <rect key="frame" x="334" y="34" width="11" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="7Ba-e8-TBc"/>
+                                    <constraint firstAttribute="width" constant="11" id="tMf-ih-DQn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTL-Rf-MKo">
+                                <rect key="frame" x="16" y="11" width="343" height="60"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DVE-37-Eo8" firstAttribute="leading" secondItem="Jlj-gC-sDy" secondAttribute="trailing" constant="18" id="0JB-yz-hxb"/>
+                            <constraint firstItem="SNO-Pq-U1W" firstAttribute="leading" secondItem="iiK-ok-PmS" secondAttribute="leading" constant="16" id="28q-Mg-lIz"/>
+                            <constraint firstItem="plb-St-j5Y" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="34" id="40d-Mu-t0J"/>
+                            <constraint firstItem="SNO-Pq-U1W" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="11" id="6mf-Xa-MQ3"/>
+                            <constraint firstItem="uTL-Rf-MKo" firstAttribute="trailing" secondItem="SNO-Pq-U1W" secondAttribute="trailing" id="8ld-sp-wl8"/>
+                            <constraint firstItem="DVE-37-Eo8" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="33" id="BWA-ep-fhY"/>
+                            <constraint firstAttribute="trailing" secondItem="plb-St-j5Y" secondAttribute="trailing" constant="30" id="HeT-kD-dEf"/>
+                            <constraint firstItem="Jlj-gC-sDy" firstAttribute="leading" secondItem="iiK-ok-PmS" secondAttribute="leading" constant="41" id="QMt-4n-6Zu"/>
+                            <constraint firstAttribute="bottom" secondItem="SNO-Pq-U1W" secondAttribute="bottom" constant="13" id="UIJ-RA-d6K"/>
+                            <constraint firstItem="TtV-4b-VSc" firstAttribute="leading" secondItem="iiK-ok-PmS" secondAttribute="leading" constant="41" id="W2S-j0-KXp"/>
+                            <constraint firstItem="uTL-Rf-MKo" firstAttribute="leading" secondItem="SNO-Pq-U1W" secondAttribute="leading" id="WeF-NW-df6"/>
+                            <constraint firstItem="TtV-4b-VSc" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="34" id="XQy-Oy-6Bj"/>
+                            <constraint firstItem="uTL-Rf-MKo" firstAttribute="top" secondItem="SNO-Pq-U1W" secondAttribute="top" id="cIt-Kt-A34"/>
+                            <constraint firstItem="Jlj-gC-sDy" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="34" id="f3C-Gn-KAt"/>
+                            <constraint firstItem="uTL-Rf-MKo" firstAttribute="bottom" secondItem="SNO-Pq-U1W" secondAttribute="bottom" id="o16-Jx-Zmc"/>
+                            <constraint firstAttribute="trailing" secondItem="SNO-Pq-U1W" secondAttribute="trailing" constant="16" id="pLQ-Fa-4N4"/>
+                            <constraint firstItem="ui8-CW-jBV" firstAttribute="top" secondItem="iiK-ok-PmS" secondAttribute="top" constant="34" id="y3C-Au-5dl"/>
+                            <constraint firstItem="ui8-CW-jBV" firstAttribute="leading" secondItem="iiK-ok-PmS" secondAttribute="leading" constant="30" id="yXe-05-BIi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="iiK-ok-PmS" secondAttribute="bottom" id="0uC-UU-BEz"/>
+                    <constraint firstItem="iiK-ok-PmS" firstAttribute="top" secondItem="vGH-G5-KPt" secondAttribute="top" id="J7p-65-rme"/>
+                    <constraint firstAttribute="trailing" secondItem="iiK-ok-PmS" secondAttribute="trailing" id="WlD-KJ-Ffi"/>
+                    <constraint firstItem="iiK-ok-PmS" firstAttribute="leading" secondItem="vGH-G5-KPt" secondAttribute="leading" id="dU6-Be-3Q4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="uTL-Rf-MKo" id="7s1-uc-jji"/>
+                <outlet property="cardView" destination="SNO-Pq-U1W" id="Gf3-zY-MGx"/>
+                <outlet property="titleLabel" destination="DVE-37-Eo8" id="952-0V-J04"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconTaxiArrow" width="33" height="51"/>
+    </resources>
+</document>

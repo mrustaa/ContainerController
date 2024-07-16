@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Playlist View Controller-->
+        <scene sceneID="SDB-mK-l0T">
+            <objects>
+                <viewController storyboardIdentifier="PlaylistViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="azT-09-ln3" customClass="PlaylistViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kPA-uf-PXN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qSd-FA-5ZQ" customClass="TableAdapterView" customModule="ContainerControllerSwift">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgPlaylistLandscape" translatesAutoresizingMaskIntoConstraints="NO" id="5un-4Y-rnC" userLabel="imgPlaylistMain">
+                                <rect key="frame" x="37.5" y="0.0" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NSf-tJ-N15"/>
+                                    <constraint firstAttribute="width" constant="300" id="aOc-t4-AuK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="top" secondItem="kPA-uf-PXN" secondAttribute="top" id="0fB-Ur-8eE"/>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="bottom" secondItem="kPA-uf-PXN" secondAttribute="bottom" id="8ZU-7O-Fa1"/>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="leading" secondItem="kPA-uf-PXN" secondAttribute="leading" id="XF6-Qb-XaJ"/>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="trailing" secondItem="kPA-uf-PXN" secondAttribute="trailing" id="Xpc-hF-pPB"/>
+                            <constraint firstItem="5un-4Y-rnC" firstAttribute="centerX" secondItem="kPA-uf-PXN" secondAttribute="centerX" id="d7Y-MS-MyL"/>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="top" secondItem="kPA-uf-PXN" secondAttribute="top" id="evd-yc-6dN"/>
+                            <constraint firstAttribute="trailing" secondItem="qSd-FA-5ZQ" secondAttribute="trailing" id="h03-Nd-kYC"/>
+                            <constraint firstAttribute="bottom" secondItem="qSd-FA-5ZQ" secondAttribute="bottom" id="joQ-Sx-lhu"/>
+                            <constraint firstItem="qSd-FA-5ZQ" firstAttribute="leading" secondItem="kPA-uf-PXN" secondAttribute="leading" id="lzM-n5-kKA"/>
+                            <constraint firstItem="5un-4Y-rnC" firstAttribute="top" secondItem="kPA-uf-PXN" secondAttribute="top" id="zgN-0Q-0zy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="5un-4Y-rnC" id="iED-VB-EfJ"/>
+                        <outlet property="imgViewH" destination="NSf-tJ-N15" id="kec-kK-m2s"/>
+                        <outlet property="imgViewW" destination="aOc-t4-AuK" id="RfG-4P-a92"/>
+                        <outlet property="imgViewY" destination="zgN-0Q-0zy" id="jNl-Mv-qVn"/>
+                        <outlet property="tableView" destination="qSd-FA-5ZQ" id="IHB-hN-1vI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ff-Qm-Q3l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="-69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="imgPlaylistLandscape" width="1242" height="2208"/>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects><placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CryptoHeaderView" customModule="FigmaConvertXib" customModuleProvider="target">
+    <connections>
+    <outlet property="titleLabel" destination="iBM-9e-MxI" id="CaG-H3-pMC"/><outlet property="subtitleLabel" destination="hnZ-z7-yHp" id="ygS-oe-O29"/><outlet property="label2" destination="Jv9-Wl-u2H" id="C6x-AC-iMs"/>
+</connections>
+</placeholder>
+<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel=" CryptoHeader" id="vDK-Kb-Jqo"><rect key="frame" x="714.0" y="1631.0" width="374.0" height="173.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89535" id="tSn-r5-B4i"><rect key="frame" x="16.0" y="138.0" width="342.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crypto" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBM-9e-MxI" userLabel="Crypto" customModuleProvider="target"><rect key="frame" x="0.0" y="9.0" width="51.0" height="21.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" weight="medium" pointSize="15.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
+</userDefinedRuntimeAttributes></label><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89531" id="t9O-Rz-qcW"><rect key="frame" x="312.0" y="0.0" width="30.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 39" id="iO3-DN-NfP" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="0.0" width="30.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+    <real key="value" value="15.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></view>
+</subviews></view>
+</subviews></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 38" id="2jn-R3-7qR"><rect key="frame" x="0.0" y="121.0" width="380.0" height="1.0"/><color key="backgroundColor" red="0.9137254953384399" green="0.9137254953384399" blue="0.9137254953384399" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89537" id="xAM-is-G8K"><rect key="frame" x="16.0" y="76.0" width="342.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiat" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnZ-z7-yHp" userLabel="Fiat" customModuleProvider="target"><rect key="frame" x="0.0" y="8.0" width="36.0" height="21.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" weight="medium" pointSize="15.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
+</userDefinedRuntimeAttributes></label><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89536" id="sUl-7Y-prp"><rect key="frame" x="36.0" y="2.0" width="67.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 41" id="Qpu-R8-ykW" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="41.0" y="0.0" width="26.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+    <real key="value" value="13.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="brColor">
+    <color key="value" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+    <real key="value" value="2.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+    <color key="value" red="0.4588235318660736" green="0.43529412150382996" blue="0.6509804129600525" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 42" id="3HX-ni-47Z" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="20.0" y="0.0" width="26.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+    <real key="value" value="13.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="brColor">
+    <color key="value" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+    <real key="value" value="2.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+    <color key="value" red="0.9058823585510254" green="0.6196078658103943" blue="0.1882352977991104" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 43" id="PdS-hc-CzJ" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="0.0" width="26.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+    <real key="value" value="13.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="brColor">
+    <color key="value" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+    <real key="value" value="2.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+    <color key="value" red="0.43921568989753723" green="0.6235294342041016" blue="0.45098039507865906" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></view>
+</subviews></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89530" id="QOR-0R-eW7"><rect key="frame" x="312.0" y="0.0" width="30.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 39" id="Lsg-cV-P5t" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="0.0" width="30.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+    <real key="value" value="15.0"/>
+</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+</userDefinedRuntimeAttribute>
+</userDefinedRuntimeAttributes></view>
+</subviews></view>
+</subviews></view><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallets" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jv9-Wl-u2H" userLabel="Wallets" customModuleProvider="target"><rect key="frame" x="16.0" y="25.0" width="87.0" height="30.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" weight="medium" pointSize="20.0"/><color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
+</userDefinedRuntimeAttributes></label>
+</subviews></view></objects></document>

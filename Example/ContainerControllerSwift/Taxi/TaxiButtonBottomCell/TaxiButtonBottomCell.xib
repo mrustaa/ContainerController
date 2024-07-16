@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="tuS-Ez-Nvv" customClass="TaxiButtonBottomCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tuS-Ez-Nvv" id="C0J-9s-tWR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nwg-Wq-yGu" userLabel="TaxiButtonBottom">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-bX-YW6" userLabel="Rectangle 13" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="16" y="11" width="272" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Taxi" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GK6-JP-WjF" userLabel="Book Taxi">
+                                        <rect key="frame" x="97" y="21" width="78" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="MlO-oC-4YP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mo-GT-KDB">
+                                        <rect key="frame" x="0.0" y="0.0" width="272" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6mo-GT-KDB" firstAttribute="top" secondItem="ycU-bX-YW6" secondAttribute="top" id="Trl-Nd-8JG"/>
+                                    <constraint firstAttribute="bottom" secondItem="6mo-GT-KDB" secondAttribute="bottom" id="bhb-b8-E5W"/>
+                                    <constraint firstItem="6mo-GT-KDB" firstAttribute="leading" secondItem="ycU-bX-YW6" secondAttribute="leading" id="j7V-lM-WFY"/>
+                                    <constraint firstAttribute="trailing" secondItem="6mo-GT-KDB" secondAttribute="trailing" id="nAM-0c-Okn"/>
+                                    <constraint firstItem="GK6-JP-WjF" firstAttribute="top" secondItem="ycU-bX-YW6" secondAttribute="top" constant="21" id="yae-0p-BBG"/>
+                                    <constraint firstItem="GK6-JP-WjF" firstAttribute="centerX" secondItem="ycU-bX-YW6" secondAttribute="centerX" id="zpN-zf-eXL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="0.15294118225574493" green="0.43137255311012268" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCN-Pc-LLo" userLabel="Frame 89503" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="299" y="11" width="60" height="60"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconTaxiTime" translatesAutoresizingMaskIntoConstraints="NO" id="HLD-cZ-5Xq">
+                                        <rect key="frame" x="19" y="19" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="ioV-Ka-JFg"/>
+                                            <constraint firstAttribute="height" constant="22" id="zfn-se-EDd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftv-Dj-qkP">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HLD-cZ-5Xq" firstAttribute="centerX" secondItem="GCN-Pc-LLo" secondAttribute="centerX" id="8ip-zN-2eF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ftv-Dj-qkP" secondAttribute="trailing" id="8ta-i8-mT5"/>
+                                    <constraint firstItem="Ftv-Dj-qkP" firstAttribute="top" secondItem="GCN-Pc-LLo" secondAttribute="top" id="IqA-se-ibh"/>
+                                    <constraint firstItem="Ftv-Dj-qkP" firstAttribute="leading" secondItem="GCN-Pc-LLo" secondAttribute="leading" id="N6a-Zy-DqG"/>
+                                    <constraint firstAttribute="width" constant="60" id="QtN-Ub-f4r"/>
+                                    <constraint firstItem="HLD-cZ-5Xq" firstAttribute="centerY" secondItem="GCN-Pc-LLo" secondAttribute="centerY" id="c5i-kM-oE4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ftv-Dj-qkP" secondAttribute="bottom" id="jwD-h7-WG9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                        <color key="value" red="0.15294118230000001" green="0.4313725531" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ycU-bX-YW6" secondAttribute="bottom" constant="13" id="5Ms-f7-h5T"/>
+                            <constraint firstItem="GCN-Pc-LLo" firstAttribute="top" secondItem="Nwg-Wq-yGu" secondAttribute="top" constant="11" id="6Qp-xd-DHP"/>
+                            <constraint firstItem="ycU-bX-YW6" firstAttribute="top" secondItem="Nwg-Wq-yGu" secondAttribute="top" constant="11" id="PHO-Nk-1Ya"/>
+                            <constraint firstAttribute="trailing" secondItem="GCN-Pc-LLo" secondAttribute="trailing" constant="16" id="Xmh-X8-zwE"/>
+                            <constraint firstItem="ycU-bX-YW6" firstAttribute="leading" secondItem="Nwg-Wq-yGu" secondAttribute="leading" constant="16" id="kui-L6-WqX"/>
+                            <constraint firstAttribute="bottom" secondItem="GCN-Pc-LLo" secondAttribute="bottom" constant="13" id="nWu-bM-sMC"/>
+                            <constraint firstItem="GCN-Pc-LLo" firstAttribute="leading" secondItem="ycU-bX-YW6" secondAttribute="trailing" constant="11" id="xrp-xI-igW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nwg-Wq-yGu" secondAttribute="trailing" id="2ht-nl-UPJ"/>
+                    <constraint firstItem="Nwg-Wq-yGu" firstAttribute="top" secondItem="C0J-9s-tWR" secondAttribute="top" id="gbA-9I-QgJ"/>
+                    <constraint firstItem="Nwg-Wq-yGu" firstAttribute="leading" secondItem="C0J-9s-tWR" secondAttribute="leading" id="t2W-k2-b4g"/>
+                    <constraint firstAttribute="bottom" secondItem="Nwg-Wq-yGu" secondAttribute="bottom" id="zoz-Eg-gtK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="btn1" destination="6mo-GT-KDB" id="Bfe-x5-Z6J"/>
+                <outlet property="btn2" destination="Ftv-Dj-qkP" id="aFT-o6-zGc"/>
+                <outlet property="carddView" destination="ycU-bX-YW6" id="26G-1v-BKM"/>
+                <outlet property="timeView" destination="GCN-Pc-LLo" id="n4b-c1-r65"/>
+                <outlet property="titleLabel" destination="GK6-JP-WjF" id="Cb1-0Z-CPX"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-49"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconTaxiTime" width="66" height="66"/>
+    </resources>
+</document>
