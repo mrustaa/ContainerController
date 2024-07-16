@@ -8,6 +8,27 @@
 
 import UIKit
 
+open class  CollectionAdapterInsets: NSObject {
+    public var minSpacing: CollectionAdapterMinSpacing = CollectionAdapterMinSpacing(cell: 0, line: 0)
+    public var insets: UIEdgeInsets = .zero
+    
+    public init(minSpacing: CollectionAdapterMinSpacing, insets: UIEdgeInsets) {
+        self.minSpacing = minSpacing
+        self.insets = insets
+    }
+    
+}
+
+open class CollectionAdapterMinSpacing: NSObject {
+    public var cell: CGFloat = 0
+    public var line: CGFloat = 0
+    
+    public init(cell: CGFloat, line: CGFloat) {
+        self.cell = cell
+        self.line = line
+    }
+}
+
 open class CollectionAdapterCell: UICollectionViewCell {
     
     @IBInspectable var hideAnimation: Bool = false

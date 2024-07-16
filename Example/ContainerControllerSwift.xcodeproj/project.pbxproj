@@ -11,8 +11,6 @@
 		46ACF0562490F52600FAAD43 /* UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFD92490F52500FAAD43 /* UIView+Positioning.swift */; };
 		46ACF0572490F52600FAAD43 /* StoryboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFDC2490F52500FAAD43 /* StoryboardController.swift */; };
 		46ACF0582490F52600FAAD43 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFDE2490F52500FAAD43 /* XibView.swift */; };
-		46ACF0592490F52600FAAD43 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFE02490F52500FAAD43 /* DesignButton.swift */; };
-		46ACF05A2490F52600FAAD43 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFE12490F52500FAAD43 /* DesignView.swift */; };
 		46ACF05B2490F52600FAAD43 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46ACEFE32490F52500FAAD43 /* Localizable.strings */; };
 		46ACF05C2490F52600FAAD43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 46ACEFE52490F52500FAAD43 /* InfoPlist.strings */; };
 		46ACF05D2490F52600FAAD43 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACEFE72490F52500FAAD43 /* LocalizationManager.swift */; };
@@ -86,8 +84,8 @@
 		46ACF0C72490FEB300FAAD43 /* ExampleSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0AA2490FEB200FAAD43 /* ExampleSegmentCell.xib */; };
 		46ACF0C82490FEB300FAAD43 /* ExampleSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0AC2490FEB200FAAD43 /* ExampleSwitchCell.swift */; };
 		46ACF0C92490FEB300FAAD43 /* ExampleSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0AD2490FEB200FAAD43 /* ExampleSwitchCell.xib */; };
-		46ACF0CA2490FEB300FAAD43 /* TitleTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0AF2490FEB200FAAD43 /* TitleTextCell.xib */; };
-		46ACF0CB2490FEB300FAAD43 /* TitleTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0B02490FEB200FAAD43 /* TitleTextCell.swift */; };
+		46ACF0CA2490FEB300FAAD43 /* TitleTextxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0AF2490FEB200FAAD43 /* TitleTextxCell.xib */; };
+		46ACF0CB2490FEB300FAAD43 /* TitleTextxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0B02490FEB200FAAD43 /* TitleTextxCell.swift */; };
 		46ACF0CC2490FEB300FAAD43 /* ExampleSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0B22490FEB200FAAD43 /* ExampleSliderCell.swift */; };
 		46ACF0CD2490FEB300FAAD43 /* ExampleSliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0B32490FEB200FAAD43 /* ExampleSliderCell.xib */; };
 		46ACF0CE2490FEB300FAAD43 /* ExampleFooterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0B62490FEB200FAAD43 /* ExampleFooterButtonView.swift */; };
@@ -106,6 +104,84 @@
 		46ACF0E824925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0E524925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift */; };
 		46ACF0E924925B9200FAAD43 /* ExampleAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ACF0E624925B9200FAAD43 /* ExampleAddTableViewController.swift */; };
 		46ACF0EA24925B9200FAAD43 /* ExampleAddTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46ACF0E724925B9200FAAD43 /* ExampleAddTableViewController.storyboard */; };
+		4A02C90D2C3D5D3F00DD39A4 /* CryptoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C9022C3D5D3F00DD39A4 /* CryptoHeaderView.swift */; };
+		4A02C90E2C3D5D3F00DD39A4 /* CryptoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C9032C3D5D3F00DD39A4 /* CryptoHeaderView.xib */; };
+		4A02C90F2C3D5D3F00DD39A4 /* CryptoOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C9052C3D5D3F00DD39A4 /* CryptoOneCell.swift */; };
+		4A02C9102C3D5D3F00DD39A4 /* CryptoOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C9062C3D5D3F00DD39A4 /* CryptoOneCell.xib */; };
+		4A02C9112C3D5D3F00DD39A4 /* CryptoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C9082C3D5D3F00DD39A4 /* CryptoViewController.storyboard */; };
+		4A02C9122C3D5D3F00DD39A4 /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C9092C3D5D3F00DD39A4 /* CryptoViewController.swift */; };
+		4A02C9162C3D5F1500DD39A4 /* CryptoTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C9132C3D5F1500DD39A4 /* CryptoTitleCell.swift */; };
+		4A02C9172C3D5F1500DD39A4 /* CryptoTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C9142C3D5F1500DD39A4 /* CryptoTitleCell.xib */; };
+		4A08A2FE2C3C205F00DE9D3E /* WalletsContainerItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08A2F42C3C205F00DE9D3E /* WalletsContainerItemCell.swift */; };
+		4A08A2FF2C3C205F00DE9D3E /* WalletsContainerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A08A2F52C3C205F00DE9D3E /* WalletsContainerItemCell.xib */; };
+		4A08A3002C3C205F00DE9D3E /* WalletsTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08A2F72C3C205F00DE9D3E /* WalletsTitleCell.swift */; };
+		4A08A3012C3C205F00DE9D3E /* WalletsTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A08A2F82C3C205F00DE9D3E /* WalletsTitleCell.xib */; };
+		4A08A3022C3C205F00DE9D3E /* WalletsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A08A2FA2C3C205F00DE9D3E /* WalletsViewController.storyboard */; };
+		4A08A3032C3C205F00DE9D3E /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08A2FB2C3C205F00DE9D3E /* WalletsViewController.swift */; };
+		4A78E9292C3C02BB00DE60F5 /* ImagineButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E90C2C3C02BB00DE60F5 /* ImagineButtonCell.swift */; };
+		4A78E92A2C3C02BB00DE60F5 /* ImagineButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E90D2C3C02BB00DE60F5 /* ImagineButtonCell.xib */; };
+		4A78E92B2C3C02BB00DE60F5 /* ImagineCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E90F2C3C02BB00DE60F5 /* ImagineCollectionCell.swift */; };
+		4A78E92C2C3C02BB00DE60F5 /* ImagineCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9102C3C02BB00DE60F5 /* ImagineCollectionCell.xib */; };
+		4A78E92D2C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E9122C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.swift */; };
+		4A78E92E2C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9132C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.xib */; };
+		4A78E92F2C3C02BB00DE60F5 /* ImagineTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E9152C3C02BB00DE60F5 /* ImagineTitleCell.swift */; };
+		4A78E9302C3C02BB00DE60F5 /* ImagineTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9162C3C02BB00DE60F5 /* ImagineTitleCell.xib */; };
+		4A78E9312C3C02BB00DE60F5 /* ImagineTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E9182C3C02BB00DE60F5 /* ImagineTagCell.swift */; };
+		4A78E9322C3C02BB00DE60F5 /* ImagineTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9192C3C02BB00DE60F5 /* ImagineTagCell.xib */; };
+		4A78E9332C3C02BB00DE60F5 /* ImagineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E91B2C3C02BB00DE60F5 /* ImagineViewController.storyboard */; };
+		4A78E9342C3C02BB00DE60F5 /* ImagineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E91C2C3C02BB00DE60F5 /* ImagineViewController.swift */; };
+		4A78E9352C3C02BB00DE60F5 /* ImagineBigTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E91E2C3C02BB00DE60F5 /* ImagineBigTagCell.swift */; };
+		4A78E9362C3C02BB00DE60F5 /* ImagineBigTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E91F2C3C02BB00DE60F5 /* ImagineBigTagCell.xib */; };
+		4A78E9372C3C02BB00DE60F5 /* ImagineCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E9212C3C02BB00DE60F5 /* ImagineCollCell.swift */; };
+		4A78E9382C3C02BB00DE60F5 /* ImagineCollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9222C3C02BB00DE60F5 /* ImagineCollCell.xib */; };
+		4A78E9392C3C02BB00DE60F5 /* ImagineSmallTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E9242C3C02BB00DE60F5 /* ImagineSmallTagCell.swift */; };
+		4A78E93A2C3C02BB00DE60F5 /* ImagineSmallTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A78E9252C3C02BB00DE60F5 /* ImagineSmallTagCell.xib */; };
+		4AAE16D12C4626F900855BD9 /* TaxiViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16B92C4626F900855BD9 /* TaxiViewController.storyboard */; };
+		4AAE16D22C4626F900855BD9 /* TaxiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16BA2C4626F900855BD9 /* TaxiViewController.swift */; };
+		4AAE16DB2C4626F900855BD9 /* TaxiMapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16C82C4626F900855BD9 /* TaxiMapButtonView.swift */; };
+		4AAE16DC2C4626F900855BD9 /* TaxiMapButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16C92C4626F900855BD9 /* TaxiMapButtonView.xib */; };
+		4AAE16DF2C4626F900855BD9 /* TaxiContainerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16CE2C4626F900855BD9 /* TaxiContainerHeaderView.swift */; };
+		4AAE16E02C4626F900855BD9 /* TaxiContainerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16CF2C4626F900855BD9 /* TaxiContainerHeaderView.xib */; };
+		4AAE16F02C462BCB00855BD9 /* TaxiAddressABCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16E12C462BCB00855BD9 /* TaxiAddressABCell.swift */; };
+		4AAE16F12C462BCB00855BD9 /* TaxiAddressABCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16E22C462BCB00855BD9 /* TaxiAddressABCell.xib */; };
+		4AAE16F22C462BCB00855BD9 /* TaxiVisaCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16E42C462BCB00855BD9 /* TaxiVisaCardCell.swift */; };
+		4AAE16F32C462BCB00855BD9 /* TaxiVisaCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16E52C462BCB00855BD9 /* TaxiVisaCardCell.xib */; };
+		4AAE16F42C462BCB00855BD9 /* TaxiButtonBottomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16E72C462BCB00855BD9 /* TaxiButtonBottomCell.swift */; };
+		4AAE16F52C462BCB00855BD9 /* TaxiButtonBottomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16E82C462BCB00855BD9 /* TaxiButtonBottomCell.xib */; };
+		4AAE16F62C462BCB00855BD9 /* TaxiCarTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16EA2C462BCB00855BD9 /* TaxiCarTagCell.swift */; };
+		4AAE16F72C462BCB00855BD9 /* TaxiCarTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16EB2C462BCB00855BD9 /* TaxiCarTagCell.xib */; };
+		4AAE16F82C462BCB00855BD9 /* TaxiCollectionCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16ED2C462BCB00855BD9 /* TaxiCollectionCarsCell.swift */; };
+		4AAE16F92C462BCB00855BD9 /* TaxiCollectionCarsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16EE2C462BCB00855BD9 /* TaxiCollectionCarsCell.xib */; };
+		4AB6DE1F2C3BEE46004A8866 /* DesignExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DDFB2C3BEE46004A8866 /* DesignExtentions.swift */; };
+		4AB6DE202C3BEE46004A8866 /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DDFD2C3BEE46004A8866 /* CopyableLabel.swift */; };
+		4AB6DE212C3BEE46004A8866 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DDFE2C3BEE46004A8866 /* DesignButton.swift */; };
+		4AB6DE222C3BEE46004A8866 /* DesignFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DDFF2C3BEE46004A8866 /* DesignFigure.swift */; };
+		4AB6DE232C3BEE46004A8866 /* DesignImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE002C3BEE46004A8866 /* DesignImageView.swift */; };
+		4AB6DE242C3BEE46004A8866 /* DesignInnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE012C3BEE46004A8866 /* DesignInnerShadow.swift */; };
+		4AB6DE252C3BEE46004A8866 /* DesignLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE022C3BEE46004A8866 /* DesignLabel.swift */; };
+		4AB6DE262C3BEE46004A8866 /* DesignSegmentBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE032C3BEE46004A8866 /* DesignSegmentBar.swift */; };
+		4AB6DE342C3BF005004A8866 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE332C3BF005004A8866 /* Cell.swift */; };
+		4AB6DE392C3BF08B004A8866 /* UIButton+AllAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE352C3BF08B004A8866 /* UIButton+AllAnimations.swift */; };
+		4AB6DE3A2C3BF08B004A8866 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE362C3BF08B004A8866 /* UIButton+Extention.swift */; };
+		4AB6DE3B2C3BF08B004A8866 /* UIButton+TapAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE372C3BF08B004A8866 /* UIButton+TapAnimationType.swift */; };
+		4AB6DE412C3BF2F2004A8866 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE3C2C3BF2F2004A8866 /* Device.swift */; };
+		4AB6DE422C3BF2F2004A8866 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE3D2C3BF2F2004A8866 /* Screen.swift */; };
+		4AB6DE442C3BF2F2004A8866 /* UIView+Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE3F2C3BF2F2004A8866 /* UIView+Round.swift */; };
+		4AB6DE962C3BF7B1004A8866 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE952C3BF7B1004A8866 /* String.swift */; };
+		4AB6DE9B2C3BF7DC004A8866 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE982C3BF7DC004A8866 /* DesignView.swift */; };
+		4ADE43A32C3C6AE6002FDEB8 /* PlaylistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE43912C3C6AE6002FDEB8 /* PlaylistViewController.storyboard */; };
+		4ADE43A42C3C6AE7002FDEB8 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE43922C3C6AE6002FDEB8 /* PlaylistViewController.swift */; };
+		4ADE43A52C3C6AE7002FDEB8 /* PlaylistOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE43942C3C6AE6002FDEB8 /* PlaylistOneCell.swift */; };
+		4ADE43A62C3C6AE7002FDEB8 /* PlaylistOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE43952C3C6AE6002FDEB8 /* PlaylistOneCell.xib */; };
+		4ADE43A72C3C6AE7002FDEB8 /* PlaylistTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE43972C3C6AE6002FDEB8 /* PlaylistTitleCell.swift */; };
+		4ADE43A82C3C6AE7002FDEB8 /* PlaylistTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE43982C3C6AE6002FDEB8 /* PlaylistTitleCell.xib */; };
+		4ADE43A92C3C6AE7002FDEB8 /* PlaylistFooterPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE439A2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.swift */; };
+		4ADE43AA2C3C6AE7002FDEB8 /* PlaylistFooterPlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE439B2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.xib */; };
+		4ADE43AB2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE439D2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.swift */; };
+		4ADE43AC2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE439E2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.xib */; };
+		4ADE43AD2C3C6AE7002FDEB8 /* PlaylistHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE43A02C3C6AE6002FDEB8 /* PlaylistHeaderView.swift */; };
+		4ADE43AE2C3C6AE7002FDEB8 /* PlaylistHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE43A12C3C6AE6002FDEB8 /* PlaylistHeaderView.xib */; };
+		4AEF41762C3C32B1001F1847 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF41752C3C32B1001F1847 /* DispatchQueue.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -123,8 +199,6 @@
 		46ACEFD92490F52500FAAD43 /* UIView+Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Positioning.swift"; sourceTree = "<group>"; };
 		46ACEFDC2490F52500FAAD43 /* StoryboardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardController.swift; sourceTree = "<group>"; };
 		46ACEFDE2490F52500FAAD43 /* XibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
-		46ACEFE02490F52500FAAD43 /* DesignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
-		46ACEFE12490F52500FAAD43 /* DesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		46ACEFE42490F52500FAAD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		46ACEFE62490F52500FAAD43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		46ACEFE72490F52500FAAD43 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
@@ -200,8 +274,8 @@
 		46ACF0AA2490FEB200FAAD43 /* ExampleSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleSegmentCell.xib; sourceTree = "<group>"; };
 		46ACF0AC2490FEB200FAAD43 /* ExampleSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSwitchCell.swift; sourceTree = "<group>"; };
 		46ACF0AD2490FEB200FAAD43 /* ExampleSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleSwitchCell.xib; sourceTree = "<group>"; };
-		46ACF0AF2490FEB200FAAD43 /* TitleTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTextCell.xib; sourceTree = "<group>"; };
-		46ACF0B02490FEB200FAAD43 /* TitleTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextCell.swift; sourceTree = "<group>"; };
+		46ACF0AF2490FEB200FAAD43 /* TitleTextxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleTextxCell.xib; sourceTree = "<group>"; };
+		46ACF0B02490FEB200FAAD43 /* TitleTextxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextxCell.swift; sourceTree = "<group>"; };
 		46ACF0B22490FEB200FAAD43 /* ExampleSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSliderCell.swift; sourceTree = "<group>"; };
 		46ACF0B32490FEB200FAAD43 /* ExampleSliderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleSliderCell.xib; sourceTree = "<group>"; };
 		46ACF0B62490FEB200FAAD43 /* ExampleFooterButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFooterButtonView.swift; sourceTree = "<group>"; };
@@ -220,6 +294,84 @@
 		46ACF0E524925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddTableViewControllerSettings.swift; sourceTree = "<group>"; };
 		46ACF0E624925B9200FAAD43 /* ExampleAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddTableViewController.swift; sourceTree = "<group>"; };
 		46ACF0E724925B9200FAAD43 /* ExampleAddTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAddTableViewController.storyboard; sourceTree = "<group>"; };
+		4A02C9022C3D5D3F00DD39A4 /* CryptoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoHeaderView.swift; sourceTree = "<group>"; };
+		4A02C9032C3D5D3F00DD39A4 /* CryptoHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoHeaderView.xib; sourceTree = "<group>"; };
+		4A02C9052C3D5D3F00DD39A4 /* CryptoOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoOneCell.swift; sourceTree = "<group>"; };
+		4A02C9062C3D5D3F00DD39A4 /* CryptoOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoOneCell.xib; sourceTree = "<group>"; };
+		4A02C9082C3D5D3F00DD39A4 /* CryptoViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CryptoViewController.storyboard; sourceTree = "<group>"; };
+		4A02C9092C3D5D3F00DD39A4 /* CryptoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		4A02C9132C3D5F1500DD39A4 /* CryptoTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoTitleCell.swift; sourceTree = "<group>"; };
+		4A02C9142C3D5F1500DD39A4 /* CryptoTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoTitleCell.xib; sourceTree = "<group>"; };
+		4A08A2F42C3C205F00DE9D3E /* WalletsContainerItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsContainerItemCell.swift; sourceTree = "<group>"; };
+		4A08A2F52C3C205F00DE9D3E /* WalletsContainerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletsContainerItemCell.xib; sourceTree = "<group>"; };
+		4A08A2F72C3C205F00DE9D3E /* WalletsTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsTitleCell.swift; sourceTree = "<group>"; };
+		4A08A2F82C3C205F00DE9D3E /* WalletsTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WalletsTitleCell.xib; sourceTree = "<group>"; };
+		4A08A2FA2C3C205F00DE9D3E /* WalletsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WalletsViewController.storyboard; sourceTree = "<group>"; };
+		4A08A2FB2C3C205F00DE9D3E /* WalletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		4A78E90C2C3C02BB00DE60F5 /* ImagineButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineButtonCell.swift; sourceTree = "<group>"; };
+		4A78E90D2C3C02BB00DE60F5 /* ImagineButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineButtonCell.xib; sourceTree = "<group>"; };
+		4A78E90F2C3C02BB00DE60F5 /* ImagineCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineCollectionCell.swift; sourceTree = "<group>"; };
+		4A78E9102C3C02BB00DE60F5 /* ImagineCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineCollectionCell.xib; sourceTree = "<group>"; };
+		4A78E9122C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineHeaderSwitchCell.swift; sourceTree = "<group>"; };
+		4A78E9132C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineHeaderSwitchCell.xib; sourceTree = "<group>"; };
+		4A78E9152C3C02BB00DE60F5 /* ImagineTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineTitleCell.swift; sourceTree = "<group>"; };
+		4A78E9162C3C02BB00DE60F5 /* ImagineTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineTitleCell.xib; sourceTree = "<group>"; };
+		4A78E9182C3C02BB00DE60F5 /* ImagineTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineTagCell.swift; sourceTree = "<group>"; };
+		4A78E9192C3C02BB00DE60F5 /* ImagineTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineTagCell.xib; sourceTree = "<group>"; };
+		4A78E91B2C3C02BB00DE60F5 /* ImagineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImagineViewController.storyboard; sourceTree = "<group>"; };
+		4A78E91C2C3C02BB00DE60F5 /* ImagineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineViewController.swift; sourceTree = "<group>"; };
+		4A78E91E2C3C02BB00DE60F5 /* ImagineBigTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineBigTagCell.swift; sourceTree = "<group>"; };
+		4A78E91F2C3C02BB00DE60F5 /* ImagineBigTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineBigTagCell.xib; sourceTree = "<group>"; };
+		4A78E9212C3C02BB00DE60F5 /* ImagineCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineCollCell.swift; sourceTree = "<group>"; };
+		4A78E9222C3C02BB00DE60F5 /* ImagineCollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineCollCell.xib; sourceTree = "<group>"; };
+		4A78E9242C3C02BB00DE60F5 /* ImagineSmallTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagineSmallTagCell.swift; sourceTree = "<group>"; };
+		4A78E9252C3C02BB00DE60F5 /* ImagineSmallTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagineSmallTagCell.xib; sourceTree = "<group>"; };
+		4AAE16B92C4626F900855BD9 /* TaxiViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaxiViewController.storyboard; sourceTree = "<group>"; };
+		4AAE16BA2C4626F900855BD9 /* TaxiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiViewController.swift; sourceTree = "<group>"; };
+		4AAE16C82C4626F900855BD9 /* TaxiMapButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiMapButtonView.swift; sourceTree = "<group>"; };
+		4AAE16C92C4626F900855BD9 /* TaxiMapButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiMapButtonView.xib; sourceTree = "<group>"; };
+		4AAE16CE2C4626F900855BD9 /* TaxiContainerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiContainerHeaderView.swift; sourceTree = "<group>"; };
+		4AAE16CF2C4626F900855BD9 /* TaxiContainerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiContainerHeaderView.xib; sourceTree = "<group>"; };
+		4AAE16E12C462BCB00855BD9 /* TaxiAddressABCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiAddressABCell.swift; sourceTree = "<group>"; };
+		4AAE16E22C462BCB00855BD9 /* TaxiAddressABCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiAddressABCell.xib; sourceTree = "<group>"; };
+		4AAE16E42C462BCB00855BD9 /* TaxiVisaCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiVisaCardCell.swift; sourceTree = "<group>"; };
+		4AAE16E52C462BCB00855BD9 /* TaxiVisaCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiVisaCardCell.xib; sourceTree = "<group>"; };
+		4AAE16E72C462BCB00855BD9 /* TaxiButtonBottomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiButtonBottomCell.swift; sourceTree = "<group>"; };
+		4AAE16E82C462BCB00855BD9 /* TaxiButtonBottomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiButtonBottomCell.xib; sourceTree = "<group>"; };
+		4AAE16EA2C462BCB00855BD9 /* TaxiCarTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiCarTagCell.swift; sourceTree = "<group>"; };
+		4AAE16EB2C462BCB00855BD9 /* TaxiCarTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiCarTagCell.xib; sourceTree = "<group>"; };
+		4AAE16ED2C462BCB00855BD9 /* TaxiCollectionCarsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiCollectionCarsCell.swift; sourceTree = "<group>"; };
+		4AAE16EE2C462BCB00855BD9 /* TaxiCollectionCarsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiCollectionCarsCell.xib; sourceTree = "<group>"; };
+		4AB6DDFB2C3BEE46004A8866 /* DesignExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignExtentions.swift; sourceTree = "<group>"; };
+		4AB6DDFD2C3BEE46004A8866 /* CopyableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
+		4AB6DDFE2C3BEE46004A8866 /* DesignButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		4AB6DDFF2C3BEE46004A8866 /* DesignFigure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignFigure.swift; sourceTree = "<group>"; };
+		4AB6DE002C3BEE46004A8866 /* DesignImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignImageView.swift; sourceTree = "<group>"; };
+		4AB6DE012C3BEE46004A8866 /* DesignInnerShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignInnerShadow.swift; sourceTree = "<group>"; };
+		4AB6DE022C3BEE46004A8866 /* DesignLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignLabel.swift; sourceTree = "<group>"; };
+		4AB6DE032C3BEE46004A8866 /* DesignSegmentBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignSegmentBar.swift; sourceTree = "<group>"; };
+		4AB6DE332C3BF005004A8866 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		4AB6DE352C3BF08B004A8866 /* UIButton+AllAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+AllAnimations.swift"; sourceTree = "<group>"; };
+		4AB6DE362C3BF08B004A8866 /* UIButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		4AB6DE372C3BF08B004A8866 /* UIButton+TapAnimationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+TapAnimationType.swift"; sourceTree = "<group>"; };
+		4AB6DE3C2C3BF2F2004A8866 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		4AB6DE3D2C3BF2F2004A8866 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		4AB6DE3F2C3BF2F2004A8866 /* UIView+Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Round.swift"; sourceTree = "<group>"; };
+		4AB6DE952C3BF7B1004A8866 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		4AB6DE982C3BF7DC004A8866 /* DesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		4ADE43912C3C6AE6002FDEB8 /* PlaylistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaylistViewController.storyboard; sourceTree = "<group>"; };
+		4ADE43922C3C6AE6002FDEB8 /* PlaylistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		4ADE43942C3C6AE6002FDEB8 /* PlaylistOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistOneCell.swift; sourceTree = "<group>"; };
+		4ADE43952C3C6AE6002FDEB8 /* PlaylistOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistOneCell.xib; sourceTree = "<group>"; };
+		4ADE43972C3C6AE6002FDEB8 /* PlaylistTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistTitleCell.swift; sourceTree = "<group>"; };
+		4ADE43982C3C6AE6002FDEB8 /* PlaylistTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistTitleCell.xib; sourceTree = "<group>"; };
+		4ADE439A2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistFooterPlayView.swift; sourceTree = "<group>"; };
+		4ADE439B2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistFooterPlayView.xib; sourceTree = "<group>"; };
+		4ADE439D2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistCollectionsCell.swift; sourceTree = "<group>"; };
+		4ADE439E2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistCollectionsCell.xib; sourceTree = "<group>"; };
+		4ADE43A02C3C6AE6002FDEB8 /* PlaylistHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderView.swift; sourceTree = "<group>"; };
+		4ADE43A12C3C6AE6002FDEB8 /* PlaylistHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaylistHeaderView.xib; sourceTree = "<group>"; };
+		4AEF41752C3C32B1001F1847 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ContainerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -270,9 +422,12 @@
 		46ACEFD62490F52500FAAD43 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				4AB6DE992C3BF7DC004A8866 /* DesignableViews */,
+				4AB6DE402C3BF2F2004A8866 /* DeviceSize */,
+				4AB6DE382C3BF08B004A8866 /* ButtonTapAnimations */,
+				4AB6DE042C3BEE46004A8866 /* Designable */,
 				46ACEFD72490F52500FAAD43 /* Utils */,
 				46ACEFDA2490F52500FAAD43 /* LoadNib */,
-				46ACEFDF2490F52500FAAD43 /* DesignableViews */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -280,7 +435,10 @@
 		46ACEFD72490F52500FAAD43 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4AB6DE332C3BF005004A8866 /* Cell.swift */,
 				46ACEFD82490F52500FAAD43 /* Color.swift */,
+				4AB6DE952C3BF7B1004A8866 /* String.swift */,
+				4AEF41752C3C32B1001F1847 /* DispatchQueue.swift */,
 				46ACEFD92490F52500FAAD43 /* UIView+Positioning.swift */,
 			);
 			path = Utils;
@@ -293,15 +451,6 @@
 				46ACEFDE2490F52500FAAD43 /* XibView.swift */,
 			);
 			path = LoadNib;
-			sourceTree = "<group>";
-		};
-		46ACEFDF2490F52500FAAD43 /* DesignableViews */ = {
-			isa = PBXGroup;
-			children = (
-				46ACEFE02490F52500FAAD43 /* DesignButton.swift */,
-				46ACEFE12490F52500FAAD43 /* DesignView.swift */,
-			);
-			path = DesignableViews;
 			sourceTree = "<group>";
 		};
 		46ACEFE22490F52500FAAD43 /* Localization */ = {
@@ -771,7 +920,7 @@
 				46ACF0A72490FEB200FAAD43 /* ExampleCell.swift */,
 				46ACF0A82490FEB200FAAD43 /* ExampleSegmentCell */,
 				46ACF0AB2490FEB200FAAD43 /* ExampleSwitchCell */,
-				46ACF0AE2490FEB200FAAD43 /* TitleTextCell */,
+				46ACF0AE2490FEB200FAAD43 /* TitleTextxCell */,
 				46ACF0B12490FEB200FAAD43 /* ExampleSliderCell */,
 			);
 			path = Cell;
@@ -795,13 +944,13 @@
 			path = ExampleSwitchCell;
 			sourceTree = "<group>";
 		};
-		46ACF0AE2490FEB200FAAD43 /* TitleTextCell */ = {
+		46ACF0AE2490FEB200FAAD43 /* TitleTextxCell */ = {
 			isa = PBXGroup;
 			children = (
-				46ACF0B02490FEB200FAAD43 /* TitleTextCell.swift */,
-				46ACF0AF2490FEB200FAAD43 /* TitleTextCell.xib */,
+				46ACF0B02490FEB200FAAD43 /* TitleTextxCell.swift */,
+				46ACF0AF2490FEB200FAAD43 /* TitleTextxCell.xib */,
 			);
-			path = TitleTextCell;
+			path = TitleTextxCell;
 			sourceTree = "<group>";
 		};
 		46ACF0B12490FEB200FAAD43 /* ExampleSliderCell */ = {
@@ -860,6 +1009,408 @@
 			path = ExampleAddCollectionView;
 			sourceTree = "<group>";
 		};
+		4A02C8FE2C3D5D2300DD39A4 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C9152C3D5F1500DD39A4 /* CryptoTitleCell */,
+				4A02C9042C3D5D3F00DD39A4 /* CryptoHeaderView */,
+				4A02C9072C3D5D3F00DD39A4 /* CryptoOneCell */,
+				4A02C90A2C3D5D3F00DD39A4 /* CryptoViewController */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		4A02C9042C3D5D3F00DD39A4 /* CryptoHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C9022C3D5D3F00DD39A4 /* CryptoHeaderView.swift */,
+				4A02C9032C3D5D3F00DD39A4 /* CryptoHeaderView.xib */,
+			);
+			path = CryptoHeaderView;
+			sourceTree = "<group>";
+		};
+		4A02C9072C3D5D3F00DD39A4 /* CryptoOneCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C9052C3D5D3F00DD39A4 /* CryptoOneCell.swift */,
+				4A02C9062C3D5D3F00DD39A4 /* CryptoOneCell.xib */,
+			);
+			path = CryptoOneCell;
+			sourceTree = "<group>";
+		};
+		4A02C90A2C3D5D3F00DD39A4 /* CryptoViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C9082C3D5D3F00DD39A4 /* CryptoViewController.storyboard */,
+				4A02C9092C3D5D3F00DD39A4 /* CryptoViewController.swift */,
+			);
+			path = CryptoViewController;
+			sourceTree = "<group>";
+		};
+		4A02C9152C3D5F1500DD39A4 /* CryptoTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C9132C3D5F1500DD39A4 /* CryptoTitleCell.swift */,
+				4A02C9142C3D5F1500DD39A4 /* CryptoTitleCell.xib */,
+			);
+			path = CryptoTitleCell;
+			sourceTree = "<group>";
+		};
+		4A08A2F62C3C205F00DE9D3E /* WalletsContainerItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A08A2F42C3C205F00DE9D3E /* WalletsContainerItemCell.swift */,
+				4A08A2F52C3C205F00DE9D3E /* WalletsContainerItemCell.xib */,
+			);
+			path = WalletsContainerItemCell;
+			sourceTree = "<group>";
+		};
+		4A08A2F92C3C205F00DE9D3E /* WalletsTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A08A2F72C3C205F00DE9D3E /* WalletsTitleCell.swift */,
+				4A08A2F82C3C205F00DE9D3E /* WalletsTitleCell.xib */,
+			);
+			path = WalletsTitleCell;
+			sourceTree = "<group>";
+		};
+		4A08A2FC2C3C205F00DE9D3E /* WalletsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A08A2FA2C3C205F00DE9D3E /* WalletsViewController.storyboard */,
+				4A08A2FB2C3C205F00DE9D3E /* WalletsViewController.swift */,
+			);
+			path = WalletsViewController;
+			sourceTree = "<group>";
+		};
+		4A08A2FD2C3C205F00DE9D3E /* Wallets */ = {
+			isa = PBXGroup;
+			children = (
+				4A08A2F62C3C205F00DE9D3E /* WalletsContainerItemCell */,
+				4A08A2F92C3C205F00DE9D3E /* WalletsTitleCell */,
+				4A08A2FC2C3C205F00DE9D3E /* WalletsViewController */,
+			);
+			path = Wallets;
+			sourceTree = "<group>";
+		};
+		4A78E90E2C3C02BB00DE60F5 /* ImagineButtonCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E90C2C3C02BB00DE60F5 /* ImagineButtonCell.swift */,
+				4A78E90D2C3C02BB00DE60F5 /* ImagineButtonCell.xib */,
+			);
+			path = ImagineButtonCell;
+			sourceTree = "<group>";
+		};
+		4A78E9112C3C02BB00DE60F5 /* ImagineCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E90F2C3C02BB00DE60F5 /* ImagineCollectionCell.swift */,
+				4A78E9102C3C02BB00DE60F5 /* ImagineCollectionCell.xib */,
+			);
+			path = ImagineCollectionCell;
+			sourceTree = "<group>";
+		};
+		4A78E9142C3C02BB00DE60F5 /* ImagineHeaderSwitchCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9122C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.swift */,
+				4A78E9132C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.xib */,
+			);
+			path = ImagineHeaderSwitchCell;
+			sourceTree = "<group>";
+		};
+		4A78E9172C3C02BB00DE60F5 /* ImagineTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9152C3C02BB00DE60F5 /* ImagineTitleCell.swift */,
+				4A78E9162C3C02BB00DE60F5 /* ImagineTitleCell.xib */,
+			);
+			path = ImagineTitleCell;
+			sourceTree = "<group>";
+		};
+		4A78E91A2C3C02BB00DE60F5 /* ImagineTagCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9182C3C02BB00DE60F5 /* ImagineTagCell.swift */,
+				4A78E9192C3C02BB00DE60F5 /* ImagineTagCell.xib */,
+			);
+			path = ImagineTagCell;
+			sourceTree = "<group>";
+		};
+		4A78E91D2C3C02BB00DE60F5 /* ImagineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E91B2C3C02BB00DE60F5 /* ImagineViewController.storyboard */,
+				4A78E91C2C3C02BB00DE60F5 /* ImagineViewController.swift */,
+			);
+			path = ImagineViewController;
+			sourceTree = "<group>";
+		};
+		4A78E9202C3C02BB00DE60F5 /* ImagineBigTagCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E91E2C3C02BB00DE60F5 /* ImagineBigTagCell.swift */,
+				4A78E91F2C3C02BB00DE60F5 /* ImagineBigTagCell.xib */,
+			);
+			path = ImagineBigTagCell;
+			sourceTree = "<group>";
+		};
+		4A78E9232C3C02BB00DE60F5 /* ImagineCollCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9212C3C02BB00DE60F5 /* ImagineCollCell.swift */,
+				4A78E9222C3C02BB00DE60F5 /* ImagineCollCell.xib */,
+			);
+			path = ImagineCollCell;
+			sourceTree = "<group>";
+		};
+		4A78E9262C3C02BB00DE60F5 /* ImagineSmallTagCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9242C3C02BB00DE60F5 /* ImagineSmallTagCell.swift */,
+				4A78E9252C3C02BB00DE60F5 /* ImagineSmallTagCell.xib */,
+			);
+			path = ImagineSmallTagCell;
+			sourceTree = "<group>";
+		};
+		4A78E9272C3C02BB00DE60F5 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9202C3C02BB00DE60F5 /* ImagineBigTagCell */,
+				4A78E9232C3C02BB00DE60F5 /* ImagineCollCell */,
+				4A78E9262C3C02BB00DE60F5 /* ImagineSmallTagCell */,
+			);
+			path = Tags;
+			sourceTree = "<group>";
+		};
+		4A78E9282C3C02BB00DE60F5 /* Imagine */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E9272C3C02BB00DE60F5 /* Tags */,
+				4A78E93B2C3C033400DE60F5 /* Cells */,
+				4A78E91D2C3C02BB00DE60F5 /* ImagineViewController */,
+			);
+			path = Imagine;
+			sourceTree = "<group>";
+		};
+		4A78E93B2C3C033400DE60F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4A78E91A2C3C02BB00DE60F5 /* ImagineTagCell */,
+				4A78E9112C3C02BB00DE60F5 /* ImagineCollectionCell */,
+				4A78E90E2C3C02BB00DE60F5 /* ImagineButtonCell */,
+				4A78E9142C3C02BB00DE60F5 /* ImagineHeaderSwitchCell */,
+				4A78E9172C3C02BB00DE60F5 /* ImagineTitleCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4AAE16A82C46213000855BD9 /* Taxi */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16EC2C462BCB00855BD9 /* TaxiCarTagCell */,
+				4AAE16E32C462BCB00855BD9 /* TaxiAddressABCell */,
+				4AAE16EF2C462BCB00855BD9 /* TaxiCollectionCarsCell */,
+				4AAE16E62C462BCB00855BD9 /* TaxiVisaCardCell */,
+				4AAE16E92C462BCB00855BD9 /* TaxiButtonBottomCell */,
+				4AAE16D02C4626F900855BD9 /* TaxiContainerHeaderView */,
+				4AAE16CA2C4626F900855BD9 /* TaxiMapButtonView */,
+				4AAE16BB2C4626F900855BD9 /* TaxiViewController */,
+			);
+			path = Taxi;
+			sourceTree = "<group>";
+		};
+		4AAE16BB2C4626F900855BD9 /* TaxiViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16B92C4626F900855BD9 /* TaxiViewController.storyboard */,
+				4AAE16BA2C4626F900855BD9 /* TaxiViewController.swift */,
+			);
+			path = TaxiViewController;
+			sourceTree = "<group>";
+		};
+		4AAE16CA2C4626F900855BD9 /* TaxiMapButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16C82C4626F900855BD9 /* TaxiMapButtonView.swift */,
+				4AAE16C92C4626F900855BD9 /* TaxiMapButtonView.xib */,
+			);
+			path = TaxiMapButtonView;
+			sourceTree = "<group>";
+		};
+		4AAE16D02C4626F900855BD9 /* TaxiContainerHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16CE2C4626F900855BD9 /* TaxiContainerHeaderView.swift */,
+				4AAE16CF2C4626F900855BD9 /* TaxiContainerHeaderView.xib */,
+			);
+			path = TaxiContainerHeaderView;
+			sourceTree = "<group>";
+		};
+		4AAE16E32C462BCB00855BD9 /* TaxiAddressABCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16E12C462BCB00855BD9 /* TaxiAddressABCell.swift */,
+				4AAE16E22C462BCB00855BD9 /* TaxiAddressABCell.xib */,
+			);
+			path = TaxiAddressABCell;
+			sourceTree = "<group>";
+		};
+		4AAE16E62C462BCB00855BD9 /* TaxiVisaCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16E42C462BCB00855BD9 /* TaxiVisaCardCell.swift */,
+				4AAE16E52C462BCB00855BD9 /* TaxiVisaCardCell.xib */,
+			);
+			path = TaxiVisaCardCell;
+			sourceTree = "<group>";
+		};
+		4AAE16E92C462BCB00855BD9 /* TaxiButtonBottomCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16E72C462BCB00855BD9 /* TaxiButtonBottomCell.swift */,
+				4AAE16E82C462BCB00855BD9 /* TaxiButtonBottomCell.xib */,
+			);
+			path = TaxiButtonBottomCell;
+			sourceTree = "<group>";
+		};
+		4AAE16EC2C462BCB00855BD9 /* TaxiCarTagCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16EA2C462BCB00855BD9 /* TaxiCarTagCell.swift */,
+				4AAE16EB2C462BCB00855BD9 /* TaxiCarTagCell.xib */,
+			);
+			path = TaxiCarTagCell;
+			sourceTree = "<group>";
+		};
+		4AAE16EF2C462BCB00855BD9 /* TaxiCollectionCarsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4AAE16ED2C462BCB00855BD9 /* TaxiCollectionCarsCell.swift */,
+				4AAE16EE2C462BCB00855BD9 /* TaxiCollectionCarsCell.xib */,
+			);
+			path = TaxiCollectionCarsCell;
+			sourceTree = "<group>";
+		};
+		4AB6DDFC2C3BEE46004A8866 /* Еxtentions */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6DDFB2C3BEE46004A8866 /* DesignExtentions.swift */,
+			);
+			path = "Еxtentions";
+			sourceTree = "<group>";
+		};
+		4AB6DE042C3BEE46004A8866 /* Designable */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6DDFC2C3BEE46004A8866 /* Еxtentions */,
+				4AB6DDFD2C3BEE46004A8866 /* CopyableLabel.swift */,
+				4AB6DDFE2C3BEE46004A8866 /* DesignButton.swift */,
+				4AB6DDFF2C3BEE46004A8866 /* DesignFigure.swift */,
+				4AB6DE002C3BEE46004A8866 /* DesignImageView.swift */,
+				4AB6DE012C3BEE46004A8866 /* DesignInnerShadow.swift */,
+				4AB6DE022C3BEE46004A8866 /* DesignLabel.swift */,
+				4AB6DE032C3BEE46004A8866 /* DesignSegmentBar.swift */,
+			);
+			path = Designable;
+			sourceTree = "<group>";
+		};
+		4AB6DE382C3BF08B004A8866 /* ButtonTapAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6DE352C3BF08B004A8866 /* UIButton+AllAnimations.swift */,
+				4AB6DE362C3BF08B004A8866 /* UIButton+Extention.swift */,
+				4AB6DE372C3BF08B004A8866 /* UIButton+TapAnimationType.swift */,
+			);
+			path = ButtonTapAnimations;
+			sourceTree = "<group>";
+		};
+		4AB6DE402C3BF2F2004A8866 /* DeviceSize */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6DE3C2C3BF2F2004A8866 /* Device.swift */,
+				4AB6DE3D2C3BF2F2004A8866 /* Screen.swift */,
+				4AB6DE3F2C3BF2F2004A8866 /* UIView+Round.swift */,
+			);
+			path = DeviceSize;
+			sourceTree = "<group>";
+		};
+		4AB6DE992C3BF7DC004A8866 /* DesignableViews */ = {
+			isa = PBXGroup;
+			children = (
+				4AB6DE982C3BF7DC004A8866 /* DesignView.swift */,
+			);
+			path = DesignableViews;
+			sourceTree = "<group>";
+		};
+		4ADE43902C3C6A81002FDEB8 /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE439F2C3C6AE6002FDEB8 /* PlaylistCollectionsCell */,
+				4ADE439C2C3C6AE6002FDEB8 /* PlaylistFooterPlayView */,
+				4ADE43A22C3C6AE6002FDEB8 /* PlaylistHeaderView */,
+				4ADE43962C3C6AE6002FDEB8 /* PlaylistOneCell */,
+				4ADE43992C3C6AE6002FDEB8 /* PlaylistTitleCell */,
+				4ADE43932C3C6AE6002FDEB8 /* PlaylistViewController */,
+			);
+			path = Playlist;
+			sourceTree = "<group>";
+		};
+		4ADE43932C3C6AE6002FDEB8 /* PlaylistViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE43912C3C6AE6002FDEB8 /* PlaylistViewController.storyboard */,
+				4ADE43922C3C6AE6002FDEB8 /* PlaylistViewController.swift */,
+			);
+			path = PlaylistViewController;
+			sourceTree = "<group>";
+		};
+		4ADE43962C3C6AE6002FDEB8 /* PlaylistOneCell */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE43942C3C6AE6002FDEB8 /* PlaylistOneCell.swift */,
+				4ADE43952C3C6AE6002FDEB8 /* PlaylistOneCell.xib */,
+			);
+			path = PlaylistOneCell;
+			sourceTree = "<group>";
+		};
+		4ADE43992C3C6AE6002FDEB8 /* PlaylistTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE43972C3C6AE6002FDEB8 /* PlaylistTitleCell.swift */,
+				4ADE43982C3C6AE6002FDEB8 /* PlaylistTitleCell.xib */,
+			);
+			path = PlaylistTitleCell;
+			sourceTree = "<group>";
+		};
+		4ADE439C2C3C6AE6002FDEB8 /* PlaylistFooterPlayView */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE439A2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.swift */,
+				4ADE439B2C3C6AE6002FDEB8 /* PlaylistFooterPlayView.xib */,
+			);
+			path = PlaylistFooterPlayView;
+			sourceTree = "<group>";
+		};
+		4ADE439F2C3C6AE6002FDEB8 /* PlaylistCollectionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE439D2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.swift */,
+				4ADE439E2C3C6AE6002FDEB8 /* PlaylistCollectionsCell.xib */,
+			);
+			path = PlaylistCollectionsCell;
+			sourceTree = "<group>";
+		};
+		4ADE43A22C3C6AE6002FDEB8 /* PlaylistHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				4ADE43A02C3C6AE6002FDEB8 /* PlaylistHeaderView.swift */,
+				4ADE43A12C3C6AE6002FDEB8 /* PlaylistHeaderView.xib */,
+			);
+			path = PlaylistHeaderView;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -882,6 +1433,11 @@
 		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4AAE16A82C46213000855BD9 /* Taxi */,
+				4A02C8FE2C3D5D2300DD39A4 /* Crypto */,
+				4ADE43902C3C6A81002FDEB8 /* Playlist */,
+				4A08A2FD2C3C205F00DE9D3E /* Wallets */,
+				4A78E9282C3C02BB00DE60F5 /* Imagine */,
 				46ACEFD62490F52500FAAD43 /* Framework */,
 				46ACEFE22490F52500FAAD43 /* Localization */,
 				46ACEFEB2490F52500FAAD43 /* Maps */,
@@ -991,45 +1547,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46ACF0CA2490FEB300FAAD43 /* TitleTextCell.xib in Resources */,
+				46ACF0CA2490FEB300FAAD43 /* TitleTextxCell.xib in Resources */,
+				4A78E93A2C3C02BB00DE60F5 /* ImagineSmallTagCell.xib in Resources */,
 				46ACF05B2490F52600FAAD43 /* Localizable.strings in Resources */,
+				4A08A3012C3C205F00DE9D3E /* WalletsTitleCell.xib in Resources */,
+				4AAE16F52C462BCB00855BD9 /* TaxiButtonBottomCell.xib in Resources */,
+				4AAE16F72C462BCB00855BD9 /* TaxiCarTagCell.xib in Resources */,
+				4A78E92C2C3C02BB00DE60F5 /* ImagineCollectionCell.xib in Resources */,
 				46ACF0662490F52600FAAD43 /* MapsLocationCell.xib in Resources */,
+				4A78E92A2C3C02BB00DE60F5 /* ImagineButtonCell.xib in Resources */,
 				46ACF05C2490F52600FAAD43 /* InfoPlist.strings in Resources */,
 				46ACF07C2490F52600FAAD43 /* MapsMenuTextCell.xib in Resources */,
 				46ACF0C92490FEB300FAAD43 /* ExampleSwitchCell.xib in Resources */,
 				46ACF0682490F52600FAAD43 /* MapsSectionCell.xib in Resources */,
+				4A02C9102C3D5D3F00DD39A4 /* CryptoOneCell.xib in Resources */,
 				46ACF0612490F52600FAAD43 /* MapsFavoritesCell.xib in Resources */,
+				4A08A3022C3C205F00DE9D3E /* WalletsViewController.storyboard in Resources */,
 				46ACF06C2490F52600FAAD43 /* LocationCoordinateCell.xib in Resources */,
+				4AAE16F12C462BCB00855BD9 /* TaxiAddressABCell.xib in Resources */,
 				46ACF0642490F52600FAAD43 /* MapsCollectionsCell.xib in Resources */,
 				46ACF0D02490FEB300FAAD43 /* headerShadow.png in Resources */,
 				46ACF06A2490F52600FAAD43 /* MapsRouteCell.xib in Resources */,
 				46ACF0CD2490FEB300FAAD43 /* ExampleSliderCell.xib in Resources */,
 				46ACF0602490F52600FAAD43 /* MapsFavoriteCell.xib in Resources */,
 				46ACF0792490F52600FAAD43 /* MapsMenuSpaceCell.xib in Resources */,
+				4A78E9302C3C02BB00DE60F5 /* ImagineTitleCell.xib in Resources */,
+				4A08A2FF2C3C205F00DE9D3E /* WalletsContainerItemCell.xib in Resources */,
+				4A78E9332C3C02BB00DE60F5 /* ImagineViewController.storyboard in Resources */,
+				4A78E9322C3C02BB00DE60F5 /* ImagineTagCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				4AAE16F32C462BCB00855BD9 /* TaxiVisaCardCell.xib in Resources */,
 				46ACF08A2490F52600FAAD43 /* MapsWeatherView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				46ACF0742490F52600FAAD43 /* LocationTextCell.xib in Resources */,
+				4A78E9382C3C02BB00DE60F5 /* ImagineCollCell.xib in Resources */,
+				4AAE16E02C4626F900855BD9 /* TaxiContainerHeaderView.xib in Resources */,
+				4ADE43AA2C3C6AE7002FDEB8 /* PlaylistFooterPlayView.xib in Resources */,
 				46ACF07F2490F52600FAAD43 /* HeaderDetailsView.xib in Resources */,
 				46ACF0E3249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard in Resources */,
 				46ACF0812490F52600FAAD43 /* HeaderSearchBarView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				46ACF0C32490FEB300FAAD43 /* ExampleCollectionCell.xib in Resources */,
+				4ADE43A62C3C6AE7002FDEB8 /* PlaylistOneCell.xib in Resources */,
 				46ACF0D22490FEB300FAAD43 /* ExampleHeaderGripView.xib in Resources */,
+				4AAE16DC2C4626F900855BD9 /* TaxiMapButtonView.xib in Resources */,
+				4AAE16F92C462BCB00855BD9 /* TaxiCollectionCarsCell.xib in Resources */,
 				46ACF0722490F52600FAAD43 /* LocationButtonCell.xib in Resources */,
+				4A78E9362C3C02BB00DE60F5 /* ImagineBigTagCell.xib in Resources */,
 				46ACF0D32490FEB300FAAD43 /* ExamplesSettingsViewController.storyboard in Resources */,
+				4A02C9172C3D5F1500DD39A4 /* CryptoTitleCell.xib in Resources */,
 				46ACF06F2490F52600FAAD43 /* LocationAddressCell.xib in Resources */,
 				46ACF0C72490FEB300FAAD43 /* ExampleSegmentCell.xib in Resources */,
 				46ACF0CF2490FEB300FAAD43 /* ExampleFooterButtonView.xib in Resources */,
+				4ADE43AC2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.xib in Resources */,
 				46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */,
 				46ACF0EA24925B9200FAAD43 /* ExampleAddTableViewController.storyboard in Resources */,
+				4ADE43A32C3C6AE6002FDEB8 /* PlaylistViewController.storyboard in Resources */,
 				46ACF0872490F52600FAAD43 /* MapsMenuHeader.xib in Resources */,
 				46ACF07B2490F52600FAAD43 /* MapsMenuSegmentCell.xib in Resources */,
+				4A02C90E2C3D5D3F00DD39A4 /* CryptoHeaderView.xib in Resources */,
+				4A02C9112C3D5D3F00DD39A4 /* CryptoViewController.storyboard in Resources */,
 				46ACF0762490F52600FAAD43 /* MapsSearchCell.xib in Resources */,
 				46ACF0852490F52600FAAD43 /* HeaderTabBarView.xib in Resources */,
+				4ADE43AE2C3C6AE7002FDEB8 /* PlaylistHeaderView.xib in Resources */,
 				46ACF08C2490F52600FAAD43 /* MapsViewController.storyboard in Resources */,
 				46ACF0892490F52600FAAD43 /* MapsButtons.xib in Resources */,
+				4ADE43A82C3C6AE7002FDEB8 /* PlaylistTitleCell.xib in Resources */,
+				4A78E92E2C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.xib in Resources */,
 				46ACF0702490F52600FAAD43 /* LocationCollectionsButtonCell.xib in Resources */,
+				4AAE16D12C4626F900855BD9 /* TaxiViewController.storyboard in Resources */,
 				46ACF0822490F52600FAAD43 /* TableHeaderSpinerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1084,16 +1670,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADE43A72C3C6AE7002FDEB8 /* PlaylistTitleCell.swift in Sources */,
+				4AB6DE242C3BEE46004A8866 /* DesignInnerShadow.swift in Sources */,
+				4A08A3002C3C205F00DE9D3E /* WalletsTitleCell.swift in Sources */,
 				46ACF06D2490F52600FAAD43 /* LocationCoordinateCell.swift in Sources */,
 				46ACF0D42490FEB300FAAD43 /* ExamplesContainerController.swift in Sources */,
 				46ACF0E924925B9200FAAD43 /* ExampleAddTableViewController.swift in Sources */,
 				46ACF06B2490F52600FAAD43 /* MapsRouteCell.swift in Sources */,
 				46ACF0752490F52600FAAD43 /* LocationTextCell.swift in Sources */,
+				4A78E9342C3C02BB00DE60F5 /* ImagineViewController.swift in Sources */,
 				46ACF09A2490F52600FAAD43 /* MapsViewController.swift in Sources */,
+				4A78E92F2C3C02BB00DE60F5 /* ImagineTitleCell.swift in Sources */,
+				4AB6DE222C3BEE46004A8866 /* DesignFigure.swift in Sources */,
 				46ACF0C82490FEB300FAAD43 /* ExampleSwitchCell.swift in Sources */,
+				4AAE16DB2C4626F900855BD9 /* TaxiMapButtonView.swift in Sources */,
+				4A78E9372C3C02BB00DE60F5 /* ImagineCollCell.swift in Sources */,
+				4AB6DE422C3BF2F2004A8866 /* Screen.swift in Sources */,
+				4ADE43AB2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.swift in Sources */,
+				4AAE16DF2C4626F900855BD9 /* TaxiContainerHeaderView.swift in Sources */,
+				4A78E9352C3C02BB00DE60F5 /* ImagineBigTagCell.swift in Sources */,
 				46ACF0962490F52600FAAD43 /* LocationContainerControllerDelegate.swift in Sources */,
+				4ADE43A52C3C6AE7002FDEB8 /* PlaylistOneCell.swift in Sources */,
 				46ACF08E2490F52600FAAD43 /* MapsMenuContainerLayout.swift in Sources */,
 				46ACF07D2490F52600FAAD43 /* MapsMenuTextCell.swift in Sources */,
+				4AB6DE962C3BF7B1004A8866 /* String.swift in Sources */,
+				4AAE16F42C462BCB00855BD9 /* TaxiButtonBottomCell.swift in Sources */,
+				4AB6DE1F2C3BEE46004A8866 /* DesignExtentions.swift in Sources */,
+				4A78E9392C3C02BB00DE60F5 /* ImagineSmallTagCell.swift in Sources */,
+				4AB6DE442C3BF2F2004A8866 /* UIView+Round.swift in Sources */,
 				46ACF07A2490F52600FAAD43 /* MapsMenuSegmentCell.swift in Sources */,
 				46ACF0C52490FEB300FAAD43 /* ExampleCell.swift in Sources */,
 				46ACF0C22490FEB300FAAD43 /* ExampleCollectionCell.swift in Sources */,
@@ -1104,50 +1708,78 @@
 				46ACF0922490F52600FAAD43 /* MapsContainerController.swift in Sources */,
 				46ACF0632490F52600FAAD43 /* MapsCollectionCellView.swift in Sources */,
 				46ACF0952490F52600FAAD43 /* LocationContainerController.swift in Sources */,
+				4AB6DE412C3BF2F2004A8866 /* Device.swift in Sources */,
 				46ACF0C42490FEB300FAAD43 /* ExampleCellStyle.swift in Sources */,
+				4AAE16F82C462BCB00855BD9 /* TaxiCollectionCarsCell.swift in Sources */,
+				4A02C9162C3D5F1500DD39A4 /* CryptoTitleCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				46ACF08D2490F52600FAAD43 /* MapsRouteContainerLayout.swift in Sources */,
 				46ACF0D52490FEB300FAAD43 /* ExamplesContainerControllerScrollType.swift in Sources */,
-				46ACF0CB2490FEB300FAAD43 /* TitleTextCell.swift in Sources */,
+				46ACF0CB2490FEB300FAAD43 /* TitleTextxCell.swift in Sources */,
 				46ACF08F2490F52600FAAD43 /* MapsMainContainerLayout.swift in Sources */,
+				4ADE43A92C3C6AE7002FDEB8 /* PlaylistFooterPlayView.swift in Sources */,
 				46ACF0E4249255ED00FAAD43 /* ExampleAddCollectionViewController.swift in Sources */,
+				4AB6DE3A2C3BF08B004A8866 /* UIButton+Extention.swift in Sources */,
 				46ACF0772490F52600FAAD43 /* MapsSearchCell.swift in Sources */,
 				46ACF05F2490F52600FAAD43 /* MapsFavoriteCell.swift in Sources */,
 				46ACF0582490F52600FAAD43 /* XibView.swift in Sources */,
+				4AAE16F02C462BCB00855BD9 /* TaxiAddressABCell.swift in Sources */,
+				4AB6DE392C3BF08B004A8866 /* UIButton+AllAnimations.swift in Sources */,
 				46ACF0782490F52600FAAD43 /* MapsMenuSpaceCell.swift in Sources */,
 				46ACF0972490F52600FAAD43 /* MenuContainerControllerDelegate.swift in Sources */,
+				4AEF41762C3C32B1001F1847 /* DispatchQueue.swift in Sources */,
 				46ACF0E824925B9200FAAD43 /* ExampleAddTableViewControllerSettings.swift in Sources */,
 				46ACF0552490F52600FAAD43 /* Color.swift in Sources */,
+				4A02C90D2C3D5D3F00DD39A4 /* CryptoHeaderView.swift in Sources */,
+				4AB6DE212C3BEE46004A8866 /* DesignButton.swift in Sources */,
 				46ACF0692490F52600FAAD43 /* MapsSectionCell.swift in Sources */,
+				4AAE16F62C462BCB00855BD9 /* TaxiCarTagCell.swift in Sources */,
+				4A78E92B2C3C02BB00DE60F5 /* ImagineCollectionCell.swift in Sources */,
 				46ACF0882490F52600FAAD43 /* MapsButtons.swift in Sources */,
+				4A02C9122C3D5D3F00DD39A4 /* CryptoViewController.swift in Sources */,
 				46ACF08B2490F52600FAAD43 /* MapsWeatherView.swift in Sources */,
 				46ACF0652490F52600FAAD43 /* MapsCollectionsCell.swift in Sources */,
 				46ACF0912490F52600FAAD43 /* MapsContainerControllerDelegate.swift in Sources */,
-				46ACF0592490F52600FAAD43 /* DesignButton.swift in Sources */,
+				4ADE43AD2C3C6AE7002FDEB8 /* PlaylistHeaderView.swift in Sources */,
 				46ACF0992490F52600FAAD43 /* MapViewManager.swift in Sources */,
+				4AAE16D22C4626F900855BD9 /* TaxiViewController.swift in Sources */,
 				46ACF06E2490F52600FAAD43 /* LocationAddressCell.swift in Sources */,
+				4A78E9312C3C02BB00DE60F5 /* ImagineTagCell.swift in Sources */,
 				46ACF0572490F52600FAAD43 /* StoryboardController.swift in Sources */,
 				46ACF0842490F52600FAAD43 /* HeaderTabBarView.swift in Sources */,
 				46ACF0562490F52600FAAD43 /* UIView+Positioning.swift in Sources */,
+				4AB6DE232C3BEE46004A8866 /* DesignImageView.swift in Sources */,
 				46ACF0712490F52600FAAD43 /* LocationCollectionsButtonCell.swift in Sources */,
 				46ACF0622490F52600FAAD43 /* MapsFavoritesCell.swift in Sources */,
 				46ACF0CC2490FEB300FAAD43 /* ExampleSliderCell.swift in Sources */,
 				46ACF09E2490FE2700FAAD43 /* SceneDelegate.swift in Sources */,
 				46ACF0C62490FEB300FAAD43 /* ExampleSegmentCell.swift in Sources */,
 				46ACF0D12490FEB300FAAD43 /* ExampleHeaderGripView.swift in Sources */,
+				4AB6DE3B2C3BF08B004A8866 /* UIButton+TapAnimationType.swift in Sources */,
 				46ACF0CE2490FEB300FAAD43 /* ExampleFooterButtonView.swift in Sources */,
 				46ACF0732490F52600FAAD43 /* LocationButtonCell.swift in Sources */,
+				4A08A2FE2C3C205F00DE9D3E /* WalletsContainerItemCell.swift in Sources */,
+				4ADE43A42C3C6AE7002FDEB8 /* PlaylistViewController.swift in Sources */,
 				46ACF0942490F52600FAAD43 /* RouteContainerControllerDelegate.swift in Sources */,
 				46ACF0982490F52600FAAD43 /* MenuContainerController.swift in Sources */,
 				46ACF0672490F52600FAAD43 /* MapsLocationCell.swift in Sources */,
 				46ACF0D62490FEB300FAAD43 /* ExamplesScrollViews.swift in Sources */,
+				4AAE16F22C462BCB00855BD9 /* TaxiVisaCardCell.swift in Sources */,
 				46ACF07E2490F52600FAAD43 /* HeaderDetailsView.swift in Sources */,
+				4A02C90F2C3D5D3F00DD39A4 /* CryptoOneCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				46ACF05A2490F52600FAAD43 /* DesignView.swift in Sources */,
+				4AB6DE252C3BEE46004A8866 /* DesignLabel.swift in Sources */,
+				4AB6DE202C3BEE46004A8866 /* CopyableLabel.swift in Sources */,
+				4A78E9292C3C02BB00DE60F5 /* ImagineButtonCell.swift in Sources */,
+				4AB6DE262C3BEE46004A8866 /* DesignSegmentBar.swift in Sources */,
 				46ACF0902490F52600FAAD43 /* MapsContainerLayout.swift in Sources */,
 				46ACF05E2490F52600FAAD43 /* LocalizeFuncs.swift in Sources */,
+				4AB6DE9B2C3BF7DC004A8866 /* DesignView.swift in Sources */,
+				4AB6DE342C3BF005004A8866 /* Cell.swift in Sources */,
+				4A78E92D2C3C02BB00DE60F5 /* ImagineHeaderSwitchCell.swift in Sources */,
 				46ACF0862490F52600FAAD43 /* MapsMenuHeader.swift in Sources */,
 				46ACF0832490F52600FAAD43 /* TableHeaderSpinerView.swift in Sources */,
+				4A08A3032C3C205F00DE9D3E /* WalletsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

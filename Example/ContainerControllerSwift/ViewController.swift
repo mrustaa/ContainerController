@@ -23,10 +23,19 @@ class ViewController: UIViewController {
         navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         navigationController?.view.backgroundColor = .systemGroupedBackground
         items = [
-            TitleTextItem(title: "Maps.app",                      clss: MapsViewController.self),
-            TitleTextItem(title: "Example. Settings",             clss: ExamplesSettingsViewController.self),
-            TitleTextItem(title: "Example. Add UITableView",      clss: ExampleAddTableViewController.self),
-            TitleTextItem(title: "Example. Add UICollectionView", clss: ExampleAddCollectionViewController.self)
+            TitleTextxItem(title: "Maps.app",                      clss: MapsViewController.self),
+            TitleTextxItem(title: "Example. Settings",             clss: ExamplesSettingsViewController.self),
+            TitleTextxItem(title: "Example. Add UITableView",      clss: ExampleAddTableViewController.self),
+            TitleTextxItem(title: "Example. Add UICollectionView", clss: ExampleAddCollectionViewController.self),
+            
+            TitleTextxItem(title: "Imagine", clss: ImagineViewController.self),
+            TitleTextxItem(title: "Playlist", clss: PlaylistViewController.self),
+            TitleTextxItem(title: "Crypto", clss: CryptoViewController.self),
+            
+            TitleTextxItem(title: "Wallets", clss: WalletsViewController.self),
+            TitleTextxItem(title: "Taxi ", clss: TaxiViewController.self)
+            
+            
         ]
         
         tableView?.set(items: items, animated: true)
@@ -35,7 +44,7 @@ class ViewController: UIViewController {
         tableView?.selectIndexCallback = { [weak self] (index: Int) in
             guard let _self = self else { return }
             
-            guard let data = _self.tableView?.items[index].cellData as? TitleTextCellData else { return }
+            guard let data = _self.tableView?.items[index].cellData as? TitleTextxCellData else { return }
             guard let storyboardClass = data.clss as? StoryboardController.Type else { return }
             let vc = storyboardClass.instantiate()
             

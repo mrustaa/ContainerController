@@ -107,7 +107,7 @@ class ExamplesSettingsViewController: StoryboardController {
         let subTitle = String(describing: type(of: container))
         let title = style.rawValue
         
-        items.append( TitleTextItem(title: title, subtitle: subTitle, editing: true) )
+        items.append( TitleTextxItem(title: title, subtitle: subTitle, editing: true) )
         tableView?.set(items: items, animated: true)
     }
     

@@ -18,7 +18,6 @@ class TaxiViewController: StoryboardController {
     @IBOutlet weak var mapView: MKMapView!
     var mapManager: MapViewManager!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -7,14 +7,41 @@
 //
 
 import UIKit
+import ContainerControllerSwift
 
 @IBDesignable
-class StoryboardController: UIViewController {    
+class StoryboardController: UIViewController {
+    
+    var navBarHide: Bool = false
     
     class func instantiate() -> UIViewController {
         return fromStoryboardController()
     }
 
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if navBarHide {
+            navigationController?.navigationBar.isTranslucent = false
+            setNeedsStatusBarAppearanceUpdate()
+            navBar(hide: true)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if navBarHide {
+            navBar(hide: false)
+        }
+    }
+    
+    func navBar(hide: Bool) {
+        self.navigationController?.setNavigationBarHidden(hide, animated: true)
+    }
+    
     class func fromStoryboardController() -> UIViewController {
         let className = String(describing: self)
         
@@ -27,5 +54,67 @@ class StoryboardController: UIViewController {
 //        }
         
         return storyboard.instantiateViewController(withIdentifier: className)
+    }
+}
+
+extension StoryboardController: ContainerControllerDelegate {
+    
+    
+    func addContainer(position: ContainerPosition, radius: CGFloat, items: [TableAdapterItem]? = nil, delegate: ContainerControllerDelegate? = nil, header: UIView? = nil, footer: UIView? = nil) -> ContainerController {
+        
+        let layoutC = ContainerLayout()
+        layoutC.positions =  position //
+        layoutC.insets = .init(right: 0, left: 0)
+        var container = ContainerController(addTo: self, layout: layoutC)
+        container.view.cornerRadius = radius
+        container.view.addShadow()
+        container.view.tag = 12
+        if let delegate = delegate {
+            container.delegate = delegate
+        } else {
+            container.delegate = self
+        }
+        let shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
+        
+        container.view.layer.shadowOpacity = Float(0.20)
+        container.view.layer.shadowOffset = .init(width: 0, height: 13)
+        container.view.layer.shadowRadius = 30.0
+        container.view.layer.shadowColor = UIColor.black.cgColor
+        
+        
+        container.view.backgroundColor = .white
+        // container.view.backgroundColor = color
+        
+        if let headerV = header {
+            container.add(headerView: headerV)
+        }
+        
+        if let footerV = footer {
+            container.add(footerView: footerV)
+        }
+        
+        var table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
+        table.indicatorStyle =  .default
+        // container.add(scrollView: addCollectionView())
+        
+        if let items = items {
+            table.set(items: items )
+        }
+        container.add(scrollView: table)
+        container.move(type: .bottom)
+        
+        main(delay: 1.05) {
+            container.move(type: .top
+            )
+        }
+        
+        return container
+    }
+    
+    
+    func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool) {
+        if  animation {
+            
+        }
     }
 }
