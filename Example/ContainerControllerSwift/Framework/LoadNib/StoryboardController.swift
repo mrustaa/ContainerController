@@ -60,7 +60,7 @@ class StoryboardController: UIViewController {
 extension StoryboardController: ContainerControllerDelegate {
     
     
-    func addContainer(position: ContainerPosition, radius: CGFloat, items: [TableAdapterItem]? = nil, delegate: ContainerControllerDelegate? = nil, addShadow: Bool = true, addBackShadow: Bool = false, header: UIView? = nil, footer: UIView? = nil) -> (ContainerController, TableAdapterView) {
+    func addContainer(position: ContainerPosition, radius: CGFloat, items: [TableAdapterItem]? = nil, delegate: ContainerControllerDelegate? = nil, addShadow: Bool = true, addBackShadow: Bool = false, header: UIView? = nil, footer: UIView? = nil, back: UIView? = nil) -> (ContainerController, TableAdapterView) {
         
         let layoutC = ContainerLayout()
         layoutC.positions =  position //
@@ -89,6 +89,8 @@ extension StoryboardController: ContainerControllerDelegate {
         container.set(backgroundShadowShow: addBackShadow)
         
         container.view.backgroundColor = .white
+        
+        
         // container.view.backgroundColor = color
         
         if let headerV = header {
@@ -97,6 +99,10 @@ extension StoryboardController: ContainerControllerDelegate {
         
         if let footerV = footer {
             container.add(footerView: footerV)
+        }
+        
+        if let back = back {
+            container.backView?.addSubview(back)
         }
         
         let table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)

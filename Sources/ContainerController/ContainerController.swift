@@ -25,7 +25,7 @@ open class ContainerController: NSObject {
     
     public var footerView: UIView?
     
-    public var backView: UIView!
+    public var backView: UIView?
     
     // MARK: Layout
     
@@ -68,7 +68,7 @@ open class ContainerController: NSObject {
     private var scrollTransform = CGAffineTransform.identity
     
     // MARK: - Properties Position
-        
+    
     public var topBarHeight: CGFloat {
         var result: CGFloat = 0.0
         if let vc = controller?.navigationController, !vc.isNavigationBarHidden {
@@ -121,7 +121,7 @@ open class ContainerController: NSObject {
     }
     
     public var positionMiddle: CGFloat {
-        var middle = layout.positions.middle ?? layout.positions.bottom
+        var middle = layout.positions.middle ?? (layout.positions.bottom ?? 0)
         if !isPortrait {
             if let landscapeMid = layout.landscapePositions?.middle {
                 middle = landscapeMid
@@ -137,7 +137,7 @@ open class ContainerController: NSObject {
                 bottom = landscape.bottom
             }
         }
-        return deviceHeight - bottom
+        return deviceHeight - (bottom ?? 0.0)
     }
     
     private var insetsLeft: CGFloat {
@@ -195,16 +195,16 @@ open class ContainerController: NSObject {
         NotificationCenter.default.removeObserver(self)
         
         move(type: .hide, completion:
-            
-            {  [weak self] in
+                
+                {  [weak self] in
             guard let _self = self else { return }
-
+            
             _self.scrollView?.removeFromSuperview()
             _self.headerView?.removeFromSuperview()
             _self.footerView?.removeFromSuperview()
             _self.shadowButton.removeFromSuperview()
             _self.view.removeFromSuperview()
-
+            
             completion?()
         })
     }
@@ -369,11 +369,8 @@ open class ContainerController: NSObject {
         view = ContainerView(frame: frame)
         view.backgroundColor = .systemBackground
         controller?.view.addSubview(view)
-        
-        backView = UIView(frame: CGRect(x: 0, y: 0, width: deviceWidth, height: deviceHeight * 2))
-        backView.backgroundColor = .clear
-        backView.isUserInteractionEnabled = false
-        view.contentView?.addSubview(backView)
+      
+        updateBackView()
         
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         panGesture?.isEnabled = layout.movingEnabled
@@ -382,6 +379,20 @@ open class ContainerController: NSObject {
         }
         
         
+    }
+    
+    func updateBackView() {
+        if backView == nil {
+            
+            backView = UIView(frame: CGRect(x: 0, y: 0, width: deviceWidth, height: deviceHeight * 1.5))
+            backView?.backgroundColor = .clear
+            backView?.isUserInteractionEnabled = false
+        }
+        
+        if let back = backView {
+            //        view.contentView?.addSubview(backView)
+            view.contentView?.insertSubview(back, at: 0)//(backView)
+        }
     }
     
     // MARK: - Add Header
@@ -398,8 +409,11 @@ open class ContainerController: NSObject {
         removeHeaderView()
         self.headerView = headerView
         
-        view.contentView?.addSubview(backView)
+        updateBackView()
         view.contentView?.addSubview(headerView)
+//        if let scrollView = scrollView {
+//            view.contentView?.addSubview(scrollView)
+//        }
         calculationViews()
     }
     
@@ -417,8 +431,11 @@ open class ContainerController: NSObject {
         removeFooterView()
         self.footerView = footerView
         
-                view.contentView?.addSubview(backView)
+        updateBackView()
         controller?.view.addSubview(footerView)
+//        if let scrollView = scrollView {
+//            view.contentView?.addSubview(scrollView)
+//        }
         calculationViews()
     }
     
@@ -460,7 +477,7 @@ open class ContainerController: NSObject {
             collectionAdapterView.dataSource = self
         }
         
-        view.contentView?.addSubview(backView)
+        updateBackView()
         view.contentView?.addSubview(scrollView)
         calculationViews()
     }
@@ -706,10 +723,12 @@ open class ContainerController: NSObject {
             
         } else {
             
+            let typeBottom: ContainerMoveType = (layout.positions.bottom != nil) ? .bottom : .hide
+            
             if position < positionTop { /// <<< (70 Top)
                 
                 if 750 < velocity {
-                    type = .bottom /// ↓↓↓
+                    type = typeBottom /// ↓↓↓
                 } else {
                     type = .top /// Default
                 }
@@ -719,7 +738,7 @@ open class ContainerController: NSObject {
                 if velocity < -750 {
                     type = .top /// ↑↑↑
                 } else {
-                    type = .bottom /// Default
+                    type = typeBottom /// Default
                 }
                 
             } else { /// (pos 150) -  Center    top...!...bottom
@@ -731,7 +750,7 @@ open class ContainerController: NSObject {
                 if position < centerTopBottom { /// ↑↑↑
                     
                     if 150 < velocity {
-                        type = .bottom
+                        type = typeBottom
                     } else {
                         type = .top /// Default
                     }
@@ -741,7 +760,7 @@ open class ContainerController: NSObject {
                     if velocity < -150 {
                         type = .top
                     } else {
-                        type = .bottom /// Default
+                        type = typeBottom /// Default
                     }
                 }
             }

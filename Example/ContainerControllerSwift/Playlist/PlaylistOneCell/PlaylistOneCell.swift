@@ -5,6 +5,7 @@ import ContainerControllerSwift
 
 extension PlaylistOneItem {
   struct State {
+      var type: ViewCallsPlayerType = .none
     var firstImage: UIImage?
     var subtitleText: String?
     var text2: String?
@@ -12,7 +13,8 @@ extension PlaylistOneItem {
     var handlers: Handlers = .init()
   }
   struct Handlers {
-    var onClickAt: (()->(Void))?
+  
+      var onClickAt: ((_ selType: ViewCallsPlayerType)->(Void))?
   }
 }
 
@@ -67,25 +69,59 @@ class PlaylistOneCell: TableAdapterCell {
   @IBOutlet private weak var label3: UILabel?
   
   @IBOutlet override var selectedView: UIView? { didSet { } }
-  @IBOutlet var cardView: UIView?
+  @IBOutlet var ccardView: UIView?
   @IBOutlet var button: UIButton?
   
   override func awakeFromNib() {
     separator(hide: true)
-    button?.tapHideAnimation(
-      view: cardView,
-      type: .alpha(0.5),
-      callback: { [weak self] type in
-        if type == .touchUpInside {
-          self?.data?.state.handlers.onClickAt?()
-        }
-      }
-    )
+      
+      button?.tapClassic({ [weak self] down in
+          UIView.animate(withDuration: down ? 0.0 : 0.35) {
+              self?.ccardView?.alpha = down ? 0.2 : 0.0
+          }
+          if !down {
+            
+              if   let playerType = self?.data?.state.type {
+                  self?.data?.state.handlers.onClickAt?(playerType)
+              }
+          }
+      })
+      
+//    button?.tapHideAnimation(
+//      view: cardView,
+//      type: .alpha(0.5),
+//      callback: { [weak self] type in
+//        if type == .touchUpInside {
+//          self?.data?.state.handlers.onClickAt?()
+//        }
+//      }
+//    )
   }
   
   override func fill(data: TableAdapterCellData?) {
     guard let data = data as? PlaylistOneCellData else { return }
     self.data = data
+      
+      
+      if   let playerType = self.data?.state.type {
+          
+          
+          let firstImage =  ViewCallsPlayer.getImage( playerType)
+          let subtitleText =  ViewCallsPlayer.getTitle( playerType)
+          let text2 = ViewCallsPlayer.getSubtitle( playerType)
+          let text3 = "4:10"
+          
+          self.data?.state.firstImage = firstImage
+          self.data?.state.subtitleText = subtitleText
+          self.data?.state.text2 = text2
+          self.data?.state.text3 = text3
+          
+          firstImageView?.image = firstImage
+          subtitleLabel?.text = subtitleText
+          label2?.text = text2
+          label3?.text = text3
+      }
+      
     firstImageView?.image = data.state.firstImage
     subtitleLabel?.text = data.state.subtitleText
     label2?.text = data.state.text2

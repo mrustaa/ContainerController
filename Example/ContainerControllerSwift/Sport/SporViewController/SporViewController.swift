@@ -40,10 +40,10 @@ class SporViewController: StoryboardController {
         
         let frr =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: ScreenSize.height - 5)
         let backgroundView = SportGradientBackgroundView()
-//        cc.0.backView.backgroundColor = .red
+//        cc.0.backView?.backgroundColor = .red
         backgroundView.frame = frr
         
-        cc.0.backView.addSubview( backgroundView)
+        cc.0.backView?.addSubview( backgroundView)
         
         
         self.containerTableView = cc.1

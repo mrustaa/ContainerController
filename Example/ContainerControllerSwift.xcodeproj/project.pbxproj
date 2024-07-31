@@ -120,6 +120,14 @@
 		4A08A3032C3C205F00DE9D3E /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08A2FB2C3C205F00DE9D3E /* WalletsViewController.swift */; };
 		4A15C9AB2C47A89E00D8F733 /* SportGradientBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A15C9A82C47A89E00D8F733 /* SportGradientBackgroundView.swift */; };
 		4A15C9AC2C47A89E00D8F733 /* SportGradientBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A15C9A92C47A89E00D8F733 /* SportGradientBackgroundView.xib */; };
+		4A2067252C5A3F64001188E7 /* CamelPhat_DropIt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2067242C5A3F64001188E7 /* CamelPhat_DropIt.mp3 */; };
+		4A2067322C5A4226001188E7 /* funky_house_classic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2067262C5A4224001188E7 /* funky_house_classic.mp3 */; };
+		4A2067372C5A4226001188E7 /* big_miz_aador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A20672B2C5A4225001188E7 /* big_miz_aador.mp3 */; };
+		4A2067382C5A4226001188E7 /* claptone_music_got_me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A20672C2C5A4225001188E7 /* claptone_music_got_me.mp3 */; };
+		4A2067392C5A4226001188E7 /* the_audio_bar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A20672D2C5A4225001188E7 /* the_audio_bar.mp3 */; };
+		4A20673A2C5A4226001188E7 /* benno_blome_botha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A20672E2C5A4225001188E7 /* benno_blome_botha.mp3 */; };
+		4A20673C2C5A4226001188E7 /* myselor_neurolife.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A2067302C5A4225001188E7 /* myselor_neurolife.mp3 */; };
+		4A20673F2C5A477E001188E7 /* TimerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A20673E2C5A477E001188E7 /* TimerUtils.swift */; };
 		4A3AA7482C4F240900438BC5 /* MyCardsCollAddonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AA73C2C4F240800438BC5 /* MyCardsCollAddonsCell.swift */; };
 		4A3AA7492C4F240900438BC5 /* MyCardsCollAddonsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A3AA73D2C4F240800438BC5 /* MyCardsCollAddonsCell.xib */; };
 		4A3AA74A2C4F240900438BC5 /* MyCardsTitileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3AA73F2C4F240900438BC5 /* MyCardsTitileCell.swift */; };
@@ -140,6 +148,11 @@
 		4A4247782C4F09D200FF11DC /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4A4247712C4F09D200FF11DC /* README.md */; };
 		4A42A6DE2C4E610500E78833 /* MapParkingTgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A42A6DB2C4E610500E78833 /* MapParkingTgCell.swift */; };
 		4A42A6DF2C4E610500E78833 /* MapParkingTgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A42A6DC2C4E610500E78833 /* MapParkingTgCell.xib */; };
+		4A4660962C5A328100AD2BD6 /* ViewCallsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4660952C5A328100AD2BD6 /* ViewCallsPlayer.swift */; };
+		4A46609B2C5A336900AD2BD6 /* Disclosure_You_Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A4660972C5A336900AD2BD6 /* Disclosure_You_Me.mp3 */; };
+		4A46609C2C5A336900AD2BD6 /* Disclosure_Ware_Running.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A4660982C5A336900AD2BD6 /* Disclosure_Ware_Running.mp3 */; };
+		4A46609D2C5A336900AD2BD6 /* Flume_Greatest_View.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A4660992C5A336900AD2BD6 /* Flume_Greatest_View.mp3 */; };
+		4A46609E2C5A336900AD2BD6 /* Flume_Sleepless.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A46609A2C5A336900AD2BD6 /* Flume_Sleepless.mp3 */; };
 		4A7164152C4F628D007C88BD /* CustomCardGradientMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7164082C4F628D007C88BD /* CustomCardGradientMainView.swift */; };
 		4A7164162C4F628D007C88BD /* CustomCardGradientMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7164092C4F628D007C88BD /* CustomCardGradientMainView.xib */; };
 		4A7164172C4F628D007C88BD /* CustomCardHeaderMiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A71640B2C4F628D007C88BD /* CustomCardHeaderMiniView.swift */; };
@@ -186,6 +199,8 @@
 		4A7E6D742C4E505D00F36CD3 /* MapParkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E6D6C2C4E505D00F36CD3 /* MapParkingViewController.swift */; };
 		4A7E6D782C4E588A00F36CD3 /* MapParkingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E6D752C4E588A00F36CD3 /* MapParkingHeaderView.swift */; };
 		4A7E6D792C4E588A00F36CD3 /* MapParkingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7E6D762C4E588A00F36CD3 /* MapParkingHeaderView.xib */; };
+		4AA93AA02C59EC9400F99845 /* PlayMusicItGribView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA93A9D2C59EC9400F99845 /* PlayMusicItGribView.swift */; };
+		4AA93AA12C59EC9400F99845 /* PlayMusicItGribView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA93A9E2C59EC9400F99845 /* PlayMusicItGribView.xib */; };
 		4AAE16D12C4626F900855BD9 /* TaxiViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AAE16B92C4626F900855BD9 /* TaxiViewController.storyboard */; };
 		4AAE16D22C4626F900855BD9 /* TaxiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16BA2C4626F900855BD9 /* TaxiViewController.swift */; };
 		4AAE16DB2C4626F900855BD9 /* TaxiMapButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE16C82C4626F900855BD9 /* TaxiMapButtonView.swift */; };
@@ -221,10 +236,10 @@
 		4AB6DE9B2C3BF7DC004A8866 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB6DE982C3BF7DC004A8866 /* DesignView.swift */; };
 		4ACA328D2C465687009EF3ED /* TaxiDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACA328A2C465687009EF3ED /* TaxiDetailsCell.swift */; };
 		4ACA328E2C465687009EF3ED /* TaxiDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA328B2C465687009EF3ED /* TaxiDetailsCell.xib */; };
+		4AD19A572C5A08080071AC96 /* PlayMusicItGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD19A542C5A08080071AC96 /* PlayMusicItGradientView.swift */; };
+		4AD19A582C5A08080071AC96 /* PlayMusicItGradientView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD19A552C5A08080071AC96 /* PlayMusicItGradientView.xib */; };
 		4AD5A0CD2C59CF5B009B8C48 /* PlayMusicItCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5A0CA2C59CF5B009B8C48 /* PlayMusicItCell.swift */; };
 		4AD5A0CE2C59CF5B009B8C48 /* PlayMusicItCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5A0CB2C59CF5B009B8C48 /* PlayMusicItCell.xib */; };
-		4AD5A0D52C59CF64009B8C48 /* PlayMusicItGribView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5A0CF2C59CF64009B8C48 /* PlayMusicItGribView.swift */; };
-		4AD5A0D62C59CF64009B8C48 /* PlayMusicItGribView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5A0D02C59CF64009B8C48 /* PlayMusicItGribView.xib */; };
 		4AD5A0D72C59CF64009B8C48 /* PlayMusicViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AD5A0D22C59CF64009B8C48 /* PlayMusicViewController.storyboard */; };
 		4AD5A0D82C59CF64009B8C48 /* PlayMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD5A0D32C59CF64009B8C48 /* PlayMusicViewController.swift */; };
 		4ADE43A32C3C6AE6002FDEB8 /* PlaylistViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADE43912C3C6AE6002FDEB8 /* PlaylistViewController.storyboard */; };
@@ -406,6 +421,14 @@
 		4A08A2FB2C3C205F00DE9D3E /* WalletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
 		4A15C9A82C47A89E00D8F733 /* SportGradientBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportGradientBackgroundView.swift; sourceTree = "<group>"; };
 		4A15C9A92C47A89E00D8F733 /* SportGradientBackgroundView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SportGradientBackgroundView.xib; sourceTree = "<group>"; };
+		4A2067242C5A3F64001188E7 /* CamelPhat_DropIt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CamelPhat_DropIt.mp3; sourceTree = "<group>"; };
+		4A2067262C5A4224001188E7 /* funky_house_classic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funky_house_classic.mp3; sourceTree = "<group>"; };
+		4A20672B2C5A4225001188E7 /* big_miz_aador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = big_miz_aador.mp3; sourceTree = "<group>"; };
+		4A20672C2C5A4225001188E7 /* claptone_music_got_me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = claptone_music_got_me.mp3; sourceTree = "<group>"; };
+		4A20672D2C5A4225001188E7 /* the_audio_bar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_audio_bar.mp3; sourceTree = "<group>"; };
+		4A20672E2C5A4225001188E7 /* benno_blome_botha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = benno_blome_botha.mp3; sourceTree = "<group>"; };
+		4A2067302C5A4225001188E7 /* myselor_neurolife.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = myselor_neurolife.mp3; sourceTree = "<group>"; };
+		4A20673E2C5A477E001188E7 /* TimerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerUtils.swift; sourceTree = "<group>"; };
 		4A3AA73C2C4F240800438BC5 /* MyCardsCollAddonsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsCollAddonsCell.swift; sourceTree = "<group>"; };
 		4A3AA73D2C4F240800438BC5 /* MyCardsCollAddonsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCardsCollAddonsCell.xib; sourceTree = "<group>"; };
 		4A3AA73F2C4F240900438BC5 /* MyCardsTitileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsTitileCell.swift; sourceTree = "<group>"; };
@@ -429,6 +452,11 @@
 		4A42477A2C4F0E0A00FF11DC /* ContainerController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ContainerController-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		4A42A6DB2C4E610500E78833 /* MapParkingTgCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParkingTgCell.swift; sourceTree = "<group>"; };
 		4A42A6DC2C4E610500E78833 /* MapParkingTgCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapParkingTgCell.xib; sourceTree = "<group>"; };
+		4A4660952C5A328100AD2BD6 /* ViewCallsPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCallsPlayer.swift; sourceTree = "<group>"; };
+		4A4660972C5A336900AD2BD6 /* Disclosure_You_Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Disclosure_You_Me.mp3; sourceTree = "<group>"; };
+		4A4660982C5A336900AD2BD6 /* Disclosure_Ware_Running.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Disclosure_Ware_Running.mp3; sourceTree = "<group>"; };
+		4A4660992C5A336900AD2BD6 /* Flume_Greatest_View.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flume_Greatest_View.mp3; sourceTree = "<group>"; };
+		4A46609A2C5A336900AD2BD6 /* Flume_Sleepless.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flume_Sleepless.mp3; sourceTree = "<group>"; };
 		4A7164082C4F628D007C88BD /* CustomCardGradientMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardGradientMainView.swift; sourceTree = "<group>"; };
 		4A7164092C4F628D007C88BD /* CustomCardGradientMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCardGradientMainView.xib; sourceTree = "<group>"; };
 		4A71640B2C4F628D007C88BD /* CustomCardHeaderMiniView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCardHeaderMiniView.swift; sourceTree = "<group>"; };
@@ -475,6 +503,8 @@
 		4A7E6D6C2C4E505D00F36CD3 /* MapParkingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParkingViewController.swift; sourceTree = "<group>"; };
 		4A7E6D752C4E588A00F36CD3 /* MapParkingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapParkingHeaderView.swift; sourceTree = "<group>"; };
 		4A7E6D762C4E588A00F36CD3 /* MapParkingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapParkingHeaderView.xib; sourceTree = "<group>"; };
+		4AA93A9D2C59EC9400F99845 /* PlayMusicItGribView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicItGribView.swift; sourceTree = "<group>"; };
+		4AA93A9E2C59EC9400F99845 /* PlayMusicItGribView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayMusicItGribView.xib; sourceTree = "<group>"; };
 		4AAE16B92C4626F900855BD9 /* TaxiViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TaxiViewController.storyboard; sourceTree = "<group>"; };
 		4AAE16BA2C4626F900855BD9 /* TaxiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiViewController.swift; sourceTree = "<group>"; };
 		4AAE16C82C4626F900855BD9 /* TaxiMapButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiMapButtonView.swift; sourceTree = "<group>"; };
@@ -510,10 +540,10 @@
 		4AB6DE982C3BF7DC004A8866 /* DesignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		4ACA328A2C465687009EF3ED /* TaxiDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxiDetailsCell.swift; sourceTree = "<group>"; };
 		4ACA328B2C465687009EF3ED /* TaxiDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiDetailsCell.xib; sourceTree = "<group>"; };
+		4AD19A542C5A08080071AC96 /* PlayMusicItGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicItGradientView.swift; sourceTree = "<group>"; };
+		4AD19A552C5A08080071AC96 /* PlayMusicItGradientView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayMusicItGradientView.xib; sourceTree = "<group>"; };
 		4AD5A0CA2C59CF5B009B8C48 /* PlayMusicItCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicItCell.swift; sourceTree = "<group>"; };
 		4AD5A0CB2C59CF5B009B8C48 /* PlayMusicItCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayMusicItCell.xib; sourceTree = "<group>"; };
-		4AD5A0CF2C59CF64009B8C48 /* PlayMusicItGribView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicItGribView.swift; sourceTree = "<group>"; };
-		4AD5A0D02C59CF64009B8C48 /* PlayMusicItGribView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayMusicItGribView.xib; sourceTree = "<group>"; };
 		4AD5A0D22C59CF64009B8C48 /* PlayMusicViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayMusicViewController.storyboard; sourceTree = "<group>"; };
 		4AD5A0D32C59CF64009B8C48 /* PlayMusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayMusicViewController.swift; sourceTree = "<group>"; };
 		4ADE43912C3C6AE6002FDEB8 /* PlaylistViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaylistViewController.storyboard; sourceTree = "<group>"; };
@@ -617,6 +647,7 @@
 		46ACEFD62490F52500FAAD43 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				4A4247722C4F09D200FF11DC /* Blurberry */,
 				4AB6DE992C3BF7DC004A8866 /* DesignableViews */,
 				4AB6DE402C3BF2F2004A8866 /* DeviceSize */,
 				4AB6DE382C3BF08B004A8866 /* ButtonTapAnimations */,
@@ -1446,9 +1477,6 @@
 		4A7164142C4F628D007C88BD /* CustomCard */ = {
 			isa = PBXGroup;
 			children = (
-				4AD5A0D12C59CF64009B8C48 /* PlayMusicItGribView */,
-				4AD5A0D42C59CF64009B8C48 /* PlayMusicViewController */,
-				4AD5A0CC2C59CF5B009B8C48 /* PlayMusicItCell */,
 				4A7164242C4F7E7C007C88BD /* CustomCardView */,
 				4A71641F2C4F7139007C88BD /* CustomCardHeaderMainView */,
 				4A71640A2C4F628D007C88BD /* CustomCardGradientMainView */,
@@ -1674,6 +1702,15 @@
 			path = MapParkingHeaderView;
 			sourceTree = "<group>";
 		};
+		4AA93A9F2C59EC9400F99845 /* PlayMusicItGribView */ = {
+			isa = PBXGroup;
+			children = (
+				4AA93A9D2C59EC9400F99845 /* PlayMusicItGribView.swift */,
+				4AA93A9E2C59EC9400F99845 /* PlayMusicItGribView.xib */,
+			);
+			path = PlayMusicItGribView;
+			sourceTree = "<group>";
+		};
 		4AAE16A82C46213000855BD9 /* Taxi */ = {
 			isa = PBXGroup;
 			children = (
@@ -1826,22 +1863,46 @@
 			path = TaxiDetailsCell;
 			sourceTree = "<group>";
 		};
+		4AD19A562C5A08080071AC96 /* PlayMusicItGradientView */ = {
+			isa = PBXGroup;
+			children = (
+				4AD19A542C5A08080071AC96 /* PlayMusicItGradientView.swift */,
+				4AD19A552C5A08080071AC96 /* PlayMusicItGradientView.xib */,
+			);
+			path = PlayMusicItGradientView;
+			sourceTree = "<group>";
+		};
+		4AD19A592C5A17D50071AC96 /* PlayMusic */ = {
+			isa = PBXGroup;
+			children = (
+				4A20673E2C5A477E001188E7 /* TimerUtils.swift */,
+				4A20672E2C5A4225001188E7 /* benno_blome_botha.mp3 */,
+				4A20672B2C5A4225001188E7 /* big_miz_aador.mp3 */,
+				4A20672C2C5A4225001188E7 /* claptone_music_got_me.mp3 */,
+				4A2067262C5A4224001188E7 /* funky_house_classic.mp3 */,
+				4A2067302C5A4225001188E7 /* myselor_neurolife.mp3 */,
+				4A20672D2C5A4225001188E7 /* the_audio_bar.mp3 */,
+				4A4660982C5A336900AD2BD6 /* Disclosure_Ware_Running.mp3 */,
+				4A4660972C5A336900AD2BD6 /* Disclosure_You_Me.mp3 */,
+				4A4660992C5A336900AD2BD6 /* Flume_Greatest_View.mp3 */,
+				4A2067242C5A3F64001188E7 /* CamelPhat_DropIt.mp3 */,
+				4A46609A2C5A336900AD2BD6 /* Flume_Sleepless.mp3 */,
+				4A4660952C5A328100AD2BD6 /* ViewCallsPlayer.swift */,
+				4AD19A562C5A08080071AC96 /* PlayMusicItGradientView */,
+				4AA93A9F2C59EC9400F99845 /* PlayMusicItGribView */,
+				4AD5A0CC2C59CF5B009B8C48 /* PlayMusicItCell */,
+				4AD5A0D42C59CF64009B8C48 /* PlayMusicViewController */,
+			);
+			path = PlayMusic;
+			sourceTree = "<group>";
+		};
 		4AD5A0CC2C59CF5B009B8C48 /* PlayMusicItCell */ = {
 			isa = PBXGroup;
 			children = (
-				4AD5A0CA2C59CF5B009B8C48 /* PlayMusicItCell.swift */,
 				4AD5A0CB2C59CF5B009B8C48 /* PlayMusicItCell.xib */,
+				4AD5A0CA2C59CF5B009B8C48 /* PlayMusicItCell.swift */,
 			);
 			path = PlayMusicItCell;
-			sourceTree = "<group>";
-		};
-		4AD5A0D12C59CF64009B8C48 /* PlayMusicItGribView */ = {
-			isa = PBXGroup;
-			children = (
-				4AD5A0CF2C59CF64009B8C48 /* PlayMusicItGribView.swift */,
-				4AD5A0D02C59CF64009B8C48 /* PlayMusicItGribView.xib */,
-			);
-			path = PlayMusicItGribView;
 			sourceTree = "<group>";
 		};
 		4AD5A0D42C59CF64009B8C48 /* PlayMusicViewController */ = {
@@ -1956,7 +2017,6 @@
 				4A3AA73E2C4F240800438BC5 /* MyCardsCollAddonsCell */,
 				4A3AA7442C4F240900438BC5 /* MyCardsCollectionCell */,
 				4A3AA7412C4F240900438BC5 /* MyCardsTitileCell */,
-				4A4247722C4F09D200FF11DC /* Blurberry */,
 				4ADEF3592C4EFE2500BE8B83 /* BuyStockTitleGreenCell */,
 				4ADEF3522C4ED4FB00BE8B83 /* BuyStockTitleCell */,
 				4ADEF34D2C4ED46600BE8B83 /* BuyStockOneCell */,
@@ -2154,6 +2214,7 @@
 		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4AD19A592C5A17D50071AC96 /* PlayMusic */,
 				4A7164142C4F628D007C88BD /* CustomCard */,
 				4ADEF3402C4ED35600BE8B83 /* BuyStock */,
 				4A7E6D6E2C4E505D00F36CD3 /* MapParking */,
@@ -2278,9 +2339,13 @@
 				4ACA328E2C465687009EF3ED /* TaxiDetailsCell.xib in Resources */,
 				4A78E93A2C3C02BB00DE60F5 /* ImagineSmallTagCell.xib in Resources */,
 				46ACF05B2490F52600FAAD43 /* Localizable.strings in Resources */,
+				4AD19A582C5A08080071AC96 /* PlayMusicItGradientView.xib in Resources */,
+				4A2067322C5A4226001188E7 /* funky_house_classic.mp3 in Resources */,
 				4AF032532C4762C6002DCC7D /* SportTagSizeColorCell.xib in Resources */,
 				4A08A3012C3C205F00DE9D3E /* WalletsTitleCell.xib in Resources */,
+				4A2067382C5A4226001188E7 /* claptone_music_got_me.mp3 in Resources */,
 				4AAE16F52C462BCB00855BD9 /* TaxiButtonBottomCell.xib in Resources */,
+				4A2067392C5A4226001188E7 /* the_audio_bar.mp3 in Resources */,
 				4AF0325F2C4762C6002DCC7D /* SportCatalogAllCell.xib in Resources */,
 				4A7164182C4F628D007C88BD /* CustomCardHeaderMiniView.xib in Resources */,
 				4AAE16F72C462BCB00855BD9 /* TaxiCarTagCell.xib in Resources */,
@@ -2289,6 +2354,7 @@
 				4ADEF3422C4ED35600BE8B83 /* BuyStockGraphCell.xib in Resources */,
 				46ACF0662490F52600FAAD43 /* MapsLocationCell.xib in Resources */,
 				4A78E92A2C3C02BB00DE60F5 /* ImagineButtonCell.xib in Resources */,
+				4A20673A2C5A4226001188E7 /* benno_blome_botha.mp3 in Resources */,
 				46ACF05C2490F52600FAAD43 /* InfoPlist.strings in Resources */,
 				46ACF07C2490F52600FAAD43 /* MapsMenuTextCell.xib in Resources */,
 				46ACF0C92490FEB300FAAD43 /* ExampleSwitchCell.xib in Resources */,
@@ -2310,6 +2376,8 @@
 				46ACF06A2490F52600FAAD43 /* MapsRouteCell.xib in Resources */,
 				46ACF0CD2490FEB300FAAD43 /* ExampleSliderCell.xib in Resources */,
 				4A7DF7ED2C470EAF002E2468 /* TaxiRateTgCell.xib in Resources */,
+				4A20673C2C5A4226001188E7 /* myselor_neurolife.mp3 in Resources */,
+				4A46609B2C5A336900AD2BD6 /* Disclosure_You_Me.mp3 in Resources */,
 				4A7E6D722C4E505D00F36CD3 /* MapParkingMiniCell.xib in Resources */,
 				4AF032572C4762C6002DCC7D /* SportTagFilterCell.xib in Resources */,
 				4AF032552C4762C6002DCC7D /* SportCatalogCell.xib in Resources */,
@@ -2324,6 +2392,7 @@
 				4AAE16F32C462BCB00855BD9 /* TaxiVisaCardCell.xib in Resources */,
 				46ACF08A2490F52600FAAD43 /* MapsWeatherView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				4A46609E2C5A336900AD2BD6 /* Flume_Sleepless.mp3 in Resources */,
 				46ACF0742490F52600FAAD43 /* LocationTextCell.xib in Resources */,
 				4ADEF35B2C4EFE2500BE8B83 /* BuyStockTitleGreenCell.xib in Resources */,
 				4A7DF7FE2C471B00002E2468 /* TaxiRateTitleCell.xib in Resources */,
@@ -2333,7 +2402,6 @@
 				46ACF07F2490F52600FAAD43 /* HeaderDetailsView.xib in Resources */,
 				46ACF0E3249255ED00FAAD43 /* ExampleAddCollectionViewController.storyboard in Resources */,
 				4A7E6D792C4E588A00F36CD3 /* MapParkingHeaderView.xib in Resources */,
-				4AD5A0D62C59CF64009B8C48 /* PlayMusicItGribView.xib in Resources */,
 				46ACF0812490F52600FAAD43 /* HeaderSearchBarView.xib in Resources */,
 				4A71641A2C4F628D007C88BD /* CustomCardHeaderView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -2343,7 +2411,9 @@
 				46ACF0C32490FEB300FAAD43 /* ExampleCollectionCell.xib in Resources */,
 				4ADE43A62C3C6AE7002FDEB8 /* PlaylistOneCell.xib in Resources */,
 				46ACF0D22490FEB300FAAD43 /* ExampleHeaderGripView.xib in Resources */,
+				4A2067252C5A3F64001188E7 /* CamelPhat_DropIt.mp3 in Resources */,
 				4AF0322D2C475536002DCC7D /* SportTitleCell.xib in Resources */,
+				4A46609D2C5A336900AD2BD6 /* Flume_Greatest_View.mp3 in Resources */,
 				4AAE16DC2C4626F900855BD9 /* TaxiMapButtonView.xib in Resources */,
 				4AAE16F92C462BCB00855BD9 /* TaxiCollectionCarsCell.xib in Resources */,
 				46ACF0722490F52600FAAD43 /* LocationButtonCell.xib in Resources */,
@@ -2356,13 +2426,16 @@
 				46ACF0C72490FEB300FAAD43 /* ExampleSegmentCell.xib in Resources */,
 				4A7DF7EB2C470EAF002E2468 /* TaxiRateEmojiCell.xib in Resources */,
 				4A7E6D702C4E505D00F36CD3 /* MapParkingDetailsCell.xib in Resources */,
+				4A46609C2C5A336900AD2BD6 /* Disclosure_Ware_Running.mp3 in Resources */,
 				46ACF0CF2490FEB300FAAD43 /* ExampleFooterButtonView.xib in Resources */,
 				4ADE43AC2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.xib in Resources */,
 				46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */,
 				4AF0322B2C475536002DCC7D /* SportSizeCell.xib in Resources */,
 				46ACF0EA24925B9200FAAD43 /* ExampleAddTableViewController.storyboard in Resources */,
+				4AA93AA12C59EC9400F99845 /* PlayMusicItGribView.xib in Resources */,
 				4ADE43A32C3C6AE6002FDEB8 /* PlaylistViewController.storyboard in Resources */,
 				46ACF0872490F52600FAAD43 /* MapsMenuHeader.xib in Resources */,
+				4A2067372C5A4226001188E7 /* big_miz_aador.mp3 in Resources */,
 				46ACF07B2490F52600FAAD43 /* MapsMenuSegmentCell.xib in Resources */,
 				4AF032592C4762C6002DCC7D /* SportCatalogFilterCell.xib in Resources */,
 				4A02C90E2C3D5D3F00DD39A4 /* CryptoHeaderView.xib in Resources */,
@@ -2466,7 +2539,6 @@
 				4AAE16DB2C4626F900855BD9 /* TaxiMapButtonView.swift in Sources */,
 				4A78E9372C3C02BB00DE60F5 /* ImagineCollCell.swift in Sources */,
 				4ADEF3432C4ED35600BE8B83 /* BuyStockHeaderView.swift in Sources */,
-				4AD5A0D52C59CF64009B8C48 /* PlayMusicItGribView.swift in Sources */,
 				4AF032262C475536002DCC7D /* SportBottomButtonCell.swift in Sources */,
 				4AB6DE422C3BF2F2004A8866 /* Screen.swift in Sources */,
 				4ADE43AB2C3C6AE7002FDEB8 /* PlaylistCollectionsCell.swift in Sources */,
@@ -2543,6 +2615,7 @@
 				4A02C9122C3D5D3F00DD39A4 /* CryptoViewController.swift in Sources */,
 				4A3AA75D2C4F24B700438BC5 /* MyCardsAddonsCell.swift in Sources */,
 				46ACF08B2490F52600FAAD43 /* MapsWeatherView.swift in Sources */,
+				4AA93AA02C59EC9400F99845 /* PlayMusicItGribView.swift in Sources */,
 				46ACF0652490F52600FAAD43 /* MapsCollectionsCell.swift in Sources */,
 				46ACF0912490F52600FAAD43 /* MapsContainerControllerDelegate.swift in Sources */,
 				4ADE43AD2C3C6AE7002FDEB8 /* PlaylistHeaderView.swift in Sources */,
@@ -2586,12 +2659,15 @@
 				4A7E6D712C4E505D00F36CD3 /* MapParkingMiniCell.swift in Sources */,
 				4ADEF3412C4ED35600BE8B83 /* BuyStockGraphCell.swift in Sources */,
 				4AB6DE252C3BEE46004A8866 /* DesignLabel.swift in Sources */,
+				4A4660962C5A328100AD2BD6 /* ViewCallsPlayer.swift in Sources */,
 				4AB6DE202C3BEE46004A8866 /* CopyableLabel.swift in Sources */,
 				4A78E9292C3C02BB00DE60F5 /* ImagineButtonCell.swift in Sources */,
 				4AB6DE262C3BEE46004A8866 /* DesignSegmentBar.swift in Sources */,
 				46ACF0902490F52600FAAD43 /* MapsContainerLayout.swift in Sources */,
 				46ACF05E2490F52600FAAD43 /* LocalizeFuncs.swift in Sources */,
 				4AB6DE9B2C3BF7DC004A8866 /* DesignView.swift in Sources */,
+				4AD19A572C5A08080071AC96 /* PlayMusicItGradientView.swift in Sources */,
+				4A20673F2C5A477E001188E7 /* TimerUtils.swift in Sources */,
 				4A4247742C4F09D200FF11DC /* Blurberry.swift in Sources */,
 				4A7164202C4F7139007C88BD /* CustomCardHeaderMainView.swift in Sources */,
 				4AB6DE342C3BF005004A8866 /* Cell.swift in Sources */,

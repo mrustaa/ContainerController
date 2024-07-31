@@ -41,7 +41,7 @@ class CustomCardViewController: StoryboardController {
 //            let scrollV = createMapsCollectionAdapterView()
 //            scrollV.alpha = 0.75
 //            c1.add(scrollView: scrollV)
-//            c1.backView.y = 39
+//            c1.backView?.y = 39
             
             containers.append( c1 )
         }
@@ -58,7 +58,7 @@ class CustomCardViewController: StoryboardController {
 //            let scrollV = createTableViewTestItems(number: 33)
 //            scrollV.alpha = 0.5
 //            c1.add(scrollView: scrollV)
-//            c1.backView.y = 39
+//            c1.backView?.y = 39
             
             containers.append( c1 )
         }
@@ -84,7 +84,7 @@ class CustomCardViewController: StoryboardController {
 //            let scrollV =  createCollectionAdapterView(width: ScreenSize.width - (98 + 8) )
 //            scrollV.alpha = 0.35
 //            c1.add(scrollView: scrollV)
-//            c1.backView.y = 63
+//            c1.backView?.y = 63
             
             containers.append( c1 )
         }
@@ -98,7 +98,7 @@ class CustomCardViewController: StoryboardController {
 //            let scrollV = createMapsCollectionAdapterView()
 //            scrollV.alpha = 0.5
 //            c1.add(scrollView: scrollV)
-//            c1.backView.y = 63i
+//            c1.backView?.y = 63i
 //            main(delay: p * 4) {
 //                c1.move(type: .top)
 //            }
@@ -111,7 +111,7 @@ class CustomCardViewController: StoryboardController {
             
             containerTableView = t1
             
-            c1.backView.subviews.forEach {
+            c1.backView?.subviews.forEach {
                 $0.removeFromSuperview()
             }
             
@@ -241,7 +241,7 @@ class CustomCardViewController: StoryboardController {
                         let scrollV = createMapsCollectionAdapterView()
                         scrollV.alpha = 0.0
                         c1.add(scrollView: scrollV)
-                        c1.backView.y = 39
+                        c1.backView?.y = 39
                         UIView.animate(withDuration: 0.35) {
                             scrollV.alpha = 0.75
                         }
@@ -249,7 +249,7 @@ class CustomCardViewController: StoryboardController {
                         let scrollV = createTableViewTestItems(number: 33)
                         scrollV.alpha = 0.0
                         c1.add(scrollView: scrollV)
-                        c1.backView.y = 39
+                        c1.backView?.y = 39
                         UIView.animate(withDuration: 0.35) {
                             scrollV.alpha = 0.5
                         }
@@ -257,7 +257,7 @@ class CustomCardViewController: StoryboardController {
                         let scrollV =  createCollectionAdapterView(width: ScreenSize.width - (98 + 8) )
                         scrollV.alpha = 0.0
                         c1.add(scrollView: scrollV)
-                        c1.backView.y = 63
+                        c1.backView?.y = 63
                         UIView.animate(withDuration: 0.35) {
                             scrollV.alpha = 0.35
                         }
@@ -265,7 +265,7 @@ class CustomCardViewController: StoryboardController {
                         let scrollV = createMapsCollectionAdapterView()
                         scrollV.alpha = 0.0
                         c1.add(scrollView: scrollV)
-                        c1.backView.y = 63
+                        c1.backView?.y = 63
                         UIView.animate(withDuration: 0.35) {
                             scrollV.alpha = 0.5
                         }
@@ -351,7 +351,7 @@ class CustomCardViewController: StoryboardController {
         let ccc = addContainer(position: .init(top: mini ? 241 : 350, bottom:  mini ? 223 : 173), radius: mini ? 22 : 37, items: itemsC, addBackShadow: addBackShadow)
         
         
-        let frr =  CGRect(x: 0, y: 0, width: ccc.0.backView.width, height: ccc.0.backView.height)
+        let frr =  CGRect(x: 0, y: 0, width: ccc.0.backView?.width ?? 0, height: ccc.0.backView?.height ?? 0)
         let gradientV = CustomCardGradientMainView()
         gradientV.gr1.isHidden = !gradient
         gradientV.gr2.isHidden = gradient
@@ -359,7 +359,7 @@ class CustomCardViewController: StoryboardController {
                                       .flexibleRightMargin, .flexibleTopMargin]
         gradientV.frame = frr
         
-        ccc.0.backView.addSubview( gradientV )
+        ccc.0.backView?.addSubview( gradientV )
         
         
         

@@ -45,9 +45,9 @@ class MapParkingViewController: StoryboardController {
         
         ccc.0.view.clipsToBounds = false
         ccc.0.scrollView?.clipsToBounds = false
-        ccc.0.backView.clipsToBounds = false
+        ccc.0.backView?.clipsToBounds = false
         headerr.clipsToBounds = false
-//        ccc.0.backView.addSubview( header)
+//        ccc.0.backView?.addSubview( header)
         containerTableView = ccc.1
         
         

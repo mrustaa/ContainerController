@@ -7,17 +7,25 @@ class PlaylistViewController: StoryboardController {
     @IBOutlet var imgViewH: NSLayoutConstraint!
     @IBOutlet var imgViewW: NSLayoutConstraint!
     @IBOutlet var imgViewY: NSLayoutConstraint!
+    
     @IBOutlet weak var tableView: TableAdapterView!
     var containers: [ContainerController] = []
     
-    var footerView: PlaylistFooterPlayView?
+    
+    var containerTableView: TableAdapterView?
+    var container: ContainerController?
+    
+    var container2TableView: TableAdapterView?
+    var container2: ContainerController?
+    
+    var hideFooterView: PlaylistFooterPlayView?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         self.navBarHide = true
         
-        let color1 =  #colorLiteral(red: 0.1273144384, green: 0.1311024159, blue: 0.1562976594, alpha: 1)
+        let color1 =  #colorLiteral(red: 0.1254901961, green: 0.1294117647, blue: 0.1568627451, alpha: 1)
         
         title = "Playlist"
         view.backgroundColor = color1
@@ -43,23 +51,64 @@ class PlaylistViewController: StoryboardController {
 //        titleView2.frame = CGRect(x: 0, y: 0, width: ScreenSize.width, height: 162)
 //        view.addSubview(titleView2)
         
+        
         addContainerr(position: .init(top: 50, middle: 310, bottom: 100))
+        
+        self.container?.move(type: .middle)
+        
+        main(delay: 0.5) {
+            self.container?.move(type: .middle )
+        }
+        
+        
+        
+//        var items2: [TableAdapterItem] = []
+//        items2.append( PlayMusicItItem(state: .init(handlers: .init(
+//            onPlayAt: { play in
+//            
+//        }, onFastForwardAt: { type in
+//            
+//        }, onMoreAt: {
+//            
+//        }, onBottomAllAt: {
+//            
+//        }))) )
+//        let header2 = PlayMusicItGribView()
+//                       
+//        let ccc2 = addContainer(position: .init(top: 0, bottom: 98), radius: 0, items: items2, delegate: self, addBackShadow: true, header: header2)
+//        
+//        self.container2TableView = ccc2.1
+//        self.container2 = ccc2.0
+//        
+//        
+//        self.container2?.move(type: .hide)
+//        
+//        main(delay: 0.5) {
+//            self.container2?.move(type: .top )
+//        }
+//        
+//        containers.append(ccc2.0)
+//        
         
         
         let fr2 =  CGRect(x: 0, y: ScreenSize.height - 98, width: ScreenSize.width, height: 98)
         let footer = PlaylistFooterPlayView()
         footer.frame = fr2
         view.addSubview(footer)
-        footerView = footer
-        footerView?.clickCallback = {
+        hideFooterView = footer
+        hideFooterView?.clickCallback = {
             
             if (self.containers.count != 0) {
                 
-                self.containers[0].move(type: .middle)
+                self.container2?.move(type: .top)
                 
             }
         }
-        self.footerView?.alpha = 0
+        self.hideFooterView?.alpha = 0
+        
+        
+        
+        
     }
     
     func addContainerr(position: ContainerPosition) {
@@ -88,7 +137,19 @@ class PlaylistViewController: StoryboardController {
         let fr2 =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: 98)
         let footer = PlaylistFooterPlayView()
         footer.frame = fr2
+        
+        footer.clickCallback = {
+            
+            if (self.containers.count != 0) {
+                
+                self.container2?.move(type: .top)
+                
+            }
+        }
+        
         container.add(footerView: footer)
+        
+        
         
 //        var imgHeader = UIImage(named: "imgWalletsHeader2")?.withTintColor(color, renderingMode: .alwaysTemplate)
         
@@ -110,7 +171,8 @@ class PlaylistViewController: StoryboardController {
         table.indicatorStyle =  .default
         //        container.add(scrollView: addCollectionView())
         
-        
+        self.containerTableView = table
+        self.container = container
         
         let img1  =   #imageLiteral(resourceName: "imgPlaylistMain")
         let img2  =   #imageLiteral(resourceName: "imgPlaylistFlume")
@@ -132,12 +194,13 @@ class PlaylistViewController: StoryboardController {
         ] )
         
         container.add(scrollView: table)
-        container.move(type: .bottom)
+//        container.move(type: .bottom)
         
-        main(delay: 1.05) {
-            container.move(type: .middle
-            )
-        }
+        
+//        main(delay: 1.05) {
+//            container.move(type: .middle
+//            )
+//        }
         
         containers.append(container)
         
@@ -148,27 +211,38 @@ class PlaylistViewController: StoryboardController {
     override func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool) {
         if  animation {
             
-           
-            
-            if (containers.count != 0) {
-                if type == .bottom {
-                    
-                    containers[0].footerView?.alpha = 0
-                    
-                    
-                    containers[0].view.alpha = 0
-                } else   {
-                    containers[0].footerView?.alpha = 1
-                    containers[0].view.alpha = 1
+            if containerController == self.container2 {
+                UIView.animate(withDuration: 2) {
+                    if type == .bottom {
+                        self.container2?.view.alpha = 0
+                        self.container?.move(type: .top)
+                    } else {
+                        
+                        self.container2?.view.alpha = 1
+                    }
                 }
             }
-                UIView.animate(withDuration: 0.35) {
-                    if type == .bottom { self.footerView?.alpha = 1 }
-                    else  { self.footerView?.alpha = 0 }
-                     
+            else if containerController == self.container {
+                
+                if (containers.count != 0) {
+                    if type == .bottom {
+                        
+                        containers[0].footerView?.alpha = 0
+                        
+                        
+                        containers[0].view.alpha = 0
+                    } else   {
+                        containers[0].footerView?.alpha = 1
+                        containers[0].view.alpha = 1
+                    }
                 }
-            
-//            main {
+                UIView.animate(withDuration: 0.35) {
+                    if type == .bottom { self.hideFooterView?.alpha = 1 }
+                    else  { self.hideFooterView?.alpha = 0 }
+                    
+                }
+                
+                //            main {
                 
                 if type == .bottom {
                     
@@ -202,38 +276,39 @@ class PlaylistViewController: StoryboardController {
                     self.view.layoutIfNeeded()
                     
                     if type == .bottom {
-//                        self.imgView.alpha = 1
+                        //                        self.imgView.alpha = 1
                         
                         self.tableView.alpha  = 1
-//                        self.imgViewH.constant = ScreenSize.height
-//                        self.imgViewW.constant = ScreenSize.width
-//                        self.imgViewY.constant = 0
-//                        self.imgView.layer.cornerRadius = 0
+                        //                        self.imgViewH.constant = ScreenSize.height
+                        //                        self.imgViewW.constant = ScreenSize.width
+                        //                        self.imgViewY.constant = 0
+                        //                        self.imgView.layer.cornerRadius = 0
                         
                     } else if type == .middle {
                         self.tableView.alpha  = 1
                         
-//                        self.imgViewW.constant = 313
-//                        self.imgViewH.constant = 162
-//                        self.imgViewY.constant = 196
+                        //                        self.imgViewW.constant = 313
+                        //                        self.imgViewH.constant = 162
+                        //                        self.imgViewY.constant = 196
                         
-//                        self.imgView.alpha = 1
-//                        self.imgView.layer.cornerRadius = 9
+                        //                        self.imgView.alpha = 1
+                        //                        self.imgView.layer.cornerRadius = 9
                         
                     } else {
                         
-//                        self.imgViewW.constant = 313
-//                        self.imgViewH.constant = 162
-//                        self.imgViewY.constant = 196
+                        //                        self.imgViewW.constant = 313
+                        //                        self.imgViewH.constant = 162
+                        //                        self.imgViewY.constant = 196
                         
                         self.tableView.alpha  = 0
-//                        self.imgView.layer.cornerRadius = 9
+                        //                        self.imgView.layer.cornerRadius = 9
                     }
                 }
                 
-//            } //
+                //            } //
+                
+            }
             
         }
-        
     }
 }

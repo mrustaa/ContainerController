@@ -37,6 +37,7 @@ class Button: UIButton {
 
 /// Simple tap implementation
 typealias Closure = () -> ()
+typealias ClosureClick = (_ down: Bool) -> ()
 
 
 class ClosureSleeve {
@@ -58,6 +59,22 @@ extension UIControl {
                                  String(format: "[%d]", arc4random()),
                                  sleeve,
                                  objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+    }
+    
+    func tapClassic(_ closure: @escaping ClosureClick) {
+        self.tap(for: .touchDown) { // [weak self]  in
+            closure(true)
+        }
+        self.tap(for: .touchUpInside) { // [weak self]  in
+            closure(false)
+        }
+        self.tap(for: .touchUpOutside) { // [weak self] in
+            closure(false)
+        }
+        self.tap(for: .touchCancel) { // [weak self] in
+            closure(false)
+        }
+        
     }
 }
 

@@ -31,6 +31,7 @@ class ViewController: UIViewController {
 //            TitleTextxItem(title: "Imagine", clss: ImagineViewController.self),
             
             TitleTextxItem(title: "Playlist", clss: PlaylistViewController.self),
+            TitleTextxItem(title: "PlayMusic", clss: PlayMusicViewController.self),
             TitleTextxItem(title: "Crypto", clss: CryptoViewController.self),
             
             TitleTextxItem(title: "Wallets", clss: WalletsViewController.self),
