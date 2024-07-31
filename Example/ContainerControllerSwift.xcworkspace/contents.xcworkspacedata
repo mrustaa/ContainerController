@@ -5,7 +5,7 @@
       location = "group:..">
    </FileRef>
    <FileRef
-      location = "group:ContainerControllerSwift.xcodeproj">
+      location = "group:/Users/rustam/.cocoapods/repos/ContainerControllerSwift/Example/ContainerControllerSwift.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

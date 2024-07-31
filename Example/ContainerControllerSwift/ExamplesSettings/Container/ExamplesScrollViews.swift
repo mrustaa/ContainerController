@@ -51,7 +51,7 @@ func createCollectionAdapterView(width: CGFloat) -> CollectionAdapterView {
 
 // MARK: - TableAdapterView
 
-func createTableAdapterView(items: [TableAdapterItem]? = nil, view: UIView) -> TableAdapterView {
+func createTableAdapterView(items: [TableAdapterItem]? = nil, view: UIView? = nil) -> TableAdapterView {
 
     let table = TableAdapterView()
     table.separatorColor = Colors.grayLevel(0.75)
@@ -61,9 +61,25 @@ func createTableAdapterView(items: [TableAdapterItem]? = nil, view: UIView) -> T
     }
 
     table.didScrollCallback = {
-        view.endEditing(true)
+        view?.endEditing(true)
     }
     return table
+}
+
+
+// MARK: - TableView
+
+func createTableViewTestItems(number: Int = 25) -> TableAdapterView {
+    
+    var items: [TableAdapterItem] = []
+    
+    for index in 1...number {
+        items.append( TitleTextxItem(title: "Subtitle", subtitle: "Title \(index)" ))
+        
+        
+    }
+    
+    return createTableAdapterView(items: items)
 }
 
 // MARK: - TableView
@@ -86,6 +102,7 @@ func createTextView() -> UITextView {
     let textView = UITextView()
     textView.returnKeyType = .done
     textView.backgroundColor = .clear
+    textView.textContainerInset = .init(top: 9, left: 18, bottom: 18, right: 18)
     textView.font = UIFont.systemFont(ofSize: 15)
     textView.text = """
     This example demonstrates a block quote. Because some introductory phrases will lead

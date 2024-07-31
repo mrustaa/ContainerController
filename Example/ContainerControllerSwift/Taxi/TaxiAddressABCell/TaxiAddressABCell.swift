@@ -7,7 +7,8 @@ extension TaxiAddressABItem {
   struct State {
     var titleText: String?
     var subtitleText: String?
-    var text2: String?
+    var edit: String?
+      var time: String?
     var image3: UIImage?
     var image4: UIImage?
     var handlers: Handlers = .init()
@@ -69,7 +70,9 @@ class TaxiAddressABCell: TableAdapterCell {
     
     @IBOutlet var abView: UIView!
   
-  @IBOutlet override var selectedView: UIView? { didSet { } }
+    @IBOutlet var rightEditButton: UIView!
+    @IBOutlet var rightTimeLabel: UILabel!
+    @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
   @IBOutlet var button: UIButton?
   
@@ -91,8 +94,12 @@ class TaxiAddressABCell: TableAdapterCell {
     self.data = data
       if let v = data.state.titleText  { label2?.text = v }
     if let v = data.state.subtitleText { subtitleLabel?.text = v }
-      if let v = data.state.text2 { titleLabel?.text = v }
     if let v = data.state.image3 { imageView3?.image = v }
+      
+      
+      
+      if let v = data.state.edit { titleLabel?.text = v; rightEditButton.isHidden = false } else  { rightEditButton.isHidden = true }
+      if let v = data.state.time { rightTimeLabel?.text = v; rightTimeLabel.isHidden = false } else  { rightTimeLabel.isHidden = true }
     
   }
 }

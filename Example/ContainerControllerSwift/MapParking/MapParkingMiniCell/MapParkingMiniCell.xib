@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="r8A-uA-QpP" customClass="MapParkingMiniCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r8A-uA-QpP" id="c2x-Bu-96m">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="258"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIc-8x-f0H" userLabel=" MapParkingMini" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="319" height="258"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwM-DJ-4c9" userLabel="Frame 89588" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="214"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9KK-Hv-MGG" userLabel="Frame 89589" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="214"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="214" id="GaU-Qr-Ial"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="33"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Spots" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPG-m3-BpW" userLabel="Parking Spots">
+                                        <rect key="frame" x="20" y="22" width="149.5" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="dmf-cb-8Pd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" red="0.18039216101169586" green="0.17647059261798859" blue="0.17647059261798859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255 Main Street" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7A-kt-W0m" userLabel="255 Main Street">
+                                        <rect key="frame" x="20" y="59" width="89.5" height="12"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="12" id="Tev-ir-0cM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                        <color key="textColor" red="0.71196722984313965" green="0.71196722984313965" blue="0.71196722984313965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wio-1K-NzZ" customClass="CollectionAdapterView" customModule="ContainerControllerSwift">
+                                        <rect key="frame" x="0.0" y="91" width="319" height="96"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96" id="iSF-db-Bp8"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="15" id="4aQ-V1-0HB">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="15" minY="18" maxX="15" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axY-Ym-fx1" userLabel="Rectangle 60" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="91" width="124" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="imgMapParkingPic0"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                                <size key="value" width="0.0" height="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-4V-i9f" userLabel="Rectangle 61" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="156" y="91" width="124" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="imgMapParkingPic1"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                                <size key="value" width="0.0" height="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpn-c6-E1j" userLabel="Rectangle 62" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="292" y="91" width="124" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="imgMapParkingPic2"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                                <size key="value" width="0.0" height="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeL-4m-hxt" userLabel="Frame 89590">
+                                        <rect key="frame" x="251" y="20" width="48" height="32"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-y9-YvG" userLabel="Rectangle 62" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="32"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.98039215803146362" green="0.90980392694473267" blue="0.87058824300765991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AZ-EA-iHY" userLabel="$7">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="32"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <color key="textColor" red="1" green="0.59117937088012695" blue="0.40762737393379211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="2AZ-EA-iHY" secondAttribute="bottom" id="81I-dE-JvK"/>
+                                            <constraint firstItem="2AZ-EA-iHY" firstAttribute="leading" secondItem="xeL-4m-hxt" secondAttribute="leading" id="8th-kG-4JN"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZWh-y9-YvG" secondAttribute="bottom" id="Ejo-wc-ISs"/>
+                                            <constraint firstAttribute="trailing" secondItem="2AZ-EA-iHY" secondAttribute="trailing" id="J6j-Dp-Ho5"/>
+                                            <constraint firstAttribute="width" constant="48" id="NIB-PT-yKi"/>
+                                            <constraint firstItem="ZWh-y9-YvG" firstAttribute="leading" secondItem="xeL-4m-hxt" secondAttribute="leading" id="PYE-xo-SWg"/>
+                                            <constraint firstItem="2AZ-EA-iHY" firstAttribute="top" secondItem="xeL-4m-hxt" secondAttribute="top" id="RO9-W6-l4K"/>
+                                            <constraint firstItem="ZWh-y9-YvG" firstAttribute="top" secondItem="xeL-4m-hxt" secondAttribute="top" id="g7s-1c-6v5"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZWh-y9-YvG" secondAttribute="trailing" id="heZ-Z9-Xa5"/>
+                                            <constraint firstAttribute="height" constant="32" id="tKO-Yb-cCX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s7A-kt-W0m" firstAttribute="top" secondItem="xeL-4m-hxt" secondAttribute="bottom" constant="7" id="7Ub-9U-lEh"/>
+                                    <constraint firstAttribute="trailing" secondItem="wio-1K-NzZ" secondAttribute="trailing" id="Acl-vA-6Wx"/>
+                                    <constraint firstItem="MPG-m3-BpW" firstAttribute="leading" secondItem="uwM-DJ-4c9" secondAttribute="leading" constant="20" id="KYU-aV-xyp"/>
+                                    <constraint firstItem="wio-1K-NzZ" firstAttribute="leading" secondItem="uwM-DJ-4c9" secondAttribute="leading" id="Qb7-Ip-gWw"/>
+                                    <constraint firstAttribute="trailing" secondItem="xeL-4m-hxt" secondAttribute="trailing" constant="20" id="Wah-jg-TsJ"/>
+                                    <constraint firstItem="MPG-m3-BpW" firstAttribute="top" secondItem="uwM-DJ-4c9" secondAttribute="top" constant="22" id="Wry-36-bi2"/>
+                                    <constraint firstItem="9KK-Hv-MGG" firstAttribute="leading" secondItem="uwM-DJ-4c9" secondAttribute="leading" id="ZG5-vs-TGy"/>
+                                    <constraint firstItem="s7A-kt-W0m" firstAttribute="leading" secondItem="uwM-DJ-4c9" secondAttribute="leading" constant="20" id="aaR-UD-2I5"/>
+                                    <constraint firstAttribute="height" constant="214" id="ikr-68-Is7"/>
+                                    <constraint firstItem="xeL-4m-hxt" firstAttribute="top" secondItem="uwM-DJ-4c9" secondAttribute="top" constant="20" id="itm-vT-fR8"/>
+                                    <constraint firstItem="9KK-Hv-MGG" firstAttribute="top" secondItem="uwM-DJ-4c9" secondAttribute="top" id="pWo-al-QaB"/>
+                                    <constraint firstItem="wio-1K-NzZ" firstAttribute="top" secondItem="s7A-kt-W0m" secondAttribute="bottom" constant="20" id="qtF-3K-W8h"/>
+                                    <constraint firstAttribute="trailing" secondItem="9KK-Hv-MGG" secondAttribute="trailing" id="y2C-BT-RyH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="33"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.17000000178813934" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                        <real key="value" value="15.699999809265137"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                        <size key="value" width="0.0" height="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqb-N8-GrG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uwM-DJ-4c9" firstAttribute="leading" secondItem="XIc-8x-f0H" secondAttribute="leading" id="Cev-gp-MOh"/>
+                            <constraint firstAttribute="trailing" secondItem="uwM-DJ-4c9" secondAttribute="trailing" id="HcY-T0-cYH"/>
+                            <constraint firstItem="uwM-DJ-4c9" firstAttribute="top" secondItem="XIc-8x-f0H" secondAttribute="top" id="Pg5-Zu-Bgu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XIc-8x-f0H" firstAttribute="leading" secondItem="c2x-Bu-96m" secondAttribute="leading" id="ggV-6p-a5B"/>
+                    <constraint firstItem="XIc-8x-f0H" firstAttribute="top" secondItem="c2x-Bu-96m" secondAttribute="top" id="ihc-8i-iLP"/>
+                    <constraint firstAttribute="trailing" secondItem="XIc-8x-f0H" secondAttribute="trailing" id="m1o-Ib-5YV"/>
+                    <constraint firstAttribute="bottom" secondItem="XIc-8x-f0H" secondAttribute="bottom" id="zTJ-D9-5LZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="Dqb-N8-GrG" id="DIs-rq-ocX"/>
+                <outlet property="collectionView" destination="wio-1K-NzZ" id="MOD-Qb-OcN"/>
+                <outlet property="imageView2" destination="uYf-4V-i9f" id="3et-tA-suY"/>
+                <outlet property="imageView3" destination="kpn-c6-E1j" id="Uqj-Vu-ENB"/>
+                <outlet property="label4" destination="MPG-m3-BpW" id="W4d-52-rMs"/>
+                <outlet property="label5" destination="2AZ-EA-iHY" id="Bix-D5-rxN"/>
+                <outlet property="secondImageView" destination="axY-Ym-fx1" id="E8z-wf-YNz"/>
+                <outlet property="titleLabel" destination="s7A-kt-W0m" id="vnH-ft-pIs"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imgMapParkingPic0" width="3204" height="2403"/>
+        <image name="imgMapParkingPic1" width="1905" height="1905"/>
+        <image name="imgMapParkingPic2" width="1700" height="1232"/>
+    </resources>
+</document>

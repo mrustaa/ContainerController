@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="8sk-bF-S35" customClass="MyCardsOneCardCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAj-EN-U4K" userLabel="  MyCardsOneCard" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="190"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htT-sn-pwE" userLabel="Rectangle 73" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$5,230.00" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TST-CE-4hA" userLabel="$5,230.00">
+                                <rect key="frame" x="19" y="119" width="114" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Debit Card" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-do-NXE" userLabel="Debit Card">
+                                <rect key="frame" x="20" y="152" width="83" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iyz-va-AmL">
+                                <rect key="frame" x="20" y="20" width="37" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="kD0-3j-HXU"/>
+                                    <constraint firstAttribute="height" constant="23" id="qVi-Yf-gGV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMK-4I-gti">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="iyz-va-AmL" firstAttribute="leading" secondItem="PAj-EN-U4K" secondAttribute="leading" constant="20" id="HRh-52-c2a"/>
+                            <constraint firstItem="iyz-va-AmL" firstAttribute="top" secondItem="PAj-EN-U4K" secondAttribute="top" constant="20" id="z0B-1j-p5v"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.050000000745058081" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                <real key="value" value="14.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                <size key="value" width="0.0" height="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="PAj-EN-U4K" firstAttribute="top" secondItem="8sk-bF-S35" secondAttribute="top" id="JUO-W5-Ogx"/>
+                <constraint firstAttribute="trailing" secondItem="PAj-EN-U4K" secondAttribute="trailing" id="U19-t8-FmC"/>
+                <constraint firstItem="PAj-EN-U4K" firstAttribute="leading" secondItem="8sk-bF-S35" secondAttribute="leading" id="lgz-RE-tm0"/>
+                <constraint firstAttribute="bottom" secondItem="PAj-EN-U4K" secondAttribute="bottom" id="pHJ-NL-rnN"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="yMK-4I-gti" id="S8t-yF-NP3"/>
+                <outlet property="cccardView" destination="htT-sn-pwE" id="v5T-lv-Rau"/>
+                <outlet property="imggView" destination="iyz-va-AmL" id="1d8-ev-Jzj"/>
+                <outlet property="label2" destination="cXz-do-NXE" id="NLb-nv-KMB"/>
+                <outlet property="titleLabel" destination="TST-CE-4hA" id="C9x-TS-XsW"/>
+            </connections>
+            <point key="canvasLocation" x="-30" y="-41"/>
+        </collectionViewCell>
+    </objects>
+</document>

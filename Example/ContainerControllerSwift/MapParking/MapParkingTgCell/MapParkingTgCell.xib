@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E0M-72-WlZ" customClass="MapParkingTgCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9G-HK-AbN" userLabel=" MapParkingTg" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K7R-V1-vEp" userLabel="Rectangle 60" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Rectangle 60"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQY-Mk-YPM">
+                                <rect key="frame" x="0.0" y="0.0" width="124" height="96"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="pQY-Mk-YPM" firstAttribute="top" secondItem="M9G-HK-AbN" secondAttribute="top" id="7Z1-yY-ALm"/>
+                            <constraint firstAttribute="bottom" secondItem="pQY-Mk-YPM" secondAttribute="bottom" id="F0h-bQ-cES"/>
+                            <constraint firstAttribute="bottom" secondItem="K7R-V1-vEp" secondAttribute="bottom" id="NkM-ms-qyn"/>
+                            <constraint firstAttribute="trailing" secondItem="K7R-V1-vEp" secondAttribute="trailing" id="cR6-Fw-db3"/>
+                            <constraint firstAttribute="trailing" secondItem="pQY-Mk-YPM" secondAttribute="trailing" id="mTI-dC-nIH"/>
+                            <constraint firstItem="K7R-V1-vEp" firstAttribute="leading" secondItem="M9G-HK-AbN" secondAttribute="leading" id="rSb-tT-Saj"/>
+                            <constraint firstItem="K7R-V1-vEp" firstAttribute="top" secondItem="M9G-HK-AbN" secondAttribute="top" id="vBW-Cc-N7k"/>
+                            <constraint firstItem="pQY-Mk-YPM" firstAttribute="leading" secondItem="M9G-HK-AbN" secondAttribute="leading" id="xku-sI-DWx"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="M9G-HK-AbN" secondAttribute="bottom" id="9Y1-4t-qvQ"/>
+                <constraint firstItem="M9G-HK-AbN" firstAttribute="leading" secondItem="E0M-72-WlZ" secondAttribute="leading" id="QGp-u7-STi"/>
+                <constraint firstAttribute="trailing" secondItem="M9G-HK-AbN" secondAttribute="trailing" id="a52-5j-hMV"/>
+                <constraint firstItem="M9G-HK-AbN" firstAttribute="top" secondItem="E0M-72-WlZ" secondAttribute="top" id="uNu-Rt-hnD"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="pQY-Mk-YPM" id="Dbu-M1-F3X"/>
+                <outlet property="ccardView" destination="K7R-V1-vEp" id="KfI-gj-BjB"/>
+                <outlet property="firstImageView" destination="K7R-V1-vEp" id="FMz-Wy-y3L"/>
+            </connections>
+            <point key="canvasLocation" x="-101" y="-48"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 60" width="128" height="128"/>
+    </resources>
+</document>

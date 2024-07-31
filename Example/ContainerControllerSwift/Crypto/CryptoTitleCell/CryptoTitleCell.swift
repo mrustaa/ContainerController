@@ -17,7 +17,9 @@ extension CryptoTitleItem {
     var text9: String?
     var text10: String?
     var text11: String?
-    var image12: UIImage?
+    var text12: String?
+    var image13: UIImage?
+    var image14: UIImage?
     var handlers: Handlers = .init()
   }
   struct Handlers {
@@ -82,7 +84,9 @@ class CryptoTitleCell: TableAdapterCell {
   @IBOutlet private weak var label9: UILabel?
   @IBOutlet private weak var label10: UILabel?
   @IBOutlet private weak var label11: UILabel?
-  @IBOutlet private weak var imageView12: UIImageView?
+  @IBOutlet private weak var label12: UILabel?
+  @IBOutlet private weak var imageView13: UIImageView?
+  @IBOutlet private weak var imageView14: UIImageView?
   
   @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
@@ -104,19 +108,21 @@ class CryptoTitleCell: TableAdapterCell {
   override func fill(data: TableAdapterCellData?) {
     guard let data = data as? CryptoTitleCellData else { return }
     self.data = data
-//    titleLabel?.text = data.state.titleText
-//    subtitleLabel?.text = data.state.subtitleText
-//    label2?.text = data.state.text2
-//    label3?.text = data.state.text3
-//    label4?.text = data.state.text4
-//    label5?.text = data.state.text5
-//    label6?.text = data.state.text6
-//    label7?.text = data.state.text7
-//    label8?.text = data.state.text8
-//    label9?.text = data.state.text9
-//    label10?.text = data.state.text10
-//    label11?.text = data.state.text11
-    imageView12?.image = data.state.image12
+    if let v = data.state.titleText { titleLabel?.text = v }
+    if let v = data.state.subtitleText { subtitleLabel?.text = v }
+    if let v = data.state.text2 { label2?.text = v }
+    if let v = data.state.text3 { label3?.text = v }
+    if let v = data.state.text4 { label4?.text = v }
+    if let v = data.state.text5 { label5?.text = v }
+    if let v = data.state.text6 { label6?.text = v }
+    if let v = data.state.text7 { label7?.text = v }
+    if let v = data.state.text8 { label8?.text = v }
+    if let v = data.state.text9 { label9?.text = v }
+    if let v = data.state.text10 { label10?.text = v }
+    if let v = data.state.text11 { label11?.text = v }
+    if let v = data.state.text12 { label12?.text = v }
+    if let v = data.state.image13 { imageView13?.image = v }
+    if let v = data.state.image14 { imageView14?.image = v }
     
   }
 }

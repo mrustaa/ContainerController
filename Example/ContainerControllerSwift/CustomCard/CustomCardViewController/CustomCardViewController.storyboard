@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Card View Controller-->
+        <scene sceneID="SMF-lf-FUO">
+            <objects>
+                <viewController storyboardIdentifier="CustomCardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NsZ-h4-THA" customClass="CustomCardViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wa8-md-jP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="R7k-cI-qbQ" customClass="TableAdapterView" customModule="ContainerControllerSwift">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R7k-cI-qbQ" secondAttribute="bottom" id="4MV-HX-8MV"/>
+                            <constraint firstItem="R7k-cI-qbQ" firstAttribute="top" secondItem="Wa8-md-jP4" secondAttribute="top" id="DHL-i6-SZv"/>
+                            <constraint firstAttribute="trailing" secondItem="R7k-cI-qbQ" secondAttribute="trailing" id="Uw9-7k-X2K"/>
+                            <constraint firstItem="R7k-cI-qbQ" firstAttribute="leading" secondItem="Wa8-md-jP4" secondAttribute="leading" id="kud-Jh-Xys"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="R7k-cI-qbQ" id="7Qv-iQ-EF8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5R-DP-IBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="-69"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Spor View Controller-->
+        <scene sceneID="J28-F4-WNk">
+            <objects>
+                <viewController storyboardIdentifier="SporViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x51-CR-PRQ" customClass="SporViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJx-0Q-g2y"/>
+                        <viewControllerLayoutGuide type="bottom" id="G70-uz-KcH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4lR-BV-JMO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YbU-DW-bK9" customClass="TableAdapterView" customModule="ContainerControllerSwift">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YbU-DW-bK9" firstAttribute="top" secondItem="4lR-BV-JMO" secondAttribute="top" id="Byh-IJ-H36"/>
+                            <constraint firstAttribute="trailing" secondItem="YbU-DW-bK9" secondAttribute="trailing" id="USC-T9-PL0"/>
+                            <constraint firstAttribute="bottom" secondItem="YbU-DW-bK9" secondAttribute="bottom" id="nHE-ZQ-X8u"/>
+                            <constraint firstItem="YbU-DW-bK9" firstAttribute="leading" secondItem="4lR-BV-JMO" secondAttribute="leading" id="ykB-65-xu3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="YbU-DW-bK9" id="3j9-Ml-w1o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Cg-ty-hUs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="-69"/>
+        </scene>
+    </scenes>
+</document>

@@ -21,7 +21,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1J-9R-aKN" userLabel="Frame 89538">
                                 <rect key="frame" x="8" y="8" width="123" height="123"/>
-                                <color key="backgroundColor" red="0.15294117647058825" green="0.43137254901960786" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZO-Q7-tVB" userLabel="Standard">
                                 <rect key="frame" x="17" y="18" width="105" height="17"/>

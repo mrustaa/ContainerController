@@ -118,8 +118,7 @@ extension ExampleAddCollectionViewController: UICollectionViewDataSource {
         case 4: color = .systemYellow
         case 5: color = .systemOrange
         default: break
-        }
-        
+        } 
         cell.backgroundColor = color
         cell.layer.cornerRadius = 12
         return cell

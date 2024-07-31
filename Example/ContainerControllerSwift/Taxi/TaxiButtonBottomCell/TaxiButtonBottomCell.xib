@@ -111,8 +111,11 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="btn1" destination="6mo-GT-KDB" id="Bfe-x5-Z6J"/>
-                <outlet property="btn2" destination="Ftv-Dj-qkP" id="aFT-o6-zGc"/>
+                <outlet property="btn2" destination="Ftv-Dj-qkP" id="hKS-xa-pZH"/>
                 <outlet property="carddView" destination="ycU-bX-YW6" id="26G-1v-BKM"/>
+                <outlet property="iconBtn" destination="HLD-cZ-5Xq" id="Vtx-w2-UaH"/>
+                <outlet property="iconPadding" destination="xrp-xI-igW" id="pZi-vo-AJf"/>
+                <outlet property="iconWidth" destination="QtN-Ub-f4r" id="WS7-TU-cGI"/>
                 <outlet property="timeView" destination="GCN-Pc-LLo" id="n4b-c1-r65"/>
                 <outlet property="titleLabel" destination="GK6-JP-WjF" id="Cb1-0Z-CPX"/>
             </connections>

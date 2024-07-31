@@ -6,6 +6,7 @@ import ContainerControllerSwift
 extension TaxiButtonBottomItem {
   struct State {
     var titleText: String?
+      var addIcon: Bool = true
     var handlers: Handlers = .init()
   }
   struct Handlers {
@@ -64,8 +65,11 @@ class TaxiButtonBottomCell: TableAdapterCell {
     @IBOutlet var timeView: DesignFigure!
     @IBOutlet var btn1: UIButton!
     @IBOutlet var btn2: UIButton!
+    @IBOutlet var iconPadding: NSLayoutConstraint!
+    @IBOutlet var iconWidth: NSLayoutConstraint!
     @IBOutlet override var selectedView: UIView? { didSet { } }
-  @IBOutlet var cardView: UIView?
+    @IBOutlet var iconBtn: UIImageView!
+    @IBOutlet var cardView: UIView?
   @IBOutlet var button: UIButton?
   
   override func awakeFromNib() {
@@ -94,6 +98,11 @@ class TaxiButtonBottomCell: TableAdapterCell {
   override func fill(data: TableAdapterCellData?) {
     guard let data = data as? TaxiButtonBottomCellData else { return }
     self.data = data
+      
+      self.iconPadding.constant =  data.state.addIcon ? 11 : 0
+      self.iconWidth.constant =  data.state.addIcon ? 60 : 0
+      self.iconBtn.isHidden  =  !data.state.addIcon
+      
     if let v = data.state.titleText { titleLabel?.text = v }
     
   }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="hQQ-Pd-Ie6" customClass="SportCatalogFilterCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQQ-Pd-Ie6" id="F3N-BK-yEC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cde-vR-Wzo" userLabel="Tags SportCatalogFilter">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="E0Z-zZ-ub7" customClass="CollectionAdapterView" customModule="ContainerControllerSwift">
+                                <rect key="frame" x="0.0" y="-3" width="375" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="15" id="Xul-OW-I1I">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="18" maxX="15" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m4-ku-kYp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E0Z-zZ-ub7" secondAttribute="bottom" constant="-2" id="ALE-Wc-d5h"/>
+                            <constraint firstItem="E0Z-zZ-ub7" firstAttribute="leading" secondItem="Cde-vR-Wzo" secondAttribute="leading" id="D44-Hv-VFi"/>
+                            <constraint firstItem="6m4-ku-kYp" firstAttribute="leading" secondItem="Cde-vR-Wzo" secondAttribute="leading" id="HPI-07-xcT"/>
+                            <constraint firstItem="6m4-ku-kYp" firstAttribute="top" secondItem="Cde-vR-Wzo" secondAttribute="top" id="Nfk-6R-T5i"/>
+                            <constraint firstAttribute="bottom" secondItem="6m4-ku-kYp" secondAttribute="bottom" id="Q29-Io-ibl"/>
+                            <constraint firstAttribute="trailing" secondItem="E0Z-zZ-ub7" secondAttribute="trailing" id="Tif-kn-gEg"/>
+                            <constraint firstItem="E0Z-zZ-ub7" firstAttribute="top" secondItem="Cde-vR-Wzo" secondAttribute="top" constant="-3" id="UYj-wY-Lhc"/>
+                            <constraint firstAttribute="trailing" secondItem="6m4-ku-kYp" secondAttribute="trailing" id="jAU-R5-0YF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Cde-vR-Wzo" secondAttribute="bottom" id="DxH-U3-Vbn"/>
+                    <constraint firstItem="Cde-vR-Wzo" firstAttribute="top" secondItem="F3N-BK-yEC" secondAttribute="top" id="Hkj-Fy-E7o"/>
+                    <constraint firstItem="Cde-vR-Wzo" firstAttribute="leading" secondItem="F3N-BK-yEC" secondAttribute="leading" id="JdC-Gu-O1L"/>
+                    <constraint firstAttribute="trailing" secondItem="Cde-vR-Wzo" secondAttribute="trailing" id="N90-7L-vE3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="6m4-ku-kYp" id="2QR-SG-uOu"/>
+                <outlet property="collectionView" destination="E0Z-zZ-ub7" id="J2C-Kp-0px"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

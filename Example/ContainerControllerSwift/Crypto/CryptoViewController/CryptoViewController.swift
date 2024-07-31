@@ -30,12 +30,12 @@ class CryptoViewController: StoryboardController {
         let layoutC = ContainerLayout()
         layoutC.positions =  position //
         layoutC.insets = .init(right: 0, left: 0)
-        var container = ContainerController(addTo: self, layout: layoutC)
+        let container = ContainerController(addTo: self, layout: layoutC)
         container.view.cornerRadius = 36
         container.view.addShadow()
         container.view.tag = 12
         container.delegate = self
-        let shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
+//        let shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
         
         container.view.layer.shadowOpacity = Float(0.20)
         container.view.layer.shadowOffset = .init(width: 0, height: 13)
@@ -69,20 +69,27 @@ class CryptoViewController: StoryboardController {
         //        container.add(headerView: header)
         //        container.view.backgroundColor = color
         
-        var table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
+        let table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
         table.indicatorStyle =  .default
         //        container.add(scrollView: addCollectionView())
         
         
         
-        let img1  =   #imageLiteral(resourceName: "imgPlaylistMain")
-        let img2  =   #imageLiteral(resourceName: "imgPlaylistFlume")
+        let img1  =   #imageLiteral(resourceName: "imgCryptoBitcoin")
+        let img2  =   #imageLiteral(resourceName: "imgCryptoEuro")
+        let img3  =   #imageLiteral(resourceName: "imgCryptoPound")
         
         
         table.set(items: [
-            CryptoOneItem(state: .init()),
-            CryptoOneItem(state: .init()),
-            CryptoOneItem(state: .init())
+            CryptoOneItem(state: .init(firstImage: img1, color: Colors.hexStr("F7931A"))),
+            CryptoOneItem(state: .init(firstImage: img2, color: Colors.hexStr("3A5FD9"))),
+            CryptoOneItem(state: .init(firstImage: img3, color: .black)),
+            CryptoOneItem(state: .init(firstImage: img1, color: Colors.hexStr("F7931A"))),
+            CryptoOneItem(state: .init(firstImage: img2, color: Colors.hexStr("3A5FD9"))),
+            CryptoOneItem(state: .init(firstImage: img3, color: .black)),
+            CryptoOneItem(state: .init(firstImage: img1, color: Colors.hexStr("F7931A"))),
+            CryptoOneItem(state: .init(firstImage: img2, color: Colors.hexStr("3A5FD9"))),
+            CryptoOneItem(state: .init(firstImage: img3, color: .black)),
         ] )
         
         container.add(scrollView: table)

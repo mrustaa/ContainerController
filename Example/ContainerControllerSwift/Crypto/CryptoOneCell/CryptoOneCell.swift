@@ -5,11 +5,14 @@ import ContainerControllerSwift
 
 extension CryptoOneItem {
   struct State {
-    var titleText: String?
+    var firstImage: UIImage?
+      var color: UIColor?
     var subtitleText: String?
     var text2: String?
     var text3: String?
     var text4: String?
+    var text5: String?
+    var image6: UIImage?
     var handlers: Handlers = .init()
   }
   struct Handlers {
@@ -62,11 +65,14 @@ class CryptoOneCell: TableAdapterCell {
   
   public var data: CryptoOneCellData?
   
-  @IBOutlet private weak var titleLabel: UILabel?
+  @IBOutlet private weak var firstImageView: UIImageView?
   @IBOutlet private weak var subtitleLabel: UILabel?
-  @IBOutlet private weak var label2: UILabel?
+    @IBOutlet var ccardView: DesignFigure!
+    @IBOutlet private weak var label2: UILabel?
   @IBOutlet private weak var label3: UILabel?
   @IBOutlet private weak var label4: UILabel?
+  @IBOutlet private weak var label5: UILabel?
+  @IBOutlet private weak var imageView6: UIImageView?
   
   @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
@@ -88,11 +94,18 @@ class CryptoOneCell: TableAdapterCell {
   override func fill(data: TableAdapterCellData?) {
     guard let data = data as? CryptoOneCellData else { return }
     self.data = data
-//    titleLabel?.text = data.state.titleText
-//    subtitleLabel?.text = data.state.subtitleText
-//    label2?.text = data.state.text2
-//    label3?.text = data.state.text3
-//    label4?.text = data.state.text4
+    if let v = data.state.firstImage { firstImageView?.image = v }
+    if let v = data.state.subtitleText { subtitleLabel?.text = v }
+    if let v = data.state.text2 { label2?.text = v }
+    if let v = data.state.text3 { label3?.text = v }
+    if let v = data.state.text4 { label4?.text = v }
+    if let v = data.state.text5 { label5?.text = v }
+    if let v = data.state.image6 { imageView6?.image = v }
     
+      
+      self.ccardView.fillColor = data.state.color ?? .orange
+      self.ccardView.layoutSubviews()
+      self.ccardView.layoutIfNeeded()
+//      self.ccardView.setup()
   }
 }

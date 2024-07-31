@@ -1,63 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <objects><placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
-<placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/><tableViewCell clipsSubviews="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="XpU-qs-A5O" customClass="CryptoTitleCell" customModule="FigmaConvertXib" customModuleProvider="target">
-    <rect key="frame" x="628.0" y="967.0" width="358.0" height="296.0"/>
-    <autoresizingMask key="autoresizingMask"/>
-    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XpU-qs-A5O" id="v4r-NM-JZn">
-        <rect key="frame" x="0.0" y="0.0" width="358.0" height="296.0"/>
-        <autoresizingMask key="autoresizingMask"/>
-        <subviews>
-            <view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel=" CryptoTitle" id="bd9-m7-eIB" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="0.0" width="358.0" height="296.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89538" id="feo-vv-GRB"><rect key="frame" x="0.0" y="140.0" width="358.0" height="156.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 35" id="c8a-cr-hac" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="0.0" y="1.0" width="358.0" height="155.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-    <real key="value" value="34.0"/>
-</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-    <color key="value" red="1.0" green="1.0" blue="1.0" alpha="0.12999999523162842" colorSpace="custom" customColorSpace="sRGB"/>
-</userDefinedRuntimeAttribute>
-</userDefinedRuntimeAttributes></view><view clipsSubviews="YES" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Frame 89529" id="D15-RU-sta"><rect key="frame" x="1.0" y="0.0" width="354.0" height="156.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><subviews><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savings" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwB-Hp-u6W" userLabel="Savings" customModuleProvider="target"><rect key="frame" x="19.0" y="16.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" weight="medium" pointSize="20.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yield limit" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTW-HX-Wav" userLabel="Yield limit" customModuleProvider="target"><rect key="frame" x="19.0" y="62.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" pointSize="12.0"/><color key="textColor" red="0.6980392336845398" green="0.7019608020782471" blue="0.772549033164978" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnZ-du-ZMJ" userLabel="$0" customModuleProvider="target"><rect key="frame" x="19.0" y="120.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" pointSize="12.0"/><color key="textColor" red="0.6980392336845398" green="0.7019608020782471" blue="0.772549033164978" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$100K" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-E7-SCp" userLabel="$100K" customModuleProvider="target"><rect key="frame" x="119.0" y="120.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" pointSize="12.0"/><color key="textColor" red="0.6980392336845398" green="0.7019608020782471" blue="0.772549033164978" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payout in " textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="555-Vb-qm1" userLabel="Payout in" customModuleProvider="target"><rect key="frame" x="224.0" y="121.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" pointSize="12.0"/><color key="textColor" red="0.6980392336845398" green="0.7019608020782471" blue="0.772549033164978" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4:56:06" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3Z-V0-B5P" userLabel="4:56:06" customModuleProvider="target"><rect key="frame" x="278.0" y="121.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="11.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$346.23" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egN-UC-Bdm" userLabel="$346.23" customModuleProvider="target"><rect key="frame" x="224.0" y="92.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="16.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earned" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YP4-AZ-SFF" userLabel="Earned" customModuleProvider="target"><rect key="frame" x="224.0" y="16.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" weight="medium" pointSize="20.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 36" id="VmC-rJ-cFo" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="19.0" y="86.0" width="178.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-    <real key="value" value="13.0"/>
-</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-    <color key="value" red="0.015686275437474258" green="0.03529411926865578" blue="0.21176470816135406" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
-</userDefinedRuntimeAttribute>
-</userDefinedRuntimeAttributes></view><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 37" id="fgG-Jw-eUw" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="19.0" y="86.0" width="121.0" height="26.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-    <real key="value" value="13.0"/>
-</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-    <color key="value" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
-</userDefinedRuntimeAttribute>
-</userDefinedRuntimeAttributes></view><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$60K" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWV-rl-8pd" userLabel="$60K" customModuleProvider="target"><rect key="frame" x="99.0" y="92.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="11.0"/><color key="textColor" red="0.015686275437474258" green="0.03529411926865578" blue="0.21176470816135406" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label>
-</subviews></view>
-</subviews></view><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$163829.12" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNa-To-lAl" userLabel="$163829.12" customModuleProvider="target"><rect key="frame" x="9.0" y="87.0" width="221.0" height="49.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="36.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onv-el-zfe" userLabel="Balance" customModuleProvider="target"><rect key="frame" x="7.0" y="60.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="system" pointSize="14.0"/><color key="textColor" red="0.6980392336845398" green="0.7019608020782471" blue="0.772549033164978" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><label opaque="NO" userInteractionEnabled="NO" alpha="1.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD" textAlignment="left" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-43-aaZ" userLabel="USD" customModuleProvider="target"><rect key="frame" x="63.0" y="59.0" width="78.0" height="25.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><fontDescription key="fontDescription" type="boldSystem" pointSize="12.0"/><color key="textColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes></label><view clipsSubviews="NO" alpha="1.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" userLabel="Rectangle 44" id="MFf-sa-iaq" customClass="DesignFigure" customModule="FigmaConvertXib" customModuleProvider="target"><rect key="frame" x="8.0" y="6.0" width="32.0" height="32.0"/><autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/><userDefinedRuntimeAttributes><userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-    <real key="value" value="16.0"/>
-</userDefinedRuntimeAttribute><userDefinedRuntimeAttribute type="image" keyPath="image" value="Rectangle 44"/><userDefinedRuntimeAttribute type="number" keyPath="imageMode">
-    <real key="value" value="2.0"/>
-</userDefinedRuntimeAttribute>
-</userDefinedRuntimeAttributes></view><button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC8-hp-nzJ">
-  <rect key="frame" x="0.0" y="0.0" width="358.0" height="296.0"/></button>
-</subviews><userDefinedRuntimeAttributes>
-</userDefinedRuntimeAttributes>            </view>
-        </subviews>
-        
-<constraints>
-    
-</constraints>
-
-    </tableViewCellContentView>
-    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/><connections>
-    <outlet property="titleLabel" destination="XwB-Hp-u6W" id="lLs-l4-TWr"/><outlet property="subtitleLabel" destination="jTW-HX-Wav" id="Jy4-g9-ZrG"/><outlet property="label2" destination="dnZ-du-ZMJ" id="lKe-qz-t89"/><outlet property="label3" destination="PhY-E7-SCp" id="fve-C6-I1g"/><outlet property="label4" destination="555-Vb-qm1" id="WEt-4e-lVV"/><outlet property="label5" destination="F3Z-V0-B5P" id="Qmw-yS-NHU"/><outlet property="label6" destination="egN-UC-Bdm" id="1FM-Hg-xRM"/><outlet property="label7" destination="YP4-AZ-SFF" id="r46-r4-1tH"/><outlet property="label8" destination="bWV-rl-8pd" id="gEV-Uz-m0f"/><outlet property="label9" destination="rNa-To-lAl" id="YjZ-De-Oj0"/><outlet property="label10" destination="Onv-el-zfe" id="YiY-gg-HYX"/><outlet property="label11" destination="rHW-43-aaZ" id="j64-OY-8PF"/><outlet property="imageView12" destination="MFf-sa-iaq" id="iVP-Mg-STi"/><outlet property="button" destination="JC8-hp-nzJ" id="fUf-ex-Pj1"/>
-</connections></tableViewCell></objects></document>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="3fV-gx-3PF" customClass="CryptoTitleCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fV-gx-3PF" id="LPi-jC-3MF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33d-WP-EMo" userLabel=" CryptoTitle" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-89-aXt" userLabel="Frame 89538">
+                                <rect key="frame" x="9" y="140" width="358" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2rv-sw-8ja" userLabel="Rectangle 35" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="358" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="34"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.12999999523162842" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-b8-ayg" userLabel="Frame 89529">
+                                        <rect key="frame" x="1" y="0.0" width="354" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Savings" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-l4-qDm" userLabel="Savings">
+                                                <rect key="frame" x="19" y="16" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yield limit" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjx-NE-tWI" userLabel="Yield limit">
+                                                <rect key="frame" x="19" y="62" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.69803923368453979" green="0.70196080207824707" blue="0.77254903316497803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oU-tX-eZX" userLabel="$0">
+                                                <rect key="frame" x="19" y="120" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.69803923368453979" green="0.70196080207824707" blue="0.77254903316497803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$100K" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-fc-nv6" userLabel="$100K">
+                                                <rect key="frame" x="119" y="120" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.69803923368453979" green="0.70196080207824707" blue="0.77254903316497803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payout in " lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-Kj-vDk" userLabel="Payout in">
+                                                <rect key="frame" x="224" y="121" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.69803923368453979" green="0.70196080207824707" blue="0.77254903316497803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4:56:06" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRh-KO-O5a" userLabel="4:56:06">
+                                                <rect key="frame" x="278" y="121" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$346.23" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90E-IP-IEZ" userLabel="$346.23">
+                                                <rect key="frame" x="224" y="92" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Earned" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZI-zS-fxb" userLabel="Earned">
+                                                <rect key="frame" x="224" y="16" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Vi-wP-EYM" userLabel="Rectangle 36" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="86" width="178" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="0.015686275437474258" green="0.035294119268655777" blue="0.21176470816135406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x6H-Ti-AHi" userLabel="Rectangle 37" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                                <rect key="frame" x="19" y="86" width="121" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="13"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$60K" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8j-0j-ogI" userLabel="$60K">
+                                                <rect key="frame" x="99" y="92" width="78" height="25"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                <color key="textColor" red="0.015686275437474258" green="0.035294119268655777" blue="0.21176470816135406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$163829.12" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-tf-Zlo" userLabel="$163829.12">
+                                <rect key="frame" x="18" y="87" width="221" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Balance" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN7-vw-BBZ" userLabel="Balance">
+                                <rect key="frame" x="16" y="60" width="78" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.69803923368453979" green="0.70196080207824707" blue="0.77254903316497803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3d-YA-cJp" userLabel="USD">
+                                <rect key="frame" x="71" y="59" width="78" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1.63%" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRH-mz-X34" userLabel="+1.63%">
+                                <rect key="frame" x="224" y="92" width="78" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S7-aP-K9C" userLabel="Rectangle 44" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="17" y="6" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Rectangle 44"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgCryptoArrowBottom" translatesAutoresizingMaskIntoConstraints="NO" id="pOR-Cf-Lo6" userLabel="imgCryptoArrowBottom">
+                                <rect key="frame" x="103" y="65.5" width="7" height="3.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-uo-XIs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="oqf-uo-XIs" id="kRQ-Ci-fZe"/>
+                <outlet property="imageView13" destination="2S7-aP-K9C" id="d6S-JF-v8U"/>
+                <outlet property="imageView14" destination="pOR-Cf-Lo6" id="uNP-4e-ViV"/>
+                <outlet property="label10" destination="ZN7-vw-BBZ" id="Tm9-P3-Lml"/>
+                <outlet property="label11" destination="P3d-YA-cJp" id="w46-Ie-TjQ"/>
+                <outlet property="label12" destination="hRH-mz-X34" id="PHe-Tw-3X6"/>
+                <outlet property="label2" destination="6oU-tX-eZX" id="rzj-fi-2My"/>
+                <outlet property="label3" destination="IrH-fc-nv6" id="Lt8-eN-lrX"/>
+                <outlet property="label4" destination="6Ph-Kj-vDk" id="tkx-4w-7i4"/>
+                <outlet property="label5" destination="HRh-KO-O5a" id="DvA-1v-dyi"/>
+                <outlet property="label6" destination="90E-IP-IEZ" id="Hjz-Rt-9CH"/>
+                <outlet property="label7" destination="tZI-zS-fxb" id="xc6-ks-pML"/>
+                <outlet property="label8" destination="n8j-0j-ogI" id="7K9-6Z-BBK"/>
+                <outlet property="label9" destination="bOb-tf-Zlo" id="d1e-H8-G9H"/>
+                <outlet property="subtitleLabel" destination="wjx-NE-tWI" id="qrY-ud-7Fm"/>
+                <outlet property="titleLabel" destination="r4w-l4-qDm" id="G9i-vU-iBL"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-48"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 44" width="128" height="128"/>
+        <image name="imgCryptoArrowBottom" width="128" height="128"/>
+    </resources>
+</document>

@@ -40,6 +40,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="68" height="38"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                         <color key="textColor" red="0.15294118225574493" green="0.43137255311012268" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -55,6 +56,14 @@
                                     <constraint firstAttribute="bottom" secondItem="qnL-la-QkX" secondAttribute="bottom" id="rqn-or-TdO"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:42PM" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRc-eQ-Wbi" userLabel="From">
+                                <rect key="frame" x="318" y="32" width="41" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="DQZ-4W-q8I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.1411764771" green="0.1411764771" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Ave, New York" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="to3-Cj-beN" userLabel="Book Ave, New York">
                                 <rect key="frame" x="43" y="31" width="236" height="16"/>
                                 <constraints>
@@ -111,6 +120,8 @@
                         <constraints>
                             <constraint firstItem="dZ9-B4-Ggg" firstAttribute="leading" secondItem="to3-Cj-beN" secondAttribute="trailing" constant="12" id="Gfp-3q-kiV"/>
                             <constraint firstItem="dZ9-B4-Ggg" firstAttribute="top" secondItem="G2O-3d-oXY" secondAttribute="top" constant="13" id="IiM-70-sLW"/>
+                            <constraint firstAttribute="trailing" secondItem="NRc-eQ-Wbi" secondAttribute="trailing" constant="16" id="M2r-Bv-zP3"/>
+                            <constraint firstItem="NRc-eQ-Wbi" firstAttribute="top" secondItem="G2O-3d-oXY" secondAttribute="top" constant="32" id="VWH-9L-NWU"/>
                             <constraint firstItem="5kW-Tf-C86" firstAttribute="leading" secondItem="MgE-8U-5QB" secondAttribute="trailing" constant="6" id="X1x-xW-DJf"/>
                             <constraint firstItem="MgE-8U-5QB" firstAttribute="leading" secondItem="G2O-3d-oXY" secondAttribute="leading" constant="13" id="aa3-WK-i6W"/>
                             <constraint firstItem="3Zs-aF-tv3" firstAttribute="leading" secondItem="G2O-3d-oXY" secondAttribute="leading" constant="20" id="bWq-hf-F8K"/>
@@ -137,6 +148,8 @@
                 <outlet property="button" destination="9gw-9y-Xh0" id="MWh-Sy-6dA"/>
                 <outlet property="imageView3" destination="Uv6-rW-AOQ" id="sqZ-do-JYu"/>
                 <outlet property="label2" destination="5kW-Tf-C86" id="MET-xC-Abh"/>
+                <outlet property="rightEditButton" destination="dZ9-B4-Ggg" id="5Fc-SF-GHd"/>
+                <outlet property="rightTimeLabel" destination="NRc-eQ-Wbi" id="xOs-VC-oGf"/>
                 <outlet property="subtitleLabel" destination="to3-Cj-beN" id="cVw-ct-Yqc"/>
                 <outlet property="titleLabel" destination="qnL-la-QkX" id="aoI-tz-wFF"/>
             </connections>

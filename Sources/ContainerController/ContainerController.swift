@@ -25,6 +25,8 @@ open class ContainerController: NSObject {
     
     public var footerView: UIView?
     
+    public var backView: UIView!
+    
     // MARK: Layout
     
     public var layout: ContainerLayout = ContainerLayout()
@@ -368,11 +370,18 @@ open class ContainerController: NSObject {
         view.backgroundColor = .systemBackground
         controller?.view.addSubview(view)
         
+        backView = UIView(frame: CGRect(x: 0, y: 0, width: deviceWidth, height: deviceHeight * 2))
+        backView.backgroundColor = .clear
+        backView.isUserInteractionEnabled = false
+        view.contentView?.addSubview(backView)
+        
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
         panGesture?.isEnabled = layout.movingEnabled
         if let panGesture = panGesture {
             view.addGestureRecognizer(panGesture)
         }
+        
+        
     }
     
     // MARK: - Add Header
@@ -388,6 +397,8 @@ open class ContainerController: NSObject {
     public func add(headerView: UIView) {
         removeHeaderView()
         self.headerView = headerView
+        
+        view.contentView?.addSubview(backView)
         view.contentView?.addSubview(headerView)
         calculationViews()
     }
@@ -405,6 +416,8 @@ open class ContainerController: NSObject {
     public func add(footerView: UIView) {
         removeFooterView()
         self.footerView = footerView
+        
+                view.contentView?.addSubview(backView)
         controller?.view.addSubview(footerView)
         calculationViews()
     }
@@ -447,6 +460,7 @@ open class ContainerController: NSObject {
             collectionAdapterView.dataSource = self
         }
         
+        view.contentView?.addSubview(backView)
         view.contentView?.addSubview(scrollView)
         calculationViews()
     }

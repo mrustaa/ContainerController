@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="GeL-qP-e2Z" customClass="SportCatalogTitileCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GeL-qP-e2Z" id="2py-OU-eWz">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ji2-2H-LGc" userLabel=" SportCatalogTitile">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catalog" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXq-6D-0nV" userLabel="Catalog">
+                                <rect key="frame" x="32" y="124" width="102.5" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Woi-xS-7ux"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kvl-gc-G8l" userLabel="Frame 89545" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="31" y="69" width="34" height="34"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWS-hZ-hpi" userLabel="Rectangle 14" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.93725490570068359" green="0.93725490570068359" blue="0.94509804248809814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="imgTaxiAvatar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="17"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hcq-ze-Dq2"/>
+                                    <constraint firstAttribute="width" constant="34" id="zdQ-Eu-Fwv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WqY-eN-LdJ" userLabel="interface-search--glass-search-magnifying" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="321" y="75" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="sb5-Jf-w2m"/>
+                                    <constraint firstAttribute="height" constant="25" id="xv2-eM-iV8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="iconSportSearch"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz6-BR-JeL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FXq-6D-0nV" secondAttribute="bottom" constant="5" id="9Gq-At-xfX"/>
+                            <constraint firstAttribute="trailing" secondItem="WqY-eN-LdJ" secondAttribute="trailing" constant="29" id="CFX-tX-DvH"/>
+                            <constraint firstItem="Kvl-gc-G8l" firstAttribute="leading" secondItem="ji2-2H-LGc" secondAttribute="leading" constant="31" id="MQl-vf-8vb"/>
+                            <constraint firstItem="FXq-6D-0nV" firstAttribute="leading" secondItem="ji2-2H-LGc" secondAttribute="leading" constant="32" id="WIg-8H-hVg"/>
+                            <constraint firstAttribute="bottom" secondItem="WqY-eN-LdJ" secondAttribute="bottom" constant="63" id="e7c-ay-83C"/>
+                            <constraint firstItem="FXq-6D-0nV" firstAttribute="top" secondItem="Kvl-gc-G8l" secondAttribute="bottom" constant="21" id="uXE-w0-nCG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ji2-2H-LGc" firstAttribute="top" secondItem="2py-OU-eWz" secondAttribute="top" id="Beh-Du-obU"/>
+                    <constraint firstAttribute="bottom" secondItem="ji2-2H-LGc" secondAttribute="bottom" id="EAA-Wx-qc8"/>
+                    <constraint firstAttribute="trailing" secondItem="ji2-2H-LGc" secondAttribute="trailing" id="c9b-mn-Sn8"/>
+                    <constraint firstItem="ji2-2H-LGc" firstAttribute="leading" secondItem="2py-OU-eWz" secondAttribute="leading" id="hFs-Tf-bMI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="Iz6-BR-JeL" id="Pts-S4-oJA"/>
+                <outlet property="secondImageView" destination="gWS-hZ-hpi" id="u44-PL-LSE"/>
+                <outlet property="titleLabel" destination="FXq-6D-0nV" id="8Tr-cO-0E0"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-48"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconSportSearch" width="25" height="25"/>
+        <image name="imgTaxiAvatar" width="180" height="180"/>
+    </resources>
+</document>

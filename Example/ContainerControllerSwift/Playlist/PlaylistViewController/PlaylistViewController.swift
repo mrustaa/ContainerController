@@ -172,7 +172,7 @@ class PlaylistViewController: StoryboardController {
                 
                 if type == .bottom {
                     
-                    
+                    self.imgView.alpha = 1
                     
                     self.imgViewH.constant = ScreenSize.height
                     self.imgViewW.constant = ScreenSize.width
@@ -180,13 +180,14 @@ class PlaylistViewController: StoryboardController {
                     
                 } else if type == .middle {
                     
+                    self.imgView.alpha = 0
                     self.imgViewW.constant = 313
                     self.imgViewH.constant = 162
                     self.imgViewY.constant = 197
                     
                     
                 } else {
-                    
+                    self.imgView.alpha = 0
                     self.imgViewW.constant = 313
                     self.imgViewH.constant = 162
                     self.imgViewY.constant = 197

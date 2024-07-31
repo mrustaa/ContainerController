@@ -28,12 +28,21 @@ class ViewController: UIViewController {
             TitleTextxItem(title: "Example. Add UITableView",      clss: ExampleAddTableViewController.self),
             TitleTextxItem(title: "Example. Add UICollectionView", clss: ExampleAddCollectionViewController.self),
             
-            TitleTextxItem(title: "Imagine", clss: ImagineViewController.self),
+//            TitleTextxItem(title: "Imagine", clss: ImagineViewController.self),
+            
             TitleTextxItem(title: "Playlist", clss: PlaylistViewController.self),
             TitleTextxItem(title: "Crypto", clss: CryptoViewController.self),
             
             TitleTextxItem(title: "Wallets", clss: WalletsViewController.self),
-            TitleTextxItem(title: "Taxi ", clss: TaxiViewController.self)
+            TitleTextxItem(title: "Sport", clss: SporViewController.self),
+            TitleTextxItem(title: "Taxi ", clss: TaxiViewController.self),
+            
+            TitleTextxItem(title: "Map Parking", clss: MapParkingViewController.self),
+            TitleTextxItem(title: "Buy Stock", clss: BuyStockViewController.self),
+            
+            TitleTextxItem(title: "Custom Card", clss: CustomCardViewController.self),
+            
+            
             
             
         ]

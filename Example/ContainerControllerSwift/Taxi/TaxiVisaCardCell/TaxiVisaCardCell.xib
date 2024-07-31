@@ -31,11 +31,11 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="**** 4568" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-37-Eo8" userLabel="**** 4568">
-                                <rect key="frame" x="76" y="33" width="59" height="18"/>
+                                <rect key="frame" x="76" y="33" width="71" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="O0L-j5-Cj5"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="0.11372549086809158" green="0.11372549086809158" blue="0.10980392247438431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlj-gC-sDy" userLabel="Rectangle 43" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">

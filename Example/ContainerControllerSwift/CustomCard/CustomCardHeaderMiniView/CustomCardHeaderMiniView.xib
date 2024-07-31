@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCardHeaderMiniView" customModule="ContainerController" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="7hA-ZS-iip" id="e0k-vJ-RKW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Sj-X3-Nug" userLabel=" CustomCardHeaderMini">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="39"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwZ-iq-b5f" userLabel="Rectangle 45">
+                    <rect key="frame" x="0.0" y="0.0" width="167" height="39"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how r u?" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hA-ZS-iip" userLabel="how r u?">
+                    <rect key="frame" x="12" y="11" width="54.5" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="XyZ-nC-MbT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7hA-ZS-iip" firstAttribute="leading" secondItem="4Sj-X3-Nug" secondAttribute="leading" constant="12" id="01a-4U-XK6"/>
+                <constraint firstItem="jwZ-iq-b5f" firstAttribute="leading" secondItem="4Sj-X3-Nug" secondAttribute="leading" id="65Q-ZV-rEz"/>
+                <constraint firstItem="jwZ-iq-b5f" firstAttribute="top" secondItem="4Sj-X3-Nug" secondAttribute="top" id="GIz-kP-fo0"/>
+                <constraint firstAttribute="bottom" secondItem="jwZ-iq-b5f" secondAttribute="bottom" id="PXa-ZO-hya"/>
+                <constraint firstItem="7hA-ZS-iip" firstAttribute="top" secondItem="4Sj-X3-Nug" secondAttribute="top" constant="11" id="U96-gQ-gdm"/>
+                <constraint firstAttribute="trailing" secondItem="jwZ-iq-b5f" secondAttribute="trailing" id="cOi-LL-liP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-100" y="-48.125937031484263"/>
+        </view>
+    </objects>
+</document>

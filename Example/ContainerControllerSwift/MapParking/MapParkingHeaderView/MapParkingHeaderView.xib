@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapParkingHeaderView" customModule="ContainerController" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytp-qJ-5XI" userLabel=" MapParkingHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="12"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO8-X9-RGn" userLabel="Rectangle 65" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                    <rect key="frame" x="155" y="0.0" width="65" height="4"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="BZ3-Sa-K0c"/>
+                        <constraint firstAttribute="width" constant="65" id="d0X-Uj-qlG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qO8-X9-RGn" firstAttribute="top" secondItem="ytp-qJ-5XI" secondAttribute="top" id="UJs-Bm-p3N"/>
+                <constraint firstItem="qO8-X9-RGn" firstAttribute="centerX" secondItem="ytp-qJ-5XI" secondAttribute="centerX" id="vlZ-Co-1e6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="-10"/>
+        </view>
+    </objects>
+</document>

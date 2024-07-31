@@ -60,12 +60,12 @@ class StoryboardController: UIViewController {
 extension StoryboardController: ContainerControllerDelegate {
     
     
-    func addContainer(position: ContainerPosition, radius: CGFloat, items: [TableAdapterItem]? = nil, delegate: ContainerControllerDelegate? = nil, header: UIView? = nil, footer: UIView? = nil) -> ContainerController {
+    func addContainer(position: ContainerPosition, radius: CGFloat, items: [TableAdapterItem]? = nil, delegate: ContainerControllerDelegate? = nil, addShadow: Bool = true, addBackShadow: Bool = false, header: UIView? = nil, footer: UIView? = nil) -> (ContainerController, TableAdapterView) {
         
         let layoutC = ContainerLayout()
         layoutC.positions =  position //
         layoutC.insets = .init(right: 0, left: 0)
-        var container = ContainerController(addTo: self, layout: layoutC)
+        let container = ContainerController(addTo: self, layout: layoutC)
         container.view.cornerRadius = radius
         container.view.addShadow()
         container.view.tag = 12
@@ -74,13 +74,19 @@ extension StoryboardController: ContainerControllerDelegate {
         } else {
             container.delegate = self
         }
-        let shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
         
-        container.view.layer.shadowOpacity = Float(0.20)
-        container.view.layer.shadowOffset = .init(width: 0, height: 13)
-        container.view.layer.shadowRadius = 30.0
-        container.view.layer.shadowColor = UIColor.black.cgColor
+        if addShadow {
+//            let shadowColor = UIColor.black.withAlphaComponent(0.1).cgColor
+            
+            container.view.layer.shadowOpacity = Float(0.20)
+            container.view.layer.shadowOffset = .init(width: 0, height: 13)
+            container.view.layer.shadowRadius = 30.0
+            container.view.layer.shadowColor = UIColor.black.cgColor
+            
+            
+        }
         
+        container.set(backgroundShadowShow: addBackShadow)
         
         container.view.backgroundColor = .white
         // container.view.backgroundColor = color
@@ -93,7 +99,7 @@ extension StoryboardController: ContainerControllerDelegate {
             container.add(footerView: footerV)
         }
         
-        var table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
+        let table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
         table.indicatorStyle =  .default
         // container.add(scrollView: addCollectionView())
         
@@ -101,14 +107,15 @@ extension StoryboardController: ContainerControllerDelegate {
             table.set(items: items )
         }
         container.add(scrollView: table)
-        container.move(type: .bottom)
         
-        main(delay: 1.05) {
-            container.move(type: .top
-            )
-        }
+        container.move(type: .hide, animation: false)
         
-        return container
+//        main(delay: 0.05) {
+//            container.move(type: .top
+//            )
+//        }
+        
+        return (container, table)
     }
     
     

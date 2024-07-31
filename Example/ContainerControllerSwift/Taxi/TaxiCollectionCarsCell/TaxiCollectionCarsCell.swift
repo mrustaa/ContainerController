@@ -6,7 +6,7 @@ import ContainerControllerSwift
 extension TaxiCollectionCarsItem {
   struct State {
     var items: [CollectionAdapterItem]?
-      var insets: CollectionAdapterInsets?
+    var insets: CollectionAdapterInsets?
     var handlers: Handlers = .init()
   }
   struct Handlers {
@@ -71,6 +71,10 @@ class TaxiCollectionCarsCell: TableAdapterCell {
       
       separator1.constant = 0.5
       separator2.constant = 0.5
+      
+      collectionView.selectIndexCallback = { index in
+          
+      }
       
     separator(hide: true)
       
