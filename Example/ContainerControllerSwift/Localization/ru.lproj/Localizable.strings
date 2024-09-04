@@ -1,5 +1,3 @@
-
-
 "LNG_MAPS_SECTION_SEE_ALL" = "См. все";
 "LNG_MAPS_SECTION_CLEAR" = "Очистить";
 
@@ -89,9 +87,9 @@
 "LNG_ALERT_POPUP_BOTTOM" = "Найти велосипед";
 
 
-"LNG_FILTER_FUN" = "Веселая"
-"LNG_FILTER_ROMANCE" = "Романтика"
-"LNG_FILTER_RELAX" = "Релакс"
-"LNG_FILTER_SAD" = "Грустная"
-"LNG_FILTER_CONCENTRATION" = "Концентрация"
-"LNG_FILTER_SLEEP" = "Сон"
+"LNG_FILTER_FUN" = "Веселая";
+"LNG_FILTER_ROMANCE" = "Романтика";
+"LNG_FILTER_RELAX" = "Релакс";
+"LNG_FILTER_SAD" = "Грустная";
+"LNG_FILTER_CONCENTRATION" = "Концентрация";
+"LNG_FILTER_SLEEP" = "Сон";
