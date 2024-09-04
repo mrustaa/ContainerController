@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="wB2-Z4-uK2" customClass="SportTagSizeColorCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5E-S2-ozZ" userLabel=" SportTagSizeColor" customClass="DesignnShadowView" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syK-f2-9Km" userLabel="back_color_view" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target" colorLabel="IBBuiltInLabel-Orange">
+                                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35k-DZ-l42" userLabel="Rectangle 52" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="0.69019609689712524" green="0.17254902422428131" blue="0.20392157137393951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                        <color key="value" red="0.95686274766921997" green="0.54117649793624878" blue="0.050980392843484879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BS-El-ASo" userLabel="group_view" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Px-Om-lol" userLabel="selected_view" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="US 6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH8-Tn-3bC" userLabel="US 6">
+                                                <rect key="frame" x="0.0" y="19" width="54" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" name="PlayMusicColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkE-G0-ArD" userLabel="white_old" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target" colorLabel="IBBuiltInLabel-Purple">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="US 7" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7P-Y1-eaz" userLabel="US 7">
+                                                <rect key="frame" x="0.0" y="19" width="54" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="0.20392157137393951" green="0.20000000298023224" blue="0.21176470816135406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.12209465280400301" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Jx-gq-Ril" userLabel="white_view" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target" colorLabel="IBBuiltInLabel-Gray">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                                <color key="value" white="1" alpha="0.28000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Px-Om-lol" firstAttribute="leading" secondItem="1BS-El-ASo" secondAttribute="leading" id="4Qo-Cu-l8r"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Px-Om-lol" secondAttribute="trailing" id="7sg-fn-zSg"/>
+                                    <constraint firstItem="fkE-G0-ArD" firstAttribute="top" secondItem="1BS-El-ASo" secondAttribute="top" id="BAg-bZ-Ktx"/>
+                                    <constraint firstItem="5Px-Om-lol" firstAttribute="top" secondItem="1BS-El-ASo" secondAttribute="top" id="Ncv-9s-g5D"/>
+                                    <constraint firstAttribute="trailing" secondItem="fkE-G0-ArD" secondAttribute="trailing" id="OMv-UP-cu7"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Px-Om-lol" secondAttribute="bottom" id="PZs-oz-6yg"/>
+                                    <constraint firstItem="fkE-G0-ArD" firstAttribute="leading" secondItem="1BS-El-ASo" secondAttribute="leading" id="fBi-JX-PZg"/>
+                                    <constraint firstAttribute="bottom" secondItem="fkE-G0-ArD" secondAttribute="bottom" id="yFA-LI-gO2"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconSportCatalogStars" translatesAutoresizingMaskIntoConstraints="NO" id="Iof-jk-3sD" userLabel="iconSportCatalogStars">
+                                <rect key="frame" x="16" y="16" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ROT-gG-gsu"/>
+                                    <constraint firstAttribute="width" constant="22" id="cn1-g8-bd8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconSportCatalogStars" translatesAutoresizingMaskIntoConstraints="NO" id="BwM-so-dlW" userLabel="iconSportCatalogStars">
+                                <rect key="frame" x="16" y="16" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="hXv-yF-25O"/>
+                                    <constraint firstAttribute="height" constant="22" id="nrc-i5-vtw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9i-o6-5ja">
+                                <rect key="frame" x="0.0" y="0.0" width="54" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="syK-f2-9Km" firstAttribute="leading" secondItem="K5E-S2-ozZ" secondAttribute="leading" id="2H2-ep-sjY"/>
+                            <constraint firstItem="syK-f2-9Km" firstAttribute="top" secondItem="K5E-S2-ozZ" secondAttribute="top" id="2Rw-gz-OL4"/>
+                            <constraint firstItem="Iof-jk-3sD" firstAttribute="centerY" secondItem="K5E-S2-ozZ" secondAttribute="centerY" id="Fs8-rq-ahc"/>
+                            <constraint firstItem="Iof-jk-3sD" firstAttribute="centerX" secondItem="K5E-S2-ozZ" secondAttribute="centerX" id="Og1-2p-RVQ"/>
+                            <constraint firstAttribute="bottom" secondItem="syK-f2-9Km" secondAttribute="bottom" id="Q5y-2O-E5u"/>
+                            <constraint firstItem="1BS-El-ASo" firstAttribute="top" secondItem="K5E-S2-ozZ" secondAttribute="top" id="QGv-Wq-QpS"/>
+                            <constraint firstItem="BwM-so-dlW" firstAttribute="centerY" secondItem="K5E-S2-ozZ" secondAttribute="centerY" id="RSq-E8-swe"/>
+                            <constraint firstItem="1BS-El-ASo" firstAttribute="leading" secondItem="K5E-S2-ozZ" secondAttribute="leading" id="YoO-M8-IId"/>
+                            <constraint firstItem="BwM-so-dlW" firstAttribute="centerX" secondItem="K5E-S2-ozZ" secondAttribute="centerX" id="ZRE-N6-HCy"/>
+                            <constraint firstAttribute="bottom" secondItem="1BS-El-ASo" secondAttribute="bottom" id="aJu-6Y-VIn"/>
+                            <constraint firstAttribute="trailing" secondItem="syK-f2-9Km" secondAttribute="trailing" id="vj1-Jo-cH8"/>
+                            <constraint firstAttribute="trailing" secondItem="1BS-El-ASo" secondAttribute="trailing" id="ygH-76-KHw"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.050000000745058081" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                <real key="value" value="8.25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                <size key="value" width="0.0" height="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="K5E-S2-ozZ" secondAttribute="bottom" id="Eua-Wx-5bl"/>
+                <constraint firstAttribute="trailing" secondItem="K5E-S2-ozZ" secondAttribute="trailing" id="M7d-i3-oKS"/>
+                <constraint firstItem="K5E-S2-ozZ" firstAttribute="leading" secondItem="wB2-Z4-uK2" secondAttribute="leading" id="Pj0-Pc-Jv3"/>
+                <constraint firstItem="K5E-S2-ozZ" firstAttribute="top" secondItem="wB2-Z4-uK2" secondAttribute="top" id="dpl-EJ-Nub"/>
+            </constraints>
+            <connections>
+                <outlet property="backCenterColorView" destination="35k-DZ-l42" id="i2v-1h-fwI"/>
+                <outlet property="backColorView" destination="syK-f2-9Km" id="7J3-CI-D5e"/>
+                <outlet property="button" destination="N9i-o6-5ja" id="yo0-Jr-UJM"/>
+                <outlet property="firstImageView" destination="BwM-so-dlW" id="BLg-y8-V5A"/>
+                <outlet property="iconImageView" destination="BwM-so-dlW" id="Vmz-2x-ITh"/>
+                <outlet property="iconImageView2" destination="Iof-jk-3sD" id="RLV-2a-GcS"/>
+                <outlet property="label3" destination="RH8-Tn-3bC" id="pFR-3h-VVc"/>
+                <outlet property="label4" destination="s7P-Y1-eaz" id="rZV-TG-8O3"/>
+                <outlet property="sselectedLabel" destination="RH8-Tn-3bC" id="9X9-Eq-t5q"/>
+                <outlet property="sselectedView" destination="5Px-Om-lol" id="hvE-CC-EUd"/>
+                <outlet property="sselectedViewMain" destination="1BS-El-ASo" id="jYw-1c-IKG"/>
+                <outlet property="sselectedViewWhite" destination="6Jx-gq-Ril" id="Hcg-bi-dyg"/>
+                <outlet property="unSelectedLabel" destination="s7P-Y1-eaz" id="SH9-Nd-LEc"/>
+                <outlet property="unSelectedView" destination="fkE-G0-ArD" id="ZaS-eQ-eNM"/>
+            </connections>
+            <point key="canvasLocation" x="-78.400000000000006" y="-41.379310344827587"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconSportCatalogStars" width="66" height="66"/>
+        <namedColor name="PlayMusicColor">
+            <color red="0.92199999094009399" green="0.2669999897480011" blue="0.36500000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

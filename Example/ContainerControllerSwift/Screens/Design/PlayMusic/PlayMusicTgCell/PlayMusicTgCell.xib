@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="ZiG-yG-giR" customClass="PlayMusicTgCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V1-Ut-frr" userLabel="  PlayMusicTg" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="206" height="203"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSc-wV-TSd" userLabel="Rectangle 73" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="206" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="0TV-1J-rnp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="img_big_3"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.019999999552965164" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain Chillout" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsI-bX-Xf7" userLabel="Mountain Chillout">
+                                <rect key="frame" x="0.0" y="151" width="206" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kxR-oe-oef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bali, Indonesia" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzk-qj-YVC" userLabel="Bali, Indonesia">
+                                <rect key="frame" x="0.0" y="173" width="93.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="pSH-bm-T5g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-cT-wvx" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="96.5" y="182" width="3" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="3" id="ehF-7E-3na"/>
+                                    <constraint firstAttribute="height" constant="3" id="lad-co-CIq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" $499" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yju-B8-W1r" userLabel="$499">
+                                <rect key="frame" x="100" y="173" width="40" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="AJq-uX-DVQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRL-GL-civ">
+                                <rect key="frame" x="0.0" y="0.0" width="206" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="nsI-bX-Xf7" firstAttribute="top" secondItem="CSc-wV-TSd" secondAttribute="bottom" constant="15" id="6Yf-cT-eiX"/>
+                            <constraint firstItem="dzk-qj-YVC" firstAttribute="top" secondItem="nsI-bX-Xf7" secondAttribute="bottom" constant="2" id="DPd-Ic-xbF"/>
+                            <constraint firstItem="CSc-wV-TSd" firstAttribute="leading" secondItem="6V1-Ut-frr" secondAttribute="leading" id="LGl-8t-WTm"/>
+                            <constraint firstItem="0nd-cT-wvx" firstAttribute="leading" secondItem="dzk-qj-YVC" secondAttribute="trailing" constant="3" id="Ls8-KE-WB5"/>
+                            <constraint firstItem="dzk-qj-YVC" firstAttribute="leading" secondItem="6V1-Ut-frr" secondAttribute="leading" id="Qhq-WJ-3DJ"/>
+                            <constraint firstItem="Yju-B8-W1r" firstAttribute="leading" secondItem="dzk-qj-YVC" secondAttribute="trailing" constant="6.5" id="Sbg-zg-We4"/>
+                            <constraint firstAttribute="trailing" secondItem="nsI-bX-Xf7" secondAttribute="trailing" id="Wcc-tr-OZC"/>
+                            <constraint firstItem="CSc-wV-TSd" firstAttribute="top" secondItem="6V1-Ut-frr" secondAttribute="top" id="Yra-Dg-5GL"/>
+                            <constraint firstItem="0nd-cT-wvx" firstAttribute="top" secondItem="6V1-Ut-frr" secondAttribute="top" constant="182" id="cQf-bz-wBq"/>
+                            <constraint firstItem="Yju-B8-W1r" firstAttribute="top" secondItem="nsI-bX-Xf7" secondAttribute="bottom" constant="2" id="ch7-Hd-AFD"/>
+                            <constraint firstAttribute="trailing" secondItem="CSc-wV-TSd" secondAttribute="trailing" id="ebc-KY-ZzN"/>
+                            <constraint firstItem="nsI-bX-Xf7" firstAttribute="leading" secondItem="6V1-Ut-frr" secondAttribute="leading" id="fbi-ut-nUh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6V1-Ut-frr" firstAttribute="top" secondItem="ZiG-yG-giR" secondAttribute="top" id="3H5-Pz-7hW"/>
+                <constraint firstAttribute="bottom" secondItem="6V1-Ut-frr" secondAttribute="bottom" id="Hxt-t8-cUT"/>
+                <constraint firstItem="6V1-Ut-frr" firstAttribute="leading" secondItem="ZiG-yG-giR" secondAttribute="leading" id="r6G-5C-HwZ"/>
+                <constraint firstAttribute="trailing" secondItem="6V1-Ut-frr" secondAttribute="trailing" id="ysK-aS-thQ"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="JRL-GL-civ" id="Esk-b5-eZG"/>
+                <outlet property="ccardView" destination="6V1-Ut-frr" id="EFp-eP-B9L"/>
+                <outlet property="imgView" destination="CSc-wV-TSd" id="rMb-8E-tDo"/>
+                <outlet property="label2" destination="dzk-qj-YVC" id="rXZ-aH-DD8"/>
+                <outlet property="label3" destination="Yju-B8-W1r" id="qpr-28-6nq"/>
+                <outlet property="subtitleLabel" destination="nsI-bX-Xf7" id="SzF-ny-0Cp"/>
+            </connections>
+            <point key="canvasLocation" x="-67.200000000000003" y="-48.125937031484263"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_big_3" width="922" height="656"/>
+    </resources>
+</document>

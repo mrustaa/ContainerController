@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="5888" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Taxi View Controller-->
+        <scene sceneID="TVj-5w-9bk">
+            <objects>
+                <viewController storyboardIdentifier="TaxiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nhK-kr-iAX" customClass="TaxiViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V2C-aT-yR0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-Yg-v9E" customClass="TableAdapterView" customModule="ContainerControllerSwift">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pitchEnabled="NO" showsCompass="NO" showsPointsOfInterest="NO" pitchButtonVisibility="adaptive" translatesAutoresizingMaskIntoConstraints="NO" id="0Jw-BR-veg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <gestureRecognizers/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6qi-GV-N23"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Jw-BR-veg" firstAttribute="trailing" secondItem="6qi-GV-N23" secondAttribute="trailing" id="Ats-Qr-Tu8"/>
+                            <constraint firstAttribute="bottom" secondItem="Kcn-Yg-v9E" secondAttribute="bottom" id="E9T-aX-sul"/>
+                            <constraint firstItem="0Jw-BR-veg" firstAttribute="bottom" secondItem="6qi-GV-N23" secondAttribute="bottom" id="IhF-LY-QJC"/>
+                            <constraint firstItem="Kcn-Yg-v9E" firstAttribute="top" secondItem="V2C-aT-yR0" secondAttribute="top" id="JZD-Ng-YFZ"/>
+                            <constraint firstItem="0Jw-BR-veg" firstAttribute="leading" secondItem="6qi-GV-N23" secondAttribute="leading" id="VIk-yR-JO9"/>
+                            <constraint firstItem="Kcn-Yg-v9E" firstAttribute="leading" secondItem="V2C-aT-yR0" secondAttribute="leading" id="fmX-Vk-oyb"/>
+                            <constraint firstAttribute="trailing" secondItem="Kcn-Yg-v9E" secondAttribute="trailing" id="rRs-j4-EB8"/>
+                            <constraint firstItem="0Jw-BR-veg" firstAttribute="top" secondItem="V2C-aT-yR0" secondAttribute="top" id="wqA-Od-hlU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="0Jw-BR-veg" id="qIb-I0-YkN"/>
+                        <outlet property="tableView" destination="Kcn-Yg-v9E" id="kqO-1j-S2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaz-Kc-2Li" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="-149"/>
+        </scene>
+    </scenes>
+</document>

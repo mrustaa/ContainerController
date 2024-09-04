@@ -68,12 +68,12 @@ class ButtonAnimationView: UIView {
         switch animationType {
         case 1: return .alpha(0.5)
         case 2: return .layerGray(0.1845)
-        case 3: return .pulsate(new: false)
-        case 4: return .pulsate(new: true)
+        case 3: return .pulsate(new: false, value: 0.9)
+        case 4: return .pulsate(new: true, value: 0.9)
         case 5: return .shake(new: false)
         case 6: return .shake(new: true)
         case 7: return .flash
-        case 8: return .color
+        case 8: return .color([.white, .red])
         case 9: return .androidStyle(color: .white)
         default: return .alpha(0.5)
         }
@@ -110,10 +110,10 @@ extension UIButton {
   enum TapType {
     case alpha(_ value: CGFloat) // 0.5
     case layerGray(_ value: CGFloat = 0.1845) // 0.1845 add black shadow
-    case pulsate(new: Bool = false)
+    case pulsate(new: Bool = false, value: CGFloat = 0.9)
     case shake(new: Bool = false)
     case flash
-    case color
+    case color(_ arr: [UIColor] = [.white, .red])
     case androidStyle(color: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
   }
   
@@ -147,7 +147,7 @@ extension UIButton {
       }
       if !tapAdded {
         
-        let tap = BindableGestureRecognizer { [weak self] sender in
+        let tapp = BindableGestureRecognizer { [weak self] sender in
           
           guard let superview = self?.superview else { return }
           let touchPoint = sender.location(in: superview)
@@ -155,8 +155,17 @@ extension UIButton {
           guard let dur: Speed = self?.defaultDuration(type: type) else { return }
           self?.androidPulseAnimation(duration: dur, color: color, position: touchPoint)
           
+            
+            if sender.state == .began {
+                callback?(.touchDown)
+            } else if sender.state == .changed {
+                callback?(.touchDown)
+            } else if sender.state == .ended {
+                callback?(.touchUpInside)
+            }
+//            callback?(.touchUpInside)
         }
-        addGestureRecognizer(tap)
+        addGestureRecognizer(tapp)
       }
     }
     default: break
@@ -196,9 +205,9 @@ extension UIButton {
   func defaultDuration(type: TapType) -> Speed {
     switch type {
     case .alpha(_), .layerGray(_):  return .ms300
-    case .pulsate(_), .flash:       return .ms200
+    case .pulsate(_, _), .flash:    return .ms200
     case .shake(_):                 return .ms50
-    case .color, .androidStyle(_):  return .s1
+    case .color(_), .androidStyle(_):  return .s1
     }
   }
   
@@ -228,10 +237,10 @@ extension UIButton {
     views.forEach {
       switch type {
       case .flash: $0.flash(duration: dur)
-      case .color: $0.animationColor(duration: dur)
-      case .pulsate(let new):
-        if new { $0.pulsateNew(visible: visible) }
-        else { $0.pulsate(duration: dur) }
+      case .color(let arr): $0.animationColor(duration: dur, colors: arr)
+      case .pulsate(let new, let value):
+          if new { $0.pulsateNew(visible: visible, value: value) }
+        else { $0.pulsate(duration: dur, value: value) }
       case .shake(let new):
         if new { $0.shake() }
         else { $0.shakeNew(duration: dur) }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCardHeaderMainView" customModule="ContainerController" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView2" destination="IoR-QA-EBe" id="7HR-lM-YRg"/>
+                <outlet property="subtitleLabel" destination="jXX-zE-i5L" id="MnE-Wy-gnA"/>
+                <outlet property="titleLabel" destination="NXv-R5-4Zn" id="0ql-zP-hEr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F8G-5p-Lzy" userLabel=" CustomCardHeaderMain">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="161"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLx-lG-5e1" userLabel="Rectangle 45">
+                    <rect key="frame" x="0.0" y="0.0" width="324" height="161"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXv-R5-4Zn" userLabel="I am a">
+                    <rect key="frame" x="18" y="27" width="248" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="oi6-bk-eN4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999403953552" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI / UX Designer" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-zE-i5L" userLabel="UI : UX Designer">
+                    <rect key="frame" x="18" y="56" width="288" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="101" id="PsN-KX-87t"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCustomCardSync" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-QA-EBe" userLabel="imgCustomCardSync">
+                    <rect key="frame" x="280" y="29" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="19" id="6uK-ZK-8dP"/>
+                        <constraint firstAttribute="height" constant="19" id="9wA-Xk-8xK"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qLx-lG-5e1" firstAttribute="leading" secondItem="F8G-5p-Lzy" secondAttribute="leading" id="4Hz-r5-a6b"/>
+                <constraint firstItem="NXv-R5-4Zn" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" constant="27" id="6hS-kZ-MYp"/>
+                <constraint firstItem="IoR-QA-EBe" firstAttribute="leading" secondItem="NXv-R5-4Zn" secondAttribute="trailing" constant="14" id="CTJ-b6-L2c"/>
+                <constraint firstItem="NXv-R5-4Zn" firstAttribute="leading" secondItem="F8G-5p-Lzy" secondAttribute="leading" constant="18" id="DwK-Kt-qxf"/>
+                <constraint firstAttribute="trailing" secondItem="jXX-zE-i5L" secondAttribute="trailing" constant="18" id="ORx-xE-y4Q"/>
+                <constraint firstAttribute="trailing" secondItem="qLx-lG-5e1" secondAttribute="trailing" id="OnZ-jf-txc"/>
+                <constraint firstItem="jXX-zE-i5L" firstAttribute="top" secondItem="NXv-R5-4Zn" secondAttribute="bottom" constant="6" id="PIj-ts-ehQ"/>
+                <constraint firstAttribute="bottom" secondItem="qLx-lG-5e1" secondAttribute="bottom" id="RIO-Sm-kUe"/>
+                <constraint firstItem="jXX-zE-i5L" firstAttribute="leading" secondItem="F8G-5p-Lzy" secondAttribute="leading" constant="18" id="WcT-8v-oY7"/>
+                <constraint firstAttribute="trailing" secondItem="IoR-QA-EBe" secondAttribute="trailing" constant="25" id="X5c-t8-FWm"/>
+                <constraint firstItem="qLx-lG-5e1" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" id="fML-xd-ugt"/>
+                <constraint firstItem="IoR-QA-EBe" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" constant="29" id="s0H-AX-zIC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-99.200000000000003" y="-48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgCustomCardSync" width="57" height="57"/>
+    </resources>
+</document>

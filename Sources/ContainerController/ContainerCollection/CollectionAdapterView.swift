@@ -15,6 +15,7 @@ open class CollectionAdapterView: UICollectionView {
     public var sizeIndexCallback: CollectionAdapterSizeIndexCallback?
     public var selectIndexCallback: CollectionAdapterSelectIndexCallback?
     
+    public var saveOffset: CGPoint = .zero
     public var items: [CollectionAdapterItem] = []
     
     required public init?(coder: NSCoder) {
@@ -34,12 +35,17 @@ open class CollectionAdapterView: UICollectionView {
     }
     
     
-    public func set(items: [CollectionAdapterItem]) {
+    public func set(items: [CollectionAdapterItem], section: Bool = false) {
         items.forEach {
             registerNibIfNeeded(for: $0)
         }
         self.items = items
-        reloadData()
+        
+        if section { reloadSections(.init(integer: 0)) }
+        else { reloadData()  }
+        
+        self.setContentOffset(self.saveOffset, animated: false)
+        
     }
     
     public func registerNibIfNeeded(for item: CollectionAdapterItem) {
@@ -60,6 +66,22 @@ open class CollectionAdapterView: UICollectionView {
         return cell
     }
     
+}
+
+
+extension CollectionAdapterView: UIScrollViewDelegate {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        saveOffset = scrollView.contentOffset
+    }
+    
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    
+    public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        saveOffset = scrollView.contentOffset
+    }
+     
 }
 
 extension CollectionAdapterView: UICollectionViewDelegate {
@@ -113,5 +135,28 @@ extension CollectionAdapterView: UICollectionViewDelegateFlowLayout {
             return sizeIndexCallback(indexPath.row)
         }
         return CGSize.zero
+    }
+}
+
+extension CollectionAdapterView {
+    
+     func scrollingMove(toEnd: CollectionAdapterToEndTypes, animated: Bool = true) {
+        let deadline = DispatchTime.now() + 0.5
+        DispatchQueue.main.asyncAfter(deadline: deadline) {
+            
+            
+            
+            var y: CGFloat = 0
+            var x: CGFloat = 0
+            
+            switch toEnd {
+            case .bottom: y = self.contentSize.height - self.bounds.height + self.contentInset.bottom
+            case .right:  x = self.contentSize.width  - self.bounds.width  + self.contentInset.right
+            default: break
+            }
+            
+            let bottomOffset = CGPoint(x: x, y: y)
+            self.setContentOffset(bottomOffset, animated: animated)
+        }
     }
 }

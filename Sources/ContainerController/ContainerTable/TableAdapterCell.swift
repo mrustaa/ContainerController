@@ -35,7 +35,12 @@ open class TableAdapterCell: UITableViewCell {
     
     let selAlpha: CGFloat = 0.2 // 0.15
     
+    open func selectEvent(_ event: UIControl.Event) {
+        
+    }
+    
     open override func setSelected(_ selected: Bool, animated: Bool) {
+        if selected { self.selectEvent(.touchUpInside) }
         
         if hideAnimation {
             
@@ -66,6 +71,7 @@ open class TableAdapterCell: UITableViewCell {
     }
     
     open override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        if highlighted { self.selectEvent(.touchDown) }
         
         if hideAnimation {
             if highlighted {

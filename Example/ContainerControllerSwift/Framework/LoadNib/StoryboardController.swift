@@ -68,7 +68,7 @@ extension StoryboardController: ContainerControllerDelegate {
         let container = ContainerController(addTo: self, layout: layoutC)
         container.view.cornerRadius = radius
         container.view.addShadow()
-        container.view.tag = 12
+        container.view.tag = 13
         if let delegate = delegate {
             container.delegate = delegate
         } else {
@@ -105,14 +105,16 @@ extension StoryboardController: ContainerControllerDelegate {
             container.backView?.addSubview(back)
         }
         
-        let table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
-        table.indicatorStyle =  .default
-        // container.add(scrollView: addCollectionView())
-        
+       
+            let table = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
+            table.indicatorStyle =  .default
+            // container.add(scrollView: addCollectionView())
+            
         if let items = items {
             table.set(items: items )
+            
+            container.add(scrollView: table)
         }
-        container.add(scrollView: table)
         
         container.move(type: .hide, animation: false)
         
@@ -129,5 +131,9 @@ extension StoryboardController: ContainerControllerDelegate {
         if  animation {
             
         }
+    }
+    
+    func containerControllerHandlePan(_ containerController: ContainerController, pan: UIPanGestureRecognizer) {
+        
     }
 }

@@ -67,6 +67,10 @@ open class ContainerController: NSObject {
     
     private var scrollTransform = CGAffineTransform.identity
     
+    public var handleEndAnimation: Bool = true
+    
+    public var handleChangeAnimation: Bool = true
+    
     // MARK: - Properties Position
     
     public var topBarHeight: CGFloat {
@@ -238,9 +242,13 @@ open class ContainerController: NSObject {
     // MARK: Set
     
     public func set(movingEnabled: Bool) {
-        layout.movingEnabled = movingEnabled
-        scrollView?.isScrollEnabled = movingEnabled
-        panGesture?.isEnabled = movingEnabled
+        set(movingNewEnabled: movingEnabled ? .enable : .disableAll)
+    }
+    
+    public func set(movingNewEnabled: ContainerMovingType) {
+        layout.movingEnabled =  movingNewEnabled
+        scrollView?.isScrollEnabled = movingNewEnabled.isScrollEnabled
+        panGesture?.isEnabled = movingNewEnabled.isContainerEnabled
     }
     
     public func set(trackingPosition: Bool) {
@@ -373,7 +381,7 @@ open class ContainerController: NSObject {
         updateBackView()
         
         panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
-        panGesture?.isEnabled = layout.movingEnabled
+        panGesture?.isEnabled = layout.movingEnabled.isContainerEnabled
         if let panGesture = panGesture {
             view.addGestureRecognizer(panGesture)
         }
@@ -453,7 +461,7 @@ open class ContainerController: NSObject {
         removeScrollView()
         self.scrollView = scrollView
         
-        scrollView.isScrollEnabled = layout.movingEnabled
+        scrollView.isScrollEnabled = layout.movingEnabled.isScrollEnabled
         scrollView.autoresizingMask = [.flexibleLeftMargin,
                                        .flexibleWidth,
                                        .flexibleRightMargin,
@@ -489,6 +497,8 @@ open class ContainerController: NSObject {
         view.layer.removeAllAnimations()
         scrollView?.layer.removeAllAnimations()
         
+        delegate?.containerControllerHandlePan?(self, pan: gesture)
+        
         switch gesture.state {
         case .began:
             
@@ -517,11 +527,17 @@ open class ContainerController: NSObject {
             let from: ContainerFromType = .pan
             let animation = false
             
-            changeView(transform: transform)
-            shadowLevelAlpha(position: position, animation: false)
-            changeFooterView(position: position)
-            calculationScrollViewHeight(from: from)
-            changeMove(position: position, type: type, animation: animation)
+            if self.handleChangeAnimation {
+                
+                changeView(transform: transform)
+                shadowLevelAlpha(position: position, animation: false)
+                changeFooterView(position: position)
+                calculationScrollViewHeight(from: from)
+                changeMove(position: position, type: type, animation: animation)
+                
+            } else {
+                
+            }
             
         case .ended:
             
@@ -529,7 +545,11 @@ open class ContainerController: NSObject {
             
             let type = calculatePositionTypeFrom(velocity: velocityY)
             
-            move(type: type, animation: true, velocity: velocityY, from: .pan)
+            if self.handleEndAnimation {
+                move(type: type, animation: true, velocity: velocityY, from: .pan)
+            } else {
+                
+            }
             
         default: break
         }
@@ -568,7 +588,7 @@ open class ContainerController: NSObject {
     
     // MARK: - Calculation ScrollView Size
     
-    private func calculationScrollViewHeight(position: CGFloat = -1.0,
+     public func calculationScrollViewHeight(position: CGFloat = -1.0,
                                              animation: Bool = false,
                                              from: ContainerFromType = .custom,
                                              velocity: CGFloat = 0.0,
@@ -590,7 +610,7 @@ open class ContainerController: NSObject {
             scrollInsetsBottom = 0.0
         }
         
-        var top: CGFloat = layout.scrollInsets.top
+        let top: CGFloat = layout.scrollInsets.top
         let bottom: CGFloat = layout.scrollInsets.bottom + scrollInsetsBottom
         
         let indicatorTop: CGFloat = layout.scrollIndicatorInsets.top
@@ -776,6 +796,13 @@ open class ContainerController: NSObject {
                      from: ContainerFromType = .custom,
                      completion: (() -> Void)? = nil) {
         
+        if type == .hide, self.view.tag == 22 {
+            
+            print(" AAA"  )
+        }
+        
+        print(" container \(self.view.tag == 15 ? "💎 Playlist" : "⚡️ PlayPanel") tag \(self.view.tag ) move \(type.string()) ")
+        
         var position = positionMoveFrom(type: type)
         if topTranslucent {
             position = position + topBarHeight
@@ -815,7 +842,7 @@ open class ContainerController: NSObject {
                      from: ContainerFromType,
                      completion: (() -> Void)? = nil) {
         
-        if layout.movingEnabled {
+        if layout.movingEnabled.isScrollEnabled {
             scrollView?.isScrollEnabled = (type == .top)
         } else {
             scrollView?.isScrollEnabled = false
@@ -1312,6 +1339,7 @@ extension ContainerController: UIScrollViewDelegate {
             let type: ContainerMoveType = .top
             let from: ContainerFromType = .scrollBorder
             let animation = false
+            
             
             shadowLevelAlpha(position: position, animation: false)
             changeFooterView(position: position)

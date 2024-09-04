@@ -20,5 +20,8 @@ import UIKit
     /// Reports the changes current position of the container, after its use
     @objc optional func containerControllerMove(_ containerController: ContainerController, position: CGFloat, type: ContainerMoveType, animation: Bool)
     
+    
+    @objc optional func containerControllerHandlePan(_ containerController: ContainerController, pan: UIPanGestureRecognizer)
+    
 }
 

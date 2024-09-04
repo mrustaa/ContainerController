@@ -56,7 +56,8 @@ open class ContainerLayout {
     /**
      Disables any moving with gestures.
     */
-    public var movingEnabled: Bool = true
+    
+    public var movingEnabled: ContainerMovingType = .enable
     
     /**
      This is parameters for control footerView.

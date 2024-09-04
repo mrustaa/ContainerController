@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+import AVFoundation
+
 // MARK: Animations
 
 extension UIButton {
@@ -121,25 +124,90 @@ extension UIView {
   
   // MARK: - Change Color
   
-  func animationColor(duration: Speed = .s1) {
     
-    let color = CABasicAnimation(keyPath: "backgroundColor")
-    color.fromValue = UIColor.white.cgColor
-    color.toValue = UIColor.red.cgColor
-    color.duration = duration.rawValue
-    color.beginTime = CACurrentMediaTime() + 0.3
-    color.autoreverses = true
+    func animationOpacity(duration: CGFloat, value: CGFloat, beginTime: CGFloat = 0.0) {
+//
+        let pulseAnimation = CABasicAnimation(keyPath:  #keyPath(CALayer.opacity))// "opacity")
+        pulseAnimation.fromValue = 0
+        pulseAnimation.toValue = 1 // 0.1
+        pulseAnimation.duration = 100
+        
+        pulseAnimation.isRemovedOnCompletion = false
+        pulseAnimation.beginTime = CACurrentMediaTime() + beginTime //CACurrentMediaTime() +  AVCoreAnimationBeginTimeAtZero + 1.0
+        pulseAnimation.fillMode = .both
+        pulseAnimation.isAdditive = false
+//        pulseAnimation.repeatCount = .infinit
+        layer.add(pulseAnimation, forKey: "opacityIn")
+        
+        
+         
+        let animtingLayer: CALayer =  CALayer(layer: layer)
+        
+        
+        let pulseAnimation2 = CABasicAnimation(keyPath:  #keyPath(CALayer.opacity))// "opacity")
+        pulseAnimation2.fromValue = 1
+        pulseAnimation2.toValue = beginTime // 0.1
+        pulseAnimation2.duration = 100
+        pulseAnimation2.isRemovedOnCompletion = false
+        pulseAnimation2.beginTime = 1.0// AVCoreAnimationBeginTimeAtZero + 0.0
+        pulseAnimation2.fillMode = .both
+        pulseAnimation2.isAdditive = false
+//        pulseAnimation2.repeatCount = .infinit
+        
+        
+        animtingLayer.add(pulseAnimation2, forKey: "opacityOut")
+        layer.addSublayer(animtingLayer)
+        
+        
+        layer.opacity = 0.0
+        
+    }
     
-    layer.add(color, forKey: "animationColor")
+    func animationColor(duration: Speed = .s1, colors: [UIColor]) {
+    
+//        layer.removeAnimation(forKey: "backgroundColor")
+//        layer.sublayers?.forEach {
+//            $0.mask?.removeAnimation(forKey: "backgroundColor")
+//        }
+//        layer.removeAllAnimations()
+//        layer.removeFromSuperlayer()
+        let darkerColor = colors[0]
+        let lighterColor = colors[1]
+        let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.backgroundColor))
+        pulseAnimation.fromValue = darkerColor
+        pulseAnimation.toValue = lighterColor
+        pulseAnimation.duration = 1
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = .infinity
+        pulseAnimation.isRemovedOnCompletion = false
+        
+//    let color = CABasicAnimation(keyPath: "backgroundColor")
+//        color.fromValue = colors[0]// UIColor.green.cgColor
+//        color.toValue = colors[1] // UIColor.red.cgColor
+//    color.duration = duration.rawValue
+//    color.beginTime = CACurrentMediaTime() + 0.3
+////    color.autoreverses = true
+////        color.repeatDuration = 1
+//        color.autoreverses = true
+//        color.repeatCount = 500
+//        layer.cornerRadius = self.layer.cornerRadius
+////        layer.add(color, forKey: "animationColor")
+        
+        
+        
+        layer.removeAnimation(forKey: "animationColor")
+    layer.add(pulseAnimation, forKey: "animationColor")
+        backgroundColor = .clear
   }
   
   // MARK: - Pulsate
   
-  func pulsate(duration: Speed = .ms200) {
+  func pulsate(duration: Speed = .ms200, value: CGFloat = 0.9) {
     
     let pulse = CASpringAnimation(keyPath: "transform.scale")
     pulse.duration = duration.rawValue
-    pulse.fromValue = 0.95
+    pulse.fromValue = value
     pulse.toValue = 1.0
     pulse.autoreverses = true
     pulse.repeatCount = 2
@@ -151,11 +219,11 @@ extension UIView {
   
   // MARK: - Pulsate 2
   
-  func pulsateNew(visible: Alpha) {
+    func pulsateNew(visible: Alpha, value: CGFloat = 0.9) {
     if visible == .visible {
       animate(self, transform: .identity)
     } else {
-      animate(self, transform: CGAffineTransform.identity.scaledBy(x: 0.95, y: 0.95))
+      animate(self, transform: CGAffineTransform.identity.scaledBy(x: value, y: value))
     }
   }
   

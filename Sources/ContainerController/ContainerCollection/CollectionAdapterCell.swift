@@ -11,10 +11,12 @@ import UIKit
 open class  CollectionAdapterInsets: NSObject {
     public var minSpacing: CollectionAdapterMinSpacing = CollectionAdapterMinSpacing(cell: 0, line: 0)
     public var insets: UIEdgeInsets = .zero
+    public var scrollDirection: UICollectionView.ScrollDirection = .horizontal
     
-    public init(minSpacing: CollectionAdapterMinSpacing, insets: UIEdgeInsets) {
+    public init(minSpacing: CollectionAdapterMinSpacing, insets: UIEdgeInsets, scrollDirection: UICollectionView.ScrollDirection = .horizontal) {
         self.minSpacing = minSpacing
         self.insets = insets
+        self.scrollDirection = scrollDirection
     }
     
 }

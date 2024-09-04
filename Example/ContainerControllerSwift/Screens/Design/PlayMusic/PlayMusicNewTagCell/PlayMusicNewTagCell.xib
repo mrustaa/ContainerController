@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="k3m-st-P4p" customClass="PlayMusicNewTagCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116.75127410888672" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116.75127410888672" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4i-nH-Kpg" userLabel=" PlayMusicNewTag">
+                        <rect key="frame" x="0.0" y="0.0" width="117" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdA-SF-v1o" userLabel=" ccardVieww">
+                                <rect key="frame" x="0.0" y="0.0" width="117" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caY-TT-5TI" userLabel="rect" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="117" height="40"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.090000003576278687" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.11999999731779099" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shRadius">
+                                                <real key="value" value="2.7000000476837158"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shOffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="inShColor">
+                                                <color key="value" red="1" green="1" blue="1" alpha="0.029999999329447736" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="inShRadius">
+                                                <real key="value" value="1.6000000238418579"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="inShOffset">
+                                                <size key="value" width="0.0" height="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Вечеринка" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVn-G8-UsS" userLabel="text">
+                                        <rect key="frame" x="12" y="10" width="93" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.89999997615814209" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="caY-TT-5TI" firstAttribute="top" secondItem="fdA-SF-v1o" secondAttribute="top" id="AWc-vJ-Z17"/>
+                                    <constraint firstItem="caY-TT-5TI" firstAttribute="leading" secondItem="fdA-SF-v1o" secondAttribute="leading" id="ETG-54-YzP"/>
+                                    <constraint firstAttribute="trailing" secondItem="caY-TT-5TI" secondAttribute="trailing" id="Yix-13-HNk"/>
+                                    <constraint firstAttribute="bottom" secondItem="caY-TT-5TI" secondAttribute="bottom" id="oKM-zP-TBO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YrB-3z-HjK">
+                                <rect key="frame" x="0.0" y="0.0" width="116.75127410888672" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fdA-SF-v1o" firstAttribute="top" secondItem="F4i-nH-Kpg" secondAttribute="top" id="D5u-et-LBZ"/>
+                            <constraint firstAttribute="bottom" secondItem="fdA-SF-v1o" secondAttribute="bottom" id="NLQ-ve-LKb"/>
+                            <constraint firstItem="fdA-SF-v1o" firstAttribute="leading" secondItem="F4i-nH-Kpg" secondAttribute="leading" id="O5M-wL-Tc0"/>
+                            <constraint firstAttribute="trailing" secondItem="fdA-SF-v1o" secondAttribute="trailing" id="sUQ-JW-qXa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="F4i-nH-Kpg" secondAttribute="bottom" id="3dU-G7-l9N"/>
+                <constraint firstAttribute="trailing" secondItem="F4i-nH-Kpg" secondAttribute="trailing" id="CDG-vl-d72"/>
+                <constraint firstItem="F4i-nH-Kpg" firstAttribute="leading" secondItem="k3m-st-P4p" secondAttribute="leading" id="TTd-Si-vCl"/>
+                <constraint firstItem="F4i-nH-Kpg" firstAttribute="top" secondItem="k3m-st-P4p" secondAttribute="top" id="chL-5g-3RQ"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="YrB-3z-HjK" id="ELx-ag-plH"/>
+                <outlet property="ccardView" destination="fdA-SF-v1o" id="R2l-ZN-FgF"/>
+                <outlet property="titleLabel" destination="EVn-G8-UsS" id="TkU-Wf-jR0"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="-10"/>
+        </collectionViewCell>
+    </objects>
+</document>

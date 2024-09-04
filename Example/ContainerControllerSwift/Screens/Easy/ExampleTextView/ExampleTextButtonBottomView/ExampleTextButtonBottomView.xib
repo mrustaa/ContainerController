@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleTextButtonBottomView" customModule="ContainerController" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="Gu0-1m-IUU" id="vHf-NI-cL1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gF-5Q-DHC" userLabel=" ExampleTextButtonBottom">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4X-o8-kkj" userLabel="Frame 89503">
+                    <rect key="frame" x="0.0" y="8" width="375" height="57"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH7-fo-wI3" userLabel="Rectangle 29" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target">
+                            <rect key="frame" x="16" y="0.0" width="343" height="57"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="17"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                    <color key="value" red="0.99215686321258545" green="0.87843137979507446" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найти велосипед" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gu0-1m-IUU" userLabel="Найти велосипед">
+                            <rect key="frame" x="0.0" y="19" width="375" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="VR8-Z2-ywn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <color key="textColor" red="0.1335751861333847" green="0.11804264783859253" blue="0.10140056908130646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Gu0-1m-IUU" firstAttribute="leading" secondItem="M4X-o8-kkj" secondAttribute="leading" id="11W-qv-lh4"/>
+                        <constraint firstAttribute="bottom" secondItem="fH7-fo-wI3" secondAttribute="bottom" id="6Ay-ww-YQ7"/>
+                        <constraint firstItem="Gu0-1m-IUU" firstAttribute="top" secondItem="M4X-o8-kkj" secondAttribute="top" constant="19" id="8EH-ad-UpD"/>
+                        <constraint firstItem="fH7-fo-wI3" firstAttribute="leading" secondItem="M4X-o8-kkj" secondAttribute="leading" constant="16" id="CEK-l6-9B0"/>
+                        <constraint firstAttribute="height" constant="57" id="NOs-k6-deb"/>
+                        <constraint firstAttribute="trailing" secondItem="Gu0-1m-IUU" secondAttribute="trailing" id="O2n-rq-IsD"/>
+                        <constraint firstItem="fH7-fo-wI3" firstAttribute="top" secondItem="M4X-o8-kkj" secondAttribute="top" id="Wl0-qQ-hJ0"/>
+                        <constraint firstAttribute="trailing" secondItem="fH7-fo-wI3" secondAttribute="trailing" constant="16" id="WwU-I9-1RB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="M4X-o8-kkj" secondAttribute="trailing" id="5lN-eC-9YB"/>
+                <constraint firstItem="M4X-o8-kkj" firstAttribute="leading" secondItem="9gF-5Q-DHC" secondAttribute="leading" id="AnZ-pd-x8r"/>
+                <constraint firstItem="M4X-o8-kkj" firstAttribute="top" secondItem="9gF-5Q-DHC" secondAttribute="top" constant="8" id="mt9-8O-OHE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="-10"/>
+        </view>
+    </objects>
+</document>
