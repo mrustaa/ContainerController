@@ -17,38 +17,38 @@ import UIKit
     //отсутствует
     case none
     
-    case the_audio_bar
-    case funky_house_classic
-    case big_miz_aador
+//    case the_audio_bar
+//    case funky_house_classic
+//    case big_miz_aador
     
-    case disclosure_you_me
-    case disclosure_ware_running
-    case disclosure_in_my_arms
-    case disclosure_f_for_you
-    case disclosure_flume_id
-    case disclosure_whats_in_your_head
-    case disclosure_duke_dumont
+//    case disclosure_you_me
+//    case disclosure_ware_running
+//    case disclosure_in_my_arms
+//    case disclosure_f_for_you
+//    case disclosure_flume_id
+//    case disclosure_whats_in_your_head
+//    case disclosure_duke_dumont
     
-    case camelphat_dropit
-    case claptone_music_got_me
-    case flume_greatest_view
-    case myselor_neurolife
-    case benno_blome_botha
+//    case camelphat_dropit
+//    case claptone_music_got_me
+//    case flume_greatest_view
+//    case myselor_neurolife
+//    case benno_blome_botha
     
-    case ludacris_eelin_so_sexy
-    case snoop_dogg_riders_on_the_storm
-    case mark_ronson
+//    case ludacris_eelin_so_sexy
+//    case snoop_dogg_riders_on_the_storm
+//    case mark_ronson
     
     case cafe_del_mare
     case josip_petrov
     case ambient_techno_mix
     
     case boris_brejcha_thunderstorm
-    case boris_brejcha_happinezz
-    case boris_brejcha_night_owl
-    case boris_brejcha_streets_of_gold
+//    case boris_brejcha_happinezz
+//    case boris_brejcha_night_owl
+//    case boris_brejcha_streets_of_gold
     
-    case dymok
+//    case dymok
     
     case retroWave1
     case retroWave2
@@ -61,22 +61,24 @@ import UIKit
     
     
     var disclosure: Bool {
-        ((self == .disclosure_you_me) ||
-         (self == .disclosure_ware_running) ||
-         (self == .disclosure_in_my_arms) ||
-         (self == .disclosure_f_for_you) ||
-         (self == .disclosure_flume_id) ||
-         (self == .disclosure_whats_in_your_head) ||
-         (self == .disclosure_duke_dumont)
-        )
+        false
+//        ((self == .disclosure_you_me) ||
+//         (self == .disclosure_ware_running) ||
+//         (self == .disclosure_in_my_arms) ||
+//         (self == .disclosure_f_for_you) ||
+//         (self == .disclosure_flume_id) ||
+//         (self == .disclosure_whats_in_your_head) ||
+//         (self == .disclosure_duke_dumont)
+//        )
     }
     
     
     var boris: Bool {
-        ((self == .boris_brejcha_happinezz) ||
-         (self == .boris_brejcha_thunderstorm) ||
-         (self == .boris_brejcha_night_owl) ||
-         (self == .boris_brejcha_streets_of_gold))
+        false
+//        ((self == .boris_brejcha_happinezz) ||
+//         (self == .boris_brejcha_thunderstorm) ||
+//         (self == .boris_brejcha_night_owl) ||
+//         (self == .boris_brejcha_streets_of_gold))
     }
     
     
@@ -133,7 +135,7 @@ import UIKit
     
     static var statusList: [Self] {
         return ViewCallsPlayerType.allCases.filter {
-            ($0 != .none) && (!$0.retro) && (!$0.mix) && (!$0.boris) && (!$0.disclosure)
+            ($0 != .none) //&& (!$0.retro) && (!$0.mix) && (!$0.boris) && (!$0.disclosure)
         }.map { $0 }
     }
 }
@@ -300,40 +302,10 @@ class ViewCallsPlayer: NSObject {
         
         switch playerType {
             
-            
-        case .disclosure_you_me:
-            return "You Me"
-        case .flume_greatest_view:
-            return "ID" // "Greatest View"
-        case .disclosure_ware_running:
-            return "Ware Running"
-            
-        case .disclosure_in_my_arms: return "In My Arms"
-        case .disclosure_f_for_you: return "F For You"
-        case .disclosure_flume_id: return "ID (BBC Radio I RIP)"
-        case .disclosure_whats_in_your_head: return "What's In Your Head"
-        case .disclosure_duke_dumont: return "Need U (100)"
-            
-
-        case .camelphat_dropit:
-            return "Drop It"
-        case .the_audio_bar: return "Harlequins"
-        case .funky_house_classic: return "ID Mix"
-        case .big_miz_aador: return "Renegade"
-        case .claptone_music_got_me: return "The Music Got Me (Darius Syrossian Remix)"
-        case .myselor_neurolife: return "Neurolife"
-        case .benno_blome_botha: return "Abotha"
         case .cafe_del_mare: return "[Lounge Chillout Del Mar Cafe Mix]" //  "Don't let me pass you by "
-        case .snoop_dogg_riders_on_the_storm: return "Riders on the Storm"
-        case .ludacris_eelin_so_sexy: return "Feelin So Sexy"
         case .josip_petrov: return "Satis"
         case .ambient_techno_mix: return "mix 014 by Rob Jenkins (cut)"
         case .boris_brejcha_thunderstorm: return "Thunderstorm"
-        case .boris_brejcha_happinezz: return "Happinezz (Happiness)"
-        case .boris_brejcha_night_owl: return "Night Owl"
-        case .boris_brejcha_streets_of_gold: return "Streets of Gold"
-            
-        case .mark_ronson: return " Feel Right"
             
         case .retroWave1: return "Highway"
         case .retroWave2: return "Space Break"
@@ -342,7 +314,40 @@ class ViewCallsPlayer: NSObject {
         case .retroWave5: return "High Tide"
         case .retroWave6: return "Crystalis"
         case .retroWave7: return "Riot"
-        case .dymok: return "Дымок" // Ицык Цыпер feat. Игорь цыба
+            
+//        case .disclosure_you_me:
+//            return "You Me"
+//        case .flume_greatest_view:
+//            return "ID" // "Greatest View"
+//        case .disclosure_ware_running:
+//            return "Ware Running"
+//            
+//        case .disclosure_in_my_arms: return "In My Arms"
+//        case .disclosure_f_for_you: return "F For You"
+//        case .disclosure_flume_id: return "ID (BBC Radio I RIP)"
+//        case .disclosure_whats_in_your_head: return "What's In Your Head"
+//        case .disclosure_duke_dumont: return "Need U (100)"
+//            
+//
+//        case .camelphat_dropit:
+//            return "Drop It"
+//        case .the_audio_bar: return "Harlequins"
+//        case .funky_house_classic: return "ID Mix"
+//        case .big_miz_aador: return "Renegade"
+//        case .claptone_music_got_me: return "The Music Got Me (Darius Syrossian Remix)"
+//        case .myselor_neurolife: return "Neurolife"
+//        case .benno_blome_botha: return "Abotha"
+//
+//        case .snoop_dogg_riders_on_the_storm: return "Riders on the Storm"
+//        case .ludacris_eelin_so_sexy: return "Feelin So Sexy"
+//
+//        case .boris_brejcha_happinezz: return "Happinezz (Happiness)"
+//        case .boris_brejcha_night_owl: return "Night Owl"
+//        case .boris_brejcha_streets_of_gold: return "Streets of Gold"
+//            
+//        case .mark_ronson: return " Feel Right"
+//            
+//        case .dymok: return "Дымок" // Ицык Цыпер feat. Игорь цыба
             
         default:
             return ""
@@ -352,68 +357,16 @@ class ViewCallsPlayer: NSObject {
     class func getFileUrl(_ playerType: ViewCallsPlayerType) -> String {
         
         switch playerType {
-        case .disclosure_you_me:
-            print("viewCallsPlayer disclosure_you_me")
-            return ViewCallsPlayer.disclosure_you_me
-        case .flume_greatest_view:
-            print("viewCallsPlayer flume_greatest_view")
-           return ViewCallsPlayer.flume_greatest_view
-        case .disclosure_ware_running:
-            print("viewCallsPlayer disclosure_ware_running")
-            return ViewCallsPlayer.disclosure_ware_running
             
-        case .disclosure_in_my_arms:         return ViewCallsPlayer.disclosure_in_my_arms
-        case .disclosure_f_for_you:         return ViewCallsPlayer.disclosure_f_for_you
-        case .disclosure_flume_id:         return ViewCallsPlayer.disclosure_flume_id
-        case .disclosure_whats_in_your_head:         return ViewCallsPlayer.disclosure_whats_in_your_head
-        case .disclosure_duke_dumont:         return ViewCallsPlayer.disclosure_duke_dumont
-            
-        case .camelphat_dropit:
-            print("viewCallsPlayer camelphat_dropit")
-            return ViewCallsPlayer.camelphat_dropit
-            
-        case .the_audio_bar:
-            print("viewCallsPlayer the_audio_bar")
-            return ViewCallsPlayer.the_audio_bar
-        case .funky_house_classic:
-            print("viewCallsPlayer funky_house_classic")
-            return ViewCallsPlayer.funky_house_classic
-        case .big_miz_aador:
-            print("viewCallsPlayer big_miz_aador")
-            return ViewCallsPlayer.big_miz_aador
-        case .claptone_music_got_me:
-            print("viewCallsPlayer claptone_music_got_me")
-            return ViewCallsPlayer.claptone_music_got_me
-        case .myselor_neurolife:
-            print("viewCallsPlayer myselor_neurolife")
-            return ViewCallsPlayer.myselor_neurolife
-        case .benno_blome_botha:
-            print("viewCallsPlayer benno_blome_botha")
-            return ViewCallsPlayer.benno_blome_botha
         case .cafe_del_mare:
             print("viewCallsPlayer cafe_del_mare")
             return ViewCallsPlayer.cafe_del_mare
-        case .snoop_dogg_riders_on_the_storm:
-            print("viewCallsPlayer snoop_dogg_riders_on_the_storm")
-            return ViewCallsPlayer.snoop_dogg_riders_on_the_storm
-        case .ludacris_eelin_so_sexy:
-            print("viewCallsPlayer ludacris_eelin_so_sexy")
-            return ViewCallsPlayer.ludacris_eelin_so_sexy
         case .josip_petrov:
             print("viewCallsPlayer josip_petrov")
             return ViewCallsPlayer.josip_petrov
         case .ambient_techno_mix:
             print("viewCallsPlayer ambient_techno_mix")
             return ViewCallsPlayer.ambient_techno_mix
-            
-        case .boris_brejcha_thunderstorm:  return ViewCallsPlayer.boris_brejcha_thunderstorm
-        case .boris_brejcha_happinezz:  return ViewCallsPlayer.boris_brejcha_happinezz
-        case .boris_brejcha_night_owl:  return ViewCallsPlayer.boris_brejcha_night_owl
-        case .boris_brejcha_streets_of_gold:  return ViewCallsPlayer.boris_brejcha_streets_of_gold
-            
-        case .mark_ronson: return ViewCallsPlayer.mark_ronson_mystikal_feel_right
-            
-        case .dymok: return ViewCallsPlayer.dymok
             
         case .retroWave1: return ViewCallsPlayer.retroWave1
         case .retroWave2: return ViewCallsPlayer.retroWave2
@@ -422,6 +375,63 @@ class ViewCallsPlayer: NSObject {
         case .retroWave5: return ViewCallsPlayer.retroWave5
         case .retroWave6: return ViewCallsPlayer.retroWave6
         case .retroWave7: return ViewCallsPlayer.retroWave7
+            
+            
+        case .boris_brejcha_thunderstorm:  return ViewCallsPlayer.boris_brejcha_thunderstorm
+//            
+//        case .disclosure_you_me:
+//            print("viewCallsPlayer disclosure_you_me")
+//            return ViewCallsPlayer.disclosure_you_me
+//        case .flume_greatest_view:
+//            print("viewCallsPlayer flume_greatest_view")
+//           return ViewCallsPlayer.flume_greatest_view
+//        case .disclosure_ware_running:
+//            print("viewCallsPlayer disclosure_ware_running")
+//            return ViewCallsPlayer.disclosure_ware_running
+//            
+//        case .disclosure_in_my_arms:         return ViewCallsPlayer.disclosure_in_my_arms
+//        case .disclosure_f_for_you:         return ViewCallsPlayer.disclosure_f_for_you
+//        case .disclosure_flume_id:         return ViewCallsPlayer.disclosure_flume_id
+//        case .disclosure_whats_in_your_head:         return ViewCallsPlayer.disclosure_whats_in_your_head
+//        case .disclosure_duke_dumont:         return ViewCallsPlayer.disclosure_duke_dumont
+//            
+//        case .camelphat_dropit:
+//            print("viewCallsPlayer camelphat_dropit")
+//            return ViewCallsPlayer.camelphat_dropit
+//            
+//        case .the_audio_bar:
+//            print("viewCallsPlayer the_audio_bar")
+//            return ViewCallsPlayer.the_audio_bar
+//        case .funky_house_classic:
+//            print("viewCallsPlayer funky_house_classic")
+//            return ViewCallsPlayer.funky_house_classic
+//        case .big_miz_aador:
+//            print("viewCallsPlayer big_miz_aador")
+//            return ViewCallsPlayer.big_miz_aador
+//        case .claptone_music_got_me:
+//            print("viewCallsPlayer claptone_music_got_me")
+//            return ViewCallsPlayer.claptone_music_got_me
+//        case .myselor_neurolife:
+//            print("viewCallsPlayer myselor_neurolife")
+//            return ViewCallsPlayer.myselor_neurolife
+//        case .benno_blome_botha:
+//            print("viewCallsPlayer benno_blome_botha")
+//            return ViewCallsPlayer.benno_blome_botha
+//        case .snoop_dogg_riders_on_the_storm:
+//            print("viewCallsPlayer snoop_dogg_riders_on_the_storm")
+//            return ViewCallsPlayer.snoop_dogg_riders_on_the_storm
+//        case .ludacris_eelin_so_sexy:
+//            print("viewCallsPlayer ludacris_eelin_so_sexy")
+//            return ViewCallsPlayer.ludacris_eelin_so_sexy
+//            
+//      
+//        case .boris_brejcha_happinezz:  return ViewCallsPlayer.boris_brejcha_happinezz
+//        case .boris_brejcha_night_owl:  return ViewCallsPlayer.boris_brejcha_night_owl
+//        case .boris_brejcha_streets_of_gold:  return ViewCallsPlayer.boris_brejcha_streets_of_gold
+//            
+//        case .mark_ronson: return ViewCallsPlayer.mark_ronson_mystikal_feel_right
+//            
+//        case .dymok: return ViewCallsPlayer.dymok
             
             
         default:
@@ -463,42 +473,11 @@ class ViewCallsPlayer: NSObject {
         
         switch playerType {
             
-            
-        case .disclosure_you_me:
-            return "Disclosure"
-        case .flume_greatest_view:
-            return "Flume"
-        case .disclosure_ware_running:
-            return "Disclosure"
-            
-        case .disclosure_in_my_arms: return "Disclosure"
-        case .disclosure_f_for_you: return "Disclosure"
-        case .disclosure_flume_id: return "Disclosure"
-        case .disclosure_whats_in_your_head: return "Disclosure"
-        case .disclosure_duke_dumont: return "Disclosure"
-            
-        case .camelphat_dropit:
-            return "CamelPhat"
-        case .the_audio_bar: return "The Audio Bar"
-        case .funky_house_classic: return "Funky House Classic vinyl"
-        case .big_miz_aador: return "Big Miz, A.D.O.R."
-        case .claptone_music_got_me: return "Claptone"
-        case .myselor_neurolife: return "Myselor"
-        case .benno_blome_botha: return "Benno Blome"
         case .cafe_del_mare: return "Cafe Del Mare"
-        case .snoop_dogg_riders_on_the_storm: return "Snoop Dogg feat. The Doors"
-        case .ludacris_eelin_so_sexy: return "Ludacris"
         case .josip_petrov:  return "Josip Petrov"
         case .ambient_techno_mix:  return "AMBIENT TECHNO"
             
         case .boris_brejcha_thunderstorm:  return "Boris Brejcha"
-        case .boris_brejcha_happinezz:  return "Boris Brejcha ft. Ginger"
-        case .boris_brejcha_night_owl:  return "Boris Brejcha"
-        case .boris_brejcha_streets_of_gold:  return "Boris Brejcha"
-            
-            
-        case .mark_ronson: return "Mark Ronson feat. Mystikal"
-            
         case .retroWave1: return "F.O.O.L"
         case .retroWave2: return "Pengus"
         case .retroWave3: return "HOME"
@@ -507,7 +486,39 @@ class ViewCallsPlayer: NSObject {
         case .retroWave6: return "Time Travel"
         case .retroWave7: return "Dance With the Dead"
             
-        case .dymok: return "Ицык Цыпер feat. Игорь цыба"
+//        case .disclosure_you_me:
+//            return "Disclosure"
+//        case .flume_greatest_view:
+//            return "Flume"
+//        case .disclosure_ware_running:
+//            return "Disclosure"
+//            
+//        case .disclosure_in_my_arms: return "Disclosure"
+//        case .disclosure_f_for_you: return "Disclosure"
+//        case .disclosure_flume_id: return "Disclosure"
+//        case .disclosure_whats_in_your_head: return "Disclosure"
+//        case .disclosure_duke_dumont: return "Disclosure"
+//            
+//        case .camelphat_dropit:
+//            return "CamelPhat"
+//        case .the_audio_bar: return "The Audio Bar"
+//        case .funky_house_classic: return "Funky House Classic vinyl"
+//        case .big_miz_aador: return "Big Miz, A.D.O.R."
+//        case .claptone_music_got_me: return "Claptone"
+//        case .myselor_neurolife: return "Myselor"
+//        case .benno_blome_botha: return "Benno Blome"
+//        case .snoop_dogg_riders_on_the_storm: return "Snoop Dogg feat. The Doors"
+//        case .ludacris_eelin_so_sexy: return "Ludacris"
+//     
+//        case .boris_brejcha_happinezz:  return "Boris Brejcha ft. Ginger"
+//        case .boris_brejcha_night_owl:  return "Boris Brejcha"
+//        case .boris_brejcha_streets_of_gold:  return "Boris Brejcha"
+//            
+//            
+//        case .mark_ronson: return "Mark Ronson feat. Mystikal"
+//   
+//            
+//        case .dymok: return "Ицык Цыпер feat. Игорь цыба"
         default:
             return ""
         }
@@ -515,33 +526,30 @@ class ViewCallsPlayer: NSObject {
     
     class func getImage(_ playerType: ViewCallsPlayerType) -> UIImage? {
         
-        let img1  =   #imageLiteral(resourceName: "img_Disclosure_You_Me")
-        let img2  =   #imageLiteral(resourceName: "img_Flume_Greatest_View")
-        let img3  =   #imageLiteral(resourceName: "img_Disclosure_Ware_Running")
-        let img4  =   #imageLiteral(resourceName: "img_camelphat_dropit")
-        
-        
-        let img5  =  #imageLiteral(resourceName: "img_the_audio_bar")
-        let img6  =  #imageLiteral(resourceName: "img_funky_house_classic")
-        let img7  =  #imageLiteral(resourceName: "img_big_miz_aador")
-        let img8  =  #imageLiteral(resourceName: "img_claptone_music_got_me")
-        let img9  =  #imageLiteral(resourceName: "img_myselor_neurolife")
-        let img10 =  #imageLiteral(resourceName: "img_benno_blome_botha")
-        let img11 =  #imageLiteral(resourceName: "img_big_chill_techno")
-       let img12 =  #imageLiteral(resourceName: "img_snoop_dogg_riders_on_the_storm")
-        let img13 =  #imageLiteral(resourceName: "img_ludacris_eelin_so_sexy")
-        
-        let imgDeep =  #imageLiteral(resourceName: "img_big_deep")
-        let imgAmbient =  #imageLiteral(resourceName: "img_big_ambient_techno")
-        let imgBorisBr =  #imageLiteral(resourceName: "img_big_deep_boris_br")
-        
-        let imgBorisBr2 =  #imageLiteral(resourceName: "img_big_deep_boris_br1")
-        let imgBorisBr3 =  #imageLiteral(resourceName: "img_big_deep_boris_br2")
-        
-        
-        let imgMarkRonson =  #imageLiteral(resourceName: "img_big_mark_ronson")
-        
-        
+//        let img1  =   #imageLiteral(resourceName: "img_Disclosure_You_Me")
+//        let img2  =   #imageLiteral(resourceName: "img_Flume_Greatest_View")
+//        let img3  =   #imageLiteral(resourceName: "img_Disclosure_Ware_Running")
+//        let img4  =   #imageLiteral(resourceName: "img_camelphat_dropit")
+//        
+//        
+//        let img5  =  #imageLiteral(resourceName: "img_the_audio_bar")
+//        let img6  =  #imageLiteral(resourceName: "img_funky_house_classic")
+//        let img7  =  #imageLiteral(resourceName: "img_big_miz_aador")
+//        let img8  =  #imageLiteral(resourceName: "img_claptone_music_got_me")
+//        let img9  =  #imageLiteral(resourceName: "img_myselor_neurolife")
+//        let img10 =  #imageLiteral(resourceName: "img_benno_blome_botha")
+//       let img12 =  #imageLiteral(resourceName: "img_snoop_dogg_riders_on_the_storm")
+//        let img13 =  #imageLiteral(resourceName: "img_ludacris_eelin_so_sexy")
+//        
+//        
+//        let imgBorisBr2 =  #imageLiteral(resourceName: "img_big_deep_boris_br1")
+//        let imgBorisBr3 =  #imageLiteral(resourceName: "img_big_deep_boris_br2")
+//        
+//        
+//        let imgMarkRonson =  #imageLiteral(resourceName: "img_big_mark_ronson")
+//        
+//        let imgDymok = #imageLiteral(resourceName: "img_dymok")
+//        
         
         let imgRetro1  =  #imageLiteral(resourceName: "retroWave1")
         let imgRetro2  =  #imageLiteral(resourceName: "retroWave2")
@@ -551,52 +559,20 @@ class ViewCallsPlayer: NSObject {
         let imgRetro6  =  #imageLiteral(resourceName: "retroWave6")
         let imgRetro7  =  #imageLiteral(resourceName: "retroWave7")
         
-        let imgDymok = #imageLiteral(resourceName: "img_dymok")
+        
+        let img11 =  #imageLiteral(resourceName: "img_big_chill_techno")
+        let imgDeep =  #imageLiteral(resourceName: "img_big_deep")
+        let imgAmbient =  #imageLiteral(resourceName: "img_big_ambient_techno")
+        let imgBorisBr =  #imageLiteral(resourceName: "img_big_deep_boris_br")
         
         switch playerType {
             
         
-        case .disclosure_you_me:
-            return img1
-        case .flume_greatest_view:
-            return img2
-        case .disclosure_ware_running:
-            return img3
-            
-        case .disclosure_in_my_arms:
-            return img3
-        case .disclosure_f_for_you:
-            return img1
-        case .disclosure_flume_id:
-            return img1
-        case .disclosure_whats_in_your_head:
-            return img3
-        case .disclosure_duke_dumont:
-            return img3
-            
-        case .camelphat_dropit:
-            return img4
-        case .the_audio_bar: return img5
-        case .funky_house_classic: return img6
-        case .big_miz_aador: return img7
-        case .claptone_music_got_me: return img8
-        case .myselor_neurolife: return img9
-        case .benno_blome_botha: return img10
         case .cafe_del_mare: return img11
-        case .snoop_dogg_riders_on_the_storm: return img12
-        case .ludacris_eelin_so_sexy: return img13
         case .josip_petrov: return imgDeep
         case .ambient_techno_mix: return imgAmbient
             
         case .boris_brejcha_thunderstorm: return imgBorisBr
-        case .boris_brejcha_happinezz: return imgBorisBr3
-        case .boris_brejcha_night_owl: return imgBorisBr2
-        case .boris_brejcha_streets_of_gold: return imgBorisBr2
-            
-        case .mark_ronson: return imgMarkRonson
-            
-        case .dymok: return imgDymok
-            
         case .retroWave1: return imgRetro1
         case .retroWave2: return imgRetro2
         case .retroWave3: return imgRetro3
@@ -604,6 +580,43 @@ class ViewCallsPlayer: NSObject {
         case .retroWave5: return imgRetro5
         case .retroWave6: return imgRetro6
         case .retroWave7: return imgRetro7
+//        case .disclosure_you_me:
+//            return img1
+//        case .flume_greatest_view:
+//            return img2
+//        case .disclosure_ware_running:
+//            return img3
+//            
+//        case .disclosure_in_my_arms:
+//            return img3
+//        case .disclosure_f_for_you:
+//            return img1
+//        case .disclosure_flume_id:
+//            return img1
+//        case .disclosure_whats_in_your_head:
+//            return img3
+//        case .disclosure_duke_dumont:
+//            return img3
+//            
+//        case .camelphat_dropit:
+//            return img4
+//        case .the_audio_bar: return img5
+//        case .funky_house_classic: return img6
+//        case .big_miz_aador: return img7
+//        case .claptone_music_got_me: return img8
+//        case .myselor_neurolife: return img9
+//        case .benno_blome_botha: return img10
+//        case .snoop_dogg_riders_on_the_storm: return img12
+//        case .ludacris_eelin_so_sexy: return img13
+//     
+//        case .boris_brejcha_happinezz: return imgBorisBr3
+//        case .boris_brejcha_night_owl: return imgBorisBr2
+//        case .boris_brejcha_streets_of_gold: return imgBorisBr2
+//            
+//        case .mark_ronson: return imgMarkRonson
+//            
+//        case .dymok: return imgDymok
+            
         default:
             return nil
         }

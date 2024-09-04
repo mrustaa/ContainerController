@@ -305,44 +305,10 @@
 		4ABFAC152C654CA5005C7990 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABFAC142C654CA5005C7990 /* Font.swift */; };
 		4ADB2C0A2C699029000F164E /* UIView+AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADB2C092C699029000F164E /* UIView+AutoLayout.swift */; };
 		4AE62A9C2C87EBFB00A75110 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE62A9B2C87EBFB00A75110 /* Label.swift */; };
-		4AE62AD02C87F0DC00A75110 /* Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62A9D2C87F0DC00A75110 /* Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3 */; };
 		4AE62AD12C87F0DC00A75110 /* ambient_techno_mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62A9E2C87F0DC00A75110 /* ambient_techno_mix.mp3 */; };
-		4AE62AD22C87F0DC00A75110 /* Ben Bohmer & Wood feat. Margret - Reflection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62A9F2C87F0DC00A75110 /* Ben Bohmer & Wood feat. Margret - Reflection.mp3 */; };
-		4AE62AD32C87F0DC00A75110 /* benno_blome_botha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA02C87F0DC00A75110 /* benno_blome_botha.mp3 */; };
-		4AE62AD42C87F0DC00A75110 /* big_miz_aador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA12C87F0DC00A75110 /* big_miz_aador.mp3 */; };
-		4AE62AD52C87F0DC00A75110 /* Bondax - All I See.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA22C87F0DC00A75110 /* Bondax - All I See.mp3 */; };
-		4AE62AD62C87F0DC00A75110 /* boris_brejcha_happinezz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA32C87F0DC00A75110 /* boris_brejcha_happinezz.mp3 */; };
-		4AE62AD72C87F0DC00A75110 /* boris_brejcha_night_owl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA42C87F0DC00A75110 /* boris_brejcha_night_owl.mp3 */; };
-		4AE62AD82C87F0DC00A75110 /* boris_brejcha_streets_of_gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA52C87F0DC00A75110 /* boris_brejcha_streets_of_gold.mp3 */; };
 		4AE62AD92C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA62C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 */; };
 		4AE62ADA2C87F0DC00A75110 /* cafe_del_mare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA72C87F0DC00A75110 /* cafe_del_mare.mp3 */; };
-		4AE62ADB2C87F0DC00A75110 /* camelphat_dropit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA82C87F0DC00A75110 /* camelphat_dropit.mp3 */; };
-		4AE62ADC2C87F0DC00A75110 /* claptone_music_got_me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AA92C87F0DC00A75110 /* claptone_music_got_me.mp3 */; };
-		4AE62ADD2C87F0DC00A75110 /* Disclosure - F For You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAA2C87F0DC00A75110 /* Disclosure - F For You.mp3 */; };
-		4AE62ADE2C87F0DC00A75110 /* Disclosure - In My Arms.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAB2C87F0DC00A75110 /* Disclosure - In My Arms.mp3 */; };
-		4AE62ADF2C87F0DC00A75110 /* Disclosure - What's In Your Head.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAC2C87F0DC00A75110 /* Disclosure - What's In Your Head.mp3 */; };
-		4AE62AE02C87F0DC00A75110 /* Disclosure x Flume - ID (BBC Radio I RIP).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAD2C87F0DC00A75110 /* Disclosure x Flume - ID (BBC Radio I RIP).mp3 */; };
-		4AE62AE12C87F0DC00A75110 /* Disclosure_Ware_Running.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAE2C87F0DC00A75110 /* Disclosure_Ware_Running.mp3 */; };
-		4AE62AE22C87F0DC00A75110 /* Disclosure_You_Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AAF2C87F0DC00A75110 /* Disclosure_You_Me.mp3 */; };
-		4AE62AE32C87F0DC00A75110 /* Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB02C87F0DC00A75110 /* Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3 */; };
-		4AE62AE42C87F0DC00A75110 /* dymok.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB12C87F0DC00A75110 /* dymok.mp3 */; };
-		4AE62AE52C87F0DC00A75110 /* Flume_Greatest_View.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB22C87F0DC00A75110 /* Flume_Greatest_View.mp3 */; };
-		4AE62AE62C87F0DC00A75110 /* Flume_ID.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB32C87F0DC00A75110 /* Flume_ID.mp3 */; };
-		4AE62AE72C87F0DC00A75110 /* Flume_Sleepless.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB42C87F0DC00A75110 /* Flume_Sleepless.mp3 */; };
-		4AE62AE82C87F0DC00A75110 /* funky_house_classic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB52C87F0DC00A75110 /* funky_house_classic.mp3 */; };
-		4AE62AE92C87F0DC00A75110 /* Giuliano Lomonte -  Stay (1).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB62C87F0DC00A75110 /* Giuliano Lomonte -  Stay (1).mp3 */; };
-		4AE62AEA2C87F0DC00A75110 /* Ishome - Ken Tavr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB72C87F0DC00A75110 /* Ishome - Ken Tavr.mp3 */; };
 		4AE62AEB2C87F0DC00A75110 /* josip_petrov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB82C87F0DC00A75110 /* josip_petrov.mp3 */; };
-		4AE62AEC2C87F0DC00A75110 /* Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AB92C87F0DC00A75110 /* Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3 */; };
-		4AE62AED2C87F0DC00A75110 /* Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABA2C87F0DC00A75110 /* Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3 */; };
-		4AE62AEE2C87F0DC00A75110 /* ludacris_eelin_so_sexy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABB2C87F0DC00A75110 /* ludacris_eelin_so_sexy.mp3 */; };
-		4AE62AEF2C87F0DC00A75110 /* mark_ronson_mystikal_feel_right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABC2C87F0DC00A75110 /* mark_ronson_mystikal_feel_right.mp3 */; };
-		4AE62AF02C87F0DC00A75110 /* Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABD2C87F0DC00A75110 /* Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3 */; };
-		4AE62AF12C87F0DC00A75110 /* myselor_neurolife.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABE2C87F0DC00A75110 /* myselor_neurolife.mp3 */; };
-		4AE62AF22C87F0DC00A75110 /* Øfdream - Thelema .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ABF2C87F0DC00A75110 /* Øfdream - Thelema .mp3 */; };
-		4AE62AF32C87F0DC00A75110 /* Offaiah - Trouble (Jengi Beats rmx).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC02C87F0DC00A75110 /* Offaiah - Trouble (Jengi Beats rmx).mp3 */; };
-		4AE62AF42C87F0DC00A75110 /* Otosan feat. Metoyer - Lights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC12C87F0DC00A75110 /* Otosan feat. Metoyer - Lights.mp3 */; };
-		4AE62AF52C87F0DC00A75110 /* Pat Lok - Remember.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC22C87F0DC00A75110 /* Pat Lok - Remember.mp3 */; };
 		4AE62AF62C87F0DC00A75110 /* retroWave1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC32C87F0DC00A75110 /* retroWave1.mp3 */; };
 		4AE62AF72C87F0DC00A75110 /* retroWave2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC42C87F0DC00A75110 /* retroWave2.mp3 */; };
 		4AE62AF82C87F0DC00A75110 /* retroWave3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC52C87F0DC00A75110 /* retroWave3.mp3 */; };
@@ -350,11 +316,6 @@
 		4AE62AFA2C87F0DC00A75110 /* retroWave5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC72C87F0DC00A75110 /* retroWave5.mp3 */; };
 		4AE62AFB2C87F0DC00A75110 /* retroWave6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC82C87F0DC00A75110 /* retroWave6.mp3 */; };
 		4AE62AFC2C87F0DC00A75110 /* retroWave7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62AC92C87F0DC00A75110 /* retroWave7.mp3 */; };
-		4AE62AFD2C87F0DC00A75110 /* Seba - Shades Of Me & You.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ACA2C87F0DC00A75110 /* Seba - Shades Of Me & You.mp3 */; };
-		4AE62AFE2C87F0DC00A75110 /* snoop_dogg_riders_on_the_storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ACB2C87F0DC00A75110 /* snoop_dogg_riders_on_the_storm.mp3 */; };
-		4AE62AFF2C87F0DC00A75110 /* Sub Focus - Falling Down.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ACC2C87F0DC00A75110 /* Sub Focus - Falling Down.mp3 */; };
-		4AE62B002C87F0DC00A75110 /* the_audio_bar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ACD2C87F0DC00A75110 /* the_audio_bar.mp3 */; };
-		4AE62B012C87F0DC00A75110 /* Walker & Royce - Reaching feat. Sue-Yenn.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62ACE2C87F0DC00A75110 /* Walker & Royce - Reaching feat. Sue-Yenn.mp3 */; };
 		4AEF41762C3C32B1001F1847 /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEF41752C3C32B1001F1847 /* DispatchQueue.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -669,44 +630,10 @@
 		4ABFAC142C654CA5005C7990 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		4ADB2C092C699029000F164E /* UIView+AutoLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AutoLayout.swift"; sourceTree = "<group>"; };
 		4AE62A9B2C87EBFB00A75110 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		4AE62A9D2C87F0DC00A75110 /* Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3"; sourceTree = "<group>"; };
 		4AE62A9E2C87F0DC00A75110 /* ambient_techno_mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ambient_techno_mix.mp3; sourceTree = "<group>"; };
-		4AE62A9F2C87F0DC00A75110 /* Ben Bohmer & Wood feat. Margret - Reflection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ben Bohmer & Wood feat. Margret - Reflection.mp3"; sourceTree = "<group>"; };
-		4AE62AA02C87F0DC00A75110 /* benno_blome_botha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = benno_blome_botha.mp3; sourceTree = "<group>"; };
-		4AE62AA12C87F0DC00A75110 /* big_miz_aador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = big_miz_aador.mp3; sourceTree = "<group>"; };
-		4AE62AA22C87F0DC00A75110 /* Bondax - All I See.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bondax - All I See.mp3"; sourceTree = "<group>"; };
-		4AE62AA32C87F0DC00A75110 /* boris_brejcha_happinezz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boris_brejcha_happinezz.mp3; sourceTree = "<group>"; };
-		4AE62AA42C87F0DC00A75110 /* boris_brejcha_night_owl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boris_brejcha_night_owl.mp3; sourceTree = "<group>"; };
-		4AE62AA52C87F0DC00A75110 /* boris_brejcha_streets_of_gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boris_brejcha_streets_of_gold.mp3; sourceTree = "<group>"; };
 		4AE62AA62C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boris_brejcha_thunderstorm.mp3; sourceTree = "<group>"; };
 		4AE62AA72C87F0DC00A75110 /* cafe_del_mare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cafe_del_mare.mp3; sourceTree = "<group>"; };
-		4AE62AA82C87F0DC00A75110 /* camelphat_dropit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = camelphat_dropit.mp3; sourceTree = "<group>"; };
-		4AE62AA92C87F0DC00A75110 /* claptone_music_got_me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = claptone_music_got_me.mp3; sourceTree = "<group>"; };
-		4AE62AAA2C87F0DC00A75110 /* Disclosure - F For You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disclosure - F For You.mp3"; sourceTree = "<group>"; };
-		4AE62AAB2C87F0DC00A75110 /* Disclosure - In My Arms.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disclosure - In My Arms.mp3"; sourceTree = "<group>"; };
-		4AE62AAC2C87F0DC00A75110 /* Disclosure - What's In Your Head.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disclosure - What's In Your Head.mp3"; sourceTree = "<group>"; };
-		4AE62AAD2C87F0DC00A75110 /* Disclosure x Flume - ID (BBC Radio I RIP).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Disclosure x Flume - ID (BBC Radio I RIP).mp3"; sourceTree = "<group>"; };
-		4AE62AAE2C87F0DC00A75110 /* Disclosure_Ware_Running.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Disclosure_Ware_Running.mp3; sourceTree = "<group>"; };
-		4AE62AAF2C87F0DC00A75110 /* Disclosure_You_Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Disclosure_You_Me.mp3; sourceTree = "<group>"; };
-		4AE62AB02C87F0DC00A75110 /* Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3"; sourceTree = "<group>"; };
-		4AE62AB12C87F0DC00A75110 /* dymok.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dymok.mp3; sourceTree = "<group>"; };
-		4AE62AB22C87F0DC00A75110 /* Flume_Greatest_View.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flume_Greatest_View.mp3; sourceTree = "<group>"; };
-		4AE62AB32C87F0DC00A75110 /* Flume_ID.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flume_ID.mp3; sourceTree = "<group>"; };
-		4AE62AB42C87F0DC00A75110 /* Flume_Sleepless.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Flume_Sleepless.mp3; sourceTree = "<group>"; };
-		4AE62AB52C87F0DC00A75110 /* funky_house_classic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = funky_house_classic.mp3; sourceTree = "<group>"; };
-		4AE62AB62C87F0DC00A75110 /* Giuliano Lomonte -  Stay (1).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Giuliano Lomonte -  Stay (1).mp3"; sourceTree = "<group>"; };
-		4AE62AB72C87F0DC00A75110 /* Ishome - Ken Tavr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ishome - Ken Tavr.mp3"; sourceTree = "<group>"; };
 		4AE62AB82C87F0DC00A75110 /* josip_petrov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = josip_petrov.mp3; sourceTree = "<group>"; };
-		4AE62AB92C87F0DC00A75110 /* Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3"; sourceTree = "<group>"; };
-		4AE62ABA2C87F0DC00A75110 /* Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3"; sourceTree = "<group>"; };
-		4AE62ABB2C87F0DC00A75110 /* ludacris_eelin_so_sexy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ludacris_eelin_so_sexy.mp3; sourceTree = "<group>"; };
-		4AE62ABC2C87F0DC00A75110 /* mark_ronson_mystikal_feel_right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mark_ronson_mystikal_feel_right.mp3; sourceTree = "<group>"; };
-		4AE62ABD2C87F0DC00A75110 /* Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3"; sourceTree = "<group>"; };
-		4AE62ABE2C87F0DC00A75110 /* myselor_neurolife.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = myselor_neurolife.mp3; sourceTree = "<group>"; };
-		4AE62ABF2C87F0DC00A75110 /* Øfdream - Thelema .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Øfdream - Thelema .mp3"; sourceTree = "<group>"; };
-		4AE62AC02C87F0DC00A75110 /* Offaiah - Trouble (Jengi Beats rmx).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Offaiah - Trouble (Jengi Beats rmx).mp3"; sourceTree = "<group>"; };
-		4AE62AC12C87F0DC00A75110 /* Otosan feat. Metoyer - Lights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Otosan feat. Metoyer - Lights.mp3"; sourceTree = "<group>"; };
-		4AE62AC22C87F0DC00A75110 /* Pat Lok - Remember.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Pat Lok - Remember.mp3"; sourceTree = "<group>"; };
 		4AE62AC32C87F0DC00A75110 /* retroWave1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave1.mp3; sourceTree = "<group>"; };
 		4AE62AC42C87F0DC00A75110 /* retroWave2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave2.mp3; sourceTree = "<group>"; };
 		4AE62AC52C87F0DC00A75110 /* retroWave3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave3.mp3; sourceTree = "<group>"; };
@@ -714,11 +641,6 @@
 		4AE62AC72C87F0DC00A75110 /* retroWave5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave5.mp3; sourceTree = "<group>"; };
 		4AE62AC82C87F0DC00A75110 /* retroWave6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave6.mp3; sourceTree = "<group>"; };
 		4AE62AC92C87F0DC00A75110 /* retroWave7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retroWave7.mp3; sourceTree = "<group>"; };
-		4AE62ACA2C87F0DC00A75110 /* Seba - Shades Of Me & You.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Seba - Shades Of Me & You.mp3"; sourceTree = "<group>"; };
-		4AE62ACB2C87F0DC00A75110 /* snoop_dogg_riders_on_the_storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = snoop_dogg_riders_on_the_storm.mp3; sourceTree = "<group>"; };
-		4AE62ACC2C87F0DC00A75110 /* Sub Focus - Falling Down.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sub Focus - Falling Down.mp3"; sourceTree = "<group>"; };
-		4AE62ACD2C87F0DC00A75110 /* the_audio_bar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = the_audio_bar.mp3; sourceTree = "<group>"; };
-		4AE62ACE2C87F0DC00A75110 /* Walker & Royce - Reaching feat. Sue-Yenn.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Walker & Royce - Reaching feat. Sue-Yenn.mp3"; sourceTree = "<group>"; };
 		4AEF41752C3C32B1001F1847 /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ContainerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -2444,44 +2366,10 @@
 		4AE62ACF2C87F0DC00A75110 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4AE62A9D2C87F0DC00A75110 /* Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3 */,
 				4AE62A9E2C87F0DC00A75110 /* ambient_techno_mix.mp3 */,
-				4AE62A9F2C87F0DC00A75110 /* Ben Bohmer & Wood feat. Margret - Reflection.mp3 */,
-				4AE62AA02C87F0DC00A75110 /* benno_blome_botha.mp3 */,
-				4AE62AA12C87F0DC00A75110 /* big_miz_aador.mp3 */,
-				4AE62AA22C87F0DC00A75110 /* Bondax - All I See.mp3 */,
-				4AE62AA32C87F0DC00A75110 /* boris_brejcha_happinezz.mp3 */,
-				4AE62AA42C87F0DC00A75110 /* boris_brejcha_night_owl.mp3 */,
-				4AE62AA52C87F0DC00A75110 /* boris_brejcha_streets_of_gold.mp3 */,
 				4AE62AA62C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 */,
 				4AE62AA72C87F0DC00A75110 /* cafe_del_mare.mp3 */,
-				4AE62AA82C87F0DC00A75110 /* camelphat_dropit.mp3 */,
-				4AE62AA92C87F0DC00A75110 /* claptone_music_got_me.mp3 */,
-				4AE62AAA2C87F0DC00A75110 /* Disclosure - F For You.mp3 */,
-				4AE62AAB2C87F0DC00A75110 /* Disclosure - In My Arms.mp3 */,
-				4AE62AAC2C87F0DC00A75110 /* Disclosure - What's In Your Head.mp3 */,
-				4AE62AAD2C87F0DC00A75110 /* Disclosure x Flume - ID (BBC Radio I RIP).mp3 */,
-				4AE62AAE2C87F0DC00A75110 /* Disclosure_Ware_Running.mp3 */,
-				4AE62AAF2C87F0DC00A75110 /* Disclosure_You_Me.mp3 */,
-				4AE62AB02C87F0DC00A75110 /* Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3 */,
-				4AE62AB12C87F0DC00A75110 /* dymok.mp3 */,
-				4AE62AB22C87F0DC00A75110 /* Flume_Greatest_View.mp3 */,
-				4AE62AB32C87F0DC00A75110 /* Flume_ID.mp3 */,
-				4AE62AB42C87F0DC00A75110 /* Flume_Sleepless.mp3 */,
-				4AE62AB52C87F0DC00A75110 /* funky_house_classic.mp3 */,
-				4AE62AB62C87F0DC00A75110 /* Giuliano Lomonte -  Stay (1).mp3 */,
-				4AE62AB72C87F0DC00A75110 /* Ishome - Ken Tavr.mp3 */,
 				4AE62AB82C87F0DC00A75110 /* josip_petrov.mp3 */,
-				4AE62AB92C87F0DC00A75110 /* Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3 */,
-				4AE62ABA2C87F0DC00A75110 /* Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3 */,
-				4AE62ABB2C87F0DC00A75110 /* ludacris_eelin_so_sexy.mp3 */,
-				4AE62ABC2C87F0DC00A75110 /* mark_ronson_mystikal_feel_right.mp3 */,
-				4AE62ABD2C87F0DC00A75110 /* Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3 */,
-				4AE62ABE2C87F0DC00A75110 /* myselor_neurolife.mp3 */,
-				4AE62ABF2C87F0DC00A75110 /* Øfdream - Thelema .mp3 */,
-				4AE62AC02C87F0DC00A75110 /* Offaiah - Trouble (Jengi Beats rmx).mp3 */,
-				4AE62AC12C87F0DC00A75110 /* Otosan feat. Metoyer - Lights.mp3 */,
-				4AE62AC22C87F0DC00A75110 /* Pat Lok - Remember.mp3 */,
 				4AE62AC32C87F0DC00A75110 /* retroWave1.mp3 */,
 				4AE62AC42C87F0DC00A75110 /* retroWave2.mp3 */,
 				4AE62AC52C87F0DC00A75110 /* retroWave3.mp3 */,
@@ -2489,11 +2377,6 @@
 				4AE62AC72C87F0DC00A75110 /* retroWave5.mp3 */,
 				4AE62AC82C87F0DC00A75110 /* retroWave6.mp3 */,
 				4AE62AC92C87F0DC00A75110 /* retroWave7.mp3 */,
-				4AE62ACA2C87F0DC00A75110 /* Seba - Shades Of Me & You.mp3 */,
-				4AE62ACB2C87F0DC00A75110 /* snoop_dogg_riders_on_the_storm.mp3 */,
-				4AE62ACC2C87F0DC00A75110 /* Sub Focus - Falling Down.mp3 */,
-				4AE62ACD2C87F0DC00A75110 /* the_audio_bar.mp3 */,
-				4AE62ACE2C87F0DC00A75110 /* Walker & Royce - Reaching feat. Sue-Yenn.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2631,11 +2514,8 @@
 			files = (
 				46ACF05B2490F52600FAAD43 /* Localizable.strings in Resources */,
 				4A0FBA752C825CD6000A06CF /* PlayMusicNewTagCell.xib in Resources */,
-				4AE62AED2C87F0DC00A75110 /* Lenno feat. The Electric Sons - No More (Les Loups Remix).mp3 in Resources */,
 				4A0FBA592C825CD6000A06CF /* MapParkingHeaderView.xib in Resources */,
-				4AE62B002C87F0DC00A75110 /* the_audio_bar.mp3 in Resources */,
 				4A0FBA732C825CD6000A06CF /* PlayMusicItGribView.xib in Resources */,
-				4AE62AE42C87F0DC00A75110 /* dymok.mp3 in Resources */,
 				4AB0D4FD2C82374E00903A73 /* TitleTextxCell.xib in Resources */,
 				4AE62AF92C87F0DC00A75110 /* retroWave4.mp3 in Resources */,
 				4A0FBA612C825CD6000A06CF /* PlaylistCollectionsCell.xib in Resources */,
@@ -2645,8 +2525,6 @@
 				4AB0D5072C82374E00903A73 /* ExamplesSettingsViewController.storyboard in Resources */,
 				4A0FBA8D2C825CD6000A06CF /* SportCatalogCell.xib in Resources */,
 				46ACF05C2490F52600FAAD43 /* InfoPlist.strings in Resources */,
-				4AE62ADC2C87F0DC00A75110 /* claptone_music_got_me.mp3 in Resources */,
-				4AE62AE52C87F0DC00A75110 /* Flume_Greatest_View.mp3 in Resources */,
 				4A0FBA192C825CD6000A06CF /* BuyStockGraphCell.xib in Resources */,
 				46ACF07C2490F52600FAAD43 /* MapsMenuTextCell.xib in Resources */,
 				4A0FBA272C825CD6000A06CF /* MyCardsAddonsCell.xib in Resources */,
@@ -2658,35 +2536,23 @@
 				4A0FBA8B2C825CD6000A06CF /* SportCatalogAllCell.xib in Resources */,
 				4A0FBA252C825CD6000A06CF /* MyCardsAddCardCell.xib in Resources */,
 				4AB0D4EE2C82374D00903A73 /* ExampleAddCollectionViewController.storyboard in Resources */,
-				4AE62AEA2C87F0DC00A75110 /* Ishome - Ken Tavr.mp3 in Resources */,
 				4A0FBA332C825CD6000A06CF /* CryptoOneCell.xib in Resources */,
 				4A0FBA2D2C825CD6000A06CF /* MyCardsOneCardCell.xib in Resources */,
 				46ACF0682490F52600FAAD43 /* MapsSectionCell.xib in Resources */,
-				4AE62AEF2C87F0DC00A75110 /* mark_ronson_mystikal_feel_right.mp3 in Resources */,
-				4AE62ADB2C87F0DC00A75110 /* camelphat_dropit.mp3 in Resources */,
 				4A0FBA652C825CD6000A06CF /* PlaylistHeaderView.xib in Resources */,
 				46ACF0612490F52600FAAD43 /* MapsFavoritesCell.xib in Resources */,
-				4AE62ADF2C87F0DC00A75110 /* Disclosure - What's In Your Head.mp3 in Resources */,
 				4A0FBA6F2C825CD6000A06CF /* PlayMusicItCell.xib in Resources */,
 				4ABEC3132C5A7342004F922A /* Colors.xcassets in Resources */,
 				4A0FBA912C825CD6000A06CF /* SportCatalogOneCell.xib in Resources */,
 				4A0FBA932C825CD6000A06CF /* SportCatalogTitileCell.xib in Resources */,
-				4AE62AD42C87F0DC00A75110 /* big_miz_aador.mp3 in Resources */,
 				4A0FBAA72C825CD6000A06CF /* TaxiButtonBottomCell.xib in Resources */,
 				46ACF06C2490F52600FAAD43 /* LocationCoordinateCell.xib in Resources */,
-				4AE62AD32C87F0DC00A75110 /* benno_blome_botha.mp3 in Resources */,
-				4AE62AEE2C87F0DC00A75110 /* ludacris_eelin_so_sexy.mp3 in Resources */,
 				46ACF0642490F52600FAAD43 /* MapsCollectionsCell.xib in Resources */,
 				4A0FBABA2C825CD6000A06CF /* TaxiViewController.storyboard in Resources */,
 				4A0FBAB72C825CD6000A06CF /* TaxiRateTgCell.xib in Resources */,
-				4AE62AE02C87F0DC00A75110 /* Disclosure x Flume - ID (BBC Radio I RIP).mp3 in Resources */,
 				4AB0D5142C82376800903A73 /* ExampleTextButtonBottomView.xib in Resources */,
 				4A0FBA3D2C825CD6000A06CF /* CustomCardHeaderMiniView.xib in Resources */,
-				4AE62AD02C87F0DC00A75110 /* Adam F & Kokiri feat. Rae - Harmony (Røse Remix) (1).mp3 in Resources */,
 				4A0FBA1F2C825CD6000A06CF /* BuyStockTitleCell.xib in Resources */,
-				4AE62AE72C87F0DC00A75110 /* Flume_Sleepless.mp3 in Resources */,
-				4AE62B012C87F0DC00A75110 /* Walker & Royce - Reaching feat. Sue-Yenn.mp3 in Resources */,
-				4AE62AE62C87F0DC00A75110 /* Flume_ID.mp3 in Resources */,
 				4A0FBA6A2C825CD6000A06CF /* PlaylistViewController.storyboard in Resources */,
 				46ACF06A2490F52600FAAD43 /* MapsRouteCell.xib in Resources */,
 				4A0FBA6D2C825CD6000A06CF /* PlayMusicCatalogCell.xib in Resources */,
@@ -2702,37 +2568,28 @@
 				4A0FBA4E2C825CD6000A06CF /* ImagineViewController.storyboard in Resources */,
 				46ACF08A2490F52600FAAD43 /* MapsWeatherView.xib in Resources */,
 				4A0FBA472C825CD6000A06CF /* ImagineCollectionCell.xib in Resources */,
-				4AE62AE92C87F0DC00A75110 /* Giuliano Lomonte -  Stay (1).mp3 in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				4AE62AF22C87F0DC00A75110 /* Øfdream - Thelema .mp3 in Resources */,
 				4A0FBA712C825CD6000A06CF /* PlayMusicItGradientView.xib in Resources */,
 				46ACF0742490F52600FAAD43 /* LocationTextCell.xib in Resources */,
-				4AE62AFF2C87F0DC00A75110 /* Sub Focus - Falling Down.mp3 in Resources */,
 				4A0FBA632C825CD6000A06CF /* PlaylistFooterPlayView.xib in Resources */,
 				4A0FBA692C825CD6000A06CF /* PlaylistTitleCell.xib in Resources */,
 				4A0FBAA92C825CD6000A06CF /* TaxiCarTagCell.xib in Resources */,
 				4A0FBA8F2C825CD6000A06CF /* SportCatalogFilterCell.xib in Resources */,
 				46ACF07F2490F52600FAAD43 /* HeaderDetailsView.xib in Resources */,
 				4A0FBA5B2C825CD6000A06CF /* MapParkingMiniCell.xib in Resources */,
-				4AE62AEC2C87F0DC00A75110 /* Late Night Radio feat. Borahm Lee - Find the Love (feat. Borahm Lee).mp3 in Resources */,
 				4A0FBA412C825CD6000A06CF /* CustomCardView.xib in Resources */,
 				4A0FBA4D2C825CD6000A06CF /* ImagineTitleCell.xib in Resources */,
 				4AE62AD12C87F0DC00A75110 /* ambient_techno_mix.mp3 in Resources */,
-				4AE62AD52C87F0DC00A75110 /* Bondax - All I See.mp3 in Resources */,
 				4A0FBA772C825CD6000A06CF /* PlayMusicTagFilterCell.xib in Resources */,
-				4AE62ADE2C87F0DC00A75110 /* Disclosure - In My Arms.mp3 in Resources */,
 				4A0FBA362C825CD6000A06CF /* CryptoViewController.storyboard in Resources */,
 				4AE62AEB2C87F0DC00A75110 /* josip_petrov.mp3 in Resources */,
 				4AB0D4F92C82374E00903A73 /* ExampleSliderCell.xib in Resources */,
 				4A0FBA352C825CD6000A06CF /* CryptoTitleCell.xib in Resources */,
-				4AE62AFD2C87F0DC00A75110 /* Seba - Shades Of Me & You.mp3 in Resources */,
 				4AE62AFA2C87F0DC00A75110 /* retroWave5.mp3 in Resources */,
 				4A0FBAA52C825CD6000A06CF /* TaxiAddressABCell.xib in Resources */,
 				4A0FBABD2C825CD6000A06CF /* TaxiVisaCardCell.xib in Resources */,
-				4AE62AE82C87F0DC00A75110 /* funky_house_classic.mp3 in Resources */,
 				4A0FBA492C825CD6000A06CF /* ImagineHeaderSwitchCell.xib in Resources */,
 				4AE62ADA2C87F0DC00A75110 /* cafe_del_mare.mp3 in Resources */,
-				4AE62AFE2C87F0DC00A75110 /* snoop_dogg_riders_on_the_storm.mp3 in Resources */,
 				46ACF0812490F52600FAAD43 /* HeaderSearchBarView.xib in Resources */,
 				4A0FBA9D2C825CD6000A06CF /* SportTagFilterCell.xib in Resources */,
 				4A0FBA952C825CD6000A06CF /* SportColorCell.xib in Resources */,
@@ -2741,15 +2598,12 @@
 				4AB0D51E2C823B3100903A73 /* ExampleTextHeaderView.xib in Resources */,
 				4A0FBA3B2C825CD6000A06CF /* CustomCardHeaderMainView.xib in Resources */,
 				4A0FBAAB2C825CD6000A06CF /* TaxiCollectionCarsCell.xib in Resources */,
-				4AE62AD82C87F0DC00A75110 /* boris_brejcha_streets_of_gold.mp3 in Resources */,
 				4AB0D4F72C82374E00903A73 /* ExampleSegmentCell.xib in Resources */,
 				4A0FBA532C825CD6000A06CF /* ImagineCollCell.xib in Resources */,
 				4AE62AD92C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 in Resources */,
-				4AE62AE22C87F0DC00A75110 /* Disclosure_You_Me.mp3 in Resources */,
 				4A0FBA1B2C825CD6000A06CF /* BuyStockHeaderView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				4A0FBA2B2C825CD6000A06CF /* MyCardsCollectionCell.xib in Resources */,
-				4AE62AF32C87F0DC00A75110 /* Offaiah - Trouble (Jengi Beats rmx).mp3 in Resources */,
 				4A0FBA452C825CD6000A06CF /* ImagineButtonCell.xib in Resources */,
 				4A0FBA5E2C825CD6000A06CF /* MapParkingViewController.storyboard in Resources */,
 				4A0FBA7B2C825CD6000A06CF /* PlayMusicTgCell.xib in Resources */,
@@ -2760,28 +2614,22 @@
 				4A0FBA572C825CD6000A06CF /* MapParkingDetailsCell.xib in Resources */,
 				4AB0D4FB2C82374E00903A73 /* ExampleSwitchCell.xib in Resources */,
 				46ACF06F2490F52600FAAD43 /* LocationAddressCell.xib in Resources */,
-				4AE62AD72C87F0DC00A75110 /* boris_brejcha_night_owl.mp3 in Resources */,
 				4A0FBAB12C825CD6000A06CF /* TaxiMapButtonView.xib in Resources */,
 				4AB0D5012C82374E00903A73 /* ExampleCollectionCell.xib in Resources */,
 				4AB0D4F02C82374D00903A73 /* ExampleAddTableViewController.storyboard in Resources */,
 				4A0FBAA22C825CD6000A06CF /* SporViewController.storyboard in Resources */,
-				4AE62AD62C87F0DC00A75110 /* boris_brejcha_happinezz.mp3 in Resources */,
 				4A0FBA802C825CD6000A06CF /* PlayMusicViewController.storyboard in Resources */,
 				4A0FBA972C825CD6000A06CF /* SportGradientBackgroundView.xib in Resources */,
 				4A0FBA9F2C825CD6000A06CF /* SportTagSizeColorCell.xib in Resources */,
 				4A0FBAC52C8262FB000A06CF /* ExampleAlertPopupController.storyboard in Resources */,
 				4A0FBA4B2C825CD6000A06CF /* ImagineTagCell.xib in Resources */,
 				46ACF0D92491A75300FAAD43 /* screenLandscape5.png in Resources */,
-				4AE62AE32C87F0DC00A75110 /* Duke Dumont, A-M-E - Need U (100) (Original Mix).mp3 in Resources */,
 				4AB0D5052C82374E00903A73 /* ExampleHeaderGripView.xib in Resources */,
 				4A0FBAAF2C825CD6000A06CF /* TaxiDetailsCell.xib in Resources */,
-				4AE62AF12C87F0DC00A75110 /* myselor_neurolife.mp3 in Resources */,
-				4AE62AF02C87F0DC00A75110 /* Mr. Carmack Remix - Gladys Knight - Grapevine ().mp3 in Resources */,
 				4A0FBA222C825CD6000A06CF /* BuyStockViewController.storyboard in Resources */,
 				46ACF0872490F52600FAAD43 /* MapsMenuHeader.xib in Resources */,
 				4A0FBA312C825CD6000A06CF /* CryptoHeaderView.xib in Resources */,
 				4A0FBA392C825CD6000A06CF /* CustomCardGradientMainView.xib in Resources */,
-				4AE62AF42C87F0DC00A75110 /* Otosan feat. Metoyer - Lights.mp3 in Resources */,
 				46ACF07B2490F52600FAAD43 /* MapsMenuSegmentCell.xib in Resources */,
 				4A0FBA892C825CD6000A06CF /* SportBottomButtonCell.xib in Resources */,
 				46ACF0762490F52600FAAD43 /* MapsSearchCell.xib in Resources */,
@@ -2790,9 +2638,7 @@
 				4A0FBA1D2C825CD6000A06CF /* BuyStockOneCell.xib in Resources */,
 				4A0FBA212C825CD6000A06CF /* BuyStockTitleGreenCell.xib in Resources */,
 				46ACF0852490F52600FAAD43 /* HeaderTabBarView.xib in Resources */,
-				4AE62ADD2C87F0DC00A75110 /* Disclosure - F For You.mp3 in Resources */,
 				4AE62AF62C87F0DC00A75110 /* retroWave1.mp3 in Resources */,
-				4AE62AE12C87F0DC00A75110 /* Disclosure_Ware_Running.mp3 in Resources */,
 				46ACF08C2490F52600FAAD43 /* MapsViewController.storyboard in Resources */,
 				46ACF0892490F52600FAAD43 /* MapsButtons.xib in Resources */,
 				4A0FBAB92C825CD6000A06CF /* TaxiRateTitleCell.xib in Resources */,
@@ -2800,9 +2646,7 @@
 				46ACF0702490F52600FAAD43 /* LocationCollectionsButtonCell.xib in Resources */,
 				4A0FBA792C825CD6000A06CF /* PlayMusicTagPickerCell.xib in Resources */,
 				4AB0D5032C82374E00903A73 /* ExampleFooterButtonView.xib in Resources */,
-				4AE62AF52C87F0DC00A75110 /* Pat Lok - Remember.mp3 in Resources */,
 				46ACF0822490F52600FAAD43 /* TableHeaderSpinerView.xib in Resources */,
-				4AE62AD22C87F0DC00A75110 /* Ben Bohmer & Wood feat. Margret - Reflection.mp3 in Resources */,
 				4A0FBA292C825CD6000A06CF /* MyCardsCollAddonsCell.xib in Resources */,
 				4A0FBA992C825CD6000A06CF /* SportSelectProductView.xib in Resources */,
 			);

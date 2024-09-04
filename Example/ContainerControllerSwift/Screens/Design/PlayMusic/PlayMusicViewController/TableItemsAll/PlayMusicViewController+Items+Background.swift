@@ -216,21 +216,21 @@ extension PlayMusicViewController {
         } 
         if boris {
             retroTypes  = [
-                .boris_brejcha_night_owl,
+//                .boris_brejcha_night_owl,
                 .boris_brejcha_thunderstorm,
-                .boris_brejcha_happinezz,
-                .boris_brejcha_streets_of_gold,
+//                .boris_brejcha_happinezz,
+//                .boris_brejcha_streets_of_gold,
             ]
         }
         if disco {
             retroTypes  = [
-                .disclosure_you_me,
-                .disclosure_ware_running,
-                .disclosure_flume_id,
-                .disclosure_duke_dumont,
-                .disclosure_f_for_you,
-                .disclosure_in_my_arms,
-                .disclosure_whats_in_your_head,
+//                .disclosure_you_me,
+//                .disclosure_ware_running,
+//                .disclosure_flume_id,
+//                .disclosure_duke_dumont,
+//                .disclosure_f_for_you,
+//                .disclosure_in_my_arms,
+//                .disclosure_whats_in_your_head,
             ]
             
         }
@@ -277,15 +277,15 @@ extension PlayMusicViewController {
         
         let img_chill_techno  =   #imageLiteral(resourceName: "img_big_chill_techno")
         let img_deep_boris_br  =   #imageLiteral(resourceName: "img_big_deep_boris_br")
-        let img_big_phonk_skeler  =   #imageLiteral(resourceName: "img_big_phonk_skeler")
+        let img_big_phonk_skeler  =   #imageLiteral(resourceName: "img_big_car")
 //        let img_big_1  =   #imageLiteral(resourceName: "img_big_1")
 //        let img_big_2  =   #imageLiteral(resourceName: "img_big_2")
 //        let img_big_3  =   #imageLiteral(resourceName: "img_big_3")
 //        let img_big_4  =   #imageLiteral(resourceName: "img_big_4")
         let imgDeep =  #imageLiteral(resourceName: "img_big_deep")
-        let img90s =  #imageLiteral(resourceName: "img_big_90s")
+        let imgPumpUpPop =  #imageLiteral(resourceName: "img_big_pump_up_pop")
         let imgAmbient =  #imageLiteral(resourceName: "img_big_ambient_techno")
-        let imgHiphop =  #imageLiteral(resourceName: "img_big_hiphop")
+//        let imgHiphop =  #imageLiteral(resourceName: "img_big_hiphop")
         
         
         var tagC: [CollectionAdapterItem] = []
@@ -306,18 +306,18 @@ extension PlayMusicViewController {
         tagC.append(PlayMusicCatalogItem(state: .init(firstImage: imgDeep, handlers: .init(onClickAt: {
             self.playlistSelectedItem(.josip_petrov)
         }))))
-        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: img90s, handlers: .init(onClickAt: {
-            self.playlistSelectedItem(.ludacris_eelin_so_sexy )
+        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: imgPumpUpPop, handlers: .init(onClickAt: {
+            self.playlistSelectedItem(.boris_brejcha_thunderstorm )
         }))))
         
 //        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: img1)))
 //        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: img_big_3)))
         //        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: img_big_disclosure)))
         
-        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: imgHiphop, handlers: .init(onClickAt: {
-            print(" PlayMusicCatalogItem  snoop_dogg_riders_on_the_storm")
-            self.playlistSelectedItem(.snoop_dogg_riders_on_the_storm)
-        }))))
+//        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: imgHiphop, handlers: .init(onClickAt: {
+//            print(" PlayMusicCatalogItem  snoop_dogg_riders_on_the_storm")
+//            self.playlistSelectedItem(.josip_petrov)
+//        }))))
         
         
 //        tagC.append(PlayMusicCatalogItem(state: .init(firstImage: img_big_1)))
@@ -361,14 +361,18 @@ extension PlayMusicViewController {
         let arrTypes: [ViewCallsPlayerType] = [
             
             .ambient_techno_mix,
-            .dymok,
+//            .dymok,
             .boris_brejcha_thunderstorm,
-            .camelphat_dropit,
+//            .camelphat_dropit,
             .cafe_del_mare,
-            .ludacris_eelin_so_sexy,
-            .boris_brejcha_happinezz,
+//            .ludacris_eelin_so_sexy,
+//            .boris_brejcha_happinezz,
             .retroWave1,
             .retroWave2,
+            .retroWave3,
+            .retroWave4,
+            .retroWave5,
+            .retroWave7,
         ]
         
 //        let itemsFilter = dict.keys.enumerated().map {
