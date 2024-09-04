@@ -84,5 +84,7 @@
 
 "LNG_ROUTE_UNKNOWN" = "unknown";
 
-
+"LNG_ALERT_POPUP_TITLE" = "Even more two-wheelers";
+"LNG_ALERT_POPUP_TEXT" = "Did you know that Yandex Go has not only scooters, but also electric bicycles!\nYou can also ride them with a subscription or a package of minutes. Take one for yourself and your friends and ride around the city with pleasure";
+"LNG_ALERT_POPUP_BOTTOM" = "Find a bike";
 

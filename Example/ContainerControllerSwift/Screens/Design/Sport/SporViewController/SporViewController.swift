@@ -84,7 +84,7 @@ class SporViewController: StoryboardController {
             
             
             var itemsFilter: [CollectionAdapterItem] = []
-            itemsFilter.append( SportTagFilterItem(state: .init()))
+            itemsFilter.append( SportTagFilterItem(state: .init(titleText: "Filter", sport: true)))
             itemsFilter.append( SportTagSizeColorItem(state: .init(index: 1, selectted: true, icon: imgg , sport: true,  handlers: .init(onClickAt: { n in
                 self.updateTagCellIndex(n, section: 2)
             }))))

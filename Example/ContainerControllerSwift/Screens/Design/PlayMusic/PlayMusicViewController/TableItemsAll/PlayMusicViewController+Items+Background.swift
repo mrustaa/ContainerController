@@ -399,13 +399,13 @@ extension PlayMusicViewController {
         let r: CGFloat = 20
         
         let arr = ["Fun", "Romance", "Relax", "Sad", "Concentration", "Sleep"]
-        let arrRu = ["Веселая", "Романтика", "Релакс", "Грустная", "Концентрация", "Сон"]
+//        let arrRu = ["Веселая", "Романтика", "Релакс", "Грустная", "Концентрация", "Сон"]
         
         var itemsFilter: [CollectionAdapterItem] = []
         
         
         
-        itemsFilter += arrRu.map {
+        itemsFilter += arr.map {
             PlayMusicTagFilterItem(state: .init(titleText: $0))
         }
         

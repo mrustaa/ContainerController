@@ -195,7 +195,7 @@ class PlayMusicViewController: StoryboardController {
         createTableItems(.backgroundTop) +
         createTableItems(.buyStockMix) +
         createTableItems(.popular) +
-//        createBackBottomItems(other: true) +
+        createBackBottomItems(other: true) +
         createTableItems(.backgroundBottom) +
         createTableItems(.playlist) +
         

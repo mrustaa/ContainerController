@@ -7,6 +7,7 @@ extension SportTagFilterItem {
   struct State {
     var titleText: String?
       var new: Bool = false
+      var sport: Bool = false
       var radius: CGFloat?
       var handlers: Handlers = .init()
   }
@@ -46,12 +47,17 @@ class SportTagFilterCellData: CollectionAdapterCellData {
  }
   
     override public func size() -> CGSize {
-        if let text = self.state.titleText {
-            let w = sizeToFitLabel(text: text, font: UIFont.boldSystemFont(ofSize: 13), lines: 1, padding: 16).width
-            return CGSize(width: w, height: 54.0)
-        } else {
-            
+        let sport = self.state.sport
+        if sport {
             return CGSize(width: 101.0, height: 54.0)
+        } else {
+            if let text = self.state.titleText {
+                let w = sizeToFitLabel(text: text, font: UIFont.boldSystemFont(ofSize: 13), lines: 1, padding: 16).width
+                return CGSize(width: w, height: 54.0)
+            } else {
+                
+                return CGSize(width: 101.0, height: 54.0)
+            }
         }
     }
 }
@@ -80,7 +86,7 @@ class SportTagFilterCell: CollectionAdapterCell {
   // MARK: Initialize
   
  override func awakeFromNib() { 
-  
+     ccardView.layer.cornerRadius = 20
      button?.tapHideAnimation(
         views: [ccardView],
         type: .layerGray(0.5),
@@ -100,7 +106,19 @@ class SportTagFilterCell: CollectionAdapterCell {
      let new = self.data?.state.new ?? false
      rectView.isHidden = new
      rectView2.isHidden = !new
+     rectView.alpha = new ? 0 : 1
+     rectView2.alpha = new ? 1 : 0
      
+     let sport = self.data?.state.sport ?? false
+     
+     if sport {
+         rectView.alpha = 1.0
+         rectView2.alpha = 0.0
+         rectView.isHidden = false
+         rectView2.isHidden = true
+     }
+     
+     ccardView.layer.cornerRadius = data.state.radius ?? 20
      ccardView.cornerRadius = data.state.radius ?? 20
      ccardView.layoutSubviews()
      ccardView.layoutIfNeeded()

@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71D-02-iWy" userLabel=" SportTagFilter" customClass="DesignnShadowView" customModule="ContainerController" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="101" height="54"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH6-sv-F1D" userLabel="Rectangle 53" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH6-sv-F1D" userLabel="Rectangle 53" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="101" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGv-NV-fHD" userLabel="Filter">
@@ -51,7 +51,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00N-ID-97k" userLabel="Rectangle 53" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="00N-ID-97k" userLabel="Rectangle 53" customClass="DesignnView" customModule="ContainerController" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="101" height="54"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mM-tK-kLw" userLabel="Filter">
@@ -106,6 +106,11 @@
                             <constraint firstAttribute="bottom" secondItem="00N-ID-97k" secondAttribute="bottom" id="vdr-f5-Nlj"/>
                             <constraint firstAttribute="trailing" secondItem="wH6-sv-F1D" secondAttribute="trailing" id="zVp-3B-h5o"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>

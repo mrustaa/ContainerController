@@ -30,10 +30,8 @@ class ExampleTextViewController: StoryboardController {
        
         title =  alert ? "Example Alert Popup" : "Example Add TextView" 
         
-//        self.navBarHide = true
         let color1 =  #colorLiteral(red: 0.4980392157, green: 0.4980392157, blue: 0.4980392157, alpha: 1)
         view.backgroundColor = color1
-//        let img1  =   #imageLiteral(resourceName: "imgPlaylistMain")
         
         var items: [TableAdapterItem] = []
         items.append( PlaylistTitleItem(state: .init(titleText: "") ) )
@@ -43,7 +41,11 @@ class ExampleTextViewController: StoryboardController {
         if alert {
             
             let header = ExampleTextHeaderView(frame:  CGRect(x: 0, y: 0, width: ScreenSize.width, height: 337))
+            
+            header.subtitleLabel?.text = _L("LNG_ALERT_POPUP_TITLE")
+            
             let footer = ExampleTextButtonBottomView(frame: CGRect(x: 0, y: 0, width: ScreenSize.width, height: 104))
+            footer.titleLabel?.text = _L("LNG_ALERT_POPUP_BOTTOM")
             
             let topS = 227 - topbarHeight
             let ccc = addContainer(position: .init(top: topS, bottom: topS), radius: 25, header: header, footer: footer)
@@ -51,6 +53,7 @@ class ExampleTextViewController: StoryboardController {
             
             
             let textView = createTextView2()
+            textView.text =  _L("LNG_ALERT_POPUP_TEXT")
             self.container?.add(scrollView: textView)
             self.textVieww = textView
             
@@ -133,11 +136,6 @@ class ExampleTextViewController: StoryboardController {
         textView.backgroundColor = .clear
         textView.textContainerInset = .init(top: 10, left: 16, bottom: 5, right: 16)
         textView.font = UIFont.mediumSystemFont(ofSize: 15)
-        textView.text = """
-    Вы знали, что в Яндекс Go есть не только самокаты, но ещё и электровелосипеды!
-    На них тоже можно кататься по абонементу или с пакетом минут. Берите для себя и друзей и колесите по городу  с удовольствием
-    """
-        
         return textView
     }
     

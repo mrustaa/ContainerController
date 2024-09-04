@@ -7,8 +7,8 @@ class ExampleTextHeaderView: XibView {
     
     // MARK: - IBOutlets
     
-    @IBOutlet private weak var firstImageView: UIImageView?
-    @IBOutlet private weak var subtitleLabel: UILabel?
+    @IBOutlet weak var firstImageView: UIImageView?
+    @IBOutlet weak var subtitleLabel: UILabel?
     
     // @IBOutlet weak var button: DesignButton!
     

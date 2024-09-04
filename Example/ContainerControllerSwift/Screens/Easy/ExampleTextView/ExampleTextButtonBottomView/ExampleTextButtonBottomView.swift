@@ -7,7 +7,7 @@ class ExampleTextButtonBottomView: XibView {
     
     // MARK: - IBOutlets
     
-    @IBOutlet private weak var titleLabel: UILabel?
+    @IBOutlet weak var titleLabel: UILabel?
     
     // @IBOutlet weak var button: DesignButton!
     
