@@ -398,8 +398,14 @@ extension PlayMusicViewController {
         let imgg4  =   #imageLiteral(resourceName: "iconImagineProgramming")
         let r: CGFloat = 20
         
-        let arr = ["Fun", "Romance", "Relax", "Sad", "Concentration", "Sleep"]
-//        let arrRu = ["Веселая", "Романтика", "Релакс", "Грустная", "Концентрация", "Сон"]
+        let arr = [
+            _L("LNG_FILTER_FUN"),
+            _L("LNG_FILTER_ROMANCE"),
+            _L("LNG_FILTER_RELAX"),
+            _L("LNG_FILTER_SAD"),
+            _L("LNG_FILTER_CONCENTRATION"),
+            _L("LNG_FILTER_SLEEP"),
+        ]
         
         var itemsFilter: [CollectionAdapterItem] = []
         
