@@ -11,6 +11,19 @@
 
 UI Component. This is a copy swipe-panel from app: https://www.apple.com/ios/maps/
 
+It can:
+- Animately move top / middle / bottom
+- Add multiple ContainerControlleron top of each other in self.view 
+- Add any type of ScrollView: Table / Collection / Text
+- Control Gesture or Scroll
+- Pin HeaderView to top / pin FooterView to bottom,
+- Add Background Color / background blur transparency
+- Adjust cornerRadius edges
+- Adjust container shadow
+- When raised to top = Add background shadow -
+- Has the ability to adjust Left / Right margins
+- And adjust Left / Right margins for landscape state.
+
 ## Preview
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/maps.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/examples.gif)
