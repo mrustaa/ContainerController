@@ -43,15 +43,7 @@ It can:
 
 Author Urls:
 
-- [🎧 Play Music](https://dribbble.com/shots/15381326-Move-Multipurpose-HTML-Template-I)
-- [💳 Sallets](https://dribbble.com/shots/18054638-Sowallet-Mobile-Appp)
-- [💲 Crypto](https://dribbble.com/shots/24353177-Crypto-Loan-Mobile-App)
-- [💹 Buy Stock](https://dribbble.com/shots/14364583-Online-Banking-Mobile-App)
-- [💪 Sport](https://dribbble.com/shots/15544535-Sneakers-Shopping-App)
-- [🚕 Taxi](https://dribbble.com/shots/23691282-Taxi-Booking-App-Design)
-- [🗺 Map Parking](https://dribbble.com/shots/15034854-AirGarage-Mobile-App-Redesign)
-- [🃏 Custom Card](https://dribbble.com/shots/20629590-Business-Card-Mobile-IOS-App)
-- [📍 Apple.Maps App](https://apps.apple.com/us/app/apple-maps/id915056765)
+ - [Play Music](https://dribbble.com/shots/15381326-Move-Multipurpose-HTML-Template-I), [Sallets](https://dribbble.com/shots/18054638-Sowallet-Mobile-Appp), [Crypto](https://dribbble.com/shots/24353177-Crypto-Loan-Mobile-App), [Buy Stock](https://dribbble.com/shots/14364583-Online-Banking-Mobile-App), [Sport](https://dribbble.com/shots/15544535-Sneakers-Shopping-App), [Taxi](https://dribbble.com/shots/23691282-Taxi-Booking-App-Design), [Map Parking](https://dribbble.com/shots/15034854-AirGarage-Mobile-App-Redesign), [Custom Card](https://dribbble.com/shots/20629590-Business-Card-Mobile-IOS-App), [Apple.Maps App](https://apps.apple.com/us/app/apple-maps/id915056765)
 
 
 ## About the project
@@ -61,8 +53,6 @@ Examples of use (ui swipe component ContainerController) in popular design appli
 It is used in different categories apps:
 - Maps / Menu / Player Music / Market / Sports News / Taxi / Finance Banks Stock / Wallets / Analytics / Notes
 - Alerts / Popups / Notifications
-
-### Designs Screen are borrowed from Dribbble.com
 
 
 <!-- TOC -->
