@@ -3,7 +3,7 @@ import ContainerControllerSwift
 
 // MARK: - State
 
-extension CryptoTitleItem {
+extension CryptoDetailsItem {
   struct State {
     var titleText: String?
     var subtitleText: String?
@@ -17,9 +17,6 @@ extension CryptoTitleItem {
     var text9: String?
     var text10: String?
     var text11: String?
-    var text12: String?
-    var image13: UIImage?
-    var image14: UIImage?
     var handlers: Handlers = .init()
   }
   struct Handlers {
@@ -29,20 +26,20 @@ extension CryptoTitleItem {
 
 // MARK: - Item
 
-class CryptoTitleItem: TableAdapterItem {
-  init(state: CryptoTitleItem.State) {
-    let cellData =  CryptoTitleCellData(state: state)
-    super.init(cellClass: CryptoTitleCell.self, cellData: cellData)
+class CryptoDetailsItem: TableAdapterItem {
+  init(state: CryptoDetailsItem.State) {
+    let cellData =  CryptoDetailsCellData(state: state)
+    super.init(cellClass: CryptoDetailsCell.self, cellData: cellData)
   }
 }
 
 // MARK: - Data
 
-class CryptoTitleCellData: TableAdapterCellData {
+class CryptoDetailsCellData: TableAdapterCellData {
 
-  var state: CryptoTitleItem.State
+  var state: CryptoDetailsItem.State
 
-  init(state: CryptoTitleItem.State) {
+  init(state: CryptoDetailsItem.State) {
     self.state = state
     super.init()
     // self.cellClickCallback = state.handlers.onClickAt
@@ -58,7 +55,7 @@ class CryptoTitleCellData: TableAdapterCellData {
   }
   
   public static func cHeight() -> CGFloat  {
-    return 536
+    return 503.0
   }
 
   override public func canEditing() -> Bool {
@@ -68,9 +65,9 @@ class CryptoTitleCellData: TableAdapterCellData {
 
 // MARK: - Cell
 
-class CryptoTitleCell: TableAdapterCell {
+class CryptoDetailsCell: TableAdapterCell {
   
-  public var data: CryptoTitleCellData?
+  public var data: CryptoDetailsCellData?
   
   @IBOutlet private weak var titleLabel: UILabel?
   @IBOutlet private weak var subtitleLabel: UILabel?
@@ -84,19 +81,15 @@ class CryptoTitleCell: TableAdapterCell {
   @IBOutlet private weak var label9: UILabel?
   @IBOutlet private weak var label10: UILabel?
   @IBOutlet private weak var label11: UILabel?
-  @IBOutlet private weak var label12: UILabel?
-  @IBOutlet private weak var imageView13: UIImageView?
-  @IBOutlet private weak var imageView14: UIImageView?
   
-    @IBOutlet var imgIcon: UIImageView!
-    @IBOutlet override var selectedView: UIView? { didSet { } }
+  @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
   @IBOutlet var button: UIButton?
   
   override func awakeFromNib() {
     separator(hide: true)
     button?.tapHideAnimation(
-      view: imgIcon,
+      view: cardView,
       type: .alpha(0.5),
       callback: { [weak self] type in
         if type == .touchUpInside {
@@ -107,7 +100,7 @@ class CryptoTitleCell: TableAdapterCell {
   }
   
   override func fill(data: TableAdapterCellData?) {
-    guard let data = data as? CryptoTitleCellData else { return }
+    guard let data = data as? CryptoDetailsCellData else { return }
     self.data = data
     if let v = data.state.titleText { titleLabel?.text = v }
     if let v = data.state.subtitleText { subtitleLabel?.text = v }
@@ -121,9 +114,6 @@ class CryptoTitleCell: TableAdapterCell {
     if let v = data.state.text9 { label9?.text = v }
     if let v = data.state.text10 { label10?.text = v }
     if let v = data.state.text11 { label11?.text = v }
-    if let v = data.state.text12 { label12?.text = v }
-    if let v = data.state.image13 { imageView13?.image = v }
-    if let v = data.state.image14 { imageView14?.image = v }
     
   }
 }

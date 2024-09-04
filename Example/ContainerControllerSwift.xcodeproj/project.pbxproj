@@ -250,6 +250,10 @@
 		4A0FBAC22C825CD6000A06CF /* WalletsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FBA132C825CD6000A06CF /* WalletsViewController.storyboard */; };
 		4A0FBAC32C825CD6000A06CF /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FBA142C825CD6000A06CF /* WalletsViewController.swift */; };
 		4A0FBAC52C8262FB000A06CF /* ExampleAlertPopupController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A0FBAC42C8262FA000A06CF /* ExampleAlertPopupController.storyboard */; };
+		4A52471F2C887C78009E629A /* CryptoDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5247192C887C78009E629A /* CryptoDetailsCell.swift */; };
+		4A5247202C887C78009E629A /* CryptoDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A52471A2C887C78009E629A /* CryptoDetailsCell.xib */; };
+		4A5247212C887C78009E629A /* CryptoAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52471C2C887C78009E629A /* CryptoAmountCell.swift */; };
+		4A5247222C887C78009E629A /* CryptoAmountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A52471D2C887C78009E629A /* CryptoAmountCell.xib */; };
 		4A8ACA002C64EA390006B3D7 /* DesignFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AC9FF2C64EA390006B3D7 /* DesignFillView.swift */; };
 		4AB0D4EE2C82374D00903A73 /* ExampleAddCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0D4C32C82374D00903A73 /* ExampleAddCollectionViewController.storyboard */; };
 		4AB0D4EF2C82374D00903A73 /* ExampleAddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0D4C42C82374D00903A73 /* ExampleAddCollectionViewController.swift */; };
@@ -575,6 +579,10 @@
 		4A0FBA132C825CD6000A06CF /* WalletsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WalletsViewController.storyboard; sourceTree = "<group>"; };
 		4A0FBA142C825CD6000A06CF /* WalletsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
 		4A0FBAC42C8262FA000A06CF /* ExampleAlertPopupController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAlertPopupController.storyboard; sourceTree = "<group>"; };
+		4A5247192C887C78009E629A /* CryptoDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoDetailsCell.swift; sourceTree = "<group>"; };
+		4A52471A2C887C78009E629A /* CryptoDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoDetailsCell.xib; sourceTree = "<group>"; };
+		4A52471C2C887C78009E629A /* CryptoAmountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoAmountCell.swift; sourceTree = "<group>"; };
+		4A52471D2C887C78009E629A /* CryptoAmountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoAmountCell.xib; sourceTree = "<group>"; };
 		4A8AC9FF2C64EA390006B3D7 /* DesignFillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignFillView.swift; sourceTree = "<group>"; };
 		4AB0D4C32C82374D00903A73 /* ExampleAddCollectionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAddCollectionViewController.storyboard; sourceTree = "<group>"; };
 		4AB0D4C42C82374D00903A73 /* ExampleAddCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddCollectionViewController.swift; sourceTree = "<group>"; };
@@ -1311,6 +1319,8 @@
 		4A0FB93A2C825CD6000A06CF /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				4A52471E2C887C78009E629A /* CryptoAmountCell */,
+				4A52471B2C887C78009E629A /* CryptoDetailsCell */,
 				4A0FB9302C825CD6000A06CF /* CryptoHeaderView */,
 				4A0FB9332C825CD6000A06CF /* CryptoOneCell */,
 				4A0FB9362C825CD6000A06CF /* CryptoTitleCell */,
@@ -2094,18 +2104,36 @@
 		4A0FBA172C825CD6000A06CF /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				4A0FB9B82C825CD6000A06CF /* PlayMusic */,
+				4A0FB98E2C825CD6000A06CF /* Playlist */,
+				4A0FBA162C825CD6000A06CF /* Wallets */,
 				4A0FB92D2C825CD6000A06CF /* BuyStock */,
-				4A0FB93A2C825CD6000A06CF /* Crypto */,
-				4A0FB94D2C825CD6000A06CF /* CustomCard */,
 				4A0FB96B2C825CD6000A06CF /* Imagine */,
+				4A0FB9E42C825CD6000A06CF /* Sport */,
 				4A0FBA0C2C825CD6000A06CF /* Taxi */,
 				4A0FB97B2C825CD6000A06CF /* MapParking */,
-				4A0FB98E2C825CD6000A06CF /* Playlist */,
-				4A0FB9B82C825CD6000A06CF /* PlayMusic */,
-				4A0FB9E42C825CD6000A06CF /* Sport */,
-				4A0FBA162C825CD6000A06CF /* Wallets */,
+				4A0FB94D2C825CD6000A06CF /* CustomCard */,
+				4A0FB93A2C825CD6000A06CF /* Crypto */,
 			);
 			path = Design;
+			sourceTree = "<group>";
+		};
+		4A52471B2C887C78009E629A /* CryptoDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A5247192C887C78009E629A /* CryptoDetailsCell.swift */,
+				4A52471A2C887C78009E629A /* CryptoDetailsCell.xib */,
+			);
+			path = CryptoDetailsCell;
+			sourceTree = "<group>";
+		};
+		4A52471E2C887C78009E629A /* CryptoAmountCell */ = {
+			isa = PBXGroup;
+			children = (
+				4A52471C2C887C78009E629A /* CryptoAmountCell.swift */,
+				4A52471D2C887C78009E629A /* CryptoAmountCell.xib */,
+			);
+			path = CryptoAmountCell;
 			sourceTree = "<group>";
 		};
 		4AB0D4C52C82374D00903A73 /* ExampleAddCollectionView */ = {
@@ -2535,6 +2563,7 @@
 				4A0FBAB52C825CD6000A06CF /* TaxiRateEmojiCell.xib in Resources */,
 				4A0FBA8B2C825CD6000A06CF /* SportCatalogAllCell.xib in Resources */,
 				4A0FBA252C825CD6000A06CF /* MyCardsAddCardCell.xib in Resources */,
+				4A5247222C887C78009E629A /* CryptoAmountCell.xib in Resources */,
 				4AB0D4EE2C82374D00903A73 /* ExampleAddCollectionViewController.storyboard in Resources */,
 				4A0FBA332C825CD6000A06CF /* CryptoOneCell.xib in Resources */,
 				4A0FBA2D2C825CD6000A06CF /* MyCardsOneCardCell.xib in Resources */,
@@ -2599,6 +2628,7 @@
 				4A0FBA3B2C825CD6000A06CF /* CustomCardHeaderMainView.xib in Resources */,
 				4A0FBAAB2C825CD6000A06CF /* TaxiCollectionCarsCell.xib in Resources */,
 				4AB0D4F72C82374E00903A73 /* ExampleSegmentCell.xib in Resources */,
+				4A5247202C887C78009E629A /* CryptoDetailsCell.xib in Resources */,
 				4A0FBA532C825CD6000A06CF /* ImagineCollCell.xib in Resources */,
 				4AE62AD92C87F0DC00A75110 /* boris_brejcha_thunderstorm.mp3 in Resources */,
 				4A0FBA1B2C825CD6000A06CF /* BuyStockHeaderView.xib in Resources */,
@@ -2736,6 +2766,7 @@
 				4A0FBA502C825CD6000A06CF /* ImagineBigTagCell.swift in Sources */,
 				4A0FBA922C825CD6000A06CF /* SportCatalogTitileCell.swift in Sources */,
 				4A0FBAB42C825CD6000A06CF /* TaxiRateEmojiCell.swift in Sources */,
+				4A52471F2C887C78009E629A /* CryptoDetailsCell.swift in Sources */,
 				4A0FBA6E2C825CD6000A06CF /* PlayMusicItCell.swift in Sources */,
 				46ACF05D2490F52600FAAD43 /* LocalizationManager.swift in Sources */,
 				4A0FBA2E2C825CD6000A06CF /* MyCardsTitileCell.swift in Sources */,
@@ -2747,6 +2778,7 @@
 				4A0FBA782C825CD6000A06CF /* PlayMusicTagPickerCell.swift in Sources */,
 				46ACF0922490F52600FAAD43 /* MapsContainerController.swift in Sources */,
 				4A0FBA482C825CD6000A06CF /* ImagineHeaderSwitchCell.swift in Sources */,
+				4A5247212C887C78009E629A /* CryptoAmountCell.swift in Sources */,
 				4A0FBA832C825CD6000A06CF /* PlayMusicViewController+ChangeRedBlueColorAll.swift in Sources */,
 				46ACF0632490F52600FAAD43 /* MapsCollectionCellView.swift in Sources */,
 				4A0FBA8E2C825CD6000A06CF /* SportCatalogFilterCell.swift in Sources */,

@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="64" id="3fV-gx-3PF" customClass="CryptoTitleCell" customModule="ContainerController" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="361" id="3fV-gx-3PF" customClass="CryptoTitleCell" customModule="ContainerController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fV-gx-3PF" id="LPi-jC-3MF">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3fV-gx-3PF" id="LPi-jC-3MF">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33d-WP-EMo" userLabel=" CryptoTitle" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-89-aXt" userLabel="Frame 89538">
                                 <rect key="frame" x="9" y="140" width="358" height="156"/>
@@ -236,9 +236,9 @@
                             <constraint firstItem="hRH-mz-X34" firstAttribute="top" secondItem="33d-WP-EMo" secondAttribute="top" constant="92" id="5Gs-qM-hXw"/>
                             <constraint firstItem="P3d-YA-cJp" firstAttribute="leading" secondItem="ZN7-vw-BBZ" secondAttribute="trailing" constant="3.5" id="6EI-9v-mbm"/>
                             <constraint firstAttribute="trailing" secondItem="0x2-89-aXt" secondAttribute="trailing" constant="8" id="6an-j2-LGb"/>
+                            <constraint firstItem="0x2-89-aXt" firstAttribute="top" secondItem="bOb-tf-Zlo" secondAttribute="bottom" constant="4" id="6r4-Hl-PWg"/>
                             <constraint firstItem="pOR-Cf-Lo6" firstAttribute="top" secondItem="33d-WP-EMo" secondAttribute="top" constant="65.5" id="G2R-Sz-Leb"/>
                             <constraint firstItem="bOb-tf-Zlo" firstAttribute="leading" secondItem="33d-WP-EMo" secondAttribute="leading" constant="18" id="TIC-Yd-d2h"/>
-                            <constraint firstAttribute="bottom" secondItem="0x2-89-aXt" secondAttribute="bottom" id="VrY-aU-QbJ"/>
                             <constraint firstItem="ZN7-vw-BBZ" firstAttribute="top" secondItem="QDl-Pg-j87" secondAttribute="bottom" constant="13" id="Yvy-wC-nEr"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bOb-tf-Zlo" secondAttribute="trailing" constant="18" id="b48-Q0-8Em"/>
                             <constraint firstItem="ZN7-vw-BBZ" firstAttribute="leading" secondItem="33d-WP-EMo" secondAttribute="leading" constant="16" id="eiN-pu-cye"/>
@@ -249,6 +249,23 @@
                             <constraint firstItem="QDl-Pg-j87" firstAttribute="leading" secondItem="33d-WP-EMo" secondAttribute="leading" constant="16" id="pM0-GP-svi"/>
                             <constraint firstItem="pOR-Cf-Lo6" firstAttribute="leading" secondItem="33d-WP-EMo" secondAttribute="leading" constant="103" id="qfh-HY-dWh"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="grColor1">
+                                <color key="value" red="0.1333333333" green="0.21960784310000001" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="grColor2">
+                                <color key="value" red="0.043137254899999998" green="0.054901960780000002" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="grStartPoint">
+                                <point key="value" x="0.0" y="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="grEndPoint">
+                                <point key="value" x="0.0" y="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="grColor3">
+                                <color key="value" red="0.043137254901960784" green="0.054901960784313725" blue="0.24313725490196078" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
@@ -277,7 +294,7 @@
                 <outlet property="subtitleLabel" destination="wjx-NE-tWI" id="qrY-ud-7Fm"/>
                 <outlet property="titleLabel" destination="r4w-l4-qDm" id="G9i-vU-iBL"/>
             </connections>
-            <point key="canvasLocation" x="-100" y="-48.575712143928037"/>
+            <point key="canvasLocation" x="-100" y="42.728635682158924"/>
         </tableViewCell>
     </objects>
     <resources>

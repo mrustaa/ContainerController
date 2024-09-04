@@ -53,6 +53,10 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbr-OH-Bds">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
@@ -60,11 +64,15 @@
                     <constraint firstItem="MbP-dL-b7J" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" constant="16" id="CVY-pT-bde"/>
                     <constraint firstItem="rzf-Pz-Z0t" firstAttribute="centerY" secondItem="Qrk-n6-aPT" secondAttribute="centerY" id="K6u-Hl-rVK"/>
                     <constraint firstItem="y4e-nG-Zu6" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" constant="16" id="QFm-sF-aRI"/>
+                    <constraint firstItem="Vbr-OH-Bds" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" id="QR1-bs-lr1"/>
+                    <constraint firstAttribute="trailing" secondItem="Vbr-OH-Bds" secondAttribute="trailing" id="QUK-HO-u0U"/>
                     <constraint firstItem="y4e-nG-Zu6" firstAttribute="top" secondItem="erD-8k-fq0" secondAttribute="bottom" constant="12" id="QZO-jk-KTF"/>
+                    <constraint firstAttribute="bottom" secondItem="Vbr-OH-Bds" secondAttribute="bottom" id="SVO-8W-bz2"/>
                     <constraint firstItem="MbP-dL-b7J" firstAttribute="top" secondItem="Qrk-n6-aPT" secondAttribute="top" constant="12" id="bPX-J8-yKW"/>
                     <constraint firstItem="erD-8k-fq0" firstAttribute="trailing" secondItem="Qrk-n6-aPT" secondAttribute="trailingMargin" constant="16" id="coB-XR-Ksl"/>
                     <constraint firstItem="erD-8k-fq0" firstAttribute="leading" secondItem="Qrk-n6-aPT" secondAttribute="leading" constant="16" id="fId-PQ-DA7"/>
                     <constraint firstAttribute="bottom" secondItem="y4e-nG-Zu6" secondAttribute="bottom" id="lV9-iJ-0gZ"/>
+                    <constraint firstItem="Vbr-OH-Bds" firstAttribute="top" secondItem="Qrk-n6-aPT" secondAttribute="top" id="stb-Id-OY3"/>
                     <constraint firstAttribute="trailing" secondItem="rzf-Pz-Z0t" secondAttribute="trailing" constant="16" id="tLT-Xz-ZX8"/>
                     <constraint firstItem="MbP-dL-b7J" firstAttribute="trailing" secondItem="Qrk-n6-aPT" secondAttribute="trailingMargin" constant="16" id="yAB-Bt-Wbb"/>
                 </constraints>
@@ -72,6 +80,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="iconFigureVView" destination="rzf-Pz-Z0t" id="TZl-ZS-Co1"/>
+                <outlet property="selectedView" destination="Vbr-OH-Bds" id="0lB-r8-sw8"/>
                 <outlet property="separatorHeightConstraint" destination="Mwb-A9-GWL" id="PQz-KX-a42"/>
                 <outlet property="separatorView" destination="y4e-nG-Zu6" id="iw9-9r-qpC"/>
                 <outlet property="subtitleLabel" destination="erD-8k-fq0" id="Ggx-EQ-sNx"/>

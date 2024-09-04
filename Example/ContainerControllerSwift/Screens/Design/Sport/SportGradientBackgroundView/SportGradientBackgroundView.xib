@@ -16,11 +16,11 @@
         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0OD-IZ-0yw" userLabel=" SportGradientBackground">
             <rect key="frame" x="0.0" y="0.0" width="376" height="833"/>
             <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fl-Kj-k7f" userLabel="Frame 89579">
-                    <rect key="frame" x="0.0" y="683" width="376" height="200"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Fl-Kj-k7f" userLabel="Frame 89579">
+                    <rect key="frame" x="0.0" y="633" width="376" height="350"/>
                     <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="200" id="fxp-Kv-jOF"/>
+                        <constraint firstAttribute="height" constant="350" id="fxp-Kv-jOF"/>
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OoQ-Gx-J9P" userLabel="Frame 89579">
@@ -194,7 +194,7 @@
                 <constraint firstAttribute="bottom" secondItem="OoQ-Gx-J9P" secondAttribute="bottom" id="5qQ-Er-Q5G"/>
                 <constraint firstItem="Lft-kx-83H" firstAttribute="top" secondItem="0OD-IZ-0yw" secondAttribute="top" id="80a-Gf-e1w"/>
                 <constraint firstAttribute="trailing" secondItem="2Fl-Kj-k7f" secondAttribute="trailing" id="DD4-Zl-Yze"/>
-                <constraint firstAttribute="bottom" secondItem="2Fl-Kj-k7f" secondAttribute="bottom" constant="-50" id="I29-zL-sca"/>
+                <constraint firstAttribute="bottom" secondItem="2Fl-Kj-k7f" secondAttribute="bottom" constant="-150" id="I29-zL-sca"/>
                 <constraint firstItem="2Fl-Kj-k7f" firstAttribute="leading" secondItem="0OD-IZ-0yw" secondAttribute="leading" id="Isr-PM-BDd"/>
                 <constraint firstAttribute="trailing" secondItem="OoQ-Gx-J9P" secondAttribute="trailing" id="MH5-U8-M5x"/>
                 <constraint firstItem="NtL-uj-xDO" firstAttribute="top" secondItem="0OD-IZ-0yw" secondAttribute="top" id="Pd7-6c-6zS"/>

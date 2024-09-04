@@ -66,18 +66,6 @@ class ViewController: UIViewController {
             TitleTextxItem(title: "Multiple components in 1 screen anim", subtitle: "Custom Card (Notes)", clss: CustomCardViewController.self, img:   imgAppCustomCard),
             TitleTextxItem(title:nil, subtitle: "Crypto", clss: CryptoViewController.self, img:   imgAppCrypto),
             
-            
-//            TitleTextxItem(title: "🔴 hard +Apple.Maps", subtitle: "Maps", clss: MapsViewController.self, img: imggAppleMaps),
-//            TitleTextxItem(title: "🔴 hard +Youtube.Music +Apple.Music", subtitle: "PlayMusic ", clss: PlayMusicViewController.self, img: imggPlayMusic),
-//            
-//            TitleTextxItem(title: "🟠 medium | Multiple components in 1 screen", subtitle: "Wallets", clss: WalletsViewController.self, img:   imgAppWallets1),
-//            TitleTextxItem(title:"🟠 medium", subtitle: "Buy Stock", clss: BuyStockViewController.self, img:   imgAppBuyStock),
-//            TitleTextxItem(title:"🟠 medium", subtitle: "Sport", clss: SporViewController.self, img:   imgAppSport),
-//            TitleTextxItem(title:"🟠 medium", subtitle: "Taxi", clss: TaxiViewController.self, img: imggTaxi),
-//            TitleTextxItem(title:"🟢 easy", subtitle: "Map Parking", clss: MapParkingViewController.self, img:   imgAppMapParking),
-//            
-//            TitleTextxItem(title: "🟠 medium | Multiple components in 1 screen anim", subtitle: "Custom Card (Notes)", clss: CustomCardViewController.self, img:   imgAppCustomCard),
-//            TitleTextxItem(title:"🟢 easy", subtitle: "Crypto", clss: CryptoViewController.self, img:   imgAppCrypto),
         ]
         
         tableView?.set(items: items, animated: true)
