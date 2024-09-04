@@ -238,12 +238,12 @@ class PlaylistTitleCell: TableAdapterCell {
           mainCardView.isHidden = true
       }
       
-      let text =  data.state.titleText
-      let calcHeight = sizeToFitLabel(
-        text:text ,
-        font: UIFont.boldSystemFont(ofSize: data.state.blackType ? 19 : 25),
-        padding: data.state.blackType ? 15 : 28
-      )
+//      let text =  data.state.titleText
+//      let calcHeight = sizeToFitLabel(
+//        text:text ,
+//        font: UIFont.boldSystemFont(ofSize: data.state.blackType ? 19 : 25),
+//        padding: data.state.blackType ? 15 : 28
+//      )
 //      let plus = (calcHeight.height > 200) ? 24 : 0
       
       mainCardBottom.constant =  data.state.blackType ? (6) : 16

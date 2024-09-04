@@ -111,7 +111,8 @@ class SportTagSizeColorCell: CollectionAdapterCell, TagUpdateCellDelegate {
      button?.tapHideAnimation(
         views: [unSelectedView,
                 backCenterColorView,
-                sselectedView],
+                sselectedView
+               ],
         type: .layerGray(0.5),
         callback: { [weak self] type in
             if type == .touchUpInside {
@@ -145,6 +146,9 @@ class SportTagSizeColorCell: CollectionAdapterCell, TagUpdateCellDelegate {
      self.unSelectedView.cornerRadius = r
      self.backColorView.cornerRadius = r
      self.sselectedView.cornerRadius = r
+     
+     self.sselectedView.layer.cornerRadius = r
+     
      self.sselectedView2?.cornerRadius = r
      
      self.unSelectedView.layoutSubviews()
