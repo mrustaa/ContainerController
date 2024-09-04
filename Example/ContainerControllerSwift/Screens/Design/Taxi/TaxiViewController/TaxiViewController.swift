@@ -217,7 +217,7 @@ class TaxiViewController: StoryboardController {
             }
         })) ) )
         
-        let ccc = addContainer(position: .init(top: 266, bottom: 184), radius: 20, items: itemsC, addBackShadow: true, header: header)
+        let ccc = addContainer(position: .init(top: 266 + ScreenSize.isIphoneXBottom, bottom: 184 + ScreenSize.isIphoneXBottom), radius: 20, items: itemsC, addBackShadow: true, header: header)
         
         c1 = ccc.0
         ct1 = ccc.1
@@ -311,7 +311,7 @@ class TaxiViewController: StoryboardController {
                         self.ct2?.set(items: self.updateTwoContainer(rate: false))
                         
                         
-                        self.c2?.set(top: 429)
+                        self.c2?.set(top: 429 + ScreenSize.isIphoneXBottom)
                         
                         main(delay: 0.5) {
                             self.c2?.move(type: .top)
@@ -328,7 +328,7 @@ class TaxiViewController: StoryboardController {
                         self.c2?.move(type: .hide)
                         
                         self.ct2?.set(items: self.updateTwoContainer(rate: true))
-                        self.c2?.set(top: 166)
+                        self.c2?.set(top: 166 + ScreenSize.isIphoneXBottom)
                         
                         
                         main(delay: 0.5) {
@@ -359,7 +359,7 @@ class TaxiViewController: StoryboardController {
 //            self.c2?.move(type: .hide)
 //        })) ) )
         
-        let ccc = addContainer(position: .init(top: 429, bottom: 20), radius: 20, items: itemsC, addBackShadow: true, header: header) // 380
+        let ccc = addContainer(position: .init(top: 429 + ScreenSize.isIphoneXBottom, bottom: 20 + ScreenSize.isIphoneXBottom), radius: 20, items: itemsC, addBackShadow: true, header: header) // 380
         
         c2 = ccc.0
         ct2 = ccc.1

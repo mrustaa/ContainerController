@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -13,15 +13,15 @@
             <objects>
                 <viewController storyboardIdentifier="WalletsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0pK-fd-Zxx" customClass="WalletsViewController" customModule="ContainerController" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LGN-78-TaW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GY3-rR-bqm" customClass="TableAdapterView" customModule="ContainerControllerSwift">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgWalletsFooter" translatesAutoresizingMaskIntoConstraints="NO" id="Zpw-I7-z2U">
-                                <rect key="frame" x="0.0" y="469" width="375" height="248"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgWalletsFooter" translatesAutoresizingMaskIntoConstraints="NO" id="Zpw-I7-z2U">
+                                <rect key="frame" x="0.0" y="698" width="414" height="248"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="248" id="ABt-wR-4XY"/>
                                 </constraints>
@@ -36,7 +36,6 @@
                             <constraint firstItem="GY3-rR-bqm" firstAttribute="top" secondItem="LGN-78-TaW" secondAttribute="top" id="NQS-8W-XO5"/>
                             <constraint firstAttribute="bottom" secondItem="GY3-rR-bqm" secondAttribute="bottom" id="Q8h-WC-14W"/>
                             <constraint firstItem="GY3-rR-bqm" firstAttribute="top" secondItem="LGN-78-TaW" secondAttribute="top" id="UdW-4w-Bw6"/>
-                            <constraint firstItem="GY3-rR-bqm" firstAttribute="bottom" secondItem="6qi-GV-N23" secondAttribute="bottom" id="YVb-KH-fCs"/>
                             <constraint firstItem="GY3-rR-bqm" firstAttribute="leading" secondItem="6qi-GV-N23" secondAttribute="leading" id="a25-fx-qP0"/>
                             <constraint firstAttribute="trailing" secondItem="Zpw-I7-z2U" secondAttribute="trailing" id="b0q-ma-hsW"/>
                             <constraint firstItem="Zpw-I7-z2U" firstAttribute="leading" secondItem="6qi-GV-N23" secondAttribute="leading" id="iz9-xU-Z8Q"/>

@@ -152,12 +152,14 @@ class PlayMusicViewController: StoryboardController {
         let header2 = PlayMusicItGribView()
         self.container2HeaderView = header2
         let gradient2 = PlayMusicItGradientView()
+        gradient2.height = ScreenSize.height 
         let items2 = createTableItems(.playpanel)
+        let color2 =  #colorLiteral(red: 0.1607843137, green: 0.1333333333, blue: 0.1960784314, alpha: 1)
         createPlayPanelContainer(
             position: .init(top: 0, bottom: 118),
             radius: 0,
             items: items2,
-            containerColor: .clear,
+            containerColor: color2,// .clear,
             addBackShadow: true,
             scrollInsets: .init(top: 0, left: 0, bottom: -50, right: 0),
             header: header2,
