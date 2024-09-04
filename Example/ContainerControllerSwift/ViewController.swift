@@ -54,8 +54,8 @@ class ViewController: UIViewController {
             
            
             
-            TitleTextxItem(title: "+Apple.Maps", subtitle: "🔴  Maps", clss: MapsViewController.self, img: imggAppleMaps),
-            TitleTextxItem(title: "+Youtube.Music +Apple.Music", subtitle: "🔴 PlayMusic ", clss: PlayMusicViewController.self, img: imggPlayMusic),
+            TitleTextxItem(title: "+Apple.Maps", subtitle: "Maps", clss: MapsViewController.self, img: imggAppleMaps),
+            TitleTextxItem(title: "+Youtube.Music +Apple.Music", subtitle: "PlayMusic ", clss: PlayMusicViewController.self, img: imggPlayMusic),
             
             TitleTextxItem(title: "Multiple components in 1 screen", subtitle: "Wallets", clss: WalletsViewController.self, img:   imgAppWallets1),
             TitleTextxItem(title:nil, subtitle: "Buy Stock", clss: BuyStockViewController.self, img:   imgAppBuyStock),

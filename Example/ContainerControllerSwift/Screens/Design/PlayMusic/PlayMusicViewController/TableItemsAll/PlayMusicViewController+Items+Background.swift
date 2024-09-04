@@ -66,7 +66,11 @@ extension PlayMusicViewController {
         
         
         var items: [TableAdapterItem] = []
-        items.append( PlaylistTitleItem(state: .init( titleText: "New Releases", subtitleText: "More", redColor: self.redColor) ) )
+        items.append( PlaylistTitleItem(state: .init( titleText: "New Releases", subtitleText: "More", redColor: self.redColor, handlers: .init(menuClickAt: {
+            
+            
+            self.back()
+        })) ) )
         items.append(MyCardsCollectionItem(state: .init(alpha: 0.85, items: self.createCollectionItems(.playMusicTag), insets: insets3)))
         
         // Likes Views

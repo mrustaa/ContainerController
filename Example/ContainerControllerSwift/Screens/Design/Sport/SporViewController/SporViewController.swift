@@ -25,6 +25,9 @@ class SporViewController: StoryboardController {
         
         let fr =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: ScreenSize.height)
         let header = SportSelectProductView()
+        header.onClickAt = {
+            self.back()
+        }
         bbackView = header
         header.frame = fr
         

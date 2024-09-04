@@ -87,6 +87,12 @@ class MenuContainerController: ContainerController, ContainerControllerDelegate 
         tableView = TableAdapterView(frame: CGRect(x: 0, y: 0, width: ContainerDevice.width, height: 0), style: .plain)
         tableView.set(items: items, animated: true)
         tableView.separatorColor = Colors.rgba(128, 128, 128, 0.6)
+        
+        tableView.selectIndexCallback = { index in
+            if index == 6 {
+                self.menuDelegate?.menuContainerControllerBack()
+            }
+        }
     }
     
     
@@ -116,7 +122,8 @@ class MenuContainerController: ContainerController, ContainerControllerDelegate 
         
         items.append( MapsMenuTextCellItem(title: _L("LNG_MAPS_SECTION_MARK_MY_LOCATION")) )
         items.append( MapsMenuTextCellItem(title: _L("LNG_MAPS_LOCATION_ADD_A_MISSING_PLACE")) )
-        items.append( MapsMenuTextCellItem(title: _L("LNG_MAPS_SECTION_REPORT_AN_ISSUE"), separator: false) )
+        items.append( MapsMenuTextCellItem(title: _L("LNG_MAPS_SECTION_REPORT_AN_ISSUE")) )
+        items.append( MapsMenuTextCellItem(title: _L("< Back"), separator: false) )
         
         items.append( MapsMenuSpaceCellItem() )
         // items.append( MapsMenuSpaceCellItem(cellHeight: 100) )

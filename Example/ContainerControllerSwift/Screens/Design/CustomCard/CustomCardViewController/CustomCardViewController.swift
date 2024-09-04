@@ -120,6 +120,9 @@ class CustomCardViewController: StoryboardController {
             
             let fr =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: 161)
             let header = CustomCardHeaderMainView()
+            header.onClickAt = {
+                self.back()
+            }
             header.frame = fr
             
             let fr3 =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: ScreenSize.height)

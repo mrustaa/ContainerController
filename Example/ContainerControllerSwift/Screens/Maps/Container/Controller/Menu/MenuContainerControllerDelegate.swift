@@ -16,4 +16,6 @@ protocol MenuContainerControllerDelegate  {
     func menuContainerController(closeComplection menuContainerController: MenuContainerController)
     
     func menuContainerController(segment menuContainerController: MenuContainerController, selectedIndex: Int)
+    
+    func menuContainerControllerBack()
 }

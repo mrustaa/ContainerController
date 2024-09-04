@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCardHeaderMainView" customModule="ContainerController" customModuleProvider="target">
             <connections>
+                <outlet property="btn" destination="SX8-WU-9Kd" id="7xU-Xi-d9T"/>
                 <outlet property="imageView2" destination="IoR-QA-EBe" id="7HR-lM-YRg"/>
                 <outlet property="subtitleLabel" destination="jXX-zE-i5L" id="MnE-Wy-gnA"/>
                 <outlet property="titleLabel" destination="NXv-R5-4Zn" id="0ql-zP-hEr"/>
@@ -23,28 +24,37 @@
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXv-R5-4Zn" userLabel="I am a">
-                    <rect key="frame" x="18" y="27" width="248" height="23"/>
+                    <rect key="frame" x="18" y="27" width="227" height="23"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="23" id="oi6-bk-eN4"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999403953552" colorSpace="custom" customColorSpace="sRGB"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UI / UX Designer" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-zE-i5L" userLabel="UI : UX Designer">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-zE-i5L" userLabel="UI : UX Designer">
                     <rect key="frame" x="18" y="56" width="288" height="101"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="101" id="PsN-KX-87t"/>
                     </constraints>
+                    <string key="text">UI / UX
+Designer</string>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgCustomCardSync" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-QA-EBe" userLabel="imgCustomCardSync">
-                    <rect key="frame" x="280" y="29" width="19" height="19"/>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconTaxiBack" translatesAutoresizingMaskIntoConstraints="NO" id="IoR-QA-EBe" userLabel="imgCustomCardSync">
+                    <rect key="frame" x="259" y="20" width="45" height="45"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="19" id="6uK-ZK-8dP"/>
-                        <constraint firstAttribute="height" constant="19" id="9wA-Xk-8xK"/>
+                        <constraint firstAttribute="width" constant="45" id="6uK-ZK-8dP"/>
+                        <constraint firstAttribute="height" constant="45" id="9wA-Xk-8xK"/>
                     </constraints>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SX8-WU-9Kd">
+                    <rect key="frame" x="248" y="16" width="60" height="57"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="EcW-4U-doM"/>
+                        <constraint firstAttribute="width" constant="60" id="Z3O-2x-i4V"/>
+                    </constraints>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="qLx-lG-5e1" firstAttribute="leading" secondItem="F8G-5p-Lzy" secondAttribute="leading" id="4Hz-r5-a6b"/>
@@ -56,15 +66,17 @@
                 <constraint firstItem="jXX-zE-i5L" firstAttribute="top" secondItem="NXv-R5-4Zn" secondAttribute="bottom" constant="6" id="PIj-ts-ehQ"/>
                 <constraint firstAttribute="bottom" secondItem="qLx-lG-5e1" secondAttribute="bottom" id="RIO-Sm-kUe"/>
                 <constraint firstItem="jXX-zE-i5L" firstAttribute="leading" secondItem="F8G-5p-Lzy" secondAttribute="leading" constant="18" id="WcT-8v-oY7"/>
-                <constraint firstAttribute="trailing" secondItem="IoR-QA-EBe" secondAttribute="trailing" constant="25" id="X5c-t8-FWm"/>
+                <constraint firstAttribute="trailing" secondItem="IoR-QA-EBe" secondAttribute="trailing" constant="20" id="X5c-t8-FWm"/>
                 <constraint firstItem="qLx-lG-5e1" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" id="fML-xd-ugt"/>
-                <constraint firstItem="IoR-QA-EBe" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" constant="29" id="s0H-AX-zIC"/>
+                <constraint firstItem="SX8-WU-9Kd" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" constant="16" id="jQS-au-t2G"/>
+                <constraint firstItem="IoR-QA-EBe" firstAttribute="top" secondItem="F8G-5p-Lzy" secondAttribute="top" constant="20" id="s0H-AX-zIC"/>
+                <constraint firstAttribute="trailing" secondItem="SX8-WU-9Kd" secondAttribute="trailing" constant="16" id="xS9-kp-L2Y"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-99.200000000000003" y="-48.125937031484263"/>
         </view>
     </objects>
     <resources>
-        <image name="imgCustomCardSync" width="57" height="57"/>
+        <image name="iconTaxiBack" width="108" height="108"/>
     </resources>
 </document>

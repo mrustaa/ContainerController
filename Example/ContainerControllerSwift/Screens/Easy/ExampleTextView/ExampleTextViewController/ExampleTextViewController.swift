@@ -90,6 +90,9 @@ class ExampleTextViewController: StoryboardController {
                 
                 let fr =  CGRect(x: 0, y: 0, width: ScreenSize.width, height: 161)
                 let header = CustomCardHeaderMainView()
+                header.onClickAt = {
+                    self.back()
+                }
                 header.titleLabel?.text = "HeaderView"
                 header.subtitleLabel?.text = "Added UITextView"
                 header.frame = fr

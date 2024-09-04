@@ -13,6 +13,7 @@ extension WalletsTitleItem {
   }
   struct Handlers {
     var onClickAt: (()->(Void))?
+      var backAt: (()->(Void))?
   }
 }
 
@@ -60,8 +61,9 @@ class WalletsTitleCellData: TableAdapterCellData {
 class WalletsTitleCell: TableAdapterCell {
   
   public var data: WalletsTitleCellData?
-  
-  @IBOutlet private weak var firstImageView: UIImageView?
+    @IBOutlet var moreButton: UIButton!
+    
+  @IBOutlet  weak var firstImageView: UIImageView!
   @IBOutlet private weak var subtitleLabel: UILabel?
   @IBOutlet private weak var label2: UILabel?
   @IBOutlet private weak var label3: UILabel?
@@ -72,6 +74,18 @@ class WalletsTitleCell: TableAdapterCell {
   
   override func awakeFromNib() {
     separator(hide: true)
+      
+      
+      
+      moreButton?.tapHideAnimation(
+        views: [firstImageView],
+        type: .alpha(0.5),
+        callback: { [weak self] type in
+            if type == .touchUpInside {
+                self?.data?.state.handlers.backAt?()
+            }
+        }
+      )
     button?.tapHideAnimation(
       view: cardView,
       type: .alpha(0.5),

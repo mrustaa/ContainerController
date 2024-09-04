@@ -88,14 +88,15 @@ class CryptoTitleCell: TableAdapterCell {
   @IBOutlet private weak var imageView13: UIImageView?
   @IBOutlet private weak var imageView14: UIImageView?
   
-  @IBOutlet override var selectedView: UIView? { didSet { } }
+    @IBOutlet var imgIcon: UIImageView!
+    @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
   @IBOutlet var button: UIButton?
   
   override func awakeFromNib() {
     separator(hide: true)
     button?.tapHideAnimation(
-      view: cardView,
+      view: imgIcon,
       type: .alpha(0.5),
       callback: { [weak self] type in
         if type == .touchUpInside {

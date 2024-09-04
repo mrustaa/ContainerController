@@ -21,6 +21,16 @@ class MapParkingViewController: StoryboardController {
         mapView.delegate = self
         self.navBarHide = true
         view.backgroundColor = .white
+        
+        
+        let mapBtn = TaxiMapButtonView()
+        mapBtn.onClickAt = {
+            self.back()
+        }
+        mapBtn.frame = CGRect(x: 12, y: 50, width: 44, height: 44)
+        view.addSubview(mapBtn)
+        
+        
 //        let color1 =  #colorLiteral(red: 0.1019607843, green: 0.168627451, blue: 0.4588235294, alpha: 1)
 //        let img1  =   #imageLiteral(resourceName: "imgPlaylistMain")
         

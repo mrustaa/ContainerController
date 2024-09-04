@@ -18,7 +18,9 @@ class CryptoViewController: StoryboardController {
         
         
         var items: [TableAdapterItem] = []
-        items.append( CryptoTitleItem(state: .init() ) )
+        items.append( CryptoTitleItem(state: .init(handlers: .init(onClickAt: {
+            self.back()
+        })) ) )
         tableView.set(items: items, animated: true)
         
         

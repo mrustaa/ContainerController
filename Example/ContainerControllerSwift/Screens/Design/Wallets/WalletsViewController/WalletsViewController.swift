@@ -53,7 +53,9 @@ class WalletsViewController: StoryboardController {
         
         let imgImagine  =  #imageLiteral(resourceName: "iconWalletsMore")
         var items: [TableAdapterItem] = []
-        items.append( WalletsTitleItem(state: .init(firstImage: imgImagine, subtitleText: "My Wallets" , text2: "$55,849.20", text3: "Total balance") ) )
+        items.append( WalletsTitleItem(state: .init(firstImage: imgImagine, subtitleText: "My Wallets" , text2: "$55,849.20", text3: "Total balance", handlers: .init(backAt: {
+            self.back()
+        })) ) )
         tableView.set(items: items, animated: true)
     }
     

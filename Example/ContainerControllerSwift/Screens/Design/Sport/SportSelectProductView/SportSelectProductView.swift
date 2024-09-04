@@ -13,13 +13,26 @@ class SportSelectProductView: XibView {
     @IBOutlet weak var firstImageView2: UIImageView?
     @IBOutlet weak var firstImageView3: UIImageView?
     @IBOutlet weak var firstImageView4: UIImageView?
-    @IBOutlet weak var secondImageView: UIImageView?
+    @IBOutlet var secondImageView: UIImageView!
     @IBOutlet private weak var imageView2: UIImageView?
     
+    var onClickAt: (()->(Void))?
+    
     // @IBOutlet weak var button: DesignButton!
+    @IBOutlet var backButton: UIButton!
     
     override func loadedFromNib() {
         buttonClickNumber(0)
+        
+        backButton?.tapHideAnimation(
+            view: secondImageView,
+            type: .alpha(0.5), //  .androidStyle(color: .systemPink),
+            callback: { [weak self] type in
+                if type == .touchUpInside {
+                    self?.onClickAt?()
+                }
+            }
+        )
     }
     
     

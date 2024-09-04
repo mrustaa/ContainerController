@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SportSelectProductView" customModule="ContainerController" customModuleProvider="target">
             <connections>
+                <outlet property="backButton" destination="jMU-aW-MmM" id="KnD-s1-Mvz"/>
                 <outlet property="firstImageView" destination="VBh-eD-smF" id="ydU-g8-mDH"/>
                 <outlet property="firstImageView2" destination="LPv-AR-xyg" id="Ib5-oE-kQw"/>
                 <outlet property="firstImageView3" destination="fAQ-1N-Hgr" id="Twc-jp-R1Z"/>
@@ -16,7 +17,7 @@
                 <outlet property="imageView2" destination="xaI-Xu-wux" id="bvd-Kj-tyl"/>
                 <outlet property="imagesView" destination="g00-Wg-yON" id="Mal-dI-Gm7"/>
                 <outlet property="paddingTopImg" destination="SZD-Cw-NEw" id="Z3W-TC-tul"/>
-                <outlet property="secondImageView" destination="a8L-nP-Rks" id="Peh-vu-U4O"/>
+                <outlet property="secondImageView" destination="a8L-nP-Rks" id="Qu6-RU-AfI"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -99,6 +100,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconSportBack" translatesAutoresizingMaskIntoConstraints="NO" id="a8L-nP-Rks" userLabel="iconSportBack">
                             <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
                             <constraints>
+                                <constraint firstAttribute="height" constant="35" id="4Lz-ia-IC6"/>
                                 <constraint firstAttribute="width" constant="35" id="Fyl-Dk-EwO"/>
                             </constraints>
                         </imageView>
@@ -119,6 +121,13 @@
                         <constraint firstItem="a8L-nP-Rks" firstAttribute="top" secondItem="sxK-KX-LdW" secondAttribute="top" id="oBa-it-FoN"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMU-aW-MmM">
+                    <rect key="frame" x="16" y="35" width="65" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="SAs-Ei-Drs"/>
+                        <constraint firstAttribute="height" constant="67" id="xhe-Si-Zre"/>
+                    </constraints>
+                </button>
             </subviews>
             <constraints>
                 <constraint firstItem="g00-Wg-yON" firstAttribute="leading" secondItem="WSa-7Y-B3F" secondAttribute="leading" constant="40" id="2G7-xk-SSG"/>
@@ -130,10 +139,12 @@
                 <constraint firstItem="EKH-t8-VQ3" firstAttribute="leading" secondItem="WSa-7Y-B3F" secondAttribute="leading" id="ZiD-YZ-HLh"/>
                 <constraint firstAttribute="trailing" secondItem="sxK-KX-LdW" secondAttribute="trailing" constant="26" id="hIR-ph-H1c"/>
                 <constraint firstAttribute="bottom" secondItem="EKH-t8-VQ3" secondAttribute="bottom" id="hgf-dc-rdR"/>
+                <constraint firstItem="jMU-aW-MmM" firstAttribute="leading" secondItem="WSa-7Y-B3F" secondAttribute="leading" constant="16" id="q8I-iI-jk8"/>
+                <constraint firstItem="jMU-aW-MmM" firstAttribute="top" secondItem="WSa-7Y-B3F" secondAttribute="top" constant="35" id="viQ-WT-uXS"/>
                 <constraint firstAttribute="trailing" secondItem="EKH-t8-VQ3" secondAttribute="trailing" id="w7x-Eb-i9G"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-100" y="-150"/>
+            <point key="canvasLocation" x="-100" y="-150.22488755622189"/>
         </view>
     </objects>
     <resources>

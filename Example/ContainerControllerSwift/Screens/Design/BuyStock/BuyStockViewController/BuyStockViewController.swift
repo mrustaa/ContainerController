@@ -121,7 +121,9 @@ class BuyStockViewController: StoryboardController {
         
         
         var items: [TableAdapterItem] = []
-        items.append( BuyStockTitleItem(state: .init(image2: imgNikeStore) ) )
+        items.append( BuyStockTitleItem(state: .init(image2: imgNikeStore, handlers: .init(onClickAt: {
+            self.back()
+        }))))
         items.append( BuyStockGraphItem(state: .init(image9: imgGraphLine, image10: imgGraph) ) )
         tableView.set(items: items, animated: true)
         
@@ -187,7 +189,9 @@ class BuyStockViewController: StoryboardController {
                 subtitleText:   "- $10.99"   ,
                 image2:  imgNikeStore  ,
                 
-                text3:   "Nike Store"
+                text3:   "Nike Store", handlers: .init(onClickAt: {
+                    self.back()
+                })
             ) ) )
             
             

@@ -422,6 +422,10 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
     
     // MARK: Delegate
     
+    func menuContainerControllerBack() {
+        self.back()
+    }
+    
     func menuContainerController(close menuContainerController: MenuContainerController) {
         mapButtons(alpha: 1.0)
     }

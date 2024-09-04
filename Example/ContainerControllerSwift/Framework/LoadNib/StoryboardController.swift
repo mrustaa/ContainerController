@@ -57,6 +57,14 @@ class StoryboardController: UIViewController {
     }
 }
 
+extension UIViewController {
+    
+    func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+}
+
 extension StoryboardController: ContainerControllerDelegate {
     
     

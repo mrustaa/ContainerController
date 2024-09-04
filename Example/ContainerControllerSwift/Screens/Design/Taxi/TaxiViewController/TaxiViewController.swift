@@ -42,6 +42,9 @@ class TaxiViewController: StoryboardController {
         
         
         let mapBtn = TaxiMapButtonView()
+        mapBtn.onClickAt = {
+            self.back()
+        }
         mapBtn.frame = CGRect(x: 12, y: 50, width: 44, height: 44)
         view.addSubview(mapBtn)
         

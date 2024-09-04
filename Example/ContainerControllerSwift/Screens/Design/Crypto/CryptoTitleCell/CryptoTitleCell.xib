@@ -146,27 +146,18 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2S7-aP-K9C" userLabel="Rectangle 44" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
-                                <rect key="frame" x="17" y="6" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Rectangle 44"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="imageMode">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgCryptoArrowBottom" translatesAutoresizingMaskIntoConstraints="NO" id="pOR-Cf-Lo6" userLabel="imgCryptoArrowBottom">
                                 <rect key="frame" x="103" y="65.5" width="7" height="3.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqf-uo-XIs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconSportBack" translatesAutoresizingMaskIntoConstraints="NO" id="QDl-Pg-j87">
+                                <rect key="frame" x="16" y="20" width="33" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                     </view>
                 </subviews>
@@ -174,8 +165,8 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="button" destination="oqf-uo-XIs" id="kRQ-Ci-fZe"/>
-                <outlet property="imageView13" destination="2S7-aP-K9C" id="d6S-JF-v8U"/>
                 <outlet property="imageView14" destination="pOR-Cf-Lo6" id="uNP-4e-ViV"/>
+                <outlet property="imgIcon" destination="QDl-Pg-j87" id="gsz-K0-opl"/>
                 <outlet property="label10" destination="ZN7-vw-BBZ" id="Tm9-P3-Lml"/>
                 <outlet property="label11" destination="P3d-YA-cJp" id="w46-Ie-TjQ"/>
                 <outlet property="label12" destination="hRH-mz-X34" id="PHe-Tw-3X6"/>
@@ -190,11 +181,11 @@
                 <outlet property="subtitleLabel" destination="wjx-NE-tWI" id="qrY-ud-7Fm"/>
                 <outlet property="titleLabel" destination="r4w-l4-qDm" id="G9i-vU-iBL"/>
             </connections>
-            <point key="canvasLocation" x="-100" y="-48"/>
+            <point key="canvasLocation" x="-100" y="-48.575712143928037"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Rectangle 44" width="128" height="128"/>
-        <image name="imgCryptoArrowBottom" width="128" height="128"/>
+        <image name="iconSportBack" width="105" height="105"/>
+        <image name="imgCryptoArrowBottom" width="24" height="14"/>
     </resources>
 </document>
