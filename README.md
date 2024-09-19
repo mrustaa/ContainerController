@@ -58,6 +58,7 @@ GIF Previews:
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_wallets_mini_2.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_sport_mini_2.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_buy_stock_mini_2.gif)
+
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_crypto_mini_2.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_taxi_mini_2.gif)
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_map_parking_mini_2.gif)
