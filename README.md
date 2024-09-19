@@ -125,7 +125,7 @@ It is used in different categories apps:
 
 ## Installation 
 
-### CocoaPods
+### [CocoaPods](https://cocoapods.org)
 
 ContainerControllerSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -133,7 +133,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ContainerControllerSwift'
 ```
-### Swift Package Manager with Xcode 11
+
+### [Swift Package Manager with Xcode 11](https://swift.org/package-manager/)
+
+```ruby
+dependencies: [
+    .package(url: "https://github.com/mrustaa/ContainerController.git")
+]
+```
 
 Follow [this doc](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app).
 
