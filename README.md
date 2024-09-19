@@ -30,8 +30,8 @@ It can:
 ![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/examples.gif)
 ![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/mapsLandscape.gif)
 
-
-## Designs are borrowed from Dribbble
+## Design examples
+### Designs are borrowed from Dribbble
 
 Examples of use (ui swipe component ContainerController) in popular design applications.
 
@@ -90,8 +90,8 @@ It is used in different categories apps:
 - [Installation](#installation)
   - [CocoaPods](#cocoapods)
   - [Swift Package Manager with Xcode 11](#swift-package-manager-with-xcode-11)
+- [Design examples](#design-examples)
 - [Getting Started](#getting-started)
-- [Designs are borrowed from Dribbble](#designs-are-borrowed-from-dribbble)
 - [Action](#action)
   - [Move position with an animation](#move-position-with-an-animation)
 - [Adding possible custom subviews in ContainerController view](#adding-possible-custom-subviews-in-containercontroller-view)
