@@ -33,15 +33,22 @@ It can:
 
 ### Designs are borrowed from Dribbble
 
+Examples of use (ui swipe component ContainerController) in popular design applications.
 
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_play_music_mi.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_wallets_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_sport_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_buy_stock_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_crypto_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_taxi_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_map_parking_mini.gif)
-![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_custom_card_mini.gif)
+It is used in different categories apps:
+- Maps / Menu / Player Music / Market / Sports News / Taxi / Finance Banks Stock / Wallets / Analytics / Notes
+- Alerts / Popups / Notifications
+
+Gif previews:
+
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_play_music_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_wallets_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_sport_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_buy_stock_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_crypto_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_taxi_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_map_parking_mini_2.gif)
+![image](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/screen_custom_card_mini_2.gif)
 
 Author Urls:
 
