@@ -80,7 +80,8 @@ class BuyStockGraphCell: TableAdapterCell {
   @IBOutlet private weak var imageView9: UIImageView?
   @IBOutlet private weak var imageView10: UIImageView?
   
-  @IBOutlet override var selectedView: UIView? { didSet { } }
+    @IBOutlet var graphView: DesignnGraphView!
+    @IBOutlet override var selectedView: UIView? { didSet { } }
   @IBOutlet var cardView: UIView?
   @IBOutlet var button: UIButton?
   
@@ -101,6 +102,7 @@ class BuyStockGraphCell: TableAdapterCell {
   
   override func fill(data: TableAdapterCellData?) {
       self.imageView10?.alpha = 0.0
+      graphView.alpha = 0
       
     guard let data = data as? BuyStockGraphCellData else { return }
     self.data = data
@@ -121,6 +123,8 @@ class BuyStockGraphCell: TableAdapterCell {
           
           UIView.animate(withDuration: 0.75) {
               self.imageView10?.alpha = 1.0
+              self.graphView?.alpha = 1.0
+              
           }
       }
   }

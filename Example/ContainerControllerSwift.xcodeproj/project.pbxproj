@@ -254,6 +254,12 @@
 		4A5247202C887C78009E629A /* CryptoDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A52471A2C887C78009E629A /* CryptoDetailsCell.xib */; };
 		4A5247212C887C78009E629A /* CryptoAmountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A52471C2C887C78009E629A /* CryptoAmountCell.swift */; };
 		4A5247222C887C78009E629A /* CryptoAmountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A52471D2C887C78009E629A /* CryptoAmountCell.xib */; };
+		4A53F0AA2C88ECB500C4FE2E /* DesignnGraphViewLegacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53F0A92C88ECB500C4FE2E /* DesignnGraphViewLegacy.swift */; };
+		4A53F0AC2C88ECCE00C4FE2E /* DesignnGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A53F0AB2C88ECCE00C4FE2E /* DesignnGraphView.swift */; };
+		4A847D932C88D659000DE0B9 /* DesignnShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A847D922C88D659000DE0B9 /* DesignnShadowView.swift */; };
+		4A847D952C88D682000DE0B9 /* DesignnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A847D942C88D682000DE0B9 /* DesignnView.swift */; };
+		4A847D972C88D69E000DE0B9 /* DesignnGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A847D962C88D69E000DE0B9 /* DesignnGradientView.swift */; };
+		4A847D992C88D6C2000DE0B9 /* DesignnImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A847D982C88D6C2000DE0B9 /* DesignnImageView.swift */; };
 		4A8ACA002C64EA390006B3D7 /* DesignFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AC9FF2C64EA390006B3D7 /* DesignFillView.swift */; };
 		4AB0D4EE2C82374D00903A73 /* ExampleAddCollectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB0D4C32C82374D00903A73 /* ExampleAddCollectionViewController.storyboard */; };
 		4AB0D4EF2C82374D00903A73 /* ExampleAddCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB0D4C42C82374D00903A73 /* ExampleAddCollectionViewController.swift */; };
@@ -583,6 +589,12 @@
 		4A52471A2C887C78009E629A /* CryptoDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoDetailsCell.xib; sourceTree = "<group>"; };
 		4A52471C2C887C78009E629A /* CryptoAmountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoAmountCell.swift; sourceTree = "<group>"; };
 		4A52471D2C887C78009E629A /* CryptoAmountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CryptoAmountCell.xib; sourceTree = "<group>"; };
+		4A53F0A92C88ECB500C4FE2E /* DesignnGraphViewLegacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnGraphViewLegacy.swift; sourceTree = "<group>"; };
+		4A53F0AB2C88ECCE00C4FE2E /* DesignnGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnGraphView.swift; sourceTree = "<group>"; };
+		4A847D922C88D659000DE0B9 /* DesignnShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnShadowView.swift; sourceTree = "<group>"; };
+		4A847D942C88D682000DE0B9 /* DesignnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnView.swift; sourceTree = "<group>"; };
+		4A847D962C88D69E000DE0B9 /* DesignnGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnGradientView.swift; sourceTree = "<group>"; };
+		4A847D982C88D6C2000DE0B9 /* DesignnImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignnImageView.swift; sourceTree = "<group>"; };
 		4A8AC9FF2C64EA390006B3D7 /* DesignFillView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignFillView.swift; sourceTree = "<group>"; };
 		4AB0D4C32C82374D00903A73 /* ExampleAddCollectionViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleAddCollectionViewController.storyboard; sourceTree = "<group>"; };
 		4AB0D4C42C82374D00903A73 /* ExampleAddCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddCollectionViewController.swift; sourceTree = "<group>"; };
@@ -2136,6 +2148,19 @@
 			path = CryptoAmountCell;
 			sourceTree = "<group>";
 		};
+		4A847D9A2C88D6DE000DE0B9 /* Designn */ = {
+			isa = PBXGroup;
+			children = (
+				4A847D922C88D659000DE0B9 /* DesignnShadowView.swift */,
+				4A847D942C88D682000DE0B9 /* DesignnView.swift */,
+				4A847D962C88D69E000DE0B9 /* DesignnGradientView.swift */,
+				4A53F0A92C88ECB500C4FE2E /* DesignnGraphViewLegacy.swift */,
+				4A53F0AB2C88ECCE00C4FE2E /* DesignnGraphView.swift */,
+				4A847D982C88D6C2000DE0B9 /* DesignnImageView.swift */,
+			);
+			path = Designn;
+			sourceTree = "<group>";
+		};
 		4AB0D4C52C82374D00903A73 /* ExampleAddCollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2351,6 +2376,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB6DDFC2C3BEE46004A8866 /* Еxtentions */,
+				4A847D9A2C88D6DE000DE0B9 /* Designn */,
 				4AB6DDFD2C3BEE46004A8866 /* CopyableLabel.swift */,
 				4AB6DDFE2C3BEE46004A8866 /* DesignButton.swift */,
 				4AB6DDFF2C3BEE46004A8866 /* DesignFigure.swift */,
@@ -2768,6 +2794,7 @@
 				4A0FBAB42C825CD6000A06CF /* TaxiRateEmojiCell.swift in Sources */,
 				4A52471F2C887C78009E629A /* CryptoDetailsCell.swift in Sources */,
 				4A0FBA6E2C825CD6000A06CF /* PlayMusicItCell.swift in Sources */,
+				4A847D932C88D659000DE0B9 /* DesignnShadowView.swift in Sources */,
 				46ACF05D2490F52600FAAD43 /* LocalizationManager.swift in Sources */,
 				4A0FBA2E2C825CD6000A06CF /* MyCardsTitileCell.swift in Sources */,
 				4AB0D5082C82374E00903A73 /* ExamplesSettingsViewController.swift in Sources */,
@@ -2785,6 +2812,7 @@
 				4A0FBA3E2C825CD6000A06CF /* CustomCardHeaderView.swift in Sources */,
 				46ACF0952490F52600FAAD43 /* LocationContainerController.swift in Sources */,
 				4A0FBA5A2C825CD6000A06CF /* MapParkingMiniCell.swift in Sources */,
+				4A847D972C88D69E000DE0B9 /* DesignnGradientView.swift in Sources */,
 				4AB0D4FF2C82374E00903A73 /* ExampleCellStyle.swift in Sources */,
 				4AB0D4F42C82374D00903A73 /* ExamplesContainerControllerScrollType.swift in Sources */,
 				4AB6DE412C3BF2F2004A8866 /* Device.swift in Sources */,
@@ -2817,8 +2845,10 @@
 				46ACF0552490F52600FAAD43 /* Colors.swift in Sources */,
 				4AB0D4F12C82374D00903A73 /* ExampleAddTableViewController.swift in Sources */,
 				4A0FBA542C825CD6000A06CF /* ImagineSmallTagCell.swift in Sources */,
+				4A847D992C88D6C2000DE0B9 /* DesignnImageView.swift in Sources */,
 				4A0FBA6C2C825CD6000A06CF /* PlayMusicCatalogCell.swift in Sources */,
 				4AB0D4F52C82374E00903A73 /* ExamplesScrollViews.swift in Sources */,
+				4A53F0AA2C88ECB500C4FE2E /* DesignnGraphViewLegacy.swift in Sources */,
 				4AB6DE212C3BEE46004A8866 /* DesignButton.swift in Sources */,
 				4A0FBA902C825CD6000A06CF /* SportCatalogOneCell.swift in Sources */,
 				46ACF0692490F52600FAAD43 /* MapsSectionCell.swift in Sources */,
@@ -2842,6 +2872,7 @@
 				46ACF06E2490F52600FAAD43 /* LocationAddressCell.swift in Sources */,
 				4A0FBA2A2C825CD6000A06CF /* MyCardsCollectionCell.swift in Sources */,
 				4A0FBA322C825CD6000A06CF /* CryptoOneCell.swift in Sources */,
+				4A53F0AC2C88ECCE00C4FE2E /* DesignnGraphView.swift in Sources */,
 				46ACF0572490F52600FAAD43 /* StoryboardController.swift in Sources */,
 				4A0FBA462C825CD6000A06CF /* ImagineCollectionCell.swift in Sources */,
 				46ACF0842490F52600FAAD43 /* HeaderTabBarView.swift in Sources */,
@@ -2882,6 +2913,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				4A0FBA372C825CD6000A06CF /* CryptoViewController.swift in Sources */,
 				4AB6DE252C3BEE46004A8866 /* DesignLabel.swift in Sources */,
+				4A847D952C88D682000DE0B9 /* DesignnView.swift in Sources */,
 				4A0FBA862C825CD6000A06CF /* TimerUtils.swift in Sources */,
 				4AB0D5022C82374E00903A73 /* ExampleFooterButtonView.swift in Sources */,
 				4A0FBA8C2C825CD6000A06CF /* SportCatalogCell.swift in Sources */,

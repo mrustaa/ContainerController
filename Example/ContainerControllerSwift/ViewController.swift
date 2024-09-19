@@ -14,10 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: TableAdapterView?
     var items: [TableAdapterItem] = []
     
+    @IBOutlet var graphV: DesignnGraphView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+//        graphV.getPoints()
         
         let imggAppleMaps =  #imageLiteral(resourceName: "imgAppAppleMaps")
         let imggPlayMusic =  #imageLiteral(resourceName: "imgAppPlayMusic")

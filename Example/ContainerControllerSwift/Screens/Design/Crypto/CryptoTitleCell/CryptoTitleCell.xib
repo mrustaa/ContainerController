@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33d-WP-EMo" userLabel=" CryptoTitle" customClass="DesignFigure" customModule="ContainerController" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="593"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-89-aXt" userLabel="Frame 89538">
                                 <rect key="frame" x="9" y="140" width="358" height="156"/>

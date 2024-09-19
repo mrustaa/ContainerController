@@ -4,6 +4,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -96,10 +98,64 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgBuyStockGraph" translatesAutoresizingMaskIntoConstraints="NO" id="CC1-ww-tao" userLabel="imgBuyStockGraph">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgBuyStockGraph" translatesAutoresizingMaskIntoConstraints="NO" id="CC1-ww-tao" userLabel="imgBuyStockGraph">
                                 <rect key="frame" x="70" y="31" width="274" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IwI-1N-mMx" customClass="DesignnGraphView" customModule="ContainerController" customModuleProvider="target">
+                                <rect key="frame" x="70" y="20" width="275" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="arrStr" value="15,25,26,34,35,40,53,56,56,20,15,27,36,46,57,53,90"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="brColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="brWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="addPoints" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="grColor1">
+                                        <color key="value" systemColor="systemIndigoColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="grColor2">
+                                        <color key="value" name="PlayMusicColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="grColor3">
+                                        <color key="value" name="SportColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="grEndPoint">
+                                        <point key="value" x="1" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="grStartPoint">
+                                        <point key="value" x="1" y="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="grRadial" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="grBlendMode">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gr2Color1">
+                                        <color key="value" red="0.92199999089999995" green="0.2669999897" blue="0.3650000095" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gr2Color2">
+                                        <color key="value" red="0.92199999089999995" green="0.2669999897" blue="0.3650000095" alpha="0.78924754159999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gr2EndPoint">
+                                        <point key="value" x="0.0" y="-0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="gr2StartPoint">
+                                        <point key="value" x="0.0" y="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKf-q8-xby">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,6 +167,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="button" destination="zKf-q8-xby" id="pQG-FQ-r1n"/>
+                <outlet property="graphView" destination="IwI-1N-mMx" id="7v0-Lv-csd"/>
                 <outlet property="imageView10" destination="CC1-ww-tao" id="zEr-Jr-ERV"/>
                 <outlet property="imageView9" destination="qlN-uP-Jum" id="Z6z-lX-GfC"/>
                 <outlet property="label2" destination="iVa-IP-Drb" id="0e2-0V-9PR"/>
@@ -123,11 +180,20 @@
                 <outlet property="subtitleLabel" destination="3yy-Nc-TjF" id="xOz-NI-kur"/>
                 <outlet property="titleLabel" destination="R0R-ge-Xl5" id="9LK-mm-b8m"/>
             </connections>
-            <point key="canvasLocation" x="138" y="-10"/>
+            <point key="canvasLocation" x="136.80000000000001" y="-10.794602698650676"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="imgBuyStockGraph" width="822" height="457"/>
         <image name="imgBuyStockGraphLine" width="827" height="471"/>
+        <namedColor name="PlayMusicColor">
+            <color red="0.92199999094009399" green="0.2669999897480011" blue="0.36500000953674316" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SportColor">
+            <color red="1" green="0.54100000858306885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
