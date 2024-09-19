@@ -31,7 +31,7 @@ It can:
 ![image(Landscape)](https://github.com/mrustaa/gif_presentation/blob/master/ContainerControllerSwift/mapsLandscape.gif)
 
 ## Design examples
-### Designs are borrowed from Dribbble
+### Designs are borrowed from [Dribbble](https://dribbble.com)
 
 Examples of use (ui swipe component ContainerController) in popular design applications.
 
