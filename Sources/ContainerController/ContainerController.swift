@@ -178,7 +178,9 @@ open class ContainerController: NSObject {
         self.controller = controller
         set(layout: layout)
         
+        #if os(iOS)
         NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+        #endif
         
         createShadowButton()
         createContainerView()
@@ -209,6 +211,7 @@ open class ContainerController: NSObject {
     
     // MARK: - Rotated
     
+    #if os(iOS)
     @objc func rotated() {
         
         if !UIDevice.current.orientation.isRotateAllowed { return }
@@ -225,6 +228,7 @@ open class ContainerController: NSObject {
         
         move(type: moveType, from: .rotation)
     }
+    #endif
     
     // MARK: - Update Layout
     

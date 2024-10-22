@@ -22,8 +22,20 @@ open class ContainerDevice {
     
     // MARK: - Size
     
-    class public var width:  CGFloat { UIScreen.main.bounds.size.width }
-    class public var height: CGFloat { UIScreen.main.bounds.size.height }
+    class public var width:  CGFloat {
+        #if os(iOS)
+        UIScreen.main.bounds.size.width
+        #else
+        UIApplication.shared.connectedScenes.compactMap { ($0 as? UIWindowScene)?.keyWindow }.last?.bounds.size.width ?? 0
+        #endif
+    }
+    class public var height: CGFloat {
+        #if os(iOS)
+        UIScreen.main.bounds.size.height
+        #else
+        UIApplication.shared.connectedScenes.compactMap { ($0 as? UIWindowScene)?.keyWindow }.last?.bounds.size.height ?? 0
+        #endif
+    }
     
     class public var frame: CGRect { CGRect(x: 0, y: 0, width: width, height: height) }
     
@@ -36,7 +48,13 @@ open class ContainerDevice {
     
     static public let isIpad   = UIDevice.current.userInterfaceIdiom == .pad
     static public let isIphone = UIDevice.current.userInterfaceIdiom == .phone
-    static public let isRetina = UIScreen.main.scale >= 2.0
+    static public let isRetina = {
+        #if os(iOS)
+        UIScreen.main.scale >= 2.0
+        #else
+        true
+        #endif
+    }
     
     class public var isIphone4:   Bool { (isIphone && screenMax <  568.0) }
     class public var isIphone5:   Bool { (isIphone && screenMax == 568.0) } // SE
@@ -74,6 +92,7 @@ open class ContainerDevice {
         
         var portrait: Bool = false
         
+        #if os(iOS)
         let size: CGSize = UIScreen.main.bounds.size
         if size.width / size.height > 1 {
             portrait = false
@@ -88,6 +107,7 @@ open class ContainerDevice {
             portrait = true
         default: break
         }
+        #endif
         
         return portrait
     }

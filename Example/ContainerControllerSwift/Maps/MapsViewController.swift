@@ -44,7 +44,9 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        #if os(iOS)
         NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+        #endif
         
         updateMapManager()
         
@@ -61,7 +63,9 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         
         navigationController?.navigationBar.isTranslucent = false
         
+        #if os(iOS)
         setNeedsStatusBarAppearanceUpdate()
+        #endif
         
         navBar(hide: true)
         if !showOnce {
@@ -105,12 +109,14 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
     
     // MARK: -  Rotation Callback
     
+    #if os(iOS)
     @objc func rotated() {
         
         if !UIDevice.current.orientation.isRotateAllowed { return }
         
         updateMapViewTopPadding()
     }
+    #endif
     
     func updateMapViewTopPadding() {
         
@@ -328,7 +334,9 @@ class MapsViewController: StoryboardController, MapsContainerControllerDelegate,
         let style: UIBlurEffect.Style = darkStyle ? .systemUltraThinMaterialDark : .regular
         statusBlur.effect = UIBlurEffect(style: style)
         
+        #if os(iOS)
         setNeedsStatusBarAppearanceUpdate()
+        #endif
     }
     
     // MARK: - Show Maps-Container
