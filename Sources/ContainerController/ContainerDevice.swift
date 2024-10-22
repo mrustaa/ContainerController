@@ -12,6 +12,7 @@ import UIKit
 public extension ContainerDevice {
     enum Orientation {
         case portrait
+        case portraitUpsideDown
         case landscapeLeft
         case landscapeRight
     }
@@ -84,7 +85,7 @@ open class ContainerDevice {
         switch UIDevice.current.orientation {
         case .landscapeLeft, .landscapeRight:
             portrait = false
-        case .portrait:
+        case .portrait, .portraitUpsideDown:
             portrait = true
         default: break
         }
@@ -107,6 +108,13 @@ open class ContainerDevice {
     
     class public var orientation: ContainerDevice.Orientation {
         if isPortrait {
+            if let statusBarOrientation = statusBarOrientation {
+                if statusBarOrientation == .portrait {
+                    return .portrait
+                } else if statusBarOrientation == .portraitUpsideDown {
+                    return .portraitUpsideDown
+                }
+            }
             return .portrait
         } else {
             if let statusBarOrientation = statusBarOrientation {
@@ -124,7 +132,7 @@ open class ContainerDevice {
 public extension UIDeviceOrientation {
     
     var isRotateAllowed: Bool {
-        return !(face || self == .portraitUpsideDown)
+        return !face
     }
     
     var face: Bool {
